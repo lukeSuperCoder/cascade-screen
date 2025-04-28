@@ -25,7 +25,7 @@ Cascade 是一个以开源数据与实时分析为基础，展现全球至局地
 1. 克隆仓库
 
 ```bash
-git clone <仓库地址>
+git clone https://github.com/lukeSuperCoder/cascade-screen.git
 cd cascade-screen
 ```
 
