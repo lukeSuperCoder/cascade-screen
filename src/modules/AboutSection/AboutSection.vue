@@ -3,10 +3,11 @@
     <h2 class="text-4xl font-bold mb-8 text-white">About Cascade</h2>
     
     <div class="mb-12">
-      <p class="text-lg text-gray-300 max-w-4xl">
-        We provide a platform leveraging open datasets and 
-        advanced AI to visualize and analyze spatially-detailed 
-        climate cascade risks worldwide.
+      <p class="text-lg text-gray-300 max-w-2xl">
+        We provide a platform leveraging open datasets 
+        and advanced AI to visualize and analyze 
+        spatially-detailed climate cascade risks 
+        worldwide.
       </p>
     </div>
     
@@ -14,17 +15,20 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <FeatureCard 
         icon="globe"
-        title="Open data integration"
+        title="Open data"
+        info="integration"
       />
       
       <FeatureCard 
         icon="ai"
-        title="AI-driven cascade analysis engine"
+        title="AI-driven"
+        info="cascade analysis engine"
       />
       
       <FeatureCard 
         icon="visualization"
-        title="Dynamic visualization"
+        title="Dynamic"
+        info="visualization"
       />
     </div>
   </div>

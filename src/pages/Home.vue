@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gray-900 text-white">
+  <div class="min-h-screen bg-black/80 text-white">
     <!-- 顶部导航栏 -->
     <NavBar />
     
@@ -9,24 +9,27 @@
     </section>
     
     <!-- About部分 -->
-    <section class="py-16" id="about">
+    <section id="about">
       <AboutSection />
     </section>
     
     <!-- Our Approach部分 -->
-    <section class="py-16" id="approach">
+    <section id="approach">
       <ApproachSection />
     </section>
     
-    <!-- Latest Product部分 -->
-    <section class="py-16" id="product">
-      <LatestProductSection />
-    </section>
-    
-    <!-- Our Services部分 -->
-    <section class="py-16" id="services">
-      <ServicesSection />
-    </section>
+    <!-- Latest Product和Services部分 -->
+    <div class="flex mx-16">
+      <!-- Latest Product部分 -->
+      <section id="product" class="w-1/2">
+        <LatestProductSection />
+      </section>
+      
+      <!-- Our Services部分 -->
+      <section id="services" class="w-1/2">
+        <ServicesSection />
+      </section>
+    </div>
     
     <!-- 页脚部分 -->
     <FooterSection />
