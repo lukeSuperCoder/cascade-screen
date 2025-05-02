@@ -19,7 +19,7 @@
     </section>
     
     <!-- Latest Product和Services部分 -->
-    <div class="flex mx-16">
+    <div class="flex container mx-auto">
       <!-- Latest Product部分 -->
       <section id="product" class="w-1/2">
         <LatestProductSection />
