@@ -30,3 +30,51 @@
     @apply bg-transparent border border-white text-white px-4 py-2 rounded-md hover:bg-white/10 transition-colors;
   }
 }
+
+/* ====== 黑暗科技感全局滚动条样式 ====== */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background: #181a20;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(120deg, #2563eb 10%, #60a5fa 90%);
+  border-radius: 8px;
+  box-shadow: 0 0 8px #2563eb55;
+  border: 2px solid #181a20;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(120deg, #60a5fa 10%, #2563eb 90%);
+  box-shadow: 0 0 16px #60a5fa99;
+}
+::-webkit-scrollbar-track {
+  background: #101117;
+  border-radius: 8px;
+}
+
+/* 默认隐藏纵向滚动条，仅在滚动时显示（webkit/chromium） */
+body,
+html {
+  scrollbar-gutter: stable;
+  /* Firefox: 保持空间，防止布局跳动 */
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  visibility: hidden;
+}
+body:hover ::-webkit-scrollbar-thumb,
+body:active ::-webkit-scrollbar-thumb,
+body:focus ::-webkit-scrollbar-thumb,
+body:focus-within ::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
+/* Firefox 隐藏滚动条，仅在滚动时显示 */
+html {
+  scrollbar-width: none;
+  scrollbar-color: #2563eb #101117;
+}
