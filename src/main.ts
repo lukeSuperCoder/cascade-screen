@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
 import Home from './pages/Home.vue'
+import MapPage from './pages/MapPage.vue'
 import './styles/tailwind.css'
 import 'element-plus/dist/index.css'
 
@@ -13,6 +14,11 @@ const router = createRouter({
       path: '/',
       name: 'Home',
       component: Home
+    },
+    {
+      path: '/map',
+      name: 'Map',
+      component: MapPage
     },
     // 其他路由可以在这里添加
     {

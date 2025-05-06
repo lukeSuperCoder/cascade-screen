@@ -1,0 +1,51 @@
+/* 地图控制按钮样式 - 科技感暗色主题 */
+.ol-zoom {
+    top: 7rem;
+    right: 0.5rem;
+    left: auto;
+    background: rgba(17, 24, 39, 0.8);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.2);
+}
+
+.ol-full-screen {
+    top: 5rem;
+    right: 0.5rem;
+    left: auto;
+    background: rgba(17, 24, 39, 0.8);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.2);
+}
+
+.ol-scale-line {
+    bottom: 0.5rem;
+    right: 0.5rem;
+    left: auto;
+    background: rgba(17, 24, 39, 0.8);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 0.25rem;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.2);
+}
+.ol-scale-line-inner{
+    color: #fff;
+}
+
+/* 按钮悬停效果 */
+.ol-zoom button:hover,
+.ol-full-screen button:hover {
+    background: rgba(59, 130, 246, 0.2);
+    border-color: rgba(59, 130, 246, 0.5);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+/* 按钮激活状态 */
+.ol-zoom button:active,
+.ol-full-screen button:active {
+    background: rgba(59, 130, 246, 0.3);
+    transform: scale(0.95);
+}

@@ -1,6 +1,6 @@
 <template>
   <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md">
-    <div class="container mx-auto py-4 px-4 flex justify-between items-center">
+    <div :class="onlyLogo ? 'container py-4 px-4 flex justify-between items-center' : 'container mx-auto py-4 px-4 flex justify-between items-start'">
       <!-- Logo -->
       <div class="flex items-center">
         <router-link to="/" class="text-white relative logo-container cyber-glow wave-logo">
@@ -16,7 +16,7 @@
       </div>
       
       <!-- 导航链接和用户图标容器 -->
-      <div class="flex items-center space-x-8">
+      <div v-if="!onlyLogo" class="flex items-center space-x-8">
         <!-- 导航链接 -->
         <div class="hidden md:flex items-center space-x-8">
           <button @click="scrollToSection('about')" class="text-white hover:text-blue-400 transition-colors duration-300 relative group py-2 cyber-link">
@@ -58,7 +58,7 @@
     </div>
     
     <!-- 移动端菜单 -->
-    <div v-if="mobileMenuOpen" class="md:hidden bg-gray-900/95 backdrop-blur-lg border-b border-blue-500/20 py-4 animate-fadeIn flex items-center">
+    <div v-if="!onlyLogo && mobileMenuOpen" class="md:hidden bg-gray-900/95 backdrop-blur-lg border-b border-blue-500/20 py-4 animate-fadeIn flex items-center">
       <div class="container mx-auto px-4 flex flex-col space-y-4">
         <button @click="scrollToSection('about', true)" class="text-white hover:text-blue-400 transition-colors py-3 px-4 rounded-md hover:bg-blue-900/20 border border-transparent hover:border-blue-500/30">
           About Cascade
@@ -85,6 +85,12 @@ import LoginModal from './LoginModal.vue'
 export default defineComponent({
   name: 'NavBar',
   components: { LoginModal },
+  props: {
+    onlyLogo: {
+      type: Boolean,
+      default: false
+    }
+  },
   setup() {
     const mobileMenuOpen = ref(false)
     const isScrolled = ref(false)

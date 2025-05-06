@@ -79,7 +79,7 @@ export default defineComponent({
   border-radius: 1.5rem;
   position: relative;
   overflow: hidden;
-  background: #181818;
+  background: #000;
 }
 .cyber-glow {
   text-shadow: 0 0 12px #fff2, 0 0 24px #fff1;

@@ -17,7 +17,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #111827; /* tailwind bg-gray-900 */
+  background-color: #000000; /* 纯黑色背景 */
   color: #ffffff;
 }
 

@@ -23,7 +23,8 @@
         
         <!-- CTA按钮 -->
         <div class="flex flex-wrap gap-4">
-          <a href="#" class="relative group bg-blue-700 hover:bg-blue-800 text-white px-8 py-3 rounded-md transition-all duration-300 backdrop-blur-sm border border-blue-500/30 hover:border-blue-400/50 overflow-hidden active:scale-95 active:animate-shake">
+          <!-- 使用router-link进行页面跳转 -->
+          <router-link to="/map" class="relative group bg-blue-700 hover:bg-blue-800 text-white px-8 py-3 rounded-md transition-all duration-300 backdrop-blur-sm border border-blue-500/30 hover:border-blue-400/50 overflow-hidden active:scale-95 active:animate-shake">
             <span class="relative z-10">Explore the Map</span>
             <!-- 科技感光效 -->
             <div class="absolute inset-0 bg-gradient-to-r from-blue-700/90 via-blue-600/90 to-blue-700/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -32,7 +33,7 @@
             <div class="absolute inset-0 translate-x-[-100%] group-hover:translate-x-[100%] bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-1000"></div>
             <!-- 边缘发光效果 -->
             <div class="absolute -inset-px bg-gradient-to-r from-blue-500 via-blue-400 to-blue-500 opacity-0 group-hover:opacity-40 group-hover:blur-sm transition-all duration-300"></div>
-          </a>
+          </router-link>
           <a href="#" class="relative group bg-transparent backdrop-blur-sm border border-blue-500/20 text-white px-8 py-3 rounded-md hover:border-blue-400/40 transition-all duration-300 overflow-hidden active:scale-95 active:animate-shake-sm">
             <span class="relative z-10">Discover Cascade</span>
             <!-- 科技感扫光效果 -->
