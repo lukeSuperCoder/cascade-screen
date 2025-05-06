@@ -19,30 +19,30 @@
       <div class="flex items-center space-x-8">
         <!-- 导航链接 -->
         <div class="hidden md:flex items-center space-x-8">
-          <router-link to="/about" class="text-white hover:text-blue-400 transition-colors duration-300 relative group py-2 cyber-link">
+          <button @click="scrollToSection('about')" class="text-white hover:text-blue-400 transition-colors duration-300 relative group py-2 cyber-link">
             <span>About Cascade</span>
             <span class="cyber-highlight"></span>
-          </router-link>
-          <router-link to="/approach" class="text-white hover:text-blue-400 transition-colors duration-300 relative group py-2 cyber-link">
+          </button>
+          <button @click="scrollToSection('approach')" class="text-white hover:text-blue-400 transition-colors duration-300 relative group py-2 cyber-link">
             <span>Our Approach</span>
             <span class="cyber-highlight"></span>
-          </router-link>
-          <router-link to="/latest" class="text-white hover:text-blue-400 transition-colors duration-300 relative group py-2 cyber-link">
+          </button>
+          <button @click="scrollToSection('product')" class="text-white hover:text-blue-400 transition-colors duration-300 relative group py-2 cyber-link">
             <span>Latest Product</span>
             <span class="cyber-highlight"></span>
-          </router-link>
-          <router-link to="/services" class="text-white hover:text-blue-400 transition-colors duration-300 relative group py-2 cyber-link">
+          </button>
+          <button @click="scrollToSection('services')" class="text-white hover:text-blue-400 transition-colors duration-300 relative group py-2 cyber-link">
             <span>Our Services</span>
             <span class="cyber-highlight"></span>
-          </router-link>
+          </button>
         </div>
         
         <!-- 用户图标/登录按钮 -->
         <div class="flex items-center">
-          <router-link to="/login" class="text-white hover:text-blue-300 transition-colors duration-200 relative group cyber-icon">
+          <button @click="showLogin = true" class="text-white hover:text-blue-300 transition-colors duration-200 relative group cyber-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user w-5 h-5"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
             <span class="cyber-icon-glow"></span>
-          </router-link>
+          </button>
         </div>
         
         <!-- 移动端菜单按钮 -->
@@ -60,31 +60,35 @@
     <!-- 移动端菜单 -->
     <div v-if="mobileMenuOpen" class="md:hidden bg-gray-900/95 backdrop-blur-lg border-b border-blue-500/20 py-4 animate-fadeIn flex items-center">
       <div class="container mx-auto px-4 flex flex-col space-y-4">
-        <router-link to="/about" class="text-white hover:text-blue-400 transition-colors py-3 px-4 rounded-md hover:bg-blue-900/20 border border-transparent hover:border-blue-500/30" @click="closeMobileMenu">
+        <button @click="scrollToSection('about', true)" class="text-white hover:text-blue-400 transition-colors py-3 px-4 rounded-md hover:bg-blue-900/20 border border-transparent hover:border-blue-500/30">
           About Cascade
-        </router-link>
-        <router-link to="/approach" class="text-white hover:text-blue-400 transition-colors py-3 px-4 rounded-md hover:bg-blue-900/20 border border-transparent hover:border-blue-500/30" @click="closeMobileMenu">
+        </button>
+        <button @click="scrollToSection('approach', true)" class="text-white hover:text-blue-400 transition-colors py-3 px-4 rounded-md hover:bg-blue-900/20 border border-transparent hover:border-blue-500/30">
           Our Approach
-        </router-link>
-        <router-link to="/latest" class="text-white hover:text-blue-400 transition-colors py-3 px-4 rounded-md hover:bg-blue-900/20 border border-transparent hover:border-blue-500/30" @click="closeMobileMenu">
+        </button>
+        <button @click="scrollToSection('product', true)" class="text-white hover:text-blue-400 transition-colors py-3 px-4 rounded-md hover:bg-blue-900/20 border border-transparent hover:border-blue-500/30">
           Latest Product
-        </router-link>
-        <router-link to="/services" class="text-white hover:text-blue-400 transition-colors py-3 px-4 rounded-md hover:bg-blue-900/20 border border-transparent hover:border-blue-500/30" @click="closeMobileMenu">
+        </button>
+        <button @click="scrollToSection('services', true)" class="text-white hover:text-blue-400 transition-colors py-3 px-4 rounded-md hover:bg-blue-900/20 border border-transparent hover:border-blue-500/30">
           Our Services
-        </router-link>
+        </button>
       </div>
     </div>
   </nav>
+  <LoginModal v-model:visible="showLogin" />
 </template>
 
 <script lang="ts">
 import { defineComponent, ref, onMounted, onUnmounted } from 'vue'
+import LoginModal from './LoginModal.vue'
 
 export default defineComponent({
   name: 'NavBar',
+  components: { LoginModal },
   setup() {
     const mobileMenuOpen = ref(false)
     const isScrolled = ref(false)
+    const showLogin = ref(false)
     
     const toggleMobileMenu = () => {
       mobileMenuOpen.value = !mobileMenuOpen.value
@@ -97,6 +101,23 @@ export default defineComponent({
     // 监听滚动事件
     const handleScroll = () => {
       isScrolled.value = window.scrollY > 50
+    }
+
+    // 滚动到指定section的函数
+    const scrollToSection = (id: string, closeMenu = false) => {
+      // 查找目标section
+      const el = document.getElementById(id)
+      if (el) {
+        // 滚动到目标section，考虑导航栏高度偏移
+        const nav = document.querySelector('nav')
+        const navHeight = nav ? (nav as HTMLElement).offsetHeight : 0
+        const top = el.getBoundingClientRect().top + window.scrollY - navHeight - 8 // 8px间距
+        window.scrollTo({ top, behavior: 'smooth' })
+      }
+      // 如果是移动端菜单，点击后关闭菜单
+      if (closeMenu) {
+        closeMobileMenu()
+      }
     }
     
     onMounted(() => {
@@ -111,7 +132,9 @@ export default defineComponent({
       mobileMenuOpen,
       isScrolled,
       toggleMobileMenu,
-      closeMobileMenu
+      closeMobileMenu,
+      scrollToSection,
+      showLogin
     }
   }
 })

@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
 import Home from './pages/Home.vue'
 import './styles/tailwind.css'
+import 'element-plus/dist/index.css'
 
 // 创建路由
 const router = createRouter({
