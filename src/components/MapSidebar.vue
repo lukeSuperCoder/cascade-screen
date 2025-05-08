@@ -131,6 +131,7 @@
 
 <script>
 import riskPoints from '@/assets/datas/riskPoints'
+import powerOutage from '@/assets/datas/power_outage.json'
 
 export default {
   name: 'MapSidebar',
@@ -408,9 +409,9 @@ export default {
         console.warn('地图实例未初始化');
         return;
       }
-      const markers = riskPoints.map(item => {
+      const markers = powerOutage.map(item => {
         return {
-          coordinates: [item.lng, item.lat],
+          coordinates: item.coordinate,
           properties: {
             ...item
           },

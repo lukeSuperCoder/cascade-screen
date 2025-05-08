@@ -100,7 +100,9 @@
         let that = this;
         let options = {
           targetId: 'olmap',
-          baseMapName: 'OSM_DARK'
+          baseMapName: 'OSM_DARK',
+          center:[-1.7370224109938552,54.91845581490148],
+          zoom:5
         }
         this.mapInstance = new OlMap('olmap',options);
         window.olMap = this.mapInstance;
