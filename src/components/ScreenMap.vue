@@ -73,7 +73,6 @@
   
   <script>
   import { OlMap } from '@/olmap/index'
-  import riskPoints from '@/assets/datas/riskPoints'
 
   export default {
     components: {},
@@ -105,6 +104,8 @@
         }
         this.mapInstance = new OlMap('olmap',options);
         window.olMap = this.mapInstance;
+        // 触发地图初始化完成事件
+        this.$emit('map-ready', this.mapInstance);
 
         // 聚类点击事件
         this.mapInstance.clusterMakerLayer.setOnClick((featureData, event) => {
@@ -117,7 +118,8 @@
         });
         // 点标记点击事件
         this.mapInstance.markerLayer.setOnClick(async (featureData, event) => {
-          if(featureData.type === 'marker' && featureData.properties){
+          const zoom = this.mapInstance.view.getZoom();
+          if(featureData.type === 'marker' && featureData.properties && zoom > 8){
             const data = featureData.properties;
             this.popupData = data;
             this.showPopup = true;
@@ -134,27 +136,6 @@
             };
           }
         });
-      },
-      addMarkers(){
-        const markers = riskPoints.map(item => {
-          return {
-            coordinates: [item.lng, item.lat],
-            properties: {
-              ...item
-            },
-            style: {
-              radius: 8,
-              showStroke: false
-            }
-          }
-        })
-        // this.mapInstance.clusterMakerLayer.addMarkers(markers);
-        // this.mapInstance.clusterMakerLayer.setMinZoom(1);
-        // this.mapInstance.clusterMakerLayer.setMaxZoom(8);
-        this.mapInstance.markerLayer.addMarkers(markers);
-        this.mapInstance.markerLayer.setMinZoom(1);
-        this.mapInstance.markerLayer.setMaxZoom(18);
-        
       },
       async getListById(id){
         const res = await currentGETById('getListById',id);
@@ -226,7 +207,6 @@
     },
     mounted() {
       this.initMap();
-      this.addMarkers();
     },
     beforeDestroy() { 
     },

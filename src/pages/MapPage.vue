@@ -7,13 +7,17 @@
     <div class="map-content">
       <!-- 左侧菜单 -->
       <MapSidebar
+        ref="sidebar"
         @layer-toggle="handleLayerToggle"
         @tool-click="handleToolClick"
       />
       
       <!-- 右侧地图区域 -->
       <div class="map-container">
-        <screenMap ref="mapComponent" />
+        <screenMap 
+          ref="mapComponent" 
+          @map-ready="handleMapReady"
+        />
       </div>
     </div>
   </div>
@@ -41,6 +45,12 @@ export default {
       // 处理工具点击
       console.log('Tool clicked:', toolId);
       // TODO: 根据工具ID执行相应操作
+    },
+    handleMapReady(mapInstance) {
+      // 当地图初始化完成时，将地图实例传递给侧边栏组件
+      if (this.$refs.sidebar) {
+        this.$refs.sidebar.mapInstance = mapInstance;
+      }
     }
   }
 }

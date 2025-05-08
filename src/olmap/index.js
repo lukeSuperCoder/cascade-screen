@@ -9,6 +9,9 @@ import MapMeasure from './markManage/measure';
 import MapMark from './markManage/mark';
 import View from './view/view';
 import Popup from './popup/popup';
+import HeatMapLayer from './layerManage/heatMapLayer';
+import FlowLinesLayer from './layerManage/flowLinesLayer';
+
 export class OlMap {
     constructor(targetId, options) {
         let that = this;
@@ -32,6 +35,8 @@ export class OlMap {
             this.markerLayer = new MarkerLayer(this.coreMap.map, this.options);
             this.geomLayer = new GeomLayer(this.coreMap.map, this.options);
             this.clusterMakerLayer = new ClusterMakerLayer(this.coreMap.map, this.options);
+            this.heatMapLayer = new HeatMapLayer(this.coreMap.map, this.options);
+            this.flowLinesLayer = new FlowLinesLayer(this.coreMap.map, this.options);
             this.mark = new MapMark(this.coreMap.map, this.options);
             this.measure = new MapMeasure(this.coreMap.map, this.options);
             this.view = new View(this.coreMap.map, this.options);
