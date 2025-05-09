@@ -2,7 +2,7 @@ import { Feature } from 'ol';
 import { Point } from 'ol/geom';
 import { Heatmap as HeatmapLayer } from 'ol/layer';
 import { Vector as VectorSource } from 'ol/source';
-import { fromLonLat } from 'ol/proj';
+import { fromLonLat, toLonLat } from 'ol/proj';
 import GeoJSON from 'ol/format/GeoJSON';
 import WKT from 'ol/format/WKT';
 
@@ -26,8 +26,60 @@ class HeatMapLayer {
     this.layers = new Map();
     
     // 创建GeoJSON和WKT解析器
-    this.geoJSONFormat = new GeoJSON();
+    this.geoJSONFormat = new GeoJSON({
+      // 添加坐标转换
+      featureProjection: 'EPSG:3857',
+      dataProjection: 'EPSG:4326'
+    });
     this.wktFormat = new WKT();
+
+    // 点击回调函数
+    this.clickCallback = null;
+  }
+
+  /**
+   * 设置点击回调函数
+   * @param {Function} callback 回调函数，接收点击的要素数据
+   */
+  setOnClick(callback) {
+    this.clickCallback = callback;
+  }
+
+  /**
+   * 处理点击事件
+   * @private
+   * @param {Object} event 点击事件对象
+   */
+  _handleClick(event) {
+    if (!this.clickCallback) return;
+
+    // 获取点击位置的所有要素
+    const features = this.map.getFeaturesAtPixel(event.pixel, {
+      hitTolerance: 5,
+      layerFilter: (layer) => {
+        return this.layers.has(layer.get('id'));
+      }
+    });
+
+    if (features && features.length > 0) {
+      // 获取点击位置最近的要素
+      const feature = features[0];
+      const properties = feature.getProperties();
+      const geometry = feature.getGeometry();
+      const coordinates = geometry.getCoordinates();
+      // 转换回4326坐标
+      const transformedCoords = toLonLat(coordinates);
+
+      // 调用回调函数
+      this.clickCallback({
+        type: 'heatmap',
+        properties: properties,
+        geometry: {
+          type: 'Point',
+          coordinates: transformedCoords
+        }
+      }, event);
+    }
   }
 
   /**
@@ -55,9 +107,25 @@ class HeatMapLayer {
     // 根据数据类型解析数据
     let features;
     if (type === 'geojson') {
+      // GeoJSON数据会自动进行坐标转换
       features = this.geoJSONFormat.readFeatures(data);
     } else if (type === 'wkt') {
       features = this.wktFormat.readFeatures(data);
+      // 手动转换WKT数据的坐标
+      features.forEach(feature => {
+        const geometry = feature.getGeometry();
+        if (geometry) {
+          const coords = geometry.getCoordinates();
+          if (Array.isArray(coords[0])) {
+            // 多点或多线
+            const transformedCoords = coords.map(coord => fromLonLat(coord));
+            geometry.setCoordinates(transformedCoords);
+          } else {
+            // 单点
+            geometry.setCoordinates(fromLonLat(coords));
+          }
+        }
+      });
     } else {
       throw new Error('不支持的数据类型');
     }
@@ -78,6 +146,9 @@ class HeatMapLayer {
       zIndex: this.options.zIndex
     });
 
+    // 设置图层ID，用于点击事件过滤
+    heatmapLayer.set('id', id);
+
     // 存储图层信息
     this.layers.set(id, {
       layer: heatmapLayer,
@@ -87,6 +158,9 @@ class HeatMapLayer {
 
     // 将图层添加到地图
     this.map.addLayer(heatmapLayer);
+
+    // 添加点击事件监听
+    this.map.on('click', this._handleClick.bind(this));
 
     return heatmapLayer;
   }

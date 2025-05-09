@@ -40,7 +40,7 @@
       <div v-if="showPopup" class="popup-container" :style="popupStyle">
         <div class="popup-content">
           <div class="popup-header">
-            <h3 class="text-lg font-medium">{{ popupData.name }}</h3>
+            <h3 class="text-lg font-medium">Power Outage Details</h3>
             <button @click="closePopup" class="close-btn">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -50,20 +50,24 @@
           </div>
           <div class="popup-body">
             <div class="info-item">
-              <span class="label">Risk：</span>
-              <span class="value">{{ popupData.risk }}</span>
+              <span class="label">Eco_loss:</span>
+              <span class="value">{{ popupData.ecoLoss }}</span>
             </div>
             <div class="info-item">
-              <span class="label">RiskLevel：</span>
-              <span class="value">{{ (popupData.riskLevel * 100).toFixed(0) }}%</span>
+              <span class="label">Incident Time:</span>
+              <span class="value">{{ popupData.incidentTime }}</span>
             </div>
             <div class="info-item">
-              <span class="label">Category：</span>
-              <span class="value">{{ popupData.category }}</span>
+              <span class="label">Month:</span>
+              <span class="value">{{ popupData.month }}</span>
             </div>
             <div class="info-item">
-              <span class="label">Description：</span>
-              <span class="value">{{ popupData.description }}</span>
+              <span class="label">Total_Daily_Period:</span>
+              <span class="value">{{ popupData.totalDailyPeriod }}</span>
+            </div>
+            <div class="info-item">
+              <span class="label">nuts218cd:</span>
+              <span class="value">{{ popupData.nuts218cd }}</span>
             </div>
           </div>
         </div>
@@ -73,6 +77,7 @@
   
   <script>
   import { OlMap } from '@/olmap/index'
+import { de } from 'element-plus/es/locale/index.mjs';
 
   export default {
     components: {},
@@ -131,6 +136,33 @@
             const rect = mapElement.getBoundingClientRect();
             const x = event.pixel[0] + rect.left;
             const y = event.pixel[1] + rect.top - 10; // 向上偏移10px
+            
+            this.popupStyle = {
+              top: `${y}px`,
+              left: `${x}px`
+            };
+          }
+        });
+
+        // 热力图点击事件
+        this.mapInstance.heatMapLayer.setOnClick((featureData, event) => {
+          if (featureData.type === 'heatmap' && featureData.properties) {
+            const data = featureData.properties;
+            this.popupData = {
+              name: 'Power Outage Details',
+              ecoLoss: data.Eco_loss ? `${data.Eco_loss}` : 'Unknown',
+              incidentTime: data['Incident Time'] || 'Unknown',
+              month: data.Month || 'Unknown',
+              totalDailyPeriod: data.Total_Daily_Period ? `${data.Total_Daily_Period}` : 'Unknown',
+              nuts218cd: data.nuts218cd || 'Unknown'
+            };
+            this.showPopup = true;
+            
+            // 计算弹出框位置
+            const mapElement = document.getElementById('olmap');
+            const rect = mapElement.getBoundingClientRect();
+            const x = event.pixel[0] + rect.left;
+            const y = event.pixel[1] + rect.top - 10;
             
             this.popupStyle = {
               top: `${y}px`,

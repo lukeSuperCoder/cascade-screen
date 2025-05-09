@@ -130,8 +130,11 @@
 </template>
 
 <script>
-import riskPoints from '@/assets/datas/riskPoints'
-import powerOutage from '@/assets/datas/power_outage.json'
+import powerOutage from '@/assets/datas/power.json'
+import traffic from '@/assets/datas/traffic.json'
+import flood from '@/assets/datas/flood.json'
+import communication from '@/assets/datas/communication.json'
+import supply from '@/assets/datas/supply.json'
 
 export default {
   name: 'MapSidebar',
@@ -140,56 +143,16 @@ export default {
       mapInstance: null,
       isCollapsed: true,
       selectedCategories: [],
-      selectedTime: null,
+      selectedTime: '2023',
       selectedIndustries: ["energy","transportation","communication","agriculture","manufacturing"],
       lastUpdated: new Date().toISOString().split('T')[0], // 格式化为 YYYY-MM-DD
       showHeatmap: false,
       showClusters: false,
       selectedBaseMap: 'default',
-      mockHeatmapData: {
+      // 转换后的热力图数据
+      heatmapData: {
         type: 'FeatureCollection',
-        features: [
-          {
-            type: 'Feature',
-            properties: { weight: 0.8 },
-            geometry: {
-              type: 'Point',
-              coordinates: [116.404, 39.915]
-            }
-          },
-          {
-            type: 'Feature',
-            properties: { weight: 0.6 },
-            geometry: {
-              type: 'Point',
-              coordinates: [116.405, 39.916]
-            }
-          },
-          {
-            type: 'Feature',
-            properties: { weight: 0.9 },
-            geometry: {
-              type: 'Point',
-              coordinates: [116.406, 39.917]
-            }
-          },
-          {
-            type: 'Feature',
-            properties: { weight: 0.7 },
-            geometry: {
-              type: 'Point',
-              coordinates: [116.407, 39.918]
-            }
-          },
-          {
-            type: 'Feature',
-            properties: { weight: 0.5 },
-            geometry: {
-              type: 'Point',
-              coordinates: [116.408, 39.919]
-            }
-          }
-        ]
+        features: []
       },
       simulationParams: [
         { 
@@ -272,10 +235,10 @@ export default {
         { id: 'supply', name: 'Supply Chain Disruption' }
       ],
       timeTags: [
-        { id: '2020', name: '2020' },
-        { id: '2021', name: '2021' },
-        { id: '2022', name: '2022' },
-        { id: '2023', name: '2023' }
+        { id: '2023', name: '2023' },
+        { id: '2024', name: '2024' },
+        { id: '2025', name: '2025' },
+        { id: '2026', name: '2026' }
       ],
       industryTags: [
         { id: 'energy', name: 'Energy' },
@@ -283,56 +246,38 @@ export default {
         { id: 'communication', name: 'Communication' },
         { id: 'agriculture', name: 'Agriculture' },
         { id: 'manufacturing', name: 'Manufacturing' }
-      ]
+      ],
+      categoryDataMap: {
+        'power': powerOutage,
+        'traffic': traffic,
+        'flood': flood,
+        'communication': communication,
+        'supply': supply
+      }
     }
   },
   watch: {
-    showHeatmap(newValue) {
-      if (!this.mapInstance) {
-        console.warn('地图实例未初始化');
-        return;
-      }
-      if (newValue) {
-        // 显示热力图
-        this.mapInstance.heatMapLayer.addLayer({
-          id: 'test-heatmap',
-          name: '测试热力图',
-          data: this.mockHeatmapData,
-          type: 'geojson',
-          config: {
-            radius: 20,
-            blur: 25,
-            gradient: ['#00f', '#0ff', '#0f0', '#ff0', '#f00']
-          }
-        });
-      } else {
-        // 隐藏热力图
-        this.mapInstance.heatMapLayer.removeLayer('test-heatmap');
-      }
+    showHeatmap() {
+      this.updateMapLayers();
     },
-    showClusters(newValue) {
-      if (!this.mapInstance) {
-        console.warn('地图实例未初始化');
-        return;
-      }
-      if (newValue) {
-        // 显示聚合点
-        this.addMarkers();
-      } else {
-        // 清除聚合点
-        this.mapInstance.clusterMakerLayer.clearMarkers();
-      }
+    showClusters() {
+      this.updateMapLayers();
     }
   },
   mounted() {
     // 等待地图实例初始化
     this.initMapInstance();
+    // 转换数据为GeoJSON格式
+    this.convertToGeoJSON();
   },
   methods: {
     initMapInstance() {
       // 检查地图实例是否已初始化
       if (window.olMap) {
         this.mapInstance = window.olMap;
+        setTimeout(() => {
+          this.showHeatmap = true;
+        }, 1000);
       } else {
         // 如果地图实例还未初始化，等待一段时间后重试
         setTimeout(() => {
@@ -352,12 +297,14 @@ export default {
         this.selectedCategories.splice(index, 1);
       }
       this.$emit('category-change', this.selectedCategories);
+      this.updateMapLayers();
     },
     handleTimeChange(event) {
       const index = parseInt(event.target.value);
       const selectedTag = this.timeTags[index];
       this.selectedTime = selectedTag.id;
       this.$emit('time-change', selectedTag.id);
+      this.updateMapLayers();
     },
     toggleIndustry(id) {
       const index = this.selectedIndustries.indexOf(id);
@@ -404,33 +351,90 @@ export default {
       const avgValue = this.simulationParams.reduce((acc, param) => acc + param.value, 0) / this.simulationParams.length;
       this.simulationColor = `rgba(0, 0, 0, ${avgValue / 100})`;
     },
-    addMarkers() {
-      if (!this.mapInstance) {
-        console.warn('地图实例未初始化');
-        return;
+    updateMapLayers() {
+      if (!this.mapInstance) return;
+      
+      // 清除现有的图层
+      if(this.mapInstance&&this.mapInstance.heatMapLayer){
+        this.mapInstance.heatMapLayer.clearAllLayers();
       }
-      const markers = powerOutage.map(item => {
-        return {
-          coordinates: item.coordinate,
-          properties: {
-            ...item
-          },
-          style: {
-            radius: 8,
-            showStroke: false
-          }
+      if(this.mapInstance&&this.mapInstance.clusterMakerLayer){
+        this.mapInstance.clusterMakerLayer.clearMarkers();
+      }
+      if(this.mapInstance&&this.mapInstance.markerLayer){
+        this.mapInstance.markerLayer.clearMarkers();
+      }
+
+      // 遍历选中的分类
+      this.selectedCategories.forEach(categoryId => {
+        const data = this.categoryDataMap[categoryId];
+        if (!data) return;
+
+        // 根据选中的时间过滤数据
+        const filteredData = data.filter(item => item['Incident Time'] === parseInt(this.selectedTime));
+
+        // 根据热力图勾选状态添加热力图
+        if (this.showHeatmap) {
+          const heatmapFeatures = filteredData.map(item => ({
+            type: 'Feature',
+            properties: {
+              weight: this.calculateWeight(item),
+              ...item
+            },
+            geometry: {
+              type: 'Point',
+              coordinates: item.coordinate
+            }
+          }));
+
+          this.mapInstance.heatMapLayer.addLayer({
+            id: `${categoryId}-heatmap`,
+            name: `${categoryId}热力图`,
+            data: {
+              type: 'FeatureCollection',
+              features: heatmapFeatures
+            },
+            type: 'geojson',
+            config: {
+              radius: 10,
+              blur: 20,
+              gradient: [
+                'rgba(0, 255, 255, 0)',
+                'rgba(0, 255, 255, 0.5)',
+                'rgba(0, 255, 255, 0.8)',
+                'rgba(0, 255, 255, 1)',
+                'rgba(0, 255, 0, 1)',
+                'rgba(255, 255, 0, 1)',
+                'rgba(255, 0, 0, 1)'
+              ]
+            }
+          });
+        }
+
+        // 根据聚合点勾选状态添加标记
+        if (this.showClusters) {
+          const markers = filteredData.map(item => ({
+            coordinates: item.coordinate,
+            properties: {
+              ...item
+            },
+            style: {
+              radius: 8,
+              showStroke: false
+            }
+          }));
+
+          // 添加到聚合图层
+          this.mapInstance.clusterMakerLayer.addMarkers(markers);
+          this.mapInstance.clusterMakerLayer.setMinZoom(1);
+          this.mapInstance.clusterMakerLayer.setMaxZoom(8);
+
+          // 添加到标记图层
+          this.mapInstance.markerLayer.addMarkers(markers);
+          this.mapInstance.markerLayer.setMinZoom(8);
+          this.mapInstance.markerLayer.setMaxZoom(18);
         }
       });
-      
-      // 添加到聚合图层 - 只在较小缩放级别显示
-      this.mapInstance.clusterMakerLayer.addMarkers(markers);
-      this.mapInstance.clusterMakerLayer.setMinZoom(1);
-      this.mapInstance.clusterMakerLayer.setMaxZoom(8); // 最大显示到7级
-
-      // 添加到标记图层 - 只在较大缩放级别显示
-      this.mapInstance.markerLayer.addMarkers(markers);
-      this.mapInstance.markerLayer.setMinZoom(8); // 从8级开始显示
-      this.mapInstance.markerLayer.setMaxZoom(18);
     },
     /**
      * 定位到指定场景的线条
@@ -443,6 +447,49 @@ export default {
           duration: 1000
         });
       }
+    },
+    // 转换数据为GeoJSON格式
+    convertToGeoJSON() {
+      this.heatmapData.features = powerOutage.map(item => {
+        // 根据影响程度计算权重
+        const weight = this.calculateWeight(item);
+        
+        return {
+          type: 'Feature',
+          properties: {
+            weight: weight,
+            ...item
+          },
+          geometry: {
+            type: 'Point',
+            coordinates: item.coordinate
+          }
+        };
+      });
+    },
+
+    // 计算热力图权重
+    calculateWeight(item) {
+      // 根据影响程度计算权重
+      let weight = 0.5; // 基础权重
+
+      // 根据影响范围调整权重
+      if (item.affectedArea) {
+        weight += item.affectedArea / 1000; // 每1000平方公里增加0.1的权重
+      }
+
+      // 根据影响人口调整权重
+      if (item.affectedPopulation) {
+        weight += item.affectedPopulation / 10000; // 每10000人增加0.1的权重
+      }
+
+      // 根据持续时间调整权重
+      if (item.duration) {
+        weight += item.duration / 24; // 每24小时增加0.1的权重
+      }
+
+      // 限制权重在0-1之间
+      return Math.min(Math.max(weight, 0), 1);
     }
   }
 }
