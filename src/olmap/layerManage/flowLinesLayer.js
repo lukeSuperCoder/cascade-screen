@@ -23,7 +23,8 @@ class FlowLinesLayer {
         this.source = new VectorSource();
         this.layer = new VectorLayer({
             source: this.source,
-            style: this._createStyle.bind(this)
+            style: this._createStyle.bind(this),
+            zIndex: 1000
         });
 
         // 添加到地图

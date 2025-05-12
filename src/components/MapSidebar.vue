@@ -14,6 +14,10 @@
                 <label class="layer-label">Clusters</label>
                 <input type="checkbox" v-model="showClusters" class="layer-checkbox" />
               </div>
+              <div class="layer-item">
+                <label class="layer-label">Markers</label>
+                <input type="checkbox" v-model="showMarkers" class="layer-checkbox" />
+              </div>
               <div class="layer-item" v-if="false">
                 <label class="layer-label">Base Map</label>
                 <select v-model="selectedBaseMap" class="layer-select">
@@ -60,12 +64,12 @@
 
           <h3 class="section-title primary">Industry Tags</h3>
           <div class="industry-container">
-            <div v-for="tag in industryTags" :key="tag.id" class="industry-item">
+            <div v-for="tag in industryTags" :key="tag.name" class="industry-item">
               <input 
                 type="checkbox" 
-                :id="tag.id" 
-                :checked="selectedIndustries.includes(tag.id)" 
-                @change="toggleIndustry(tag.id)" 
+                :id="tag.name" 
+                :checked="selectedIndustries.includes(tag.name)" 
+                @change="toggleIndustry(tag.name)" 
                 class="industry-checkbox"
               />
               <label :for="tag.id" class="industry-label">{{ tag.name }}</label>
@@ -135,6 +139,9 @@ import traffic from '@/assets/datas/traffic.json'
 import flood from '@/assets/datas/flood.json'
 import communication from '@/assets/datas/communication.json'
 import supply from '@/assets/datas/supply.json'
+import cyber_line from '@/assets/datas/cyber_line.json'
+import earthquake_line from '@/assets/datas/earthquake_line.json'
+import weather_line from '@/assets/datas/weather_line.json'
 
 export default {
   name: 'MapSidebar',
@@ -144,10 +151,11 @@ export default {
       isCollapsed: true,
       selectedCategories: [],
       selectedTime: '2023',
-      selectedIndustries: ["energy","transportation","communication","agriculture","manufacturing"],
+      selectedIndustries: ["Energy","Transportation","Communication","Agriculture","Manufacturing"],
       lastUpdated: new Date().toISOString().split('T')[0], // 格式化为 YYYY-MM-DD
       showHeatmap: false,
       showClusters: false,
+      showMarkers: false,
       selectedBaseMap: 'default',
       // 转换后的热力图数据
       heatmapData: {
@@ -164,15 +172,9 @@ export default {
           active: false,
           flowLines: [
             {
-              coordinates: [[116.404, 39.915], [116.405, 39.916], [116.406, 39.917]],
+              coordinates: weather_line.geometry.coordinates,
               style: { 
-                color: 'rgba(255, 0, 0, 0.8)'
-              }
-            },
-            {
-              coordinates: [[116.407, 39.918], [116.408, 39.919], [116.409, 39.920]],
-              style: { 
-                color: 'rgba(255, 0, 0, 0.8)'
+                color: 'rgba(153, 0, 255, 0.8)'
               }
             }
           ],
@@ -187,13 +189,7 @@ export default {
           active: false,
           flowLines: [
             {
-              coordinates: [[116.410, 39.921], [116.411, 39.922], [116.412, 39.923]],
-              style: { 
-                color: 'rgba(0, 255, 0, 0.8)'
-              }
-            },
-            {
-              coordinates: [[116.413, 39.924], [116.414, 39.925], [116.415, 39.926]],
+              coordinates: earthquake_line.geometry.coordinates,
               style: { 
                 color: 'rgba(0, 255, 0, 0.8)'
               }
@@ -210,16 +206,9 @@ export default {
           active: false,
           flowLines: [
             {
-              coordinates: [[116.416, 39.927], [116.417, 39.928], [116.418, 39.929]],
+              coordinates: cyber_line.geometry.coordinates,
               style: { 
                 color: 'rgba(0, 0, 255, 0.8)'
-              }
-            },
-            {
-              coordinates: [[116.419, 39.930], [116.420, 39.931], [116.421, 39.932]],
-              style: { 
-                color: 'rgba(0, 0, 255, 0.8)', 
-
               }
             }
           ],
@@ -228,11 +217,11 @@ export default {
       ],
       simulationColor: 'rgba(0, 0, 0, 0.5)',
       categoryTags: [
-        { id: 'power', name: 'Power Outage' },
-        { id: 'traffic', name: 'Traffic Disruption' },
-        { id: 'flood', name: 'Flood' },
-        { id: 'communication', name: 'Communication Disruption' },
-        { id: 'supply', name: 'Supply Chain Disruption' }
+        { id: 'power', name: 'Power Outage', color: 'red' },
+        { id: 'traffic', name: 'Traffic Disruption', color: 'blue' },
+        { id: 'flood', name: 'Flood', color: 'green' },
+        { id: 'communication', name: 'Communication Disruption', color: 'yellow' },
+        { id: 'supply', name: 'Supply Chain Disruption', color: 'purple' }
       ],
       timeTags: [
         { id: '2023', name: '2023' },
@@ -261,6 +250,9 @@ export default {
       this.updateMapLayers();
     },
     showClusters() {
+      this.updateMapLayers();
+    },
+    showMarkers() {
       this.updateMapLayers();
     }
   },
@@ -314,6 +306,7 @@ export default {
         this.selectedIndustries.splice(index, 1);
       }
       this.$emit('industry-change', this.selectedIndustries);
+      this.updateMapLayers();
     },
     toggleSimulation(id) {
       const param = this.simulationParams.find(p => p.id === id);
@@ -355,13 +348,13 @@ export default {
       if (!this.mapInstance) return;
       
       // 清除现有的图层
-      if(this.mapInstance&&this.mapInstance.heatMapLayer){
+      if(this.mapInstance && this.mapInstance.heatMapLayer) {
         this.mapInstance.heatMapLayer.clearAllLayers();
       }
-      if(this.mapInstance&&this.mapInstance.clusterMakerLayer){
+      if(this.mapInstance && this.mapInstance.clusterMakerLayer) {
         this.mapInstance.clusterMakerLayer.clearMarkers();
       }
-      if(this.mapInstance&&this.mapInstance.markerLayer){
+      if(this.mapInstance && this.mapInstance.markerLayer) {
         this.mapInstance.markerLayer.clearMarkers();
       }
 
@@ -370,8 +363,19 @@ export default {
         const data = this.categoryDataMap[categoryId];
         if (!data) return;
 
-        // 根据选中的时间过滤数据
-        const filteredData = data.filter(item => item['Incident Time'] === parseInt(this.selectedTime));
+        // 根据选中的时间和行业类型过滤数据
+        const filteredData = data.filter(item => {
+          // 时间过滤
+          const timeMatch = item['Incident Time'] === parseInt(this.selectedTime);
+          
+          // 行业类型过滤
+          const industryMatch = this.selectedIndustries.some(industry => {
+            // 检查数据中的 Industry Tags 字段是否包含当前选中的行业
+            return item['Industry Tags'] && item['Industry Tags'].includes(industry);
+          });
+
+          return timeMatch && industryMatch;
+        });
 
         // 根据热力图勾选状态添加热力图
         if (this.showHeatmap) {
@@ -396,8 +400,8 @@ export default {
             },
             type: 'geojson',
             config: {
-              radius: 10,
-              blur: 20,
+              radius: 20,
+              blur: 30,
               gradient: [
                 'rgba(0, 255, 255, 0)',
                 'rgba(0, 255, 255, 0.5)',
@@ -411,7 +415,7 @@ export default {
           });
         }
 
-        // 根据聚合点勾选状态添加标记
+        // 根据聚合点勾选状态添加聚合点
         if (this.showClusters) {
           const markers = filteredData.map(item => ({
             coordinates: item.coordinate,
@@ -419,19 +423,35 @@ export default {
               ...item
             },
             style: {
-              radius: 8,
-              showStroke: false
+              radius: 6,
+              showStroke: false,
+              fillColor: this.categoryTags.find(tag => tag.id === categoryId).color
             }
           }));
 
           // 添加到聚合图层
           this.mapInstance.clusterMakerLayer.addMarkers(markers);
           this.mapInstance.clusterMakerLayer.setMinZoom(1);
-          this.mapInstance.clusterMakerLayer.setMaxZoom(8);
+          this.mapInstance.clusterMakerLayer.setMaxZoom(18);
+        }
+
+        // 根据标记点勾选状态添加标记点
+        if (this.showMarkers) {
+          const markers = filteredData.map(item => ({
+            coordinates: item.coordinate,
+            properties: {
+              ...item
+            },
+            style: {
+              radius: 6,
+              showStroke: false,
+              fillColor: this.categoryTags.find(tag => tag.id === categoryId).color
+            }
+          }));
 
           // 添加到标记图层
           this.mapInstance.markerLayer.addMarkers(markers);
-          this.mapInstance.markerLayer.setMinZoom(8);
+          this.mapInstance.markerLayer.setMinZoom(1);
           this.mapInstance.markerLayer.setMaxZoom(18);
         }
       });

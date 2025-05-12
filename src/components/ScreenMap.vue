@@ -106,8 +106,8 @@ import { de } from 'element-plus/es/locale/index.mjs';
         let options = {
           targetId: 'olmap',
           baseMapName: 'OSM_DARK',
-          center:[-1.7370224109938552,54.91845581490148],
-          zoom:5
+          center: [-1.7370224109938552,54.91845581490148],
+          zoom: 5.5
         }
         this.mapInstance = new OlMap('olmap',options);
         window.olMap = this.mapInstance;
