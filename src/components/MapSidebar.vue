@@ -115,6 +115,51 @@
               </div>
             </div>
           </div>
+          <!-- 添加导出功能 -->
+          <div class="export-section" v-if="isLoggedIn">
+            <h3 class="section-title primary">Export Data</h3>
+            <div class="export-container">
+              <div class="export-selector">
+                <button @click="showExportOptions = !showExportOptions" class="export-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="export-icon">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  Export Data
+                </button>
+                <div v-if="showExportOptions" class="export-options">
+                  <button @click="exportData('csv')" class="export-option">
+                    <span class="format-icon">📊</span>
+                    CSV Format
+                  </button>
+                  <button @click="exportData('geojson')" class="export-option">
+                    <span class="format-icon">🗺️</span>
+                    GeoJSON Format
+                  </button>
+                  <button @click="exportData('png')" class="export-option">
+                    <span class="format-icon">🖼️</span>
+                    PNG Image
+                  </button>
+                  <button @click="exportData('pdf')" class="export-option">
+                    <span class="format-icon">📄</span>
+                    PDF Document
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 添加登录按钮 -->
+          <div v-else class="login-section">
+            <button @click="handleLoginClick" class="login-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="login-icon">
+                <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                <polyline points="10 17 15 12 10 7"></polyline>
+                <line x1="15" y1="12" x2="3" y2="12"></line>
+              </svg>
+              Login to Export
+            </button>
+          </div>
           <div class="last-updated">
             Last Updated: {{ lastUpdated }}
           </div>
@@ -130,10 +175,17 @@
     >
       <svg t="1746523530564" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6345" width="12" height="12"><path d="M397.513 514.794l-307.163 307.163h187.090l307.163-307.163-312.749-312.749h-187.090l312.749 312.749zM444.983 821.955h187.090l307.163-307.163-312.749-312.749h-187.090l312.749 312.749-307.163 307.163zM444.983 821.955z" fill="#60a5fa" p-id="6346"></path></svg>
     </button>
+
+    <!-- 添加登录模态框 -->
+    <LoginModal
+      v-model:visible="showLoginModal"
+      @update:visible="handleLoginModalClose"
+    />
   </div>
 </template>
 
 <script>
+import { useStore } from 'vuex'
 import powerOutage from '@/assets/datas/power.json'
 import traffic from '@/assets/datas/traffic.json'
 import flood from '@/assets/datas/flood.json'
@@ -142,9 +194,15 @@ import supply from '@/assets/datas/supply.json'
 import cyber_line from '@/assets/datas/cyber_line.json'
 import earthquake_line from '@/assets/datas/earthquake_line.json'
 import weather_line from '@/assets/datas/weather_line.json'
+import html2canvas from 'html2canvas'
+import { jsPDF } from 'jspdf'
+import LoginModal from './LoginModal.vue'
 
 export default {
   name: 'MapSidebar',
+  components: {
+    LoginModal
+  },
   data() {
     return {
       mapInstance: null,
@@ -242,7 +300,15 @@ export default {
         'flood': flood,
         'communication': communication,
         'supply': supply
-      }
+      },
+      showExportOptions: false,
+      showLoginModal: false,
+    }
+  },
+  computed: {
+    // 从 store 获取登录状态
+    isLoggedIn() {
+      return this.$store.state.isLoggedIn
     }
   },
   watch: {
@@ -261,6 +327,10 @@ export default {
     this.initMapInstance();
     // 转换数据为GeoJSON格式
     this.convertToGeoJSON();
+    document.addEventListener('click', this.handleClickOutside);
+  },
+  beforeDestroy() {
+    document.removeEventListener('click', this.handleClickOutside);
   },
   methods: {
     initMapInstance() {
@@ -510,6 +580,202 @@ export default {
 
       // 限制权重在0-1之间
       return Math.min(Math.max(weight, 0), 1);
+    },
+
+    // 获取当前筛选后的数据
+    getFilteredData() {
+      let allData = [];
+      
+      // 遍历选中的分类
+      this.selectedCategories.forEach(categoryId => {
+        const data = this.categoryDataMap[categoryId];
+        if (!data) return;
+
+        // 根据选中的时间和行业类型过滤数据
+        const filteredData = data.filter(item => {
+          // 时间过滤
+          const timeMatch = item['Incident Time'] === parseInt(this.selectedTime);
+          
+          // 行业类型过滤
+          const industryMatch = this.selectedIndustries.some(industry => {
+            return item['Industry Tags'] && item['Industry Tags'].includes(industry);
+          });
+
+          return timeMatch && industryMatch;
+        });
+
+        allData = allData.concat(filteredData);
+      });
+
+      return allData;
+    },
+
+    // 添加点击外部关闭选择器的方法
+    handleClickOutside(event) {
+      const exportSelector = this.$el.querySelector('.export-selector');
+      if (exportSelector && !exportSelector.contains(event.target)) {
+        this.showExportOptions = false;
+      }
+    },
+
+    // 修改导出数据方法，添加登录检查
+    exportData(format) {
+      if (!this.isLoggedIn) {
+        ElMessage.warning('请先登录后再导出数据')
+        return
+      }
+
+      this.showExportOptions = false
+      const data = this.getFilteredData()
+      
+      if (format === 'csv') {
+        if (data.length === 0) {
+          ElMessage.warning('没有可导出的数据')
+          return
+        }
+        this.exportCSV(data)
+      } else if (format === 'geojson') {
+        if (data.length === 0) {
+          ElMessage.warning('没有可导出的数据')
+          return
+        }
+        this.exportGeoJSON(data)
+      } else if (format === 'png') {
+        this.exportPNG()
+      } else if (format === 'pdf') {
+        this.exportPDF()
+      }
+    },
+
+    // 导出 CSV
+    exportCSV(data) {
+      // 获取所有可能的字段
+      const fields = new Set();
+      data.forEach(item => {
+        Object.keys(item).forEach(key => fields.add(key));
+      });
+
+      // 创建 CSV 头部
+      const headers = Array.from(fields);
+      const csvContent = [
+        headers.join(','),
+        ...data.map(item => 
+          headers.map(header => {
+            const value = item[header];
+            // 处理包含逗号的字段
+            return typeof value === 'string' && value.includes(',') 
+              ? `"${value}"` 
+              : value;
+          }).join(',')
+        )
+      ].join('\n');
+
+      // 创建下载链接
+      const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = `export_${this.selectedTime}_${new Date().toISOString().split('T')[0]}.csv`;
+      link.click();
+    },
+
+    // 导出 GeoJSON
+    exportGeoJSON(data) {
+      const geojson = {
+        type: 'FeatureCollection',
+        features: data.map(item => ({
+          type: 'Feature',
+          properties: {
+            ...item
+          },
+          geometry: {
+            type: 'Point',
+            coordinates: item.coordinate
+          }
+        }))
+      };
+
+      // 创建下载链接
+      const blob = new Blob([JSON.stringify(geojson, null, 2)], { type: 'application/json' });
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = `export_${this.selectedTime}_${new Date().toISOString().split('T')[0]}.geojson`;
+      link.click();
+    },
+
+    // 添加 PNG 导出方法
+    async exportPNG() {
+      try {
+        // 获取地图容器
+        const mapContainer = document.querySelector('.ol-viewport');
+        if (!mapContainer) {
+          alert('无法找到地图容器');
+          return;
+        }
+
+        // 使用 html2canvas 截图
+        const canvas = await html2canvas(mapContainer, {
+          useCORS: true,
+          scale: 2, // 提高清晰度
+          backgroundColor: null,
+          logging: false
+        });
+
+        // 转换为图片并下载
+        const link = document.createElement('a');
+        link.download = `map_export_${this.selectedTime}_${new Date().toISOString().split('T')[0]}.png`;
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+      } catch (error) {
+        console.error('导出 PNG 失败:', error);
+        alert('导出 PNG 失败，请重试');
+      }
+    },
+
+    // 添加 PDF 导出方法
+    async exportPDF() {
+      try {
+        // 获取地图容器
+        const mapContainer = document.querySelector('.ol-viewport');
+        if (!mapContainer) {
+          alert('无法找到地图容器');
+          return;
+        }
+
+        // 使用 html2canvas 截图
+        const canvas = await html2canvas(mapContainer, {
+          useCORS: true,
+          scale: 2, // 提高清晰度
+          backgroundColor: null,
+          logging: false
+        });
+
+        // 创建 PDF 文档
+        const pdf = new jsPDF({
+          orientation: 'landscape',
+          unit: 'px',
+          format: [canvas.width, canvas.height]
+        });
+
+        // 将图片添加到 PDF
+        const imgData = canvas.toDataURL('image/png');
+        pdf.addImage(imgData, 'PNG', 0, 0, canvas.width, canvas.height);
+
+        // 下载 PDF
+        pdf.save(`map_export_${this.selectedTime}_${new Date().toISOString().split('T')[0]}.pdf`);
+      } catch (error) {
+        console.error('导出 PDF 失败:', error);
+        alert('导出 PDF 失败，请重试');
+      }
+    },
+
+    // 处理登录模态框关闭
+    handleLoginModalClose(visible) {
+      this.showLoginModal = visible
+    },
+
+    // 修改登录按钮点击事件
+    handleLoginClick() {
+      this.showLoginModal = true
     }
   }
 }
@@ -859,5 +1125,81 @@ input:checked + .slider:after {
 
 .zoom-btn:hover .icon {
   transform: scale(1.1);
+}
+
+.export-section {
+  @apply mt-6;
+}
+
+.export-container {
+  @apply relative;
+}
+
+.export-selector {
+  @apply relative;
+}
+
+.export-btn {
+  @apply flex items-center justify-center gap-2 px-4 py-2 rounded-md w-full;
+  @apply bg-blue-600/20 text-blue-400 hover:bg-blue-600/30;
+  @apply border border-blue-500/20;
+  @apply transition-colors duration-200;
+}
+
+.export-btn:hover {
+  @apply bg-blue-600/30;
+}
+
+.export-icon {
+  @apply transition-transform duration-200;
+}
+
+.export-btn:hover .export-icon {
+  transform: translateY(-2px);
+}
+
+.export-options {
+  @apply absolute bottom-full left-0 right-0 mb-1;
+  @apply bg-gray-800/95 backdrop-blur-sm;
+  @apply border border-blue-500/20 rounded-md;
+  @apply shadow-lg;
+  @apply z-50;
+  @apply min-w-[200px];
+}
+
+.export-option {
+  @apply flex items-center gap-2 px-4 py-2.5 w-full;
+  @apply text-gray-300 hover:text-white;
+  @apply hover:bg-blue-600/20;
+  @apply transition-colors duration-200;
+  @apply text-sm;
+}
+
+.format-icon {
+  @apply text-lg w-6 text-center;
+}
+
+.login-section {
+  @apply mt-6;
+}
+
+.login-btn {
+  @apply flex items-center justify-center gap-2 px-4 py-2 rounded-md w-full;
+  @apply bg-gray-700/20 text-gray-400 hover:text-white;
+  @apply border border-gray-600/20 hover:border-gray-500/30;
+  @apply transition-all duration-200;
+  @apply text-sm;
+}
+
+.login-btn:hover {
+  @apply bg-gray-700/30;
+}
+
+.login-icon {
+  @apply transition-transform duration-200;
+}
+
+.login-btn:hover .login-icon {
+  transform: translateX(2px);
 }
 </style> 

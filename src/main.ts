@@ -5,6 +5,8 @@ import Home from './pages/Home.vue'
 import MapPage from './pages/MapPage.vue'
 import './styles/tailwind.css'
 import 'element-plus/dist/index.css'
+import store from './store'
+import ElementPlus from 'element-plus'
 
 // 创建路由
 const router = createRouter({
@@ -33,6 +35,8 @@ const app = createApp(App)
 
 // 使用路由
 app.use(router)
+app.use(store)
+app.use(ElementPlus)
 
 // 挂载应用
 app.mount('#app')

@@ -38,6 +38,7 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
 import { ElMessage } from 'element-plus'
+import { useStore } from 'vuex'
 
 export default defineComponent({
   name: 'LoginModal',
@@ -49,19 +50,34 @@ export default defineComponent({
   },
   emits: ['update:visible'],
   setup(_, { emit }) {
-    // Username and password
+    const store = useStore()
     const username = ref('')
     const password = ref('')
 
-    // Login handler
-    const handleLogin = () => {
-      // 校验用户名和密码，未填写则弹框提示
+    // 登录处理
+    const handleLogin = async () => {
       if (!username.value || !password.value) {
-        ElMessage.error('Please enter username and password')
+        ElMessage.error('请输入用户名和密码')
         return
       }
-      // Demo only, replace with real API call
-      emit('update:visible', false)
+
+      try {
+        // 使用 store 的 login action
+        const success = await store.dispatch('login', {
+          username: username.value,
+          password: password.value
+        })
+
+        if (success) {
+          ElMessage.success('登录成功')
+          emit('update:visible', false)
+        } else {
+          ElMessage.error('登录失败，请重试')
+        }
+      } catch (error) {
+        console.error('Login error:', error)
+        ElMessage.error('登录失败，请重试')
+      }
     }
 
     return {
