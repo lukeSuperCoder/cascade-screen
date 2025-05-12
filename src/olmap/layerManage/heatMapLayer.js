@@ -12,10 +12,16 @@ class HeatMapLayer {
     this.options = {
       // 默认配置
       defaultConfig: {
-        radius: 10,
-        blur: 15,
-        gradient: ['#00f', '#0ff', '#0f0', '#ff0', '#f00'],
-        weight: 'weight'
+        radius: 10,        // 热力点半径
+        blur: 15,         // 模糊程度
+        gradient: ['#00f', '#0ff', '#0f0', '#ff0', '#f00'],  // 颜色渐变
+        weight: 'weight',  // 权重字段名
+        minWeight: 0,      // 最小权重值
+        maxWeight: 1,      // 最大权重值
+        intensity: 1,      // 热力图强度
+        opacity: 0.8,      // 图层透明度
+        // 自定义权重计算函数
+        weightFunction: null
       },
       // 图层层级
       zIndex: 5
@@ -90,6 +96,15 @@ class HeatMapLayer {
    * @param {Object|string} options.data GeoJSON对象或WKT字符串
    * @param {string} options.type 数据类型：'geojson' 或 'wkt'
    * @param {Object} options.config 热力图配置
+   * @param {number} options.config.radius 热力点半径
+   * @param {number} options.config.blur 模糊程度
+   * @param {Array} options.config.gradient 颜色渐变数组
+   * @param {string} options.config.weight 权重字段名
+   * @param {number} options.config.minWeight 最小权重值
+   * @param {number} options.config.maxWeight 最大权重值
+   * @param {number} options.config.intensity 热力图强度
+   * @param {number} options.config.opacity 图层透明度
+   * @param {Function} options.config.weightFunction 自定义权重计算函数
    * @param {boolean} options.visible 是否可见
    * @returns {HeatmapLayer} 创建的热力图图层
    */

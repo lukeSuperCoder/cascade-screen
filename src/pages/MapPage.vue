@@ -18,6 +18,13 @@
           ref="mapComponent" 
           @map-ready="handleMapReady"
         />
+        <!-- 热力图图例 -->
+        <HeatMapLegend
+          v-if="showHeatMapLegend"
+          :gradient="heatMapGradient"
+          :min-value="heatMapMinValue"
+          :max-value="heatMapMaxValue"
+        />
       </div>
     </div>
   </div>
@@ -27,19 +34,48 @@
 import NavBar from '@/components/NavBar.vue'
 import ScreenMap from '@/components/ScreenMap.vue'
 import MapSidebar from '@/components/MapSidebar.vue'
+import HeatMapLegend from '@/components/HeatMapLegend.vue'
 
 export default {
   name: 'MapPage',
   components: {
     NavBar,
     ScreenMap,
-    MapSidebar
+    MapSidebar,
+    HeatMapLegend
+  },
+  data() {
+    return {
+      showHeatMapLegend: true,
+      heatMapGradient: ['rgba(0, 255, 255, 0)',
+                'rgba(0, 255, 255, 0.5)',
+                'rgba(0, 255, 255, 0.8)',
+                'rgba(0, 255, 255, 1)',
+                'rgba(0, 255, 0, 1)',
+                'rgba(255, 255, 0, 1)',
+                'rgba(255, 0, 0, 1)'],
+      heatMapMinValue: 0,
+      heatMapMaxValue: 1
+    }
   },
   methods: {
     handleLayerToggle({ layerId, active }) {
       // 处理图层显示/隐藏
       console.log('Layer toggle:', layerId, active);
-      // TODO: 调用地图组件的方法来控制图层
+      // 如果是热力图图层，控制图例显示
+      if (layerId.startsWith('heatmap')) {
+        this.showHeatMapLegend = active;
+        // 如果激活热力图，更新图例配置
+        if (active && this.$refs.mapComponent) {
+          const layer = this.$refs.mapComponent.getLayer(layerId);
+          if (layer) {
+            const config = layer.getProperties();
+            this.heatMapGradient = config.gradient || this.heatMapGradient;
+            this.heatMapMinValue = config.minWeight || this.heatMapMinValue;
+            this.heatMapMaxValue = config.maxWeight || this.heatMapMaxValue;
+          }
+        }
+      }
     },
     handleToolClick(toolId) {
       // 处理工具点击

@@ -40,7 +40,7 @@
       <div v-if="showPopup" class="popup-container" :style="popupStyle">
         <div class="popup-content">
           <div class="popup-header">
-            <h3 class="text-lg font-medium">Power Outage Details</h3>
+            <h3 class="text-lg font-medium">Details</h3>
             <button @click="closePopup" class="close-btn">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -77,7 +77,6 @@
   
   <script>
   import { OlMap } from '@/olmap/index'
-import { de } from 'element-plus/es/locale/index.mjs';
 
   export default {
     components: {},
@@ -107,9 +106,11 @@ import { de } from 'element-plus/es/locale/index.mjs';
           targetId: 'olmap',
           baseMapName: 'OSM_DARK',
           center: [-1.7370224109938552,54.91845581490148],
+          minZoom: 3,
           zoom: 5.5
         }
         this.mapInstance = new OlMap('olmap',options);
+        this.mapInstance.view.setMinZoom(3);
         window.olMap = this.mapInstance;
         // 触发地图初始化完成事件
         this.$emit('map-ready', this.mapInstance);
@@ -120,15 +121,23 @@ import { de } from 'element-plus/es/locale/index.mjs';
             if(featureData[0].type === 'cluster'){
               this.mapInstance.view.setCenter(featureData[0].geometry);
               this.mapInstance.view.zoomIn();
+              this.showPopup = false;
             }
           }
         });
         // 点标记点击事件
         this.mapInstance.markerLayer.setOnClick(async (featureData, event) => {
           const zoom = this.mapInstance.view.getZoom();
-          if(featureData.type === 'marker' && featureData.properties && zoom > 8){
+          if(featureData.type === 'marker' && featureData.properties){
             const data = featureData.properties;
-            this.popupData = data;
+            this.popupData = {
+              name: 'Power Outage Details',
+              ecoLoss: data.Eco_loss ? `${data.Eco_loss}` : 'Unknown',
+              incidentTime: data['Incident Time'] || 'Unknown',
+              month: data.Month || 'Unknown',
+              totalDailyPeriod: data.Total_Daily_Period ? `${data.Total_Daily_Period}` : 'Unknown',
+              nuts218cd: data.nuts218cd || 'Unknown'
+            };
             this.showPopup = true;
             
             // 计算弹出框位置

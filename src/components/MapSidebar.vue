@@ -470,8 +470,8 @@ export default {
             },
             type: 'geojson',
             config: {
-              radius: 20,
-              blur: 30,
+              radius: 10,
+              blur: 20,
               gradient: [
                 'rgba(0, 255, 255, 0)',
                 'rgba(0, 255, 255, 0.5)',
@@ -561,22 +561,17 @@ export default {
     // 计算热力图权重
     calculateWeight(item) {
       // 根据影响程度计算权重
-      let weight = 0.5; // 基础权重
-
-      // 根据影响范围调整权重
-      if (item.affectedArea) {
-        weight += item.affectedArea / 1000; // 每1000平方公里增加0.1的权重
-      }
+      let weight = 0.2; // 基础权重
 
       // 根据影响人口调整权重
-      if (item.affectedPopulation) {
-        weight += item.affectedPopulation / 10000; // 每10000人增加0.1的权重
+      if (item.Eco_loss) {
+        weight += item.Eco_loss / 10000; // 每10000增加0.1的权重
       }
 
       // 根据持续时间调整权重
-      if (item.duration) {
-        weight += item.duration / 24; // 每24小时增加0.1的权重
-      }
+      // if (item.Total_Daily_Period) {
+      //   weight += item.Total_Daily_Period / 24; // 每24小时增加0.1的权重
+      // }
 
       // 限制权重在0-1之间
       return Math.min(Math.max(weight, 0), 1);
