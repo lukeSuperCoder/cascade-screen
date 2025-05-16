@@ -78,3 +78,33 @@ html {
   scrollbar-width: none;
   scrollbar-color: #2563eb #101117;
 }
+
+.el-tree {
+  background: #111 !important;
+  color: #fff !important;
+}
+
+.el-tree-node__content {
+  background: #111 !important;
+  color: #fff !important;
+}
+
+.el-select-dropdown__wrap {
+  background: #111 !important;
+  color: #fff !important;
+}
+
+.el-select-dropdown__item {
+  background: #111 !important;
+  color: #fff !important;
+}
+
+.el-popper {
+  background: #111 !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+
+
+
+

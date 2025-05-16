@@ -19,12 +19,12 @@
           @map-ready="handleMapReady"
         />
         <!-- 热力图图例 -->
-        <HeatMapLegend
+        <!-- <HeatMapLegend
           v-if="showHeatMapLegend"
           :gradient="heatMapGradient"
           :min-value="heatMapMinValue"
           :max-value="heatMapMaxValue"
-        />
+        /> -->
       </div>
     </div>
   </div>

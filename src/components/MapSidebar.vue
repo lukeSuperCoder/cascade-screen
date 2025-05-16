@@ -3,7 +3,7 @@
     <div class="map-sidebar" :class="{ 'collapsed': isCollapsed }">
       <!-- 侧边栏内容 -->
       <div class="sidebar-content" :class="{ 'collapsed': isCollapsed }">
-        <div class="layer-management">
+        <div class="layer-management" style="display: none;">
             <h3 class="section-title primary">Layer Management</h3>
             <div class="layer-container">
               <div class="layer-item">
@@ -31,38 +31,41 @@
         <!-- 标签切换区域 -->
         <div class="tags-section">
           <h3 class="section-title primary">Category Tags</h3>
-          <div class="switch-container">
-            <div v-for="tag in categoryTags" 
-                 :key="tag.id" 
-                 class="switch-item">
-              <span class="switch-label">{{ tag.name }}</span>
-              <label class="switch">
-                <input 
-                  type="checkbox" 
-                  :checked="selectedCategories.includes(tag.id)"
-                  @change="toggleCategory(tag.id)"
-                >
-                <span class="slider"></span>
-              </label>
-            </div>
+          <div class="category-tree-container">
+            <el-tree-select
+              v-model="selectedCategories"
+              :data="categoryTags"
+              :props="{
+                label: 'name',
+                children: 'children',
+                value: 'id'
+              }"
+              filterable
+              multiple
+              show-checkbox
+              node-key="id"
+              :render-after-expand="false"
+              placeholder="Please select categories"
+              class="category-tree-select"
+              @change="handleCategoryChange"
+            />
           </div>
 
           <h3 class="section-title primary">Time Range</h3>
           <div class="timeline-container">
-            <input 
-              type="range" 
-              :min="0" 
-              :max="timeTags.length - 1" 
-              :value="timeTags.findIndex(tag => tag.id === selectedTime)" 
-              @input="handleTimeChange" 
-              class="timeline-slider"
+            <el-slider
+              v-model="timeRange"
+              range
+              :min="0"
+              :max="timeTags.length - 1"
+              :marks="timeMarks"
+              :format-tooltip="formatTimeTooltip"
+              @change="handleTimeRangeChange"
+              class="time-range-slider"
             />
-            <div class="timeline-labels">
-              <span v-for="tag in timeTags" :key="tag.id" class="timeline-label">{{ tag.name }}</span>
-            </div>
           </div>
 
-          <h3 class="section-title primary">Industry Tags</h3>
+          <!-- <h3 class="section-title primary">Industry Tags</h3>
           <div class="industry-container">
             <div v-for="tag in industryTags" :key="tag.name" class="industry-item">
               <input 
@@ -74,8 +77,8 @@
               />
               <label :for="tag.id" class="industry-label">{{ tag.name }}</label>
             </div>
-          </div>
-          <div class="simulation-section">
+          </div> -->
+          <!-- <div class="simulation-section">
             <h3 class="section-title primary">Scenario Simulation</h3>
             <div class="simulation-container">
               <div v-for="param in simulationParams" :key="param.id" class="simulation-item">
@@ -114,7 +117,8 @@
                 <span class="simulation-value">{{ param.value }}</span>
               </div>
             </div>
-          </div>
+          </div> -->
+          <div style="padding-bottom: 10px;"></div>
           <!-- 添加导出功能 -->
           <div class="export-section" v-if="isLoggedIn">
             <h3 class="section-title primary">Export Data</h3>
@@ -275,11 +279,76 @@ export default {
       ],
       simulationColor: 'rgba(0, 0, 0, 0.5)',
       categoryTags: [
-        { id: 'power', name: 'Power Outage', color: 'red' },
-        { id: 'traffic', name: 'Traffic Disruption', color: 'blue' },
-        { id: 'flood', name: 'Flood', color: 'green' },
-        { id: 'communication', name: 'Communication Disruption', color: 'yellow' },
-        { id: 'supply', name: 'Supply Chain Disruption', color: 'purple' }
+        {
+          id: 'natural',
+          name: 'Natural',
+          children: [
+            {
+              id: 'biological',
+              name: 'Biological'
+            },
+            {
+              id: 'climatological',
+              name: 'Climatological',
+              children: [
+                {
+                  id: 'drought',
+                  name: 'Drought'
+                },
+                {
+                  id: 'glacial-lake-outburst-flood',
+                  name: 'Glacial lake outburst flood'
+                },
+                {
+                  id: 'wildfire',
+                  name: 'Wildfire'
+                }
+              ]
+            },
+            {
+              id: 'extra-terrestrial',
+              name: 'Extra-terrestrial',
+              children: [
+                {
+                  id: 'impact',
+                  name: 'Impact'
+                },
+                {
+                  id: 'space-weather',
+                  name: 'Space weather'
+                }
+              ]
+            },
+            {
+              id: 'geophysical',
+              name: 'Geophysical',
+              children: [
+                {
+                  id: 'earthquake',
+                  name: 'Earthquake'
+                }
+              ]
+            }
+          ]
+        },
+        {
+          id: 'technological',
+          name: 'Technological',
+          children: [
+            {
+              id: 'industrial-accident',
+              name: 'Industrial accident'
+            },
+            {
+              id: 'miscellaneous-accident',
+              name: 'Miscellaneous accident'
+            },
+            {
+              id: 'transport',
+              name: 'Transport'
+            }
+          ]
+        }
       ],
       timeTags: [
         { id: '2023', name: '2023' },
@@ -303,12 +372,20 @@ export default {
       },
       showExportOptions: false,
       showLoginModal: false,
+      timeRange: [2, 3], // 对应 timeTags 的索引
     }
   },
   computed: {
     // 从 store 获取登录状态
     isLoggedIn() {
       return this.$store.state.isLoggedIn
+    },
+    timeMarks() {
+      const marks = {};
+      this.timeTags.forEach((tag, index) => {
+        marks[index] = tag.name;
+      });
+      return marks;
     }
   },
   watch: {
@@ -338,7 +415,7 @@ export default {
       if (window.olMap) {
         this.mapInstance = window.olMap;
         setTimeout(() => {
-          this.showHeatmap = true;
+          this.showMarkers = true;
         }, 1000);
       } else {
         // 如果地图实例还未初始化，等待一段时间后重试
@@ -351,21 +428,17 @@ export default {
       this.isCollapsed = !this.isCollapsed;
       this.$emit('sidebar-toggle', this.isCollapsed);
     },
-    toggleCategory(id) {
-      const index = this.selectedCategories.indexOf(id);
-      if (index === -1) {
-        this.selectedCategories.push(id);
-      } else {
-        this.selectedCategories.splice(index, 1);
-      }
-      this.$emit('category-change', this.selectedCategories);
-      this.updateMapLayers();
+    handleCategoryChange(value) {
+      console.log(this.selectedCategories)
+      // // 将选中的值转换为数组
+      // this.selectedCategories = Array.isArray(value) ? value : [];
+      // this.$emit('category-change', this.selectedCategories);
+      // this.updateMapLayers();
     },
-    handleTimeChange(event) {
-      const index = parseInt(event.target.value);
-      const selectedTag = this.timeTags[index];
-      this.selectedTime = selectedTag.id;
-      this.$emit('time-change', selectedTag.id);
+    handleTimeRangeChange(value) {
+      const [startIndex, endIndex] = value;
+      const startYear = this.timeTags[startIndex].id;
+      const endYear = this.timeTags[endIndex].id;
       this.updateMapLayers();
     },
     toggleIndustry(id) {
@@ -428,19 +501,30 @@ export default {
         this.mapInstance.markerLayer.clearMarkers();
       }
 
+      // 获取所有选中的叶子节点ID
+      const selectedLeafIds = this.selectedCategories.filter(id => {
+        // 检查是否是叶子节点（不包含在父节点的children中）
+        return !this.categoryTags.some(category => 
+          category.children?.some(child => child.id === id)
+        );
+      });
+
       // 遍历选中的分类
-      this.selectedCategories.forEach(categoryId => {
+      selectedLeafIds.forEach(categoryId => {
         const data = this.categoryDataMap[categoryId];
         if (!data) return;
 
         // 根据选中的时间和行业类型过滤数据
         const filteredData = data.filter(item => {
           // 时间过滤
-          const timeMatch = item['Incident Time'] === parseInt(this.selectedTime);
+          const [startIndex, endIndex] = this.timeRange;
+          const startYear = parseInt(this.timeTags[startIndex].id);
+          const endYear = parseInt(this.timeTags[endIndex].id);
+          const timeMatch = item['Incident Time'] >= startYear && 
+                           item['Incident Time'] <= endYear;
           
           // 行业类型过滤
           const industryMatch = this.selectedIndustries.some(industry => {
-            // 检查数据中的 Industry Tags 字段是否包含当前选中的行业
             return item['Industry Tags'] && item['Industry Tags'].includes(industry);
           });
 
@@ -495,7 +579,7 @@ export default {
             style: {
               radius: 6,
               showStroke: false,
-              fillColor: this.categoryTags.find(tag => tag.id === categoryId).color
+              fillColor: this.getCategoryColor(categoryId)
             }
           }));
 
@@ -515,7 +599,7 @@ export default {
             style: {
               radius: 6,
               showStroke: false,
-              fillColor: this.categoryTags.find(tag => tag.id === categoryId).color
+              fillColor: this.getCategoryColor(categoryId)
             }
           }));
 
@@ -525,6 +609,17 @@ export default {
           this.mapInstance.markerLayer.setMaxZoom(18);
         }
       });
+    },
+    // 添加获取分类颜色的辅助方法
+    getCategoryColor(categoryId) {
+      // 在所有分类中查找颜色
+      for (const category of this.categoryTags) {
+        const child = category.children?.find(child => child.id === categoryId);
+        if (child) {
+          return child.color;
+        }
+      }
+      return 'gray'; // 默认颜色
     },
     /**
      * 定位到指定场景的线条
@@ -771,7 +866,11 @@ export default {
     // 修改登录按钮点击事件
     handleLoginClick() {
       this.showLoginModal = true
-    }
+    },
+
+    formatTimeTooltip(val) {
+      return this.timeTags[val].name;
+    },
   }
 }
 </script>
@@ -988,20 +1087,78 @@ input:checked + .slider:after {
 
 /* 时间轴样式 */
 .timeline-container {
-  @apply flex flex-col items-center my-4;
+  @apply flex flex-col items-center my-4 px-2;
 }
-.timeline-slider {
-  @apply w-full h-2 bg-gray-500/30 rounded-full appearance-none;
-  outline: none;
+
+:deep(.time-range-slider) {
+  @apply w-full;
 }
-.timeline-slider::-webkit-slider-thumb {
-  @apply appearance-none w-4 h-4 bg-gray-500 rounded-full cursor-pointer;
+
+:deep(.el-slider__runway) {
+  @apply h-2 bg-gray-500/30;
 }
-.timeline-labels {
-  @apply flex justify-between w-full mt-2;
+
+:deep(.el-slider__bar) {
+  @apply bg-gray-500/50;
 }
-.timeline-label {
+
+:deep(.el-slider__button) {
+  @apply w-4 h-4 border-2 border-gray-500 bg-gray-500;
+}
+
+:deep(.el-slider__button:hover) {
+  @apply border-gray-400 bg-gray-400;
+}
+
+:deep(.el-slider__marks-text) {
   @apply text-xs text-gray-300;
+}
+
+/* 隐藏标记点 */
+:deep(.el-slider__stop),
+:deep(.el-slider__marks-stop) {
+  @apply hidden;
+}
+
+/* 优化标记文本位置 */
+:deep(.el-slider__marks) {
+  @apply mt-2;
+}
+
+:deep(.el-slider__marks-text) {
+  @apply transform -translate-x-1/2;
+}
+
+/* 优化提示框样式 */
+:deep(.el-tooltip__popper) {
+  @apply bg-gray-800/95 backdrop-blur-sm border border-gray-700;
+  @apply text-xs text-gray-300;
+  @apply py-1 px-2;
+}
+
+:deep(.el-tooltip__popper .el-popper__arrow::before) {
+  @apply bg-gray-800/95 border-gray-700;
+}
+
+/* 优化滑块轨道样式 */
+:deep(.el-slider__runway) {
+  @apply rounded-full;
+}
+
+:deep(.el-slider__bar) {
+  @apply rounded-full;
+}
+
+/* 优化滑块按钮样式 */
+:deep(.el-slider__button) {
+  @apply rounded-full;
+  @apply transition-all duration-200;
+  @apply shadow-sm;
+}
+
+:deep(.el-slider__button:hover) {
+  @apply transform scale-110;
+  @apply shadow-md;
 }
 
 /* 行业标签样式 */
@@ -1196,5 +1353,165 @@ input:checked + .slider:after {
 
 .login-btn:hover .login-icon {
   transform: translateX(2px);
+}
+
+/* 树形选择器样式 */
+.category-tree-container {
+  @apply mb-4;
+}
+
+:deep(.category-tree-select) {
+  @apply w-full;
+}
+
+:deep(.el-tree-select__popper) {
+  @apply bg-gray-800/95 backdrop-blur-sm border border-gray-700;
+}
+
+:deep(.el-tree-select__popper .el-tree) {
+  @apply bg-transparent;
+}
+
+:deep(.el-tree-select__popper .el-tree-node__content) {
+  @apply text-gray-300 hover:bg-gray-700/30;
+}
+
+:deep(.el-tree-select__popper .el-tree-node.is-current > .el-tree-node__content) {
+  @apply bg-gray-700/50 text-white;
+}
+
+:deep(.el-tree-select__popper .el-checkbox__inner) {
+  @apply bg-gray-700 border-gray-600;
+}
+
+:deep(.el-tree-select__popper .el-checkbox__input.is-checked .el-checkbox__inner) {
+  @apply bg-blue-500 border-blue-500;
+}
+
+:deep(.el-tree-select__popper .el-tree-node__expand-icon) {
+  @apply text-gray-400;
+}
+
+:deep(.el-tree-select__popper .el-tree-node__expand-icon.expanded) {
+  @apply text-gray-300;
+}
+
+:deep(.el-tree-select__popper .el-select-dropdown__item) {
+  @apply text-gray-300 hover:bg-gray-700/30;
+}
+
+:deep(.el-tree-select__popper .el-select-dropdown__item.selected) {
+  @apply bg-gray-700/50 text-white;
+}
+
+:deep(.el-select__wrapper) {
+  @apply bg-black/30 shadow-none;
+  @apply hover:border-gray-400/20;
+  @apply focus-within:border-gray-400/30;
+  @apply transition-colors duration-200;
+  border: 1px solid #404040;
+}
+
+:deep(.el-input__inner) {
+  @apply text-white;
+  @apply placeholder:text-white/30;
+}
+
+:deep(.el-input__suffix) {
+  @apply text-white/50;
+}
+
+:deep(.el-select__caret) {
+  @apply text-white/50;
+  @apply transition-transform duration-200;
+}
+
+:deep(.el-select .el-input.is-focus .el-input__wrapper) {
+  @apply shadow-none;
+  @apply border-white/30;
+}
+
+:deep(.el-select-dropdown) {
+  @apply bg-black/95 backdrop-blur-sm;
+  @apply border border-white/10;
+  @apply shadow-lg;
+}
+
+:deep(.el-select-dropdown__item) {
+  @apply text-white/80;
+  @apply hover:bg-white/10;
+  @apply transition-colors duration-200;
+}
+
+:deep(.el-select-dropdown__item.selected) {
+  @apply text-white bg-white/20;
+}
+
+:deep(.el-select-dropdown__item.hover) {
+  @apply bg-white/10;
+}
+
+:deep(.el-select-dropdown__empty) {
+  @apply text-white/50;
+}
+
+:deep(.el-select__tags) {
+  @apply bg-black/50;
+  @apply border border-white/10;
+  @apply rounded-md;
+  @apply px-2 py-1;
+}
+
+:deep(.el-tag) {
+  @apply bg-white/10;
+  @apply border border-white/20;
+  @apply text-white;
+  @apply rounded-md;
+  @apply px-2 py-0.5;
+  @apply text-xs;
+  @apply transition-colors duration-200;
+}
+
+:deep(.el-tag:hover) {
+  @apply bg-white/20;
+  @apply border-white/30;
+}
+
+:deep(.el-tag__close) {
+  @apply text-white/50;
+  @apply hover:bg-white/20;
+  @apply hover:text-white;
+  @apply transition-colors duration-200;
+}
+
+:deep(.el-select__tags-text) {
+  @apply text-white/80;
+}
+
+:deep(.el-select .el-input__wrapper.is-focus) {
+  @apply border-white/30;
+  @apply shadow-none;
+}
+
+:deep(.el-select .el-input.is-disabled .el-input__wrapper) {
+  @apply bg-black/20;
+  @apply border-white/5;
+}
+
+:deep(.el-select .el-input.is-disabled .el-input__inner) {
+  @apply text-white/30;
+}
+
+:deep(.el-select .el-input.is-disabled .el-input__suffix) {
+  @apply text-white/30;
+}
+
+/* 下拉箭头动画 */
+:deep(.el-select .el-input__suffix-inner) {
+  @apply transition-transform duration-200;
+}
+
+:deep(.el-select.is-focus .el-input__suffix-inner) {
+  @apply transform rotate-180;
 }
 </style> 
