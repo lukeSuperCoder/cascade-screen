@@ -53,6 +53,31 @@
 
           <h3 class="section-title primary">Time Range</h3>
           <div class="timeline-container">
+            <!-- 新增：年份输入框，左右对称布局 -->
+            <div class="time-range-inputs">
+              <div class="time-input-group">
+                <span class="time-input-label">From</span>
+                <input
+                  type="number"
+                  class="time-input"
+                  :min="2000"
+                  :max="2025"
+                  :value="timeTags[timeRange[0]]?.id"
+                  @input="onTimeInput($event, 0)"
+                />
+              </div>
+              <div class="time-input-group right-input">
+                <span class="time-input-label">To</span>
+                <input
+                  type="number"
+                  class="time-input"
+                  :min="2000"
+                  :max="2026"
+                  :value="timeTags[timeRange[1]]?.id"
+                  @input="onTimeInput($event, 1)"
+                />
+              </div>
+            </div>
             <el-slider
               v-model="timeRange"
               range
@@ -350,12 +375,7 @@ export default {
           ]
         }
       ],
-      timeTags: [
-        { id: '2023', name: '2023' },
-        { id: '2024', name: '2024' },
-        { id: '2025', name: '2025' },
-        { id: '2026', name: '2026' }
-      ],
+      timeTags: Array.from({length: 26}, (_, i) => ({ id: String(2000 + i), name: String(2000 + i) })),
       industryTags: [
         { id: 'energy', name: 'Energy' },
         { id: 'transportation', name: 'Transportation' },
@@ -372,7 +392,7 @@ export default {
       },
       showExportOptions: false,
       showLoginModal: false,
-      timeRange: [2, 3], // 对应 timeTags 的索引
+      timeRange: [18, 25], // 对应 timeTags 的索引
     }
   },
   computed: {
@@ -383,7 +403,9 @@ export default {
     timeMarks() {
       const marks = {};
       this.timeTags.forEach((tag, index) => {
-        marks[index] = tag.name;
+        if(index == 0 || index == this.timeTags.length - 1) {
+          marks[index] = tag.name;
+        }
       });
       return marks;
     }
@@ -870,6 +892,25 @@ export default {
 
     formatTimeTooltip(val) {
       return this.timeTags[val].name;
+    },
+
+    onTimeInput(event, idx) {
+      // 输入框输入后联动滑块
+      let val = parseInt(event.target.value)
+      if (isNaN(val)) return
+      val = Math.max(2000, Math.min(2026, val))
+      // 找到对应的 timeTags 索引
+      const tagIdx = this.timeTags.findIndex(t => t.id === String(val))
+      if (tagIdx === -1) return
+      // 保证起始不大于结束
+      if (idx === 0 && tagIdx > this.timeRange[1]) {
+        this.timeRange = [tagIdx, tagIdx]
+      } else if (idx === 1 && tagIdx < this.timeRange[0]) {
+        this.timeRange = [tagIdx, tagIdx]
+      } else {
+        this.timeRange.splice(idx, 1, tagIdx)
+      }
+      this.handleTimeRangeChange(this.timeRange)
     },
   }
 }
@@ -1513,5 +1554,49 @@ input:checked + .slider:after {
 
 :deep(.el-select.is-focus .el-input__suffix-inner) {
   @apply transform rotate-180;
+}
+
+.time-range-inputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.time-input-group {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.right-input {
+  justify-content: flex-end;
+}
+.time-input-label {
+  color: #e5e7eb;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 2px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-shadow: none;
+  margin-right: 5px;
+}
+.time-input {
+  width: 60px;
+  height: 28px;
+  padding: 2px 6px;
+  border: 1px solid #444a;
+  border-radius: 7px;
+  font-size: 13px;
+  text-align: center;
+  background: #181c20;
+  color: #fff;
+  outline: none;
+  box-shadow: none;
+  transition: border 0.2s;
+}
+.time-input:focus {
+  border: 1.5px solid #60a5fa;
+  box-shadow: 0 0 0 1.5px #60a5fa33;
 }
 </style> 
