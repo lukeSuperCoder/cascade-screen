@@ -47,6 +47,7 @@ npm run dev
 
 ```bash
 npm run build
+git pull origin main
 ```
 
 ## 主要功能模块
