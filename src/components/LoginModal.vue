@@ -57,7 +57,7 @@ export default defineComponent({
     // 登录处理
     const handleLogin = async () => {
       if (!username.value || !password.value) {
-        ElMessage.error('请输入用户名和密码')
+        ElMessage.error('Please enter your username and password')
         return
       }
 
@@ -69,14 +69,14 @@ export default defineComponent({
         })
 
         if (success) {
-          ElMessage.success('登录成功')
+          ElMessage.success('Login successful')
           emit('update:visible', false)
         } else {
-          ElMessage.error('登录失败，请重试')
+          ElMessage.error('Login failed, please try again')
         }
       } catch (error) {
         console.error('Login error:', error)
-        ElMessage.error('登录失败，请重试')
+        ElMessage.error('Login failed, please try again')
       }
     }
 

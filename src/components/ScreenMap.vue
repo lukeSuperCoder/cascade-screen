@@ -129,9 +129,9 @@
         this.mapInstance.markerLayer.setOnClick(async (featureData, event) => {
           const zoom = this.mapInstance.view.getZoom();
           if(featureData.type === 'marker' && featureData.properties){
-            const data = featureData.properties;
+            const data = featureData.properties.properties;
             this.popupData = {
-              name: 'Power Outage Details',
+              name: 'Details',
               ecoLoss: data.Eco_loss ? `${data.Eco_loss}` : 'Unknown',
               incidentTime: data['Incident Time'] || 'Unknown',
               month: data.Month || 'Unknown',

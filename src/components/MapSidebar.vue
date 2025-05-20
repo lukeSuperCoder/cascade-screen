@@ -85,7 +85,7 @@
               :max="timeTags.length - 1"
               :marks="timeMarks"
               :format-tooltip="formatTimeTooltip"
-              @change="handleTimeRangeChange"
+              @input="handleTimeRangeChange"
               class="time-range-slider"
             />
           </div>
@@ -223,9 +223,11 @@ import supply from '@/assets/datas/supply.json'
 import cyber_line from '@/assets/datas/cyber_line.json'
 import earthquake_line from '@/assets/datas/earthquake_line.json'
 import weather_line from '@/assets/datas/weather_line.json'
+import uk_data from '@/assets/datas/uk_data.json'
 import html2canvas from 'html2canvas'
 import { jsPDF } from 'jspdf'
 import LoginModal from './LoginModal.vue'
+import { ElMessage } from 'element-plus'
 
 export default {
   name: 'MapSidebar',
@@ -393,6 +395,8 @@ export default {
       showExportOptions: false,
       showLoginModal: false,
       timeRange: [18, 25], // 对应 timeTags 的索引
+      ukAreaData: uk_data,
+      exportUkData: []
     }
   },
   computed: {
@@ -425,7 +429,7 @@ export default {
     // 等待地图实例初始化
     this.initMapInstance();
     // 转换数据为GeoJSON格式
-    this.convertToGeoJSON();
+    // this.convertToGeoJSON();
     document.addEventListener('click', this.handleClickOutside);
   },
   beforeDestroy() {
@@ -451,17 +455,30 @@ export default {
       this.$emit('sidebar-toggle', this.isCollapsed);
     },
     handleCategoryChange(value) {
-      console.log(this.selectedCategories)
-      // // 将选中的值转换为数组
-      // this.selectedCategories = Array.isArray(value) ? value : [];
-      // this.$emit('category-change', this.selectedCategories);
-      // this.updateMapLayers();
+      this.addMarkerLayer(this.formatData(this.ukAreaData));
+    },
+    formatData(data) {
+      // 获取当前年份范围
+      const [startIdx, endIdx] = this.timeRange;
+      const startYear = parseInt(this.timeTags[startIdx].id);
+      const endYear = parseInt(this.timeTags[endIdx].id);
+
+      return data.map(item => ({
+        coordinate: item.coordinate,
+        properties: {
+          ...item.properties,
+          "Month": Math.floor(Math.random() * 12) + 1,
+          "Incident Time": Math.floor(Math.random() * (endYear - startYear + 1)) + startYear,
+          "Total_Daily_Period": (Math.random() * (1000 - 1) + 1).toFixed(4),
+          "Eco_loss": (Math.random() * (50000 - 1) + 1).toFixed(4),
+        }
+      }));
     },
     handleTimeRangeChange(value) {
       const [startIndex, endIndex] = value;
       const startYear = this.timeTags[startIndex].id;
       const endYear = this.timeTags[endIndex].id;
-      this.updateMapLayers();
+      this.addMarkerLayer(this.formatData(this.ukAreaData));
     },
     toggleIndustry(id) {
       const index = this.selectedIndustries.indexOf(id);
@@ -509,6 +526,7 @@ export default {
       const avgValue = this.simulationParams.reduce((acc, param) => acc + param.value, 0) / this.simulationParams.length;
       this.simulationColor = `rgba(0, 0, 0, ${avgValue / 100})`;
     },
+    //更新图层
     updateMapLayers() {
       if (!this.mapInstance) return;
       
@@ -601,7 +619,7 @@ export default {
             style: {
               radius: 6,
               showStroke: false,
-              fillColor: this.getCategoryColor(categoryId)
+              fillColor: this.getEcoLossColor(item.properties.Eco_loss)
             }
           }));
 
@@ -621,7 +639,7 @@ export default {
             style: {
               radius: 6,
               showStroke: false,
-              fillColor: this.getCategoryColor(categoryId)
+              fillColor: this.getEcoLossColor(item.properties.Eco_loss)
             }
           }));
 
@@ -632,16 +650,61 @@ export default {
         }
       });
     },
-    // 添加获取分类颜色的辅助方法
-    getCategoryColor(categoryId) {
-      // 在所有分类中查找颜色
-      for (const category of this.categoryTags) {
-        const child = category.children?.find(child => child.id === categoryId);
-        if (child) {
-          return child.color;
-        }
+    //添加标记点图层
+    addMarkerLayer(data) {
+      if (!this.mapInstance) return;
+      
+      // 清除现有的图层
+      if(this.mapInstance && this.mapInstance.markerLayer) {
+        this.mapInstance.markerLayer.clearMarkers();
       }
-      return 'gray'; // 默认颜色
+      console.log(data);
+      
+      const markers = data.map(item => ({
+        coordinates: item.coordinate,
+        properties: {
+          ...item
+        },
+        style: {
+          radius: 6,
+          showStroke: false,
+          fillColor: this.getEcoLossColor(item.properties.Eco_loss)
+        }
+      }));
+      this.mapInstance.markerLayer.addMarkers(markers);
+      this.mapInstance.markerLayer.setMinZoom(1);
+      this.mapInstance.markerLayer.setMaxZoom(18);
+      this.exportUkData = data;
+    },
+    // 添加获取分类颜色的辅助方法
+    getEcoLossColor(ecoLoss) {
+      // 绿色(0,255,0) -> 黄色(255,255,0) -> 橙色(255,165,0) -> 红色(255,0,0)
+      const min = 1;
+      const max = 50000;
+      const value = Math.max(min, Math.min(max, parseFloat(ecoLoss)));
+      const percent = (value - min) / (max - min);
+
+      let r, g, b;
+      if (percent <= 1/3) {
+        // 绿到黄
+        const p = percent * 3;
+        r = Math.round(0 + (255 - 0) * p);
+        g = 255;
+        b = 0;
+      } else if (percent <= 2/3) {
+        // 黄到橙
+        const p = (percent - 1/3) * 3;
+        r = 255;
+        g = Math.round(255 - (255 - 165) * p);
+        b = 0;
+      } else {
+        // 橙到红
+        const p = (percent - 2/3) * 3;
+        r = 255;
+        g = Math.round(165 - 165 * p);
+        b = 0;
+      }
+      return `rgba(${r},${g},${b},0.85)`;
     },
     /**
      * 定位到指定场景的线条
@@ -733,22 +796,22 @@ export default {
     // 修改导出数据方法，添加登录检查
     exportData(format) {
       if (!this.isLoggedIn) {
-        ElMessage.warning('请先登录后再导出数据')
+        ElMessage.warning('Please login before exporting data')
         return
       }
 
       this.showExportOptions = false
-      const data = this.getFilteredData()
+      const data = this.exportUkData
       
       if (format === 'csv') {
         if (data.length === 0) {
-          ElMessage.warning('没有可导出的数据')
+          ElMessage.warning('No data available for export')
           return
         }
         this.exportCSV(data)
       } else if (format === 'geojson') {
         if (data.length === 0) {
-          ElMessage.warning('没有可导出的数据')
+          ElMessage.warning('No data available for export')
           return
         }
         this.exportGeoJSON(data)
@@ -761,19 +824,20 @@ export default {
 
     // 导出 CSV
     exportCSV(data) {
-      // 获取所有可能的字段
+      // 收集所有properties里的字段
       const fields = new Set();
       data.forEach(item => {
-        Object.keys(item).forEach(key => fields.add(key));
+        if (item.properties) {
+          Object.keys(item.properties).forEach(key => fields.add(key));
+        }
       });
-
       // 创建 CSV 头部
       const headers = Array.from(fields);
       const csvContent = [
         headers.join(','),
         ...data.map(item => 
           headers.map(header => {
-            const value = item[header];
+            const value = item.properties ? item.properties[header] : '';
             // 处理包含逗号的字段
             return typeof value === 'string' && value.includes(',') 
               ? `"${value}"` 
@@ -797,7 +861,7 @@ export default {
         features: data.map(item => ({
           type: 'Feature',
           properties: {
-            ...item
+            ...item.properties
           },
           geometry: {
             type: 'Point',
