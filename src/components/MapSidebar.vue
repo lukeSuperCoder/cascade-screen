@@ -658,7 +658,6 @@ export default {
       if(this.mapInstance && this.mapInstance.markerLayer) {
         this.mapInstance.markerLayer.clearMarkers();
       }
-      console.log(data);
       
       const markers = data.map(item => ({
         coordinates: item.coordinate,
