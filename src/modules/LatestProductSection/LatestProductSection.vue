@@ -16,7 +16,7 @@
       
       <li class="flex items-center py-1">
         <span class="text-blue-400 mr-3">•</span>
-        <span class="text-gray-300">Custom cascade risk reporting</span>
+        <span class="text-gray-300">Custom domino risk reporting</span>
       </li>
       
       <li class="flex items-center py-1">

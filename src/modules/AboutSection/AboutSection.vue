@@ -1,12 +1,12 @@
 <template>
   <div class="container mx-auto px-4 py-16">
-    <h2 class="text-4xl font-bold mb-8 text-white">About Cascade</h2>
+    <h2 class="text-4xl font-bold mb-8 text-white">About Domino Risk</h2>
     
     <div class="mb-12">
       <p class="text-lg text-gray-300 max-w-2xl">
         We provide a platform leveraging open datasets 
         and advanced AI to visualize and analyze 
-        spatially-detailed climate cascade risks 
+        spatially-detailed climate domino risks 
         worldwide.
       </p>
     </div>
@@ -22,7 +22,7 @@
       <FeatureCard 
         icon="ai"
         title="AI-driven"
-        info="cascade analysis engine"
+        info="domino risk analysis engine"
       />
       
       <FeatureCard 

@@ -5,13 +5,16 @@
       <div class="flex items-center">
         <router-link to="/" class="text-white relative logo-container cyber-glow wave-logo">
           <!-- 主Logo文字 - 鼠标移入波动特效 -->
-          <span class="wave-letter">C</span>
-          <span class="wave-letter" style="animation-delay:0.05s">A</span>
-          <span class="wave-letter" style="animation-delay:0.10s">S</span>
-          <span class="wave-letter" style="animation-delay:0.15s">C</span>
-          <span class="wave-letter" style="animation-delay:0.20s">A</span>
-          <span class="wave-letter" style="animation-delay:0.25s">D</span>
-          <span class="wave-letter" style="animation-delay:0.30s">E</span>
+          <span class="wave-letter">D</span>
+          <span class="wave-letter" style="animation-delay:0.05s">O</span>
+          <span class="wave-letter" style="animation-delay:0.10s">M</span>
+          <span class="wave-letter" style="animation-delay:0.15s">I</span>
+          <span class="wave-letter" style="animation-delay:0.20s">N</span>
+          <span class="wave-letter" style="animation-delay:0.25s">O</span>
+          <span class="wave-letter" style="animation-delay:0.30s;margin-left: 0.5em;">R</span>
+          <span class="wave-letter" style="animation-delay:0.35s">I</span>
+          <span class="wave-letter" style="animation-delay:0.40s">S</span>
+          <span class="wave-letter" style="animation-delay:0.45s">K</span>
         </router-link>
       </div>
       
@@ -20,7 +23,7 @@
         <!-- 导航链接 -->
         <div class="hidden md:flex items-center space-x-8">
           <button @click="scrollToSection('about')" class="text-white hover:text-blue-400 transition-colors duration-300 relative group py-2 cyber-link">
-            <span>About Cascade</span>
+            <span>About Domino Risk</span>
             <span class="cyber-highlight"></span>
           </button>
           <button @click="scrollToSection('approach')" class="text-white hover:text-blue-400 transition-colors duration-300 relative group py-2 cyber-link">
@@ -61,7 +64,7 @@
     <div v-if="!onlyLogo && mobileMenuOpen" class="md:hidden bg-gray-900/95 backdrop-blur-lg border-b border-blue-500/20 py-4 animate-fadeIn flex items-center">
       <div class="container mx-auto px-4 flex flex-col space-y-4">
         <button @click="scrollToSection('about', true)" class="text-white hover:text-blue-400 transition-colors py-3 px-4 rounded-md hover:bg-blue-900/20 border border-transparent hover:border-blue-500/30">
-          About Cascade
+          About Domino Risk
         </button>
         <button @click="scrollToSection('approach', true)" class="text-white hover:text-blue-400 transition-colors py-3 px-4 rounded-md hover:bg-blue-900/20 border border-transparent hover:border-blue-500/30">
           Our Approach

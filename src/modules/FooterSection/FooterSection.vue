@@ -4,12 +4,12 @@
       <div class="flex flex-col md:flex-row justify-between items-center">
         <!-- Logo -->
         <div class="text-white text-2xl font-bold uppercase tracking-wider mb-4 md:mb-0">
-          CASCADE
+          DOMINO RISK
         </div>
         
         <!-- 版权信息 -->
         <div class="text-gray-500 text-sm">
-          © {{ new Date().getFullYear() }} Cascade. All rights reserved.
+          © {{ new Date().getFullYear() }} Domino Risk. All rights reserved.
         </div>
       </div>
     </div>

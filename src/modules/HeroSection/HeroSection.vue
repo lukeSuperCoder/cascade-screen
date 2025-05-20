@@ -11,14 +11,14 @@
       <div class="max-w-3xl">
         <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-6 [text-shadow:_0_2px_10px_rgba(0,0,0,0.5)]">
           Mapping Climate <br />
-          Cascade Effects <br />
+          Domino Risk <br />
           with AI-Powered <br />
           Insight
         </h1>
         
         <p class="text-lg md:text-xl text-zinc-200 mb-10 max-w-2xl [text-shadow:_0_1px_5px_rgba(0,0,0,0.3)]">
-          From global disruption to local impacts 
-          — we visualize cascading climate risks with open data and real-time analytics.
+          From global disruption to local impacts <br />
+          ——real-time projections of domino risk.
         </p>
         
         <!-- CTA按钮 -->
@@ -35,7 +35,7 @@
             <div class="absolute -inset-px bg-gradient-to-r from-blue-500 via-blue-400 to-blue-500 opacity-0 group-hover:opacity-40 group-hover:blur-sm transition-all duration-300"></div>
           </router-link>
           <a href="#" class="relative group bg-transparent backdrop-blur-sm border border-blue-500/20 text-white px-8 py-3 rounded-md hover:border-blue-400/40 transition-all duration-300 overflow-hidden active:scale-95 active:animate-shake-sm">
-            <span class="relative z-10">Discover Cascade</span>
+            <span class="relative z-10">Discover Domino Risk</span>
             <!-- 科技感扫光效果 -->
             <div class="absolute inset-0 translate-x-[-100%] group-hover:translate-x-[100%] bg-gradient-to-r from-transparent via-blue-400/10 to-transparent transition-transform duration-1000"></div>
             <!-- 悬停时的微光效果 -->
