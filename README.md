@@ -38,6 +38,7 @@ npm install
 3. 启动开发服务器
 
 ```bash
+git pull origin main
 npm run dev
 ```
 
@@ -47,7 +48,6 @@ npm run dev
 
 ```bash
 npm run build
-git pull origin main
 ```
 
 ## 主要功能模块
