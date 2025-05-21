@@ -72,14 +72,41 @@
           </div>
         </div>
       </div>
+
+      <!-- 播放条组件 -->
+      <div class="timeline-container">
+        <div class="timeline-controls">
+          <button @click="togglePlay" class="play-btn">
+            <svg style="margin-left: 3px;" v-if="!isPlaying" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            <svg v-else xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+              <rect x="6" y="4" width="4" height="16"></rect>
+              <rect x="14" y="4" width="4" height="16"></rect>
+            </svg>
+          </button>
+          <el-slider
+            v-model="currentDay"
+            :min="0"
+            :max="59"
+            :marks="timeMarks"
+            :format-tooltip="formatTimeTooltip"
+            @input="handleTimeRangeChange"
+            class="timeline-slider"
+          />
+        </div>
+      </div>
     </div>
   </template>
   
   <script>
   import { OlMap } from '@/olmap/index'
+  import { ElSlider } from 'element-plus'
 
   export default {
-    components: {},
+    components: {
+      ElSlider
+    },
     data() {
       return {
         mapInstance:null,
@@ -89,7 +116,16 @@
         popupStyle: {
           top: '0px',
           left: '0px'
-        }
+        },
+        isPlaying: false,
+        currentDay: 0,
+        startDate: new Date(),
+        endDate: new Date(),
+        playInterval: null,
+        timeMarks: {
+          0: '1 day',
+          59: '60 day'
+        },
       };
     },
     props:{
@@ -243,15 +279,57 @@
       closePopup() {
         this.showPopup = false;
         this.popupData = null;
-      }
+      },
+      togglePlay() {
+        this.isPlaying = !this.isPlaying;
+        if (this.isPlaying) {
+          this.playInterval = setInterval(() => {
+            if (this.currentDay >= 59) {
+              this.currentDay = 0;
+            } else {
+              this.currentDay++;
+            }
+            this.updateMapData();
+          }, 1000); // 每秒更新一次
+        } else {
+          clearInterval(this.playInterval);
+        }
+      },
+      handleSliderChange() {
+        if (this.isPlaying) {
+          this.togglePlay(); // 如果正在播放，则暂停
+        }
+        this.updateMapData();
+      },
+      formatTimeTooltip(val) {
+        return val+1;
+      },
+      handleTimeRangeChange(val) {
+        this.currentDay = val;
+        this.updateMapData();
+      },
+      updateMapData() {
+        // 这里添加更新地图数据的逻辑
+        const currentDate = new Date(this.startDate);
+        currentDate.setDate(currentDate.getDate() + this.currentDay);
+        this.endDate = new Date(currentDate);
+        // 触发数据更新事件
+        this.$emit('date-changed', currentDate);
+      },
     },
     created() {
-    
+      // 设置初始日期范围
+      this.startDate = new Date();
+      this.endDate = new Date();
+      this.endDate.setDate(this.endDate.getDate() + 59);
     },
     mounted() {
       this.initMap();
     },
-    beforeDestroy() { 
+    beforeDestroy() {
+      if (this.playInterval) {
+        clearInterval(this.playInterval);
+      }
     },
   }
   </script>
@@ -305,4 +383,55 @@
   .info-item .value {
     @apply text-gray-300;
   }
+
+  .timeline-container {
+    @apply fixed bottom-4 left-1/2 transform -translate-x-1/2 z-20;
+    @apply bg-black/90 backdrop-blur-md border border-blue-500/20 rounded-full px-8 py-4;
+    @apply w-[600px] max-w-[90vw];
+  }
+
+  .timeline-controls {
+    @apply flex items-center space-x-4;
+  }
+
+  .play-btn {
+    @apply w-10 h-9 bg-gray-500/30 backdrop-blur-sm;
+    @apply rounded-full;
+    @apply flex items-center justify-center text-white hover:bg-blue-900/50 transition-colors;
+  }
+
+  :deep(.el-slider__runway) {
+    @apply h-2 bg-gray-500/30 mx-5;
+  }
+
+  :deep(.el-slider__bar) {
+    @apply bg-gray-500/50;
+  }
+
+  :deep(.el-slider__button) {
+    @apply w-4 h-4 border-2 border-gray-500 bg-gray-500;
+  }
+
+  :deep(.el-slider__button:hover) {
+    @apply border-gray-400 bg-gray-400;
+  }
+
+  :deep(.el-slider__marks-text) {
+    @apply text-xs text-gray-300;
+  }
+
+/* 隐藏标记点 */
+:deep(.el-slider__stop),
+:deep(.el-slider__marks-stop) {
+  @apply hidden;
+}
+
+/* 优化标记文本位置 */
+:deep(.el-slider__marks) {
+  @apply mt-2;
+}
+
+:deep(.el-slider__marks-text) {
+  @apply transform -translate-x-1/2;
+}
   </style>

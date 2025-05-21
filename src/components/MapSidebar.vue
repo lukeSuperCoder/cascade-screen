@@ -665,7 +665,7 @@ export default {
           ...item
         },
         style: {
-          radius: 6,
+          radius: Math.floor(Math.random() * 8) + 5,
           showStroke: false,
           fillColor: this.getEcoLossColor(item.properties.Eco_loss)
         }

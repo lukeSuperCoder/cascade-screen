@@ -14,17 +14,18 @@
       
       <!-- 右侧地图区域 -->
       <div class="map-container">
-        <screenMap 
+        <screenMap
+          @date-changed="handleDateChanged"
           ref="mapComponent" 
           @map-ready="handleMapReady"
         />
         <!-- 热力图图例 -->
-        <!-- <HeatMapLegend
+        <HeatMapLegend
           v-if="showHeatMapLegend"
           :gradient="heatMapGradient"
           :min-value="heatMapMinValue"
           :max-value="heatMapMaxValue"
-        /> -->
+        />
       </div>
     </div>
   </div>
@@ -87,6 +88,9 @@ export default {
       if (this.$refs.sidebar) {
         this.$refs.sidebar.mapInstance = mapInstance;
       }
+    },
+    handleDateChanged(date) {
+      this.$refs.sidebar.handleTimeRangeChange([1,2]);
     }
   }
 }
