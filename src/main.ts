@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
 import Home from './pages/Home.vue'
 import MapPage from './pages/MapPage.vue'
+import Approach from './pages/Approach.vue'
 import './styles/tailwind.css'
 import 'element-plus/dist/index.css'
 import store from './store'
@@ -21,6 +22,11 @@ const router = createRouter({
       path: '/map',
       name: 'Map',
       component: MapPage
+    },
+    {
+      path: '/contribute',
+      name: 'Contribute',
+      component: Approach
     },
     // 其他路由可以在这里添加
     {

@@ -47,6 +47,7 @@
               :render-after-expand="false"
               placeholder="Please select categories"
               class="category-tree-select"
+              ref="categoryTree"
               @change="handleCategoryChange"
             />
           </div>
@@ -54,38 +55,13 @@
           <h3 class="section-title primary">Time Range</h3>
           <div class="timeline-container">
             <!-- 新增：年份输入框，左右对称布局 -->
-            <div class="time-range-inputs">
-              <div class="time-input-group">
-                <span class="time-input-label">From</span>
-                <input
-                  type="number"
-                  class="time-input"
-                  :min="2000"
-                  :max="2025"
-                  :value="timeTags[timeRange[0]]?.id"
-                  @input="onTimeInput($event, 0)"
-                />
-              </div>
-              <div class="time-input-group right-input">
-                <span class="time-input-label">To</span>
-                <input
-                  type="number"
-                  class="time-input"
-                  :min="2000"
-                  :max="2026"
-                  :value="timeTags[timeRange[1]]?.id"
-                  @input="onTimeInput($event, 1)"
-                />
-              </div>
-            </div>
             <el-slider
-              v-model="timeRange"
-              range
+              v-model="selectedTimeIndex"
               :min="0"
               :max="timeTags.length - 1"
               :marks="timeMarks"
               :format-tooltip="formatTimeTooltip"
-              @input="handleTimeRangeChange"
+              @input="handleTimeChange"
               class="time-range-slider"
             />
           </div>
@@ -223,7 +199,7 @@ import supply from '@/assets/datas/supply.json'
 import cyber_line from '@/assets/datas/cyber_line.json'
 import earthquake_line from '@/assets/datas/earthquake_line.json'
 import weather_line from '@/assets/datas/weather_line.json'
-import uk_data from '@/assets/datas/uk_data.json'
+import uk_data from '@/assets/datas/weekly_flood_data.json'
 import html2canvas from 'html2canvas'
 import { jsPDF } from 'jspdf'
 import LoginModal from './LoginModal.vue'
@@ -239,7 +215,7 @@ export default {
       mapInstance: null,
       isCollapsed: true,
       selectedCategories: [],
-      selectedTime: '2023',
+      selectedTime: '2016',
       selectedIndustries: ["Energy","Transportation","Communication","Agriculture","Manufacturing"],
       lastUpdated: new Date().toISOString().split('T')[0], // 格式化为 YYYY-MM-DD
       showHeatmap: false,
@@ -325,10 +301,18 @@ export default {
                 {
                   id: 'glacial-lake-outburst-flood',
                   name: 'Glacial lake outburst flood',
-                  children:[
+                  children: [
                     {
-                      id: 'Uk York Flooding',
-                      name: 'Uk York Flooding'
+                      id: 'uk-york-flooding',
+                      name: 'UK York Flooding'
+                    },
+                    {
+                      id: 'uk-scotland-flooding',
+                      name: 'UK Scotland Flooding'
+                    },
+                    {
+                      id: 'uk-spain-flooding',
+                      name: 'UK Spain Flooding'
                     }
                   ]
                 },
@@ -400,8 +384,9 @@ export default {
       },
       showExportOptions: false,
       showLoginModal: false,
-      timeRange: [18, 25], // 对应 timeTags 的索引
+      selectedTimeIndex: 16, // 替换 timeRange
       ukAreaData: uk_data,
+      year_week: 1,
       exportUkData: []
     }
   },
@@ -461,29 +446,32 @@ export default {
       this.$emit('sidebar-toggle', this.isCollapsed);
     },
     handleCategoryChange(value) {
-      this.addMarkerLayer(this.formatData(this.ukAreaData));
+      const checkedKeys = this.$refs['categoryTree'].getCheckedKeys();
+      if(checkedKeys.includes('uk-york-flooding')) {
+        this.addMarkerLayer(this.formatData(this.ukAreaData));
+      } else {
+        if(this.mapInstance && this.mapInstance.markerLayer) {
+          this.mapInstance.markerLayer.clearMarkers();
+        }
+      }
     },
     formatData(data) {
       // 获取当前年份范围
-      const [startIdx, endIdx] = this.timeRange;
+      const startIdx = this.selectedTimeIndex;
       const startYear = parseInt(this.timeTags[startIdx].id);
-      const endYear = parseInt(this.timeTags[endIdx].id);
-
-      return data.map(item => ({
-        coordinate: item.coordinate,
-        properties: {
-          ...item.properties,
-          "Month": Math.floor(Math.random() * 12) + 1,
-          "Incident Time": Math.floor(Math.random() * (endYear - startYear + 1)) + startYear,
-          "Total_Daily_Period": (Math.random() * (1000 - 1) + 1).toFixed(4),
-          "Eco_loss": (Math.random() * (50000 - 1) + 1).toFixed(4),
-        }
-      }));
+      if(startYear===2016) {
+        return data.map(item => ({
+          coordinate: item.coordinate,
+          properties: {
+            ...item.properties
+          }
+        })).filter(item => item.properties.year_week === this.year_week);
+      } else {
+        return []
+      }
     },
-    handleTimeRangeChange(value) {
-      const [startIndex, endIndex] = value;
-      const startYear = this.timeTags[startIndex].id;
-      const endYear = this.timeTags[endIndex].id;
+    handleTimeChange(value) {
+      this.year_week = value;
       this.addMarkerLayer(this.formatData(this.ukAreaData));
     },
     toggleIndustry(id) {
@@ -563,7 +551,7 @@ export default {
         // 根据选中的时间和行业类型过滤数据
         const filteredData = data.filter(item => {
           // 时间过滤
-          const [startIndex, endIndex] = this.timeRange;
+          const [startIndex, endIndex] = this.selectedTimeIndex;
           const startYear = parseInt(this.timeTags[startIndex].id);
           const endYear = parseInt(this.timeTags[endIndex].id);
           const timeMatch = item['Incident Time'] >= startYear && 
@@ -643,9 +631,9 @@ export default {
               ...item
             },
             style: {
-              radius: 6,
+              radius: (1.5 - item.properties.Eco_Intensity) * 15,
               showStroke: false,
-              fillColor: this.getEcoLossColor(item.properties.Eco_loss)
+              fillColor: this.getEcoLossColor(item.properties.Cumulative_loss)
             }
           }));
 
@@ -671,9 +659,9 @@ export default {
           ...item
         },
         style: {
-          radius: Math.floor(Math.random() * 8) + 5,
+          radius: (1.5 - item.properties.Eco_Intensity) * 20,
           showStroke: false,
-          fillColor: this.getEcoLossColor(item.properties.Eco_loss)
+          fillColor: this.getEcoLossColor(item.properties.Cumulative_loss)
         }
       }));
       this.mapInstance.markerLayer.addMarkers(markers);
@@ -685,7 +673,7 @@ export default {
     getEcoLossColor(ecoLoss) {
       // 绿色(0,255,0) -> 黄色(255,255,0) -> 橙色(255,165,0) -> 红色(255,0,0)
       const min = 1;
-      const max = 50000;
+      const max = 10;
       const value = Math.max(min, Math.min(max, parseFloat(ecoLoss)));
       const percent = (value - min) / (max - min);
 
@@ -971,15 +959,8 @@ export default {
       // 找到对应的 timeTags 索引
       const tagIdx = this.timeTags.findIndex(t => t.id === String(val))
       if (tagIdx === -1) return
-      // 保证起始不大于结束
-      if (idx === 0 && tagIdx > this.timeRange[1]) {
-        this.timeRange = [tagIdx, tagIdx]
-      } else if (idx === 1 && tagIdx < this.timeRange[0]) {
-        this.timeRange = [tagIdx, tagIdx]
-      } else {
-        this.timeRange.splice(idx, 1, tagIdx)
-      }
-      this.handleTimeRangeChange(this.timeRange)
+      this.selectedTimeIndex = tagIdx
+      this.handleTimeChange(tagIdx)
     },
   }
 }
@@ -1627,7 +1608,7 @@ input:checked + .slider:after {
 
 .time-range-inputs {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* 修改为居中对齐 */
   align-items: center;
   width: 100%;
   margin-bottom: 10px;
@@ -1635,7 +1616,7 @@ input:checked + .slider:after {
 .time-input-group {
   display: flex;
   align-items: center;
-  flex: 1;
+  width: 120px; /* 设置固定宽度 */
 }
 .right-input {
   justify-content: flex-end;

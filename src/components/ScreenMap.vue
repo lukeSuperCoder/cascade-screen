@@ -50,7 +50,7 @@
           </div>
           <div class="popup-body">
             <div class="info-item">
-              <span class="label">Eco_loss:</span>
+              <span class="label">Eco_Intensity:</span>
               <span class="value">{{ popupData.ecoLoss }}</span>
             </div>
             <div class="info-item">
@@ -58,16 +58,16 @@
               <span class="value">{{ popupData.incidentTime }}</span>
             </div>
             <div class="info-item">
-              <span class="label">Month:</span>
-              <span class="value">{{ popupData.month }}</span>
+              <span class="label">Location:</span>
+              <span class="value">{{ popupData.nuts218nm }}</span>
             </div>
             <div class="info-item">
-              <span class="label">Total_Daily_Period:</span>
-              <span class="value">{{ popupData.totalDailyPeriod }}</span>
+              <span class="label">Sector:</span>
+              <span class="value">{{ popupData.Sector }}</span>
             </div>
             <div class="info-item">
-              <span class="label">nuts218cd:</span>
-              <span class="value">{{ popupData.nuts218cd }}</span>
+              <span class="label">Damage_Source:</span>
+              <span class="value">{{ popupData.Damage_source }}</span>
             </div>
           </div>
         </div>
@@ -88,7 +88,7 @@
           <el-slider
             v-model="currentDay"
             :min="0"
-            :max="59"
+            :max="47"
             :marks="timeMarks"
             :format-tooltip="formatTimeTooltip"
             @input="handleTimeRangeChange"
@@ -123,8 +123,8 @@
         endDate: new Date(),
         playInterval: null,
         timeMarks: {
-          0: '1 day',
-          59: '60 day'
+          0: '1 week',
+          47: '48 week'
         },
       };
     },
@@ -168,11 +168,12 @@
             const data = featureData.properties.properties;
             this.popupData = {
               name: 'Details',
-              ecoLoss: data.Eco_loss ? `${data.Eco_loss}` : 'Unknown',
-              incidentTime: data['Incident Time'] || 'Unknown',
-              month: data.Month || 'Unknown',
-              totalDailyPeriod: data.Total_Daily_Period ? `${data.Total_Daily_Period}` : 'Unknown',
-              nuts218cd: data.nuts218cd || 'Unknown'
+              ecoLoss: data.Eco_Intensity ? `${data.Eco_Intensity}` : 'Unknown',
+              incidentTime: data['date'].substr(0,7) || 'Unknown',
+              Damage_source: data.Damage_source || 'Unknown',
+              Sector: data.Sector ? `${data.Sector}` : 'Unknown',
+              nuts218cd: data.nuts218cd || 'Unknown',
+              nuts218nm: data.nuts218nm || 'Unknown',
             };
             this.showPopup = true;
             
@@ -284,7 +285,7 @@
         this.isPlaying = !this.isPlaying;
         if (this.isPlaying) {
           this.playInterval = setInterval(() => {
-            if (this.currentDay >= 59) {
+            if (this.currentDay >= 47) {
               this.currentDay = 0;
             } else {
               this.currentDay++;
@@ -314,14 +315,14 @@
         currentDate.setDate(currentDate.getDate() + this.currentDay);
         this.endDate = new Date(currentDate);
         // 触发数据更新事件
-        this.$emit('date-changed', currentDate);
+        this.$emit('date-changed', this.currentDay+1);
       },
     },
     created() {
       // 设置初始日期范围
       this.startDate = new Date();
       this.endDate = new Date();
-      this.endDate.setDate(this.endDate.getDate() + 59);
+      this.endDate.setDate(this.endDate.getDate() + 47);
     },
     mounted() {
       this.initMap();
