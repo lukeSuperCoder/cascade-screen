@@ -1,6 +1,6 @@
 <template>
   <div class="heatmap-legend">
-    <div class="legend-title">Economic Loss</div>
+    <div class="legend-title">Cumulative Loss</div>
     <div class="legend-content">
       <div class="gradient-bar" :style="gradientStyle"></div>
       <div class="legend-labels">
@@ -13,15 +13,15 @@
       </div>
     </div>
     <br>
-    <div class="legend-title">Cumulative Loss</div>
+    <div class="legend-title">Eco Intensity</div>
     <div class="legend-content">
       <div class="circle-size-legend">
-        <div class="circle" :style="{ width: '4px', height: '4px' }"></div>
-        <div class="circle" :style="{ width: '8px', height: '8px' }"></div>
-        <div class="circle" :style="{ width: '12px', height: '12px' }"></div>
-        <div class="circle" :style="{ width: '16px', height: '16px' }"></div>
-        <div class="circle" :style="{ width: '20px', height: '20px' }"></div>
         <div class="circle" :style="{ width: '24px', height: '24px' }"></div>
+        <div class="circle" :style="{ width: '20px', height: '20px' }"></div>
+        <div class="circle" :style="{ width: '16px', height: '16px' }"></div>
+        <div class="circle" :style="{ width: '12px', height: '12px' }"></div>
+        <div class="circle" :style="{ width: '8px', height: '8px' }"></div>
+        <div class="circle" :style="{ width: '4px', height: '4px' }"></div>
       </div>
       <div class="legend-labels">
         <span class="vertical-text">{{ 0 }}</span>

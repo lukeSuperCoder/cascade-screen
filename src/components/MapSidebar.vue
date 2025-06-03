@@ -199,7 +199,7 @@ import supply from '@/assets/datas/supply.json'
 import cyber_line from '@/assets/datas/cyber_line.json'
 import earthquake_line from '@/assets/datas/earthquake_line.json'
 import weather_line from '@/assets/datas/weather_line.json'
-import uk_data from '@/assets/datas/uk_data.json'
+import uk_data from '@/assets/datas/weekly_flood_data.json'
 import html2canvas from 'html2canvas'
 import { jsPDF } from 'jspdf'
 import LoginModal from './LoginModal.vue'
@@ -215,7 +215,7 @@ export default {
       mapInstance: null,
       isCollapsed: true,
       selectedCategories: [],
-      selectedTime: '2023',
+      selectedTime: '2016',
       selectedIndustries: ["Energy","Transportation","Communication","Agriculture","Manufacturing"],
       lastUpdated: new Date().toISOString().split('T')[0], // 格式化为 YYYY-MM-DD
       showHeatmap: false,
@@ -384,8 +384,9 @@ export default {
       },
       showExportOptions: false,
       showLoginModal: false,
-      selectedTimeIndex: 18, // 替换 timeRange
+      selectedTimeIndex: 16, // 替换 timeRange
       ukAreaData: uk_data,
+      year_week: 1,
       exportUkData: []
     }
   },
@@ -458,20 +459,19 @@ export default {
       // 获取当前年份范围
       const startIdx = this.selectedTimeIndex;
       const startYear = parseInt(this.timeTags[startIdx].id);
-
-      return data.map(item => ({
-        coordinate: item.coordinate,
-        properties: {
-          ...item.properties,
-          "Month": Math.floor(Math.random() * 12) + 1,
-          "Incident Time": Math.floor(Math.random() * (startYear + 1)) + startYear,
-          "Total_Daily_Period": (Math.random() * (1000 - 1) + 1).toFixed(4),
-          "Eco_loss": (Math.random() * (50000 - 1) + 1).toFixed(4),
-        }
-      }));
+      if(startYear===2016) {
+        return data.map(item => ({
+          coordinate: item.coordinate,
+          properties: {
+            ...item.properties
+          }
+        })).filter(item => item.properties.year_week === this.year_week);
+      } else {
+        return []
+      }
     },
     handleTimeChange(value) {
-      const year = this.timeTags[value].id;
+      this.year_week = value;
       this.addMarkerLayer(this.formatData(this.ukAreaData));
     },
     toggleIndustry(id) {
@@ -631,9 +631,9 @@ export default {
               ...item
             },
             style: {
-              radius: 6,
+              radius: (1.5 - item.properties.Eco_Intensity) * 15,
               showStroke: false,
-              fillColor: this.getEcoLossColor(item.properties.Eco_loss)
+              fillColor: this.getEcoLossColor(item.properties.Cumulative_loss)
             }
           }));
 
@@ -659,9 +659,9 @@ export default {
           ...item
         },
         style: {
-          radius: Math.floor(Math.random() * 8) + 5,
+          radius: (1.5 - item.properties.Eco_Intensity) * 20,
           showStroke: false,
-          fillColor: this.getEcoLossColor(item.properties.Eco_loss)
+          fillColor: this.getEcoLossColor(item.properties.Cumulative_loss)
         }
       }));
       this.mapInstance.markerLayer.addMarkers(markers);
@@ -673,7 +673,7 @@ export default {
     getEcoLossColor(ecoLoss) {
       // 绿色(0,255,0) -> 黄色(255,255,0) -> 橙色(255,165,0) -> 红色(255,0,0)
       const min = 1;
-      const max = 50000;
+      const max = 10;
       const value = Math.max(min, Math.min(max, parseFloat(ecoLoss)));
       const percent = (value - min) / (max - min);
 

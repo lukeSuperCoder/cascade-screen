@@ -22,7 +22,7 @@
       <div v-if="!onlyLogo" class="flex items-center space-x-8">
         <!-- 导航链接 -->
         <div class="hidden md:flex items-center space-x-8">
-          <button @click="scrollToSection('about')" class="text-white hover:text-blue-400 transition-colors duration-300 relative group py-2 cyber-link">
+          <button @click="openTeamContribute" class="text-white hover:text-blue-400 transition-colors duration-300 relative group py-2 cyber-link">
             <span>Our Team</span>
             <span class="cyber-highlight"></span>
           </button>
@@ -83,6 +83,7 @@
 
 <script lang="ts">
 import { defineComponent, ref, onMounted, onUnmounted } from 'vue'
+import { useRouter } from 'vue-router'
 import LoginModal from './LoginModal.vue'
 
 export default defineComponent({
@@ -95,6 +96,7 @@ export default defineComponent({
     }
   },
   setup() {
+    const router = useRouter()
     const mobileMenuOpen = ref(false)
     const isScrolled = ref(false)
     const showLogin = ref(false)
@@ -128,6 +130,12 @@ export default defineComponent({
         closeMobileMenu()
       }
     }
+
+    //打开团队贡献
+    const openTeamContribute = () => {
+      const routeData = router.resolve({ name: 'Contribute' });
+      window.open(routeData.href, '_blank');
+    }
     
     onMounted(() => {
       window.addEventListener('scroll', handleScroll)
@@ -143,7 +151,8 @@ export default defineComponent({
       toggleMobileMenu,
       closeMobileMenu,
       scrollToSection,
-      showLogin
+      showLogin,
+      openTeamContribute
     }
   }
 })

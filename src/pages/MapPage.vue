@@ -90,7 +90,7 @@ export default {
       }
     },
     handleDateChanged(date) {
-      this.$refs.sidebar.handleTimeChange(1);
+      this.$refs.sidebar.handleTimeChange(date);
     }
   }
 }
