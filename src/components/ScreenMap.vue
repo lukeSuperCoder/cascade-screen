@@ -50,7 +50,7 @@
           </div>
           <div class="popup-body">
             <div class="info-item">
-              <span class="label">Eco_loss:</span>
+              <span class="label">Eco_Intensity:</span>
               <span class="value">{{ popupData.ecoLoss }}</span>
             </div>
             <div class="info-item">
@@ -58,15 +58,15 @@
               <span class="value">{{ popupData.incidentTime }}</span>
             </div>
             <div class="info-item">
-              <span class="label">Month:</span>
-              <span class="value">{{ popupData.month }}</span>
+              <span class="label">Location:</span>
+              <span class="value">{{ popupData.nuts218cd }}</span>
             </div>
             <div class="info-item">
-              <span class="label">Total_Daily_Period:</span>
+              <span class="label">Sector:</span>
               <span class="value">{{ popupData.totalDailyPeriod }}</span>
             </div>
             <div class="info-item">
-              <span class="label">nuts218cd:</span>
+              <span class="label">Damage_Source:</span>
               <span class="value">{{ popupData.nuts218cd }}</span>
             </div>
           </div>
@@ -88,7 +88,7 @@
           <el-slider
             v-model="currentDay"
             :min="0"
-            :max="59"
+            :max="47"
             :marks="timeMarks"
             :format-tooltip="formatTimeTooltip"
             @input="handleTimeRangeChange"
@@ -123,8 +123,8 @@
         endDate: new Date(),
         playInterval: null,
         timeMarks: {
-          0: '1 day',
-          59: '60 day'
+          0: '1 week',
+          47: '48 week'
         },
       };
     },

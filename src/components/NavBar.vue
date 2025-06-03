@@ -23,7 +23,7 @@
         <!-- 导航链接 -->
         <div class="hidden md:flex items-center space-x-8">
           <button @click="scrollToSection('about')" class="text-white hover:text-blue-400 transition-colors duration-300 relative group py-2 cyber-link">
-            <span>About Domino Risk</span>
+            <span>Our Team</span>
             <span class="cyber-highlight"></span>
           </button>
           <button @click="scrollToSection('approach')" class="text-white hover:text-blue-400 transition-colors duration-300 relative group py-2 cyber-link">

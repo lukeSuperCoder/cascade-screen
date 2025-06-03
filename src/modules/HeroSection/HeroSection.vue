@@ -35,7 +35,7 @@
             <div class="absolute -inset-px bg-gradient-to-r from-blue-500 via-blue-400 to-blue-500 opacity-0 group-hover:opacity-40 group-hover:blur-sm transition-all duration-300"></div>
           </router-link>
           <a href="#" class="relative group bg-transparent backdrop-blur-sm border border-blue-500/20 text-white px-8 py-3 rounded-md hover:border-blue-400/40 transition-all duration-300 overflow-hidden active:scale-95 active:animate-shake-sm">
-            <span class="relative z-10">Discover Domino Risk</span>
+            <span class="relative z-10">Contribute Data</span>
             <!-- 科技感扫光效果 -->
             <div class="absolute inset-0 translate-x-[-100%] group-hover:translate-x-[100%] bg-gradient-to-r from-transparent via-blue-400/10 to-transparent transition-transform duration-1000"></div>
             <!-- 悬停时的微光效果 -->

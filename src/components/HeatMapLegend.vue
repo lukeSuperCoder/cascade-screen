@@ -5,11 +5,31 @@
       <div class="gradient-bar" :style="gradientStyle"></div>
       <div class="legend-labels">
         <span class="vertical-text">{{ 0 }}</span>
-        <span class="vertical-text">{{ 10000 }}</span>
-        <span class="vertical-text">{{ 20000 }}</span>
-        <span class="vertical-text">{{ 30000 }}</span>
-        <span class="vertical-text">{{ 40000 }}</span>
-        <span class="vertical-text">{{ 50000 }}</span>
+        <span class="vertical-text">{{ 0.3 }}</span>
+        <span class="vertical-text">{{ 0.6 }}</span>
+        <span class="vertical-text">{{ 0.9 }}</span>
+        <span class="vertical-text">{{ 1.2 }}</span>
+        <span class="vertical-text">{{ 1.5 }}</span>
+      </div>
+    </div>
+    <br>
+    <div class="legend-title">Cumulative Loss</div>
+    <div class="legend-content">
+      <div class="circle-size-legend">
+        <div class="circle" :style="{ width: '4px', height: '4px' }"></div>
+        <div class="circle" :style="{ width: '8px', height: '8px' }"></div>
+        <div class="circle" :style="{ width: '12px', height: '12px' }"></div>
+        <div class="circle" :style="{ width: '16px', height: '16px' }"></div>
+        <div class="circle" :style="{ width: '20px', height: '20px' }"></div>
+        <div class="circle" :style="{ width: '24px', height: '24px' }"></div>
+      </div>
+      <div class="legend-labels">
+        <span class="vertical-text">{{ 0 }}</span>
+        <span class="vertical-text">{{ 2 }}</span>
+        <span class="vertical-text">{{ 4 }}</span>
+        <span class="vertical-text">{{ 6 }}</span>
+        <span class="vertical-text">{{ 8 }}</span>
+        <span class="vertical-text">{{ 10 }}</span>
       </div>
     </div>
   </div>
@@ -21,11 +41,11 @@ export default {
   props: {
     minValue: {
       type: Number,
-      default: 1
+      default: 0
     },
     maxValue: {
       type: Number,
-      default: 50000
+      default: 1.5
     }
   },
   computed: {
@@ -94,5 +114,16 @@ export default {
 
 .legend-labels span:last-child {
   @apply mt-0;
+}
+
+.circle-size-legend {
+  @apply flex flex-col justify-between items-center h-40;
+  padding: 0 2px;
+}
+
+.circle {
+  @apply bg-white rounded-full;
+  opacity: 0.85;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 }
 </style> 
