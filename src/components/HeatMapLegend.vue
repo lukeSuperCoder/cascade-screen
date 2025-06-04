@@ -4,12 +4,12 @@
     <div class="legend-content">
       <div class="gradient-bar" :style="gradientStyle"></div>
       <div class="legend-labels">
-        <span class="vertical-text">{{ 0 }}</span>
-        <span class="vertical-text">{{ 0.3 }}</span>
+        <span class="vertical-text">{{ 0.5 }}</span>
         <span class="vertical-text">{{ 0.6 }}</span>
+        <span class="vertical-text">{{ 0.7 }}</span>
+        <span class="vertical-text">{{ 0.8 }}</span>
         <span class="vertical-text">{{ 0.9 }}</span>
-        <span class="vertical-text">{{ 1.2 }}</span>
-        <span class="vertical-text">{{ 1.5 }}</span>
+        <span class="vertical-text">{{ '100%' }}</span>
       </div>
     </div>
     <br>
@@ -24,12 +24,12 @@
         <div class="circle" :style="{ width: '4px', height: '4px' }"></div>
       </div>
       <div class="legend-labels">
-        <span class="vertical-text">{{ 0 }}</span>
-        <span class="vertical-text">{{ 2 }}</span>
-        <span class="vertical-text">{{ 4 }}</span>
-        <span class="vertical-text">{{ 6 }}</span>
-        <span class="vertical-text">{{ 8 }}</span>
-        <span class="vertical-text">{{ 10 }}</span>
+        <span class="vertical-text">{{ 0.5 }}</span>
+        <span class="vertical-text">{{ 0.6 }}</span>
+        <span class="vertical-text">{{ 0.7 }}</span>
+        <span class="vertical-text">{{ 0.8 }}</span>
+        <span class="vertical-text">{{ 0.9 }}</span>
+        <span class="vertical-text">{{ '100%' }}</span>
       </div>
     </div>
   </div>
@@ -58,10 +58,11 @@ export default {
     gradientStyle() {
       return {
         background: `linear-gradient(to top, 
-          rgba(255, 0, 0, 0.85) 0%,
-          rgba(255, 165, 0, 0.85) 33.33%,
-          rgba(255, 255, 0, 0.85) 66.66%,
-          rgba(0, 255, 0, 0.85) 100%
+          rgb(102, 37, 6, 0.85) 0%,
+          rgb(153, 63, 0, 0.85) 25%,
+          rgb(204, 109, 0, 0.85) 50%,
+          rgb(236, 158, 0, 0.85) 75%,
+          rgb(255, 212, 0, 0.85) 100%
         )`
       };
     }
