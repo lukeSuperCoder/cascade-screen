@@ -465,7 +465,7 @@ export default {
           properties: {
             ...item.properties
           }
-        })).filter(item => item.properties.year_week === this.year_week);
+        })).filter(item => (item.properties.year_week === this.year_week) && item.properties.Eco_Intensity<0.9);
       } else {
         return []
       }
@@ -591,13 +591,12 @@ export default {
               radius: 10,
               blur: 20,
               gradient: [
-                'rgba(0, 255, 255, 0)',
-                'rgba(0, 255, 255, 0.5)',
-                'rgba(0, 255, 255, 0.8)',
-                'rgba(0, 255, 255, 1)',
-                'rgba(0, 255, 0, 1)',
-                'rgba(255, 255, 0, 1)',
-                'rgba(255, 0, 0, 1)'
+                'rgba(102, 37, 6, 0)', 
+                'rgba(102, 37, 6, 0.85)',
+                'rgba(153, 63, 0, 0.85)',
+                'rgba(204, 109, 0, 0.85)',
+                'rgba(236, 158, 0, 0.85)',
+                'rgba(255, 212, 0, 0.85)'
               ]
             }
           });
@@ -631,7 +630,7 @@ export default {
               ...item
             },
             style: {
-              radius: (1.5 - item.properties.Eco_Intensity) * 15,
+              radius: (1 - item.properties.Eco_Intensity) * 15,
               showStroke: false,
               fillColor: this.getEcoLossColor(item.properties.Cumulative_loss)
             }
@@ -659,7 +658,7 @@ export default {
           ...item
         },
         style: {
-          radius: (1.5 - item.properties.Eco_Intensity) * 20,
+          radius: (1 - item.properties.Eco_Intensity) * 50,
           showStroke: false,
           fillColor: this.getEcoLossColor(item.properties.Cumulative_loss)
         }
@@ -671,31 +670,37 @@ export default {
     },
     // 添加获取分类颜色的辅助方法
     getEcoLossColor(ecoLoss) {
-      // 绿色(0,255,0) -> 黄色(255,255,0) -> 橙色(255,165,0) -> 红色(255,0,0)
+      // BrwnYl棕黄色系渐变
       const min = 1;
       const max = 10;
       const value = Math.max(min, Math.min(max, parseFloat(ecoLoss)));
       const percent = (value - min) / (max - min);
 
       let r, g, b;
-      if (percent <= 1/3) {
-        // 绿到黄
-        const p = percent * 3;
-        r = Math.round(0 + (255 - 0) * p);
-        g = 255;
+      if (percent <= 0.25) {
+        // 深棕色到棕色
+        const p = percent * 4;
+        r = Math.round(102 + (153 - 102) * p);
+        g = Math.round(37 + (63 - 37) * p);
+        b = Math.round(6 + (0 - 6) * p);
+      } else if (percent <= 0.5) {
+        // 棕色到中棕色
+        const p = (percent - 0.25) * 4;
+        r = Math.round(153 + (204 - 153) * p);
+        g = Math.round(63 + (109 - 63) * p);
         b = 0;
-      } else if (percent <= 2/3) {
-        // 黄到橙
-        const p = (percent - 1/3) * 3;
-        r = 255;
-        g = Math.round(255 - (255 - 165) * p);
+      } else if (percent <= 0.75) {
+        // 中棕色到浅棕色
+        const p = (percent - 0.5) * 4;
+        r = Math.round(204 + (236 - 204) * p);
+        g = Math.round(109 + (158 - 109) * p);
         b = 0;
       } else {
-        // 橙到红
-        const p = (percent - 2/3) * 3;
-        r = 255;
-        g = Math.round(165 - 165 * p);
-        b = 0;
+        // 浅棕色到黄色
+        const p = (percent - 0.75) * 4;
+        r = Math.round(236 + (255 - 236) * p);
+        g = Math.round(158 + (212 - 158) * p);
+        b = Math.round(0 + (0 - 0) * p);
       }
       return `rgba(${r},${g},${b},0.85)`;
     },
