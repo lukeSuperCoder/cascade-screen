@@ -4,11 +4,11 @@
     <div class="legend-content">
       <div class="gradient-bar" :style="gradientStyle"></div>
       <div class="legend-labels">
-        <span class="vertical-text">{{ 0.5 }}</span>
-        <span class="vertical-text">{{ 0.6 }}</span>
-        <span class="vertical-text">{{ 0.7 }}</span>
-        <span class="vertical-text">{{ 0.8 }}</span>
-        <span class="vertical-text">{{ 0.9 }}</span>
+        <span class="vertical-text">{{ 0 }}</span>
+        <span class="vertical-text">{{ 2 }}</span>
+        <span class="vertical-text">{{ 4 }}</span>
+        <span class="vertical-text">{{ 6 }}</span>
+        <span class="vertical-text">{{ 8 }}</span>
         <span class="vertical-text">{{ '100%' }}</span>
       </div>
     </div>
