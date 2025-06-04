@@ -591,12 +591,14 @@ export default {
               radius: 10,
               blur: 20,
               gradient: [
-                'rgba(102, 37, 6, 0)', 
-                'rgba(102, 37, 6, 0.85)',
-                'rgba(153, 63, 0, 0.85)',
-                'rgba(204, 109, 0, 0.85)',
-                'rgba(236, 158, 0, 0.85)',
-                'rgba(255, 212, 0, 0.85)'
+                'rgba(5, 48, 97, 0)',
+                'rgba(5, 48, 97, 0.85)',
+                'rgba(33, 102, 172, 0.85)',
+                'rgba(103, 169, 207, 0.85)',
+                'rgba(247, 247, 247, 0.85)',
+                'rgba(239, 138, 98, 0.85)',
+                'rgba(214, 96, 77, 0.85)',
+                'rgba(178, 24, 43, 0.85)'
               ]
             }
           });
@@ -670,37 +672,49 @@ export default {
     },
     // 添加获取分类颜色的辅助方法
     getEcoLossColor(ecoLoss) {
-      // BrwnYl棕黄色系渐变
+      // RdBu_r色系渐变 (蓝色到白色到红色)
       const min = 1;
       const max = 10;
       const value = Math.max(min, Math.min(max, parseFloat(ecoLoss)));
       const percent = (value - min) / (max - min);
-
+      
       let r, g, b;
-      if (percent <= 0.25) {
-        // 深棕色到棕色
-        const p = percent * 4;
-        r = Math.round(102 + (153 - 102) * p);
-        g = Math.round(37 + (63 - 37) * p);
-        b = Math.round(6 + (0 - 6) * p);
+      if (percent <= 0.167) {
+        // 深蓝色到蓝色
+        const p = percent * 6;
+        r = Math.round(5 + (33 - 5) * p);
+        g = Math.round(48 + (102 - 48) * p);
+        b = Math.round(97 + (172 - 97) * p);
+      } else if (percent <= 0.333) {
+        // 蓝色到浅蓝色
+        const p = (percent - 0.167) * 6;
+        r = Math.round(33 + (103 - 33) * p);
+        g = Math.round(102 + (169 - 102) * p);
+        b = Math.round(172 + (207 - 172) * p);
       } else if (percent <= 0.5) {
-        // 棕色到中棕色
-        const p = (percent - 0.25) * 4;
-        r = Math.round(153 + (204 - 153) * p);
-        g = Math.round(63 + (109 - 63) * p);
-        b = 0;
-      } else if (percent <= 0.75) {
-        // 中棕色到浅棕色
-        const p = (percent - 0.5) * 4;
-        r = Math.round(204 + (236 - 204) * p);
-        g = Math.round(109 + (158 - 109) * p);
-        b = 0;
+        // 浅蓝色到白色
+        const p = (percent - 0.333) * 6;
+        r = Math.round(103 + (247 - 103) * p);
+        g = Math.round(169 + (247 - 169) * p);
+        b = Math.round(207 + (247 - 207) * p);
+      } else if (percent <= 0.667) {
+        // 白色到浅红色
+        const p = (percent - 0.5) * 6;
+        r = Math.round(247 - (247 - 239) * p);
+        g = Math.round(247 - (247 - 138) * p);
+        b = Math.round(247 - (247 - 98) * p);
+      } else if (percent <= 0.833) {
+        // 浅红色到红色
+        const p = (percent - 0.667) * 6;
+        r = Math.round(239 - (239 - 214) * p);
+        g = Math.round(138 - (138 - 96) * p);
+        b = Math.round(98 - (98 - 77) * p);
       } else {
-        // 浅棕色到黄色
-        const p = (percent - 0.75) * 4;
-        r = Math.round(236 + (255 - 236) * p);
-        g = Math.round(158 + (212 - 158) * p);
-        b = Math.round(0 + (0 - 0) * p);
+        // 红色到深红色
+        const p = (percent - 0.833) * 6;
+        r = Math.round(214 - (214 - 178) * p);
+        g = Math.round(96 - (96 - 24) * p);
+        b = Math.round(77 - (77 - 43) * p);
       }
       return `rgba(${r},${g},${b},0.85)`;
     },

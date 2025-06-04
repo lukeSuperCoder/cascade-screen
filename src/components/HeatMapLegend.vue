@@ -1,6 +1,7 @@
 <template>
   <div class="heatmap-legend">
     <div class="legend-title">Cumulative Loss</div>
+    <div class="legend-text">(100%)</div>
     <div class="legend-content">
       <div class="gradient-bar" :style="gradientStyle"></div>
       <div class="legend-labels">
@@ -9,11 +10,12 @@
         <span class="vertical-text">{{ 4 }}</span>
         <span class="vertical-text">{{ 6 }}</span>
         <span class="vertical-text">{{ 8 }}</span>
-        <span class="vertical-text">{{ '100%' }}</span>
+        <span class="vertical-text">{{ 10 }}</span>
       </div>
     </div>
     <br>
     <div class="legend-title">Eco Intensity</div>
+    <div class="legend-text">(100%)</div>
     <div class="legend-content">
       <div class="circle-size-legend">
         <div class="circle" :style="{ width: '24px', height: '24px' }"></div>
@@ -29,7 +31,6 @@
         <span class="vertical-text">{{ 0.7 }}</span>
         <span class="vertical-text">{{ 0.8 }}</span>
         <span class="vertical-text">{{ 0.9 }}</span>
-        <span class="vertical-text">{{ '100%' }}</span>
       </div>
     </div>
   </div>
@@ -58,11 +59,13 @@ export default {
     gradientStyle() {
       return {
         background: `linear-gradient(to top, 
-          rgb(102, 37, 6, 0.85) 0%,
-          rgb(153, 63, 0, 0.85) 25%,
-          rgb(204, 109, 0, 0.85) 50%,
-          rgb(236, 158, 0, 0.85) 75%,
-          rgb(255, 212, 0, 0.85) 100%
+          rgb(5, 48, 97, 0.85) 0%,
+          rgb(33, 102, 172, 0.85) 20%,
+          rgb(103, 169, 207, 0.85) 40%,
+          rgb(247, 247, 247, 0.85) 50%,
+          rgb(239, 138, 98, 0.85) 60%,
+          rgb(214, 96, 77, 0.85) 80%,
+          rgb(178, 24, 43, 0.85) 100%
         )`
       };
     }
@@ -86,6 +89,10 @@ export default {
 
 .legend-title {
   @apply text-sm font-medium text-gray-300 mb-3 text-center;
+  pointer-events: auto;
+}
+.legend-text {
+  @apply text-xs  text-gray-300 mb-3 text-center;
   pointer-events: auto;
 }
 
