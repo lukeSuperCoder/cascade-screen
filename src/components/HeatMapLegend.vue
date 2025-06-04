@@ -23,7 +23,6 @@
         <div class="circle" :style="{ width: '16px', height: '16px' }"></div>
         <div class="circle" :style="{ width: '12px', height: '12px' }"></div>
         <div class="circle" :style="{ width: '8px', height: '8px' }"></div>
-        <div class="circle" :style="{ width: '4px', height: '4px' }"></div>
       </div>
       <div class="legend-labels">
         <span class="vertical-text">{{ 0.5 }}</span>
@@ -59,13 +58,13 @@ export default {
     gradientStyle() {
       return {
         background: `linear-gradient(to top, 
-          rgb(5, 48, 97, 0.85) 0%,
-          rgb(33, 102, 172, 0.85) 20%,
-          rgb(103, 169, 207, 0.85) 40%,
+          rgb(178, 24, 43, 0.85) 0%,
+          rgb(214, 96, 77, 0.85) 20%,
+          rgb(239, 138, 98, 0.85) 40%,
           rgb(247, 247, 247, 0.85) 50%,
-          rgb(239, 138, 98, 0.85) 60%,
-          rgb(214, 96, 77, 0.85) 80%,
-          rgb(178, 24, 43, 0.85) 100%
+          rgb(103, 169, 207, 0.85) 60%,
+          rgb(33, 102, 172, 0.85) 80%,
+          rgb(5, 48, 97, 0.85) 100%
         )`
       };
     }
