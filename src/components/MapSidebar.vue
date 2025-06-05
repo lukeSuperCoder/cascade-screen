@@ -30,7 +30,7 @@
           </div>
         <!-- 标签切换区域 -->
         <div class="tags-section">
-          <h3 class="section-title primary">Category Tags</h3>
+          <h3 class="section-title primary">Select Events</h3>
           <div class="category-tree-container">
             <el-tree-select
               v-model="selectedCategories"
@@ -45,14 +45,14 @@
               show-checkbox
               node-key="id"
               :render-after-expand="false"
-              placeholder="Please select categories"
+              placeholder="Enter a event name to start"
               class="category-tree-select"
               ref="categoryTree"
               @change="handleCategoryChange"
             />
           </div>
 
-          <h3 class="section-title primary">Time Range</h3>
+          <h3 class="section-title primary">Interested Time Range</h3>
           <div class="timeline-container">
             <!-- 新增：年份输入框，左右对称布局 -->
             <el-slider
