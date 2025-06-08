@@ -14,8 +14,8 @@
             <line x1="12" y1="22" x2="12" y2="18"/>
           </svg>
         </div>
-        <div class="node-title">Data Acquisition</div>
-        <div class="node-desc" :class="{active: activeStep === 0}">Remote Sensing / Sensors / Social Media</div>
+        <div class="node-title">Data Infrastructure Building</div>
+        <div class="node-desc" :class="{active: activeStep === 0}">Remote Sensing/ Social Survey etc </div>
       </div>
       <!-- 箭头1 -->
       <css-arrow />
@@ -28,8 +28,8 @@
             <path d="M153.6 545.28s2.56 0 0 0c15.36-2.56 28.16-12.8 25.6-28.16V512c0-120.32 66.56-232.96 171.52-291.84 12.8-7.68 17.92-23.04 10.24-35.84-7.68-12.8-23.04-17.92-35.84-10.24C204.8 243.2 128 371.2 128 512v10.24c2.56 12.8 12.8 23.04 25.6 23.04z m519.68-325.12C778.24 279.04 844.8 391.68 844.8 512v5.12c-2.56 12.8 7.68 25.6 23.04 28.16h2.56c12.8 0 23.04-10.24 25.6-23.04V512c0-140.8-76.8-268.8-197.12-335.36-12.8-7.68-28.16-2.56-35.84 10.24-7.68 12.8-2.56 28.16 10.24 33.28z" fill="#FFF"></path>
           </svg>
         </div>
-        <div class="node-title">Cascading Risk Modeling</div>
-        <div class="node-desc" :class="{active: activeStep === 1}">Based on AI</div>
+        <div class="node-title">Cascading Risk Modelling</div>
+        <div class="node-desc" :class="{active: activeStep === 1}">Machine Learning/ Network Theory etc</div>
       </div>
       <!-- 箭头2 -->
       <css-arrow />
@@ -42,8 +42,8 @@
             <path d="M21 8L14 15L10 11L3 18"/>
           </svg>
         </div>
-        <div class="node-title">Dynamic Visualization</div>
-        <div class="node-desc" :class="{active: activeStep === 2}">Multi-dimensional Interactive Display</div>
+        <div class="node-title">Key Vulnerabilities Identification </div>
+        <div class="node-desc" :class="{active: activeStep === 2}">Pinch Points/ Major Channels etc </div>
       </div>
       <!-- 箭头3 -->
       <css-arrow />
@@ -56,8 +56,8 @@
             <path d="M22 4L12 14.01L9 11.01"/>
           </svg>
         </div>
-        <div class="node-title">Strategy Decision Support</div>
-        <div class="node-desc" :class="{active: activeStep === 3}">Support Scientific</div>
+        <div class="node-title">Effective Strategic Management</div>
+        <div class="node-desc" :class="{active: activeStep === 3}">Adaptation Priorities/ Investment ect</div>
       </div>
     </div>
   </div>

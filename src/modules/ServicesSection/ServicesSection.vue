@@ -1,28 +1,37 @@
 <template>
   <div class="container mx-auto px-4 py-16">
-    <h2 class="text-4xl font-bold mb-12 text-white">Our services</h2>
+    <h2 class="text-4xl font-bold mb-12 text-white">Scientific Services</h2>
     
     <!-- 服务列表 -->
     <ul class="space-y-4">
       <li class="flex items-center py-1">
         <span class="text-blue-400 mr-3">•</span>
-        <span class="text-gray-300">AI simulation tools development</span>
+        <span class="text-gray-300">Cascading business risk assessments</span>
       </li>
       
       <li class="flex items-center py-1">
         <span class="text-blue-400 mr-3">•</span>
-        <span class="text-gray-300">High-resolution mapping APIs</span>
+        <span class="text-gray-300">Infrastructure criticality assessments</span>
       </li>
       
       <li class="flex items-center py-1">
         <span class="text-blue-400 mr-3">•</span>
-        <span class="text-gray-300">Custom domino risk reporting</span>
+        <span class="text-gray-300">Supply chain risk management strategy consulting</span>
       </li>
       
       <li class="flex items-center py-1">
         <span class="text-blue-400 mr-3">•</span>
         <span class="text-gray-300">Cross-sector collaboration</span>
       </li>
+
+      <li class="flex items-center py-1">
+        <span class="text-gray-300">
+          <a href="https://example.org/" class="text-blue-400 hover:text-blue-600">
+            Read more &rarr;
+          </a> 
+        </span>
+      </li>
+      
     </ul>
   </div>
 </template>

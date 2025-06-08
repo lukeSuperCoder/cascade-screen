@@ -31,11 +31,11 @@
             <span class="cyber-highlight"></span>
           </button>
           <button @click="scrollToSection('product')" class="text-white hover:text-blue-400 transition-colors duration-300 relative group py-2 cyber-link">
-            <span>Latest Product</span>
+            <span>Latest Insights</span>
             <span class="cyber-highlight"></span>
           </button>
           <button @click="scrollToSection('services')" class="text-white hover:text-blue-400 transition-colors duration-300 relative group py-2 cyber-link">
-            <span>Our Services</span>
+            <span>Scientific Services</span>
             <span class="cyber-highlight"></span>
           </button>
         </div>
@@ -64,16 +64,16 @@
     <div v-if="!onlyLogo && mobileMenuOpen" class="md:hidden bg-gray-900/95 backdrop-blur-lg border-b border-blue-500/20 py-4 animate-fadeIn flex items-center">
       <div class="container mx-auto px-4 flex flex-col space-y-4">
         <button @click="scrollToSection('about', true)" class="text-white hover:text-blue-400 transition-colors py-3 px-4 rounded-md hover:bg-blue-900/20 border border-transparent hover:border-blue-500/30">
-          About Domino Risk
+          Our Team
         </button>
         <button @click="scrollToSection('approach', true)" class="text-white hover:text-blue-400 transition-colors py-3 px-4 rounded-md hover:bg-blue-900/20 border border-transparent hover:border-blue-500/30">
           Our Approach
         </button>
         <button @click="scrollToSection('product', true)" class="text-white hover:text-blue-400 transition-colors py-3 px-4 rounded-md hover:bg-blue-900/20 border border-transparent hover:border-blue-500/30">
-          Latest Product
+          Latest Insights
         </button>
         <button @click="scrollToSection('services', true)" class="text-white hover:text-blue-400 transition-colors py-3 px-4 rounded-md hover:bg-blue-900/20 border border-transparent hover:border-blue-500/30">
-          Our Services
+          Scientific Services
         </button>
       </div>
     </div>

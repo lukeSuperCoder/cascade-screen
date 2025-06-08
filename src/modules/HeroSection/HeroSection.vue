@@ -10,22 +10,23 @@
     <div class="container mx-auto px-4 h-screen flex flex-col justify-center relative z-10 pt-20">
       <div class="max-w-3xl">
         <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-6 [text-shadow:_0_2px_10px_rgba(0,0,0,0.5)]">
-          Mapping Climate <br />
-          Domino Risk <br />
-          with AI-Powered <br />
-          Insight
+          PROJECTING <br />
+          CASCADING RISK <br />
+          WITH <br />
+          ADVANCED AI TECH
         </h1>
         
         <p class="text-lg md:text-xl text-zinc-200 mb-10 max-w-2xl [text-shadow:_0_1px_5px_rgba(0,0,0,0.3)]">
-          From global disruption to local impacts <br />
-          ——real-time projections of domino risk.
+          Mapping local disruptions to systemic impacts — <br />
+          Anticipate earlier, act faster, build resilience, and mitigate losses <br />
+          through AI-driven risk intelligence
         </p>
         
         <!-- CTA按钮 -->
         <div class="flex flex-wrap gap-4">
           <!-- 使用router-link进行页面跳转 -->
           <router-link to="/map" class="relative group bg-blue-700 hover:bg-blue-800 text-white px-8 py-3 rounded-md transition-all duration-300 backdrop-blur-sm border border-blue-500/30 hover:border-blue-400/50 overflow-hidden active:scale-95 active:animate-shake">
-            <span class="relative z-10">Explore the Map</span>
+            <span class="relative z-10">Explore the Risk Map</span>
             <!-- 科技感光效 -->
             <div class="absolute inset-0 bg-gradient-to-r from-blue-700/90 via-blue-600/90 to-blue-700/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.7),transparent_60%)] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

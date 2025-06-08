@@ -4,10 +4,15 @@
     
     <div class="mb-12">
       <p class="text-lg text-gray-300 max-w-2xl">
-        We provide a platform leveraging open datasets 
-        and advanced AI to visualize and analyze 
-        spatially-detailed climate domino risks 
-        worldwide.
+        Domino Risk brings together a global network of 
+        multidisciplinary experts to revolutionise how we 
+        understand cascading risks. 
+        We develop cutting-edge AI models with deep expertise 
+        in economics, network theory, and policy research to map how local disruptions cascade into systemic impacts.
+      </p>
+      <p class="text-lg text-gray-300 max-w-2xl">
+        Our mission is to help governments, businesses, and communities anticipate complex threats and strengthen resilience. 
+        Through advanced risk mapping and actionable insights, we enable better decisions in an increasingly interconnected and volatile world.
       </p>
     </div>
     
@@ -15,20 +20,20 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <FeatureCard 
         icon="globe"
-        title="Open data"
-        info="integration"
+        title="Cascading Risk"  
+        info="Complex threats"
       />
       
       <FeatureCard 
         icon="ai"
-        title="AI-driven"
-        info="domino risk analysis engine"
+        title="AI-driven Approach"
+        info="High-quality assessments"
       />
       
       <FeatureCard 
         icon="visualization"
-        title="Dynamic"
-        info="visualization"
+        title="Actionable Insights"
+        info="Real-world decision support"
       />
     </div>
   </div>
