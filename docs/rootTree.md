@@ -20,8 +20,8 @@
 │   ├── ApproachSection/
 │   │   ├── ApproachSection.vue
 │   │   └── TimelineItem.vue
-│   ├── LatestProductSection/
-│   │   ├── LatestProductSection.vue
+│   ├── InsightsSection/
+│   │   ├── InsightsSection.vue
 │   │   └── ProductCard.vue
 │   ├── ServicesSection/
 │   │   └── ServicesSection.vue
@@ -34,7 +34,7 @@
 │   ├── Home.vue           # 首页
 │   ├── About.vue          # About Cascade 页面
 │   ├── Approach.vue       # Our Approach 页面
-│   ├── LatestProduct.vue  # 最新产品页面
+│   ├── Insights.vue  # 最新产品页面
 │   ├── Services.vue       # 服务页面
 │   ├── Reports.vue        # 报告页面
 │   ├── Login.vue          # 登录页面

@@ -4,16 +4,26 @@
     
     <div class="mb-12">
       <p class="text-lg text-gray-300 max-w-2xl">
-        Domino Risk brings together a global network of 
-        multidisciplinary experts to revolutionise how we 
-        understand cascading risks. 
-        We develop cutting-edge AI models with deep expertise 
-        in economics, network theory, and policy research to map how local disruptions cascade into systemic impacts.
+        Domino Risk brings together a global network of multidisciplinary experts 
+        to revolutionise how we understand cascading risks. 
+        We develop cutting-edge AI models with deep expertise in machine learning, network theory, and economics
+        to map how local disruptions cascade into systemic impacts.
+      </p>
+      <p class="text-lg text-gray-300 max-w-2xl mt-4">
+
       </p>
       <p class="text-lg text-gray-300 max-w-2xl">
         Our mission is to help governments, businesses, and communities anticipate complex threats and strengthen resilience. 
-        Through advanced risk mapping and actionable insights, we enable better decisions in an increasingly interconnected and volatile world.
+        Through advanced risk modelling and quantitative analysis, we enable better decisions in an increasingly interconnected and volatile world.
       </p>
+      <p class="text-lg text-gray-300 max-w-2xl mt-4">
+      
+      </p>
+      <button @click="openTeamContribute" class="text-write hover:text-blue-500 transition-colors duration-300 relative group py-2 cyber-link">
+            <span>Learn more about our team and work &rarr;</span>
+            <span class="cyber-highlight"></span>
+      </button>
+
     </div>
     
     <!-- 特性卡片区域 -->

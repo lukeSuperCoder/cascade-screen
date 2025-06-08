@@ -7,11 +7,8 @@
         <div class="node-icon data">
           <!-- 数据获取图标 -->
           <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="10"/>
-            <line x1="22" y1="12" x2="18" y2="12"/>
-            <line x1="6" y1="12" x2="2" y2="12"/>
-            <line x1="12" y1="6" x2="12" y2="2"/>
-            <line x1="12" y1="22" x2="12" y2="18"/>
+            <path d="M21 21H3V3"/>
+            <path d="M21 8L14 15L10 11L3 18"/>
           </svg>
         </div>
         <div class="node-title">Data Infrastructure Building</div>
@@ -38,8 +35,11 @@
         <div class="node-icon visual">
           <!-- 可视化图标 -->
           <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 21H3V3"/>
-            <path d="M21 8L14 15L10 11L3 18"/>
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="22" y1="12" x2="18" y2="12"/>
+            <line x1="6" y1="12" x2="2" y2="12"/>
+            <line x1="12" y1="6" x2="12" y2="2"/>
+            <line x1="12" y1="22" x2="12" y2="18"/>
           </svg>
         </div>
         <div class="node-title">Key Vulnerabilities Identification </div>
@@ -57,9 +57,16 @@
           </svg>
         </div>
         <div class="node-title">Effective Strategic Management</div>
-        <div class="node-desc" :class="{active: activeStep === 3}">Adaptation Priorities/ Investment ect</div>
+        <div class="node-desc" :class="{active: activeStep === 3}">Adaptation Priorities/ Insurance ect</div>
       </div>
     </div>
+    <p class="text-lg text-gray-300 max-w-2xl mt-4">
+      
+    </p>
+    <button @click="openApproachPage" class="text-write hover:text-blue-500 transition-colors duration-300 relative group py-2 cyber-link">
+            <span>Learn more about our approach &rarr;</span>
+            <span class="cyber-highlight"></span>
+    </button>
   </div>
 </template>
 

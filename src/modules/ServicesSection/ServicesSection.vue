@@ -5,33 +5,30 @@
     <!-- 服务列表 -->
     <ul class="space-y-4">
       <li class="flex items-center py-1">
-        <span class="text-blue-400 mr-3">•</span>
-        <span class="text-gray-300">Cascading business risk assessments</span>
+        <span class="text-write mr-3">•</span>
+        <span class="text-gray-300">Business interruption risk assessments</span>
       </li>
       
       <li class="flex items-center py-1">
-        <span class="text-blue-400 mr-3">•</span>
-        <span class="text-gray-300">Infrastructure criticality assessments</span>
-      </li>
-      
-      <li class="flex items-center py-1">
-        <span class="text-blue-400 mr-3">•</span>
-        <span class="text-gray-300">Supply chain risk management strategy consulting</span>
-      </li>
-      
-      <li class="flex items-center py-1">
-        <span class="text-blue-400 mr-3">•</span>
-        <span class="text-gray-300">Cross-sector collaboration</span>
+        <span class="text-write mr-3">•</span>
+        <span class="text-gray-300">Supply chain risk management strategies</span>
       </li>
 
       <li class="flex items-center py-1">
-        <span class="text-gray-300">
-          <a href="https://example.org/" class="text-blue-400 hover:text-blue-600">
-            Read more &rarr;
-          </a> 
-        </span>
+        <span class="text-write mr-3">•</span>
+        <span class="text-gray-300">Infrastructure criticality assessments and adaptation priorities</span>
       </li>
       
+      <li class="flex items-center py-1">
+        <span class="text-write mr-3">•</span>
+        <span class="text-gray-300">Cross-sector collaboration</span>
+      </li>
+
+      <button @click="openServicePage" class="text-write hover:text-blue-500 transition-colors duration-300 relative group py-2 cyber-link">
+            <span>Read more &rarr;</span>
+            <span class="cyber-highlight"></span>
+      </button>
+
     </ul>
   </div>
 </template>

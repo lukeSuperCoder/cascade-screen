@@ -22,8 +22,8 @@
       <div v-if="!onlyLogo" class="flex items-center space-x-8">
         <!-- 导航链接 -->
         <div class="hidden md:flex items-center space-x-8">
-          <button @click="openTeamContribute" class="text-white hover:text-blue-400 transition-colors duration-300 relative group py-2 cyber-link">
-            <span>Our Team</span>
+          <button @click="scrollToSection('about')" class="text-white hover:text-blue-400 transition-colors duration-300 relative group py-2 cyber-link">
+            <span>About Us</span>
             <span class="cyber-highlight"></span>
           </button>
           <button @click="scrollToSection('approach')" class="text-white hover:text-blue-400 transition-colors duration-300 relative group py-2 cyber-link">

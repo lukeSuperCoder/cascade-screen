@@ -22,7 +22,7 @@
     <div class="flex container mx-auto">
       <!-- Latest Product部分 -->
       <section id="product" class="w-1/2">
-        <LatestProductSection />
+        <InsightsSection />
       </section>
       
       <!-- Our Services部分 -->
@@ -42,7 +42,7 @@ import NavBar from '../components/NavBar.vue'
 import HeroSection from '../modules/HeroSection/HeroSection.vue'
 import AboutSection from '../modules/AboutSection/AboutSection.vue'
 import ApproachSection from '../modules/ApproachSection/ApproachSection.vue'
-import LatestProductSection from '../modules/LatestProductSection/LatestProductSection.vue'
+import InsightsSection from '../modules/InsightsSection/InsightsSection.vue'
 import ServicesSection from '../modules/ServicesSection/ServicesSection.vue'
 import FooterSection from '../modules/FooterSection/FooterSection.vue'
 
@@ -53,7 +53,7 @@ export default defineComponent({
     HeroSection,
     AboutSection,
     ApproachSection,
-    LatestProductSection,
+    InsightsSection,
     ServicesSection,
     FooterSection
   }
