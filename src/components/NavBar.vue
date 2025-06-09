@@ -83,7 +83,6 @@
 
 <script lang="ts">
 import { defineComponent, ref, onMounted, onUnmounted } from 'vue'
-import { useRouter } from 'vue-router'
 import LoginModal from './LoginModal.vue'
 
 export default defineComponent({
@@ -96,7 +95,6 @@ export default defineComponent({
     }
   },
   setup() {
-    const router = useRouter()
     const mobileMenuOpen = ref(false)
     const isScrolled = ref(false)
     const showLogin = ref(false)
@@ -131,11 +129,6 @@ export default defineComponent({
       }
     }
 
-    //打开团队贡献
-    const openTeamContribute = () => {
-      const routeData = router.resolve({ name: 'Contribute' });
-      window.open(routeData.href, '_blank');
-    }
     
     onMounted(() => {
       window.addEventListener('scroll', handleScroll)
@@ -151,8 +144,7 @@ export default defineComponent({
       toggleMobileMenu,
       closeMobileMenu,
       scrollToSection,
-      showLogin,
-      openTeamContribute
+      showLogin
     }
   }
 })

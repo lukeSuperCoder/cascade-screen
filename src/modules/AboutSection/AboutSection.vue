@@ -52,7 +52,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import FeatureCard from './FeatureCard.vue'
-
+import router from '../../router'
 export default defineComponent({
   name: 'AboutSection',
   components: {
@@ -61,7 +61,8 @@ export default defineComponent({
   methods: {
     openTeamContribute() {
       // 导航到团队贡献页面
-      window.open('/team-contribute', '_blank')
+      const routeData = router.resolve({ name: 'Contribute' });
+      window.open(routeData.href, '_blank');
     }
   }
 })

@@ -73,7 +73,7 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
 import CssArrow from '../../components/CssArrow.vue'
-
+import router from '../../router'
 export default defineComponent({
   name: 'ApproachSection',
   components: {
@@ -84,7 +84,8 @@ export default defineComponent({
     
     // 添加缺少的方法
     const openApproachPage = () => {
-      window.open('/approach', '_blank')
+      const routeData = router.resolve({ name: 'Empty' });
+      window.open(routeData.href, '_blank');
     }
     
     return { 

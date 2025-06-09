@@ -48,13 +48,14 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-
+import router from '../../router'
 export default defineComponent({
   name: 'InsightsSection',
   methods: {
     openInsightsPage() {
       // 导航到洞见页面
-      window.open('/insights', '_blank')
+      const routeData = router.resolve({ name: 'Empty' });
+      window.open(routeData.href, '_blank');
     }
   }
 })

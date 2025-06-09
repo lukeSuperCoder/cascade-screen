@@ -35,13 +35,14 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-
+import router from '../../router'
 export default defineComponent({
   name: 'ServicesSection',
   methods: {
     openServicePage() {
       // 导航到服务页面
-      window.open('/services', '_blank')
+      const routeData = router.resolve({ name: 'Empty' });
+      window.open(routeData.href, '_blank');
     }
   }
 })
