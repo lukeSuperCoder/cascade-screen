@@ -57,6 +57,12 @@ export default defineComponent({
   name: 'AboutSection',
   components: {
     FeatureCard
+  },
+  methods: {
+    openTeamContribute() {
+      // 导航到团队贡献页面
+      window.open('/team-contribute', '_blank')
+    }
   }
 })
 </script>

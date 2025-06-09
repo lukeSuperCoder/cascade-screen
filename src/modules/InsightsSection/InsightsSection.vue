@@ -32,7 +32,7 @@
         <span class="text-blue-400 mr-3">•</span>
         <span class="text-gray-300">
           <a href="https://www.nature.com/articles/s41893-020-00646-7" class="text-blue-400 hover:text-blue-500">
-            Most of California wildfires’ economic impacts are indirect (Nature Sustainability)
+            Most of California wildfires' economic impacts are indirect (Nature Sustainability)
           </a>
         </span>
       </li>
@@ -50,7 +50,13 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'InsightsSection'
+  name: 'InsightsSection',
+  methods: {
+    openInsightsPage() {
+      // 导航到洞见页面
+      window.open('/insights', '_blank')
+    }
+  }
 })
 </script>
 

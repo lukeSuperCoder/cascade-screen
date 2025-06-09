@@ -81,7 +81,16 @@ export default defineComponent({
   },
   setup() {
     const activeStep = ref(-1)
-    return { activeStep }
+    
+    // 添加缺少的方法
+    const openApproachPage = () => {
+      window.open('/approach', '_blank')
+    }
+    
+    return { 
+      activeStep,
+      openApproachPage
+    }
   }
 })
 </script>

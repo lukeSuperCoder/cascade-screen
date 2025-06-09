@@ -37,7 +37,13 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'ServicesSection'
+  name: 'ServicesSection',
+  methods: {
+    openServicePage() {
+      // 导航到服务页面
+      window.open('/services', '_blank')
+    }
+  }
 })
 </script>
 
