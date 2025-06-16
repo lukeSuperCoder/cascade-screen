@@ -2,7 +2,7 @@
   <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md">
     <div :class="onlyLogo ? 'container py-4 px-4 flex justify-between items-center' : 'container mx-auto py-4 px-4 flex justify-between items-start'">
       <!-- Logo -->
-      <div class="flex items-center">
+      <div id="step1" class="flex items-center">
         <router-link to="/" class="text-white relative logo-container cyber-glow wave-logo">
           <!-- 主Logo文字 - 鼠标移入波动特效 -->
           <span class="wave-letter">D</span>
@@ -83,6 +83,20 @@
     </div>
   </nav>
   <LoginModal v-model:visible="showLogin" />
+  <el-tour class="tour-contain" v-model="tourVisible">
+    <el-tour-step target="#step1" title="Begin to use risk map">
+        <div>This interactive platform visualizes cascading economic losses from single or compound climate disasters across sectors and regions. Users can select specific hazard types and events, along with desired time frames, to explore how initial shocks spread spatially and temporally. The dynamic map shows the magnitude of disruption in each area, highlighting critical nodes for targeted interventions. Designed for policymakers and researchers, this tool helps identify vulnerabilities and informs strategies to mitigate cascading impacts. Data are continuously updated, ensuring accurate tracking and robust decision support for climate resilience planning.</div>
+    </el-tour-step>
+    <el-tour-step target="#step2" title="Select Events">
+      <div>Choose specific hazard events by clicking the dropdown menu. You can select one or multiple categories (e.g., Biological, Climatological, Geophysical, or Technological) to visualize their cascading impacts.</div>
+    </el-tour-step>
+    <el-tour-step target="#step3" title="Choose Your Interested Time Range">
+      <div>Adjust the slider to select your preferred time period to analyze the temporal spread of selected hazard events. The map will display cascading losses over the following 52 weeks for your selected events.</div>
+    </el-tour-step>
+    <el-tour-step target="#step4" title="Export Your Data">
+      <div>Sign in, then click "Login to Export." The platform will package your selected events and 52-week loss data into downloadable CSV/GeoJSON files for offline analysis.</div>
+    </el-tour-step>
+  </el-tour>
 </template>
 
 <script lang="ts">
@@ -102,6 +116,7 @@ export default defineComponent({
     const mobileMenuOpen = ref(false)
     const isScrolled = ref(false)
     const showLogin = ref(false)
+    const tourVisible = ref(true)
     
     const toggleMobileMenu = () => {
       mobileMenuOpen.value = !mobileMenuOpen.value
@@ -155,13 +170,14 @@ export default defineComponent({
       closeMobileMenu,
       scrollToSection,
       openTeamContribute,
-      showLogin
+      showLogin,
+      tourVisible
     }
   }
 })
 </script>
 
-<style scoped>
+<style>
 /* 导航栏动画 */
 .router-link-active {
   color: #60a5fa; /* tailwind text-blue-400 */
@@ -276,5 +292,76 @@ export default defineComponent({
   100% {
     transform: translateY(0);
   }
+}
+</style>
+
+<style>
+/* Tour 组件全局样式 */
+.el-tour__content {
+  background: linear-gradient(145deg, #1a1d24, #23272f) !important;
+  color: #e0e6ed !important;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(96, 165, 250, 0.1) !important;
+  border: 1px solid rgba(96, 165, 250, 0.2) !important;
+  padding: 20px 18px !important;
+  backdrop-filter: blur(10px) !important;
+  animation: tourFadeIn 0.3s ease-out !important;
+}
+
+.el-tour__title {
+  color: #60a5fa !important;
+  font-weight: 600 !important;
+  font-size: 1.25rem !important;
+  margin-bottom: 16px !important;
+  text-shadow: 0 0 10px rgba(96, 165, 250, 0.3) !important;
+  letter-spacing: 0.5px !important;
+}
+
+.el-tour__description {
+  color: #e0e6ed !important;
+  font-size: 1.05rem !important;
+  line-height: 1.8 !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+.el-tour__footer .el-button {
+  background: rgba(96, 165, 250, 0.1) !important;
+  color: #60a5fa !important;
+  border: 1px solid rgba(96, 165, 250, 0.3) !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+  font-weight: 500 !important;
+  padding: 8px 20px !important;
+  backdrop-filter: blur(4px) !important;
+}
+
+.el-tour__footer .el-button:hover {
+  background: #60a5fa !important;
+  color: #18181c !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(96, 165, 250, 0.3) !important;
+}
+
+.el-tour__arrow {
+  background-color: #60a5fa !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+}
+
+@keyframes tourFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 高亮目标元素 */
+.el-tour__target {
+  box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.3) !important;
+  border-radius: 4px !important;
+  transition: all 0.3s ease !important;
 }
 </style> 

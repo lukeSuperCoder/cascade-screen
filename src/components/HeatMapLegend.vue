@@ -1,6 +1,6 @@
 <template>
   <div class="heatmap-legend">
-    <div class="legend-title">Cumulative Loss</div>
+    <!-- <div class="legend-title">Cumulative Loss</div>
     <div class="legend-text">(100%)</div>
     <div class="legend-content">
       <div class="gradient-bar" :style="gradientStyle"></div>
@@ -13,7 +13,7 @@
         <span class="vertical-text">{{ 10 }}</span>
       </div>
     </div>
-    <br>
+    <br> -->
     <div class="legend-title">Eco Intensity</div>
     <div class="legend-text">(100%)</div>
     <div class="legend-content">

@@ -30,7 +30,7 @@
           </div>
         <!-- 标签切换区域 -->
         <div class="tags-section">
-          <h3 class="section-title primary">Select Events</h3>
+          <h3 class="section-title primary" id="step2">Select Events</h3>
           <div class="category-tree-container">
             <el-tree-select
               v-model="selectedCategories"
@@ -52,7 +52,7 @@
             />
           </div>
 
-          <h3 class="section-title primary">Interested Time Range</h3>
+          <h3 class="section-title primary" id="step3">Interested Time Range</h3>
           <div class="timeline-container">
             <!-- 新增：年份输入框，左右对称布局 -->
             <el-slider
@@ -121,7 +121,7 @@
           </div> -->
           <div style="padding-bottom: 10px;"></div>
           <!-- 添加导出功能 -->
-          <div class="export-section" v-if="isLoggedIn">
+          <div class="export-section" v-if="isLoggedIn" id="step4">
             <h3 class="section-title primary">Export Data</h3>
             <div class="export-container">
               <div class="export-selector">
@@ -155,7 +155,7 @@
             </div>
           </div>
           <!-- 添加登录按钮 -->
-          <div v-else class="login-section">
+          <div v-else class="login-section" id="step4">
             <button @click="handleLoginClick" class="login-btn">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="login-icon">
                 <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>

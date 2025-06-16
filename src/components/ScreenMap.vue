@@ -88,7 +88,7 @@
           <el-slider
             v-model="currentDay"
             :min="0"
-            :max="47"
+            :max="51"
             :marks="timeMarks"
             :format-tooltip="formatTimeTooltip"
             @input="handleTimeRangeChange"
@@ -124,7 +124,7 @@
         playInterval: null,
         timeMarks: {
           0: '1 week',
-          47: '48 week'
+          51: '52 week'
         },
       };
     },
