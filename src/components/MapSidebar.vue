@@ -213,7 +213,7 @@ export default {
   data() {
     return {
       mapInstance: null,
-      isCollapsed: true,
+      isCollapsed: false,
       selectedCategories: [],
       selectedTime: '2016',
       selectedIndustries: ["Energy","Transportation","Communication","Agriculture","Manufacturing"],
@@ -294,6 +294,20 @@ export default {
               id: 'climatological',
               name: 'Climatological',
               children: [
+                {
+                  id: 'storm',
+                  name: 'Storm',
+                  children: [
+                    {
+                      id: 'melik',
+                      name: 'Melik'
+                    },
+                    {
+                      id: 'dudley',
+                      name: 'Dudley'
+                    }
+                  ]
+                },
                 {
                   id: 'drought',
                   name: 'Drought'

@@ -22,8 +22,12 @@
       <div v-if="!onlyLogo" class="flex items-center space-x-8">
         <!-- 导航链接 -->
         <div class="hidden md:flex items-center space-x-8">
-          <button @click="scrollToSection('about')" class="text-white hover:text-blue-400 transition-colors duration-300 relative group py-2 cyber-link">
+          <button @click="openTeamContribute()" class="text-white hover:text-blue-400 transition-colors duration-300 relative group py-2 cyber-link">
             <span>About Us</span>
+            <span class="cyber-highlight"></span>
+          </button>
+          <button @click="scrollToSection('about')" class="text-white hover:text-blue-400 transition-colors duration-300 relative group py-2 cyber-link">
+            <span>Our mention</span>
             <span class="cyber-highlight"></span>
           </button>
           <button @click="scrollToSection('approach')" class="text-white hover:text-blue-400 transition-colors duration-300 relative group py-2 cyber-link">
@@ -84,7 +88,7 @@
 <script lang="ts">
 import { defineComponent, ref, onMounted, onUnmounted } from 'vue'
 import LoginModal from './LoginModal.vue'
-
+import router from '../router'
 export default defineComponent({
   name: 'NavBar',
   components: { LoginModal },
@@ -129,6 +133,12 @@ export default defineComponent({
       }
     }
 
+    const openTeamContribute = () => {
+      // 导航到团队贡献页面
+      const routeData = router.resolve({ name: 'Contribute' });
+      window.open(routeData.href, '_blank');
+    }
+
     
     onMounted(() => {
       window.addEventListener('scroll', handleScroll)
@@ -144,6 +154,7 @@ export default defineComponent({
       toggleMobileMenu,
       closeMobileMenu,
       scrollToSection,
+      openTeamContribute,
       showLogin
     }
   }
