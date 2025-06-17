@@ -28,6 +28,20 @@
         />
       </div>
     </div>
+    <el-tour class="tour-contain" v-model="tourVisible">
+      <el-tour-step target="#step1" title="Begin to use risk map">
+          <div>This interactive platform visualizes cascading economic losses from single or compound climate disasters across sectors and regions. Users can select specific hazard types and events, along with desired time frames, to explore how initial shocks spread spatially and temporally. The dynamic map shows the magnitude of disruption in each area, highlighting critical nodes for targeted interventions. Designed for policymakers and researchers, this tool helps identify vulnerabilities and informs strategies to mitigate cascading impacts. Data are continuously updated, ensuring accurate tracking and robust decision support for climate resilience planning.</div>
+      </el-tour-step>
+      <el-tour-step target="#step2" title="Select Events">
+        <div>Choose specific hazard events by clicking the dropdown menu. You can select one or multiple categories (e.g., Biological, Climatological, Geophysical, or Technological) to visualize their cascading impacts.</div>
+      </el-tour-step>
+      <el-tour-step target="#step3" title="Choose Your Interested Time Range">
+        <div>Adjust the slider to select your preferred time period to analyze the temporal spread of selected hazard events. The map will display cascading losses over the following 52 weeks for your selected events.</div>
+      </el-tour-step>
+      <el-tour-step target="#step4" title="Export Your Data">
+        <div>Sign in, then click "Login to Export." The platform will package your selected events and 52-week loss data into downloadable CSV/GeoJSON files for offline analysis.</div>
+      </el-tour-step>
+    </el-tour>
   </div>
 </template>
 
@@ -47,6 +61,7 @@ export default {
   },
   data() {
     return {
+      tourVisible: true,
       showHeatMapLegend: true,
       heatMapGradient: ['rgba(0, 255, 255, 0)',
                 'rgba(0, 255, 255, 0.5)',
