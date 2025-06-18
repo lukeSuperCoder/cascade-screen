@@ -51,23 +51,23 @@
           <div class="popup-body">
             <div class="info-item">
               <span class="label">Eco_Intensity:</span>
-              <span class="value">{{ popupData.ecoLoss }}</span>
+              <span class="value">{{ popupData.MaxLoss }}</span>
             </div>
             <div class="info-item">
               <span class="label">Incident Time:</span>
-              <span class="value">{{ popupData.incidentTime }}</span>
+              <span class="value">{{ popupData.Date }}</span>
             </div>
             <div class="info-item">
               <span class="label">Location:</span>
-              <span class="value">{{ popupData.nuts218nm }}</span>
+              <span class="value">{{ popupData.nuts2 }}</span>
             </div>
             <div class="info-item">
               <span class="label">Sector:</span>
-              <span class="value">{{ popupData.Sector }}</span>
+              <span class="value">{{ popupData.UpstreamSector }}</span>
             </div>
             <div class="info-item">
               <span class="label">Damage_Source:</span>
-              <span class="value">{{ popupData.Damage_source }}</span>
+              <span class="value">{{ popupData.UpstreamRegion }}</span>
             </div>
           </div>
         </div>
@@ -168,12 +168,11 @@
             const data = featureData.properties.properties;
             this.popupData = {
               name: 'Details',
-              ecoLoss: data.Eco_Intensity ? `${data.Eco_Intensity}` : 'Unknown',
-              incidentTime: data['date'].substr(0,7) || 'Unknown',
-              Damage_source: data.Damage_source || 'Unknown',
-              Sector: data.Sector ? `${data.Sector}` : 'Unknown',
-              nuts218cd: data.nuts218cd || 'Unknown',
-              nuts218nm: data.nuts218nm || 'Unknown',
+              MaxLoss: data.MaxLoss ? `${data.MaxLoss}` : 'Unknown',
+              Date: data['Date'].substr(0,7) || 'Unknown',
+              UpstreamRegion: data.UpstreamRegion || 'Unknown',
+              UpstreamSector: data.UpstreamSector ? `${data.UpstreamSector}` : 'Unknown',
+              nuts2: data.nuts2 || 'Unknown',
             };
             this.showPopup = true;
             

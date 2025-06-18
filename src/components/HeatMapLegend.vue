@@ -25,11 +25,11 @@
         <div class="circle" :style="{ width: '8px', height: '8px' }"></div>
       </div>
       <div class="legend-labels">
-        <span class="vertical-text">{{ 0.5 }}</span>
-        <span class="vertical-text">{{ 0.6 }}</span>
-        <span class="vertical-text">{{ 0.7 }}</span>
-        <span class="vertical-text">{{ 0.8 }}</span>
-        <span class="vertical-text">{{ 0.9 }}</span>
+        <span class="vertical-text">{{ 0 }}</span>
+        <span class="vertical-text">{{ 25 }}</span>
+        <span class="vertical-text">{{ 50 }}</span>
+        <span class="vertical-text">{{ 75 }}</span>
+        <span class="vertical-text">{{ 100 }}</span>
       </div>
     </div>
   </div>

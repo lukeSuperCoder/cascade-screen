@@ -1,8 +1,31 @@
+// shapeType 码表：
+// 0: circle（圆形）
+// 1: rect（矩形）
+// 2: triangle（三角形）
+// 3: star（五角星）
+// 4: pentagon（五边形）
+// 5: hexagon（六边形）
+// 6: heptagon（七边形）
+// 7: octagon（八边形）
+// 8: nonagon（九边形）
+// 9: decagon（十边形）
+// 10: cross（十字）
+// 11: x（叉形）
+// 12: diamond（菱形）
+// 13: plus（加号）
+// 14: star6（六角星）
+// 15: star7（七角星）
+// 16: star8（八角星）
+// 17: star9（九角星）
+// 18: star10（十角星）
+// 19: ellipse（椭圆）
+// 20: custom（自定义，预留）
+
 import { Feature } from 'ol';
 import { Point } from 'ol/geom';
 import { Vector as VectorLayer } from 'ol/layer';
 import { Vector as VectorSource } from 'ol/source';
-import { Style, Icon, Stroke, Fill, Circle } from 'ol/style';
+import { Style, Icon, Stroke, Fill, Circle, RegularShape } from 'ol/style';
 import { fromLonLat,toLonLat } from 'ol/proj';
 
 class MarkerLayer {
@@ -168,24 +191,83 @@ class MarkerLayer {
    * @private
    */
   _createStyle(styleConfig) {
-    // 创建圆形样式配置
-    const circleConfig = {
-      radius: styleConfig.radius || 6,
-      fill: new Fill({
-        color: styleConfig.fillColor || '#FF0000'
-      })
-    };
-
-    // 如果配置了stroke相关属性,则添加stroke
-    if (styleConfig.showStroke !== false) {
-      circleConfig.stroke = new Stroke({
-        color: styleConfig.strokeColor || '#FFFFFF',
-        width: styleConfig.strokeWidth || 2
-      });
+    const shapeType = styleConfig.shapeType || 0; // 默认为圆形
+    let imageStyle;
+    const radius = styleConfig.radius || 6;
+    const fillColor = styleConfig.fillColor || '#FF0000';
+    const stroke = styleConfig.showStroke !== false ? new Stroke({
+      color: styleConfig.strokeColor || '#FFFFFF',
+      width: styleConfig.strokeWidth || 2
+    }) : undefined;
+    switch (shapeType) {
+      case 0: // circle
+        imageStyle = new Circle({ radius, fill: new Fill({ color: fillColor }), stroke });
+        break;
+      case 1: // rect
+        imageStyle = new RegularShape({ points: 4, radius, angle: Math.PI / 4, fill: new Fill({ color: fillColor }), stroke });
+        break;
+      case 2: // triangle
+        imageStyle = new RegularShape({ points: 3, radius, rotation: 0, fill: new Fill({ color: fillColor }), stroke });
+        break;
+      case 3: // star5
+        imageStyle = new RegularShape({ points: 5, radius, radius2: radius / 2, angle: 0, fill: new Fill({ color: fillColor }), stroke });
+        break;
+      case 4: // pentagon
+        imageStyle = new RegularShape({ points: 5, radius, angle: 0, fill: new Fill({ color: fillColor }), stroke });
+        break;
+      case 5: // hexagon
+        imageStyle = new RegularShape({ points: 6, radius, angle: 0, fill: new Fill({ color: fillColor }), stroke });
+        break;
+      case 6: // heptagon
+        imageStyle = new RegularShape({ points: 7, radius, angle: 0, fill: new Fill({ color: fillColor }), stroke });
+        break;
+      case 7: // octagon
+        imageStyle = new RegularShape({ points: 8, radius, angle: 0, fill: new Fill({ color: fillColor }), stroke });
+        break;
+      case 8: // nonagon
+        imageStyle = new RegularShape({ points: 9, radius, angle: 0, fill: new Fill({ color: fillColor }), stroke });
+        break;
+      case 9: // decagon
+        imageStyle = new RegularShape({ points: 10, radius, angle: 0, fill: new Fill({ color: fillColor }), stroke });
+        break;
+      case 10: // cross
+        imageStyle = new RegularShape({ points: 4, radius, radius2: 0, angle: 0, fill: new Fill({ color: fillColor }), stroke });
+        break;
+      case 11: // x
+        imageStyle = new RegularShape({ points: 4, radius, radius2: 0, angle: Math.PI / 4, fill: new Fill({ color: fillColor }), stroke });
+        break;
+      case 12: // diamond
+        imageStyle = new RegularShape({ points: 4, radius, angle: 0, fill: new Fill({ color: fillColor }), stroke });
+        break;
+      case 13: // plus
+        imageStyle = new RegularShape({ points: 4, radius, radius2: radius / 2.5, angle: 0, fill: new Fill({ color: fillColor }), stroke });
+        break;
+      case 14: // star6
+        imageStyle = new RegularShape({ points: 6, radius, radius2: radius / 2, angle: 0, fill: new Fill({ color: fillColor }), stroke });
+        break;
+      case 15: // star7
+        imageStyle = new RegularShape({ points: 7, radius, radius2: radius / 2, angle: 0, fill: new Fill({ color: fillColor }), stroke });
+        break;
+      case 16: // star8
+        imageStyle = new RegularShape({ points: 8, radius, radius2: radius / 2, angle: 0, fill: new Fill({ color: fillColor }), stroke });
+        break;
+      case 17: // star9
+        imageStyle = new RegularShape({ points: 9, radius, radius2: radius / 2, angle: 0, fill: new Fill({ color: fillColor }), stroke });
+        break;
+      case 18: // star10
+        imageStyle = new RegularShape({ points: 10, radius, radius2: radius / 2, angle: 0, fill: new Fill({ color: fillColor }), stroke });
+        break;
+      case 19: // ellipse（用RegularShape近似椭圆）
+        imageStyle = new RegularShape({ points: 100, radius, radius2: radius / 2, angle: 0, fill: new Fill({ color: fillColor }), stroke });
+        break;
+      case 20: // custom（预留）
+        imageStyle = new Circle({ radius, fill: new Fill({ color: fillColor }), stroke });
+        break;
+      default:
+        imageStyle = new Circle({ radius, fill: new Fill({ color: fillColor }), stroke });
     }
-
     return new Style({
-      image: new Circle(circleConfig)
+      image: imageStyle
     });
   }
 

@@ -200,6 +200,10 @@ import cyber_line from '@/assets/datas/cyber_line.json'
 import earthquake_line from '@/assets/datas/earthquake_line.json'
 import weather_line from '@/assets/datas/weather_line.json'
 import uk_data from '@/assets/datas/weekly_flood_data.json'
+import Dudley from '@/assets/datas/Dudley.json'
+import Melik from '@/assets/datas/Melik.json'
+import Melik_Dudley from '@/assets/datas/Melik_Dudley.json'
+import heatwave from '@/assets/datas/heatwave.json'
 import html2canvas from 'html2canvas'
 import { jsPDF } from 'jspdf'
 import LoginModal from './LoginModal.vue'
@@ -215,7 +219,7 @@ export default {
       mapInstance: null,
       isCollapsed: false,
       selectedCategories: [],
-      selectedTime: '2016',
+      selectedTime: '2022',
       selectedIndustries: ["Energy","Transportation","Communication","Agriculture","Manufacturing"],
       lastUpdated: new Date().toISOString().split('T')[0], // 格式化为 YYYY-MM-DD
       showHeatmap: false,
@@ -398,10 +402,31 @@ export default {
       },
       showExportOptions: false,
       showLoginModal: false,
-      selectedTimeIndex: 16, // 替换 timeRange
-      ukAreaData: uk_data,
+      selectedTimeIndex: 22, // 替换 timeRange
+      ukAreaData: [],
       year_week: 1,
-      exportUkData: []
+      exportUkData: [],
+      shapeMap: {
+        'Agriculture, Forestry and Fishing': 0,
+        'Mining and Quarrying': 1,
+        'Manufacturing': 2,
+        'Electricity, Gas, Steam and Air Conditioning Supply': 3,
+        'Water Supply, Sewerage, Waste Management and Remediation Activities': 4,
+        'Construction': 5,
+        'Wholesale and Retail Trade, Repair of Motor Vehicles and Motorcycles': 6,
+        'Transport and Storage': 7,
+        'Accommodation and Food Service Activities': 8,
+        'Information and Communication': 9,
+        'Financial and Insurance Activities': 10,
+        'Real Estate Activities': 11,
+        'Professional, Scientific and Technical Activities': 12,
+        'Administrative and Support Service Activities': 13,
+        'Public Administration and Defence': 14,
+        'Education': 15,
+        'Human Health and Social Work Activities': 16,
+        'Arts, Entertainment and Recreation': 17,
+        'Other Service Activities': 18
+      }
     }
   },
   computed: {
@@ -461,7 +486,17 @@ export default {
     },
     handleCategoryChange(value) {
       const checkedKeys = this.$refs['categoryTree'].getCheckedKeys();
-      if(checkedKeys.includes('uk-york-flooding')) {
+      if(checkedKeys.includes('dudley') && !checkedKeys.includes('storm') && !checkedKeys.includes('natural')) {
+        this.ukAreaData = Dudley;
+        this.addMarkerLayer(this.formatData(this.ukAreaData));
+      } else if(checkedKeys.includes('melik') && !checkedKeys.includes('storm') && !checkedKeys.includes('natural')) {
+        this.ukAreaData = Melik;
+        this.addMarkerLayer(this.formatData(this.ukAreaData));
+      } else if(checkedKeys.includes('storm') && !checkedKeys.includes('natural')) {
+        this.ukAreaData = Melik_Dudley;
+        this.addMarkerLayer(this.formatData(this.ukAreaData));
+      } else if(checkedKeys.includes('natural')) {
+        this.ukAreaData = heatwave;
         this.addMarkerLayer(this.formatData(this.ukAreaData));
       } else {
         if(this.mapInstance && this.mapInstance.markerLayer) {
@@ -473,16 +508,13 @@ export default {
       // 获取当前年份范围
       const startIdx = this.selectedTimeIndex;
       const startYear = parseInt(this.timeTags[startIdx].id);
-      if(startYear===2016) {
-        return data.map(item => ({
-          coordinate: item.coordinate,
-          properties: {
-            ...item.properties
-          }
-        })).filter(item => (item.properties.year_week === this.year_week) && item.properties.Eco_Intensity<0.9);
-      } else {
-        return []
-      }
+      
+      return data.map(item => ({
+        coordinate: item.coordinate,
+        properties: {
+          ...item.properties
+        }
+      })).filter(item => (item.properties.year_week === this.year_week && parseInt(item.properties.Date.substr(0,4))==startYear));
     },
     handleTimeChange(value) {
       this.year_week = value;
@@ -561,7 +593,6 @@ export default {
       selectedLeafIds.forEach(categoryId => {
         const data = this.categoryDataMap[categoryId];
         if (!data) return;
-
         // 根据选中的时间和行业类型过滤数据
         const filteredData = data.filter(item => {
           // 时间过滤
@@ -667,16 +698,24 @@ export default {
       if(this.mapInstance && this.mapInstance.markerLayer) {
         this.mapInstance.markerLayer.clearMarkers();
       }
-      
+      // 线性插值函数，将MaxLoss从1-100映射到10-20，MaxLoss越大半径越小
+      function mapMaxLossToRadius(maxLoss) {
+        const minLoss = 1;
+        const maxLossValue = 100;
+        const minRadius = 1;
+        const maxRadius = 15;
+        return maxRadius - (maxLoss - minLoss) * (maxRadius - minRadius) / (maxLossValue - minLoss);
+      }
       const markers = data.map(item => ({
         coordinates: item.coordinate,
         properties: {
           ...item
         },
         style: {
-          radius: (1 - item.properties.Eco_Intensity) * 50,
+          radius: mapMaxLossToRadius(item.properties.MaxLoss),
           showStroke: false,
-          fillColor: this.getEcoLossColor(item.properties.Cumulative_loss)
+          fillColor: "rgb(178, 24, 43)",
+          shapeType: this.shapeMap[item.properties.WorstSector]
         }
       }));
       this.mapInstance.markerLayer.addMarkers(markers);
