@@ -48,7 +48,7 @@
               <h3 class="detail-name">{{ contributor.name }}</h3>
               <p class="detail-title">{{ contributor.title }}</p>
               <div class="detail-bio">{{ contributor.detail }}</div>
-              <div class="detail-links">
+              <div class="detail-links" v-show="false">
                 <a v-for="link in contributor.socialLinks" 
                    :key="link.platform" 
                    :href="link.url" 
@@ -67,7 +67,7 @@
 </template>
 
 <script>
-const websiteSVG = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0077b5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z"/></svg>`;
+const websiteSVG = `<svg width="25" height="25" t="1750214648696" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10025" width="64" height="64" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M81.822476 674.133333c18.578286 0 33.938286 13.750857 36.376381 31.695238l0.341333 4.973715v165.302857c0 14.531048 10.727619 26.672762 24.624762 28.964571l4.729905 0.390096h165.302857a36.668952 36.668952 0 0 1 4.973715 73.142857l-4.973715 0.292571h-165.302857A102.985143 102.985143 0 0 1 45.348571 883.419429l-0.243809-7.314286v-165.302857c0-20.284952 16.384-36.668952 36.717714-36.668953z m860.355048-1.072762c18.627048 0 33.938286 13.799619 36.376381 31.744l0.341333 4.973715v165.302857a102.985143 102.985143 0 0 1-95.475809 102.546286l-7.314286 0.243809h-165.302857a36.668952 36.668952 0 0 1-4.973715-73.094095l4.973715-0.341333h165.302857c14.531048 0 26.672762-10.727619 28.964571-24.624762l0.390096-4.778667v-165.254095c0-20.284952 16.432762-36.717714 36.717714-36.717715zM296.667429 46.128762a36.668952 36.668952 0 0 1 4.973714 73.094095l-4.973714 0.341333h-148.72381a29.500952 29.500952 0 0 0-29.013333 24.624762l-0.390096 4.778667v165.254095a36.668952 36.668952 0 0 1-73.142857 4.973715l-0.292571-4.973715v-165.302857c0-54.125714 42.22781-98.742857 95.475809-102.546286l7.314286-0.243809h148.72381zM876.105143 45.104762c54.174476 0 98.742857 42.22781 102.546286 95.475809l0.243809 7.314286v165.302857a36.668952 36.668952 0 0 1-73.094095 4.973715l-0.341333-4.973715v-165.302857a29.500952 29.500952 0 0 0-24.624762-28.964571l-4.729905-0.390096h-165.302857a36.668952 36.668952 0 0 1-4.973715-73.142857l4.973715-0.292571h165.302857zM477.866667 283.111619c19.017143-9.020952 41.155048-9.99619 61.244952-2.82819l7.460571 3.072 224.304762 115.809523c15.262476 6.826667 25.453714 21.211429 26.136381 38.668191a42.76419 42.76419 0 0 1-20.138666 34.962286l-4.681143 2.535619-57.100191 29.257142v150.77181a64.170667 64.170667 0 0 1-15.11619 36.278857l-4.583619 4.876191-5.071238 4.486095c-13.750857 11.215238-29.598476 19.992381-46.811429 25.892571a392.630857 392.630857 0 0 1-131.120762 20.626286 393.020952 393.020952 0 0 1-131.657143-20.626286c-17.115429-5.851429-33.01181-14.628571-46.567619-25.746285a66.169905 66.169905 0 0 1-24.819809-44.032l-0.097524-3.120762v-149.406477L253.074286 475.623619a43.544381 43.544381 0 0 1-24.380953-27.648l-1.267809-5.461333-0.585143-5.753905a42.959238 42.959238 0 0 1 21.26019-35.108571L477.866667 283.111619z m-102.497524 255.609905v113.761524c0-1.170286 1.26781 0.487619 5.607619 3.510857 7.070476 4.681143 14.726095 8.484571 22.479238 11.264 34.620952 11.50781 71.289905 17.066667 108.739048 16.384a323.779048 323.779048 0 0 0 107.958857-16.432762 106.788571 106.788571 0 0 0 22.576762-11.215238l5.12-3.754667c0.292571-0.146286 0.487619-0.195048 0.585143-0.146286l0.146285 0.487619v-113.712761l-102.351238 52.809142c-19.017143 8.97219-41.155048 9.99619-61.293714 2.828191l-7.41181-3.120762-102.15619-52.662857z m138.776381-199.192381l-1.804191-0.195048-3.315809 0.195048-189.391238 97.816381 188.367238 97.231238c0.682667 0.292571 1.462857 0.487619 2.535619 0.585143h3.023238l1.267809-0.097524 189.391239-97.767619-188.318477-97.28a8.192 8.192 0 0 0-1.755428-0.487619z" fill="#000000" p-id="10026"></path><path d="M755.273143 512.78019a31.841524 31.841524 0 0 0-15.847619 23.649524l-0.146286 126.439619c-1.462857 10.48381 4.87619 22.625524 15.993905 29.062096a34.474667 34.474667 0 0 0 34.328381 0 31.548952 31.548952 0 0 0 15.847619-31.207619l0.146286-118.832762c1.462857-10.532571-4.87619-22.674286-15.993905-29.110858a34.523429 34.523429 0 0 0-29.647238-2.243047l-4.681143 2.243047z" fill="#000000" p-id="10027"></path></svg>`;
 
 export default {
   name: 'Approach',
@@ -99,7 +99,7 @@ He graduated with a PhD in Economics at Xiamen University and completed postdoct
 
 He has published over 40 peer-reviewed papers in top-tier journals, including Economic Research, European Journal of Operational Research, Energy Economics, and Journal of Cleaner Production. More than 30 of his papers rank in the top 5% of their disciplines, with 1 ESI Hot Paper, 2 ESI Highly Cited Papers, and the Elsevier Highest Cited Paper Award (2018).`,
           socialLinks: [
-            { platform: 'Website', icon: websiteSVG, url: 'https://www.kcl.ac.uk/people/daoping-wang' }
+            { platform: 'Website', icon: websiteSVG, url: 'https://faculty.sdu.edu.cn/liaijun/zh_CN/index.htm' }
           ]
         },
         {
@@ -116,7 +116,7 @@ Yue Mo, Jinlei Zhang* , Chengcheng Wang, Xiaopei Hao, Lixing Yang, Ziyou Gao. A 
 
 Jinlei Zhang , Shuai Mao, Shuxin Zhang, Jiateng Yin, Lixing Yang*, Ziyou Gao*. EF-former for short-term passenger Flow Prediction during large-scale events in Urban Rail Transit systems[J]. Information Fusion, 2025, 117: 102916.`,
           socialLinks: [
-            { platform: 'Website', icon: websiteSVG, url: 'https://www.kcl.ac.uk/people/daoping-wang' }
+            { platform: 'Website', icon: websiteSVG, url: 'https://faculty.bjtu.edu.cn/9684/' }
           ]
         },
         {
@@ -134,7 +134,7 @@ Rui, J. (2025). Green disparities, happiness elusive: Decoding the spatial misma
 
 Rui, J., & Cai, C. (2025). Plausible or misleading? Evaluating the adaption of the place pulse 2.0 dataset for predicting subjective perception in Chinese urban landscapes. Habitat International, 157, 103333.`,
           socialLinks: [
-            { platform: 'Website', icon: websiteSVG, url: 'https://www.kcl.ac.uk/people/daoping-wang' }
+            { platform: 'Website', icon: websiteSVG, url: 'https://come.tju.edu.cn/info/1552/5864.htm' }
           ]
         },
         {
@@ -166,7 +166,7 @@ During past several years, she improved the methodology of disaster footprint an
 
 Zhao Zeng, Nan Wang, Zengkai Zhang, Huimin Wang, Huibin Du*. Flood footprint assessment: Assessing external assistance' impact on post-disaster recovery. Risk Analysis, 2025, 1–12. https://doi.org/10.1111/risa.70013.`,
           socialLinks: [
-            { platform: 'Website', icon: websiteSVG, url: 'https://www.kcl.ac.uk/people/daoping-wang' }
+            { platform: 'Website', icon: websiteSVG, url: 'https://come.tju.edu.cn/info/1552/5864.htm' }
           ]
         }
       ],
@@ -199,7 +199,7 @@ Pan, Y., Dong, F., & Du, C*. (2023). Is China approaching the inflection point o
 
 Du, C., Cao, Y., Ling, Y., Jin, Z., Wang, S., & Wang, D. (2024). Does manufacturing agglomeration promote green productivity growth in China? Fresh evidence from partially linear functional-coefficient models. Energy Economics, 131, 107352 (13.6/Q1).`,
           socialLinks: [
-            { platform: 'Website', icon: websiteSVG, url: 'https://www.kcl.ac.uk/people/daoping-wang' }
+            { platform: 'Website', icon: websiteSVG, url: 'https://come.tju.edu.cn/info/1552/5864.htm' }
           ]
         },
         {
