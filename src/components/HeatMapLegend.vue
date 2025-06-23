@@ -18,11 +18,11 @@
     <div class="legend-text">(100%)</div>
     <div class="legend-content">
       <div class="circle-size-legend">
-        <div class="circle" :style="{ width: '24px', height: '24px' }"></div>
-        <div class="circle" :style="{ width: '20px', height: '20px' }"></div>
-        <div class="circle" :style="{ width: '16px', height: '16px' }"></div>
-        <div class="circle" :style="{ width: '12px', height: '12px' }"></div>
         <div class="circle" :style="{ width: '8px', height: '8px' }"></div>
+        <div class="circle" :style="{ width: '12px', height: '12px' }"></div>
+        <div class="circle" :style="{ width: '16px', height: '16px' }"></div>
+        <div class="circle" :style="{ width: '20px', height: '20px' }"></div>
+        <div class="circle" :style="{ width: '24px', height: '24px' }"></div>
       </div>
       <div class="legend-labels">
         <span class="vertical-text">{{ 1 }}</span>
