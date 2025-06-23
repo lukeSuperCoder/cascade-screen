@@ -61,7 +61,6 @@
               :max="timeTags.length - 1"
               :marks="timeMarks"
               :format-tooltip="formatTimeTooltip"
-              @input="handleTimeChange"
               class="time-range-slider"
             />
           </div>
@@ -506,15 +505,20 @@ export default {
     },
     formatData(data) {
       // 获取当前年份范围
-      const startIdx = this.selectedTimeIndex;
+      if(data && data.length == 0) {
+        return [];
+      }
+      // const startIdx = this.selectedTimeIndex;
+      // const startYear = parseInt(this.timeTags[startIdx].id);
+      const startIdx = parseInt(data[0].properties['Date'].substr(2,4));
       const startYear = parseInt(this.timeTags[startIdx].id);
-      
+      this.selectedTimeIndex = startIdx;
       return data.map(item => ({
         coordinate: item.coordinate,
         properties: {
           ...item.properties
         }
-      })).filter(item => (item.properties.year_week === this.year_week && parseInt(item.properties.Date.substr(0,4))==startYear));
+      })).filter(item => (item.properties.year_week === this.year_week && parseInt(item.properties.Date.substr(0,4))==startYear) && item.properties.MaxLoss > 0);
     },
     handleTimeChange(value) {
       this.year_week = value;
