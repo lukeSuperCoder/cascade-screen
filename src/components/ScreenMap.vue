@@ -40,7 +40,28 @@
       <div v-if="showPopup" class="popup-container" :style="popupStyle">
         <div class="popup-content">
           <div class="popup-header">
-            <h3 class="text-lg font-medium">Details</h3>
+            <h3 class="text-lg font-medium flex items-center">
+              Details
+              <el-popover
+                placement="right"
+                trigger="hover"
+                width="320"
+                popper-class="details-popover"
+              >
+                <template #reference>
+                  <span class="ml-2 cursor-pointer inline-flex items-center justify-center w-5 h-5 rounded-full bg-blue-500 text-white text-xs font-bold" style="font-size: 13px;">
+                    !
+                  </span>
+                </template>
+                <div style="line-height:1.7;">
+                  <div><b>Sector</b>: The sector experiencing the most significant disruption following a cascading climate disaster.</div>
+                  <div><b>Eco_Intensity</b>: Decrease in economic activity intensity of the most affected sector (100 % indicates full disruption).</div>
+                  <div><b>Location</b>: The geographic area where the cascading damage occurred.</div>
+                  <div><b>Incident Time</b>: The time when the economic impact was observed.</div>
+                  <div><b>Damage_Source</b>: The originating location from which the cascading loss spread.</div>
+                </div>
+              </el-popover>
+            </h3>
             <button @click="closePopup" class="close-btn">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -50,20 +71,20 @@
           </div>
           <div class="popup-body">
             <div class="info-item">
-              <span class="label">Eco_Intensity:</span>
-              <span class="value">{{ popupData.MaxLoss }}</span>
+              <span class="label">Sector:</span>
+              <span class="value">{{ popupData.UpstreamSector }}</span>
             </div>
             <div class="info-item">
-              <span class="label">Incident Time:</span>
-              <span class="value">{{ popupData.Date }}</span>
+              <span class="label">Eco_Intensity:</span>
+              <span class="value">{{ popupData.MaxLoss }}</span>
             </div>
             <div class="info-item">
               <span class="label">Location:</span>
               <span class="value">{{ popupData.nuts2 }}</span>
             </div>
             <div class="info-item">
-              <span class="label">Sector:</span>
-              <span class="value">{{ popupData.UpstreamSector }}</span>
+              <span class="label">Incident Time:</span>
+              <span class="value">{{ popupData.Date }}</span>
             </div>
             <div class="info-item">
               <span class="label">Damage_Source:</span>
@@ -101,11 +122,12 @@
   
   <script>
   import { OlMap } from '@/olmap/index'
-  import { ElSlider } from 'element-plus'
+  import { ElSlider, ElPopover } from 'element-plus'
 
   export default {
     components: {
-      ElSlider
+      ElSlider,
+      ElPopover
     },
     data() {
       return {
@@ -168,7 +190,7 @@
             const data = featureData.properties.properties;
             this.popupData = {
               name: 'Details',
-              MaxLoss: data.MaxLoss ? `${data.MaxLoss}` : 'Unknown',
+              MaxLoss: data.MaxLoss ? `${data.MaxLoss.toFixed(1)}` : 'Unknown',
               Date: data['Date'].substr(0,7) || 'Unknown',
               UpstreamRegion: data.UpstreamRegion || 'Unknown',
               UpstreamSector: data.UpstreamSector ? `${data.UpstreamSector}` : 'Unknown',
@@ -434,4 +456,16 @@
 :deep(.el-slider__marks-text) {
   @apply transform -translate-x-1/2;
 }
+  </style>
+  <style>
+  .details-popover {
+    background: rgba(20, 24, 36, 0.98) !important;
+    color: #fff !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 24px 0 #0008 !important;
+    border: 1px solid #2563eb33 !important;
+    padding: 16px 18px !important;
+    font-size: 14px;
+    line-height: 1.7;
+  }
   </style>

@@ -384,7 +384,7 @@ export default {
           ]
         }
       ],
-      timeTags: Array.from({length: 26}, (_, i) => ({ id: String(2000 + i), name: String(2000 + i) })),
+      timeTags: Array.from({length: 31}, (_, i) => ({ id: String(2000 + i), name: String(2000 + i) })),
       industryTags: [
         { id: 'energy', name: 'Energy' },
         { id: 'transportation', name: 'Transportation' },
@@ -702,14 +702,21 @@ export default {
       if(this.mapInstance && this.mapInstance.markerLayer) {
         this.mapInstance.markerLayer.clearMarkers();
       }
-      // 线性插值函数，将MaxLoss从1-100映射到10-20，MaxLoss越大半径越小
+      // 线性插值函数，将MaxLoss从1-100映射到不同半径，1-20区间变化大，20-100区间变化小
       function mapMaxLossToRadius(maxLoss) {
-        const minLoss = 1;
-        const maxLossValue = 100;
-        const minRadius = 1;
-        const maxRadius = 15;
-        return maxRadius - (maxLoss - minLoss) * (maxRadius - minRadius) / (maxLossValue - minLoss);
+        if (maxLoss <= 20) {
+          // 1~20 映射到 5~15
+          const minLoss = 1, maxLoss20 = 20;
+          const minRadius = 5, maxRadius = 15;
+          return minRadius + (maxLoss - minLoss) * (maxRadius - minRadius) / (maxLoss20 - minLoss);
+        } else {
+          // 20~100 映射到 15~20
+          const minLoss = 20, maxLoss100 = 100;
+          const minRadius = 15, maxRadius = 20;
+          return minRadius + (maxLoss - minLoss) * (maxRadius - minRadius) / (maxLoss100 - minLoss);
+        }
       }
+      
       const markers = data.map(item => ({
         coordinates: item.coordinate,
         properties: {
