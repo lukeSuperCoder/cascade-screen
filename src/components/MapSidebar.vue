@@ -540,7 +540,7 @@ export default {
         properties: {
           ...item.properties
         }
-      })).filter(item => (item.properties.year_week === this.year_week && parseInt(item.properties.Date.substr(0,4))==startYear) && item.properties.MaxLoss > 0);
+      })).filter(item => (item.properties.year_week === this.year_week && parseInt(item.properties.Date.substr(0,4))==startYear) && item.properties.MaxLoss > 1);
     },
     handleTimeChange(value) {
       this.year_week = value;
