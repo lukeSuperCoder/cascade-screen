@@ -31,6 +31,9 @@
         <!-- 标签切换区域 -->
         <div class="tags-section">
           <h3 class="section-title primary" id="step2">Select Events</h3>
+          <div style="display: flex; align-items: center; margin: -6px 0 -14px 0;">
+            <el-checkbox style="color: #FFF;" v-model="selectAllChecked" @change="handleSelectAllChange">Select All</el-checkbox>
+          </div>
           <div class="category-tree-container">
             <el-tree-select
               v-model="selectedCategories"
@@ -207,11 +210,14 @@ import html2canvas from 'html2canvas'
 import { jsPDF } from 'jspdf'
 import LoginModal from './LoginModal.vue'
 import { ElMessage } from 'element-plus'
+import { ElButton, ElCheckbox } from 'element-plus'
 
 export default {
   name: 'MapSidebar',
   components: {
-    LoginModal
+    LoginModal,
+    ElButton,
+    ElCheckbox
   },
   data() {
     return {
@@ -425,7 +431,8 @@ export default {
         'Human Health and Social Work Activities': 16,
         'Arts, Entertainment and Recreation': 17,
         'Other Service Activities': 18
-      }
+      },
+      selectAllChecked: false
     }
   },
   computed: {
@@ -452,6 +459,21 @@ export default {
     },
     showMarkers() {
       this.updateMapLayers();
+    },
+    selectedCategories(val) {
+      function getAllLeafIds(nodes) {
+        let ids = [];
+        nodes.forEach(node => {
+          if (node.children && node.children.length > 0) {
+            ids = ids.concat(getAllLeafIds(node.children));
+          } else {
+            ids.push(node.id);
+          }
+        });
+        return ids;
+      }
+      const allLeafIds = getAllLeafIds(this.categoryTags);
+      this.selectAllChecked = val.length === allLeafIds.length;
     }
   },
   mounted() {
@@ -485,16 +507,16 @@ export default {
     },
     handleCategoryChange(value) {
       const checkedKeys = this.$refs['categoryTree'].getCheckedKeys();
-      if(checkedKeys.includes('dudley') && !checkedKeys.includes('storm') && !checkedKeys.includes('natural')) {
+      if(checkedKeys.includes('dudley') && !checkedKeys.includes('storm') && !this.selectAllChecked) {
         this.ukAreaData = Dudley;
         this.addMarkerLayer(this.formatData(this.ukAreaData));
-      } else if(checkedKeys.includes('melik') && !checkedKeys.includes('storm') && !checkedKeys.includes('natural')) {
+      } else if(checkedKeys.includes('melik') && !checkedKeys.includes('storm') && !this.selectAllChecked) {
         this.ukAreaData = Melik;
         this.addMarkerLayer(this.formatData(this.ukAreaData));
-      } else if(checkedKeys.includes('storm') && !checkedKeys.includes('natural')) {
+      } else if(checkedKeys.includes('storm') && !this.selectAllChecked) {
         this.ukAreaData = Melik_Dudley;
         this.addMarkerLayer(this.formatData(this.ukAreaData));
-      } else if(checkedKeys.includes('natural')) {
+      } else if(this.selectAllChecked) {
         this.ukAreaData = heatwave;
         this.addMarkerLayer(this.formatData(this.ukAreaData));
       } else {
@@ -707,26 +729,39 @@ export default {
         if (maxLoss <= 20) {
           // 1~20 映射到 5~15
           const minLoss = 1, maxLoss20 = 20;
-          const minRadius = 5, maxRadius = 15;
+          const minRadius = 0.1, maxRadius = 0.25;
           return minRadius + (maxLoss - minLoss) * (maxRadius - minRadius) / (maxLoss20 - minLoss);
         } else {
           // 20~100 映射到 15~20
           const minLoss = 20, maxLoss100 = 100;
-          const minRadius = 15, maxRadius = 20;
+          const minRadius = 0.25, maxRadius = 0.35;
           return minRadius + (maxLoss - minLoss) * (maxRadius - minRadius) / (maxLoss100 - minLoss);
         }
       }
-      
+
+      // 线性插值函数，将MaxLoss从1-100映射到不同半径，1-20区间变化大，20-100区间变化小
+      function mapMaxLossToRadiusAll(maxLoss) {
+        if (maxLoss <= 20) {
+          // 1~20 映射到 5~15
+          const minLoss = 1, maxLoss20 = 50;
+          const minRadius = 0.1, maxRadius = 0.2;
+          return minRadius + (maxLoss - minLoss) * (maxRadius - minRadius) / (maxLoss20 - minLoss);
+        } else {
+          // 20~100 映射到 15~20
+          const minLoss = 50, maxLoss100 = 100;
+          const minRadius = 0.2, maxRadius = 0.3;
+          return minRadius + (maxLoss - minLoss) * (maxRadius - minRadius) / (maxLoss100 - minLoss);
+        }
+      }
+
       const markers = data.map(item => ({
         coordinates: item.coordinate,
         properties: {
           ...item
         },
         style: {
-          radius: mapMaxLossToRadius(item.properties.MaxLoss),
-          showStroke: false,
-          fillColor: "rgb(178, 24, 43)",
-          shapeType: this.shapeMap[item.properties.WorstSector]
+          iconUrl: `/src/assets/icons/${this.shapeMap[item.properties.WorstSector]}.png`,
+          iconScale: this.selectAllChecked? mapMaxLossToRadiusAll(item.properties.MaxLoss): mapMaxLossToRadius(item.properties.MaxLoss),
         }
       }));
       this.mapInstance.markerLayer.addMarkers(markers);
@@ -1044,6 +1079,27 @@ export default {
       if (tagIdx === -1) return
       this.selectedTimeIndex = tagIdx
       this.handleTimeChange(tagIdx)
+    },
+
+    // 全选/全不选事件分类
+    handleSelectAllChange(val) {
+      function getAllLeafIds(nodes) {
+        let ids = [];
+        nodes.forEach(node => {
+          if (node.children && node.children.length > 0) {
+            ids = ids.concat(getAllLeafIds(node.children));
+          } else {
+            ids.push(node.id);
+          }
+        });
+        return ids;
+      }
+      if (val) {
+        this.selectedCategories = getAllLeafIds(this.categoryTags);
+      } else {
+        this.selectedCategories = [];
+      }
+      this.handleCategoryChange();
     },
   }
 }

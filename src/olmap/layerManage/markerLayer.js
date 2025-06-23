@@ -159,7 +159,18 @@ class MarkerLayer {
     });
 
     // 设置样式
-    if (style) {
+    if (style && style.iconUrl) {
+      // 如果有iconUrl，优先用图标
+      feature.setStyle(new Style({
+        image: new Icon({
+          src: style.iconUrl,
+          scale: style.iconScale || 1,
+          anchor: style.iconAnchor || [0.5, 1],
+          anchorXUnits: 'fraction',
+          anchorYUnits: 'fraction'
+        })
+      }));
+    } else if (style) {
       feature.setStyle(this._createStyle(style));
     } else if (this.options.iconStyle) {
       feature.setStyle(this._createIconStyle(this.options.iconStyle));
