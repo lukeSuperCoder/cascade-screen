@@ -323,21 +323,7 @@ export default {
                 },
                 {
                   id: 'glacial-lake-outburst-flood',
-                  name: 'Glacial lake outburst flood',
-                  children: [
-                    {
-                      id: 'uk-york-flooding',
-                      name: 'UK York Flooding'
-                    },
-                    {
-                      id: 'uk-scotland-flooding',
-                      name: 'UK Scotland Flooding'
-                    },
-                    {
-                      id: 'uk-spain-flooding',
-                      name: 'UK Spain Flooding'
-                    }
-                  ]
+                  name: 'Glacial lake outburst flood'
                 },
                 {
                   id: 'wildfire',
@@ -474,6 +460,7 @@ export default {
       }
       const allLeafIds = getAllLeafIds(this.categoryTags);
       this.selectAllChecked = val.length === allLeafIds.length;
+      this.$store.commit('setSelectAllChecked', this.selectAllChecked);
     }
   },
   mounted() {

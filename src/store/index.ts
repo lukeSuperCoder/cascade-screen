@@ -8,6 +8,7 @@ interface UserInfo {
 interface State {
   isLoggedIn: boolean
   userInfo: UserInfo | null
+  selectAllChecked: boolean
 }
 
 interface Credentials {
@@ -18,7 +19,8 @@ interface Credentials {
 export default createStore({
   state: {
     isLoggedIn: false,
-    userInfo: null
+    userInfo: null,
+    selectAllChecked: false
   } as State,
   mutations: {
     setLoginStatus(state: State, status: boolean) {
@@ -30,6 +32,9 @@ export default createStore({
     clearUserInfo(state: State) {
       state.userInfo = null
       state.isLoggedIn = false
+    },
+    setSelectAllChecked(state: State, checked: boolean) {
+      state.selectAllChecked = checked
     }
   },
   actions: {
@@ -56,6 +61,7 @@ export default createStore({
   },
   getters: {
     isLoggedIn: (state: State) => state.isLoggedIn,
-    userInfo: (state: State) => state.userInfo
+    userInfo: (state: State) => state.userInfo,
+    selectAllChecked: (state: State) => state.selectAllChecked
   }
 }) 

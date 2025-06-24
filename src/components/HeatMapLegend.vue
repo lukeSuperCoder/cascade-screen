@@ -25,11 +25,7 @@
         <div class="circle" :style="{ width: '24px', height: '24px' }"></div>
       </div>
       <div class="legend-labels">
-        <span class="vertical-text">{{ 1 }}</span>
-        <span class="vertical-text">{{ 25 }}</span>
-        <span class="vertical-text">{{ 50 }}</span>
-        <span class="vertical-text">{{ 75 }}</span>
-        <span class="vertical-text">{{ 100 }}</span>
+        <span class="vertical-text" v-for="mark in marks" :key="mark">{{ mark }}</span>
       </div>
     </div>
   </div>
@@ -46,6 +42,10 @@ export default {
     maxValue: {
       type: Number,
       default: 1.5
+    },
+    marks: {
+      type: Array,
+      default: () => [1, 25, 50, 75, 100]
     }
   },
   computed: {

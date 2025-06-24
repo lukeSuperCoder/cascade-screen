@@ -25,6 +25,7 @@
           :gradient="heatMapGradient"
           :min-value="heatMapMinValue"
           :max-value="heatMapMaxValue"
+          :marks="heatMapMarks"
         />
       </div>
     </div>
@@ -72,6 +73,11 @@ export default {
                 'rgba(255, 0, 0, 1)'],
       heatMapMinValue: 0,
       heatMapMaxValue: 1
+    }
+  },
+  computed: {
+    heatMapMarks() {
+      return this.$store.state.selectAllChecked ? [1, 25, 50, 75, 100] : [1, 10, 20, 50, 100];
     }
   },
   methods: {
