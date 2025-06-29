@@ -46,6 +46,8 @@
         info="Real-world decision support"
       />
     </div>
+
+    <h2 class="text-4xl font-bold mb-8 text-white pt-16">Our Project</h2>
   </div>
 </template>
 

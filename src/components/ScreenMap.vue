@@ -88,7 +88,7 @@
             </div>
             <div class="info-item">
               <span class="label">Damage_Source:</span>
-              <span class="value">{{ popupData.UpstreamRegion }}</span>
+              <span class="value">{{ popupData.UpstreamRegion }}, {{ popupData.UpstreamSector }}</span>
             </div>
           </div>
         </div>
@@ -188,6 +188,7 @@
           const zoom = this.mapInstance.view.getZoom();
           if(featureData.type === 'marker' && featureData.properties){
             const data = featureData.properties.properties;
+            console.log('current click data',data);
             this.popupData = {
               name: 'Details',
               MaxLoss: data.MaxLoss ? `${data.MaxLoss.toFixed(1)}` : 'Unknown',

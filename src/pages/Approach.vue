@@ -32,7 +32,7 @@
       </div>
     </div>
 
-    <div class="university-header" style="margin-top: 64px;">ADVISOR BOARD</div>
+    <div class="university-header" style="margin-top: 48px;">ADVISOR BOARD</div>
     <div class="team-grid">
       <div v-for="(contributor) in advisorBoard" :key="contributor.id" class="member-card">
         <div class="card-inner">
@@ -293,26 +293,28 @@ Sun, Y., Zhang, R. and Li, A. (2024). 'A new concept of education-innovation-eco
   background: #fff;
   color: #222;
   min-height: 100vh;
-  padding: 40px 0;
+  padding: 32px 0;
 }
 
 .university-header {
-  font-size: 1.5rem;
-  letter-spacing: 0.08em;
+  font-size: 1.4rem;
+  letter-spacing: 0.06em;
   font-weight: 600;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
   border-bottom: 2px solid #e5e7eb;
-  padding-bottom: 12px;
+  padding-bottom: 8px;
   text-align: left;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 32px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -320,8 +322,8 @@ Sun, Y., Zhang, R. and Li, A. (2024). 'A new concept of education-innovation-eco
 
 .member-card {
   perspective: 1000px;
-  height: 320px;
-  width: 220px;
+  height: 280px;
+  width: 200px;
   margin: 0 auto;
 }
 
@@ -329,7 +331,7 @@ Sun, Y., Zhang, R. and Li, A. (2024). 'A new concept of education-innovation-eco
   position: relative;
   width: 100%;
   height: 100%;
-  transition: transform 0.8s;
+  transition: transform 0.6s ease-in-out;
   transform-style: preserve-3d;
 }
 
@@ -342,22 +344,27 @@ Sun, Y., Zhang, R. and Li, A. (2024). 'A new concept of education-innovation-eco
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border-radius: 16px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
   background: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+.member-card:hover .card-front {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
 }
 
 .card-back {
   position: absolute;
-  width: 400px;
+  width: 320px;
   height: 100%;
   left: 50%;
   transform: translateX(-50%) rotateY(180deg);
   backface-visibility: hidden;
-  border-radius: 16px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
   background: #fff;
   padding: 16px;
   display: flex;
@@ -366,27 +373,29 @@ Sun, Y., Zhang, R. and Li, A. (2024). 'A new concept of education-innovation-eco
 
 .avatar {
   width: 100%;
-  height: 220px;
+  height: 180px;
   object-fit: cover;
-  border-radius: 16px 16px 0 0;
+  border-radius: 12px 12px 0 0;
 }
 
 .member-info {
-  padding: 12px;
+  padding: 10px;
   text-align: center;
 }
 
 .member-name {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
-  margin: 0 0 4px 0;
+  margin: 0 0 3px 0;
   color: #111;
+  line-height: 1.3;
 }
 
 .member-title {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: #666;
   margin: 0;
+  line-height: 1.4;
 }
 
 .member-detail {
@@ -396,23 +405,23 @@ Sun, Y., Zhang, R. and Li, A. (2024). 'A new concept of education-innovation-eco
 }
 
 .detail-name {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
-  margin: 0 0 4px 0;
+  margin: 0 0 3px 0;
   color: #111;
 }
 
 .detail-title {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #0077b5;
-  margin: 0 0 12px 0;
+  margin: 0 0 10px 0;
 }
 
 .detail-bio {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   line-height: 1.5;
   color: #444;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   flex-grow: 1;
   overflow-y: auto;
   /* 滚动条美化 */
@@ -420,31 +429,31 @@ Sun, Y., Zhang, R. and Li, A. (2024). 'A new concept of education-innovation-eco
   scrollbar-color: #c1c7cd #f3f4f6;
 }
 .detail-bio::-webkit-scrollbar {
-  width: 6px;
+  width: 4px;
   background: #f3f4f6;
 }
 .detail-bio::-webkit-scrollbar-thumb {
   background: #c1c7cd;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 .detail-bio::-webkit-scrollbar-thumb:hover {
   background: #b0b6bc;
 }
 .detail-bio::-webkit-scrollbar-track {
   background: #f3f4f6;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 .detail-links {
   display: flex;
-  gap: 12px;
+  gap: 10px;
   justify-content: center;
-  padding-top: 12px;
+  padding-top: 10px;
   border-top: 1px solid #eee;
 }
 
 .icon-link {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #666;
   transition: color 0.2s;
 }
@@ -455,12 +464,13 @@ Sun, Y., Zhang, R. and Li, A. (2024). 'A new concept of education-innovation-eco
 
 @media (max-width: 768px) {
   .team-grid {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
   }
   
   .member-card {
-    height: 320px;
-    width: 220px;
+    height: 260px;
+    width: 180px;
   }
   
   .card-back {
@@ -468,7 +478,32 @@ Sun, Y., Zhang, R. and Li, A. (2024). 'A new concept of education-innovation-eco
   }
   
   .avatar {
-    height: 220px;
+    height: 160px;
+  }
+  
+  .university-header {
+    font-size: 1.2rem;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  
+  .member-card {
+    height: 240px;
+    width: 160px;
+  }
+  
+  .card-back {
+    width: 260px;
+  }
+  
+  .avatar {
+    height: 140px;
   }
 }
 </style>
