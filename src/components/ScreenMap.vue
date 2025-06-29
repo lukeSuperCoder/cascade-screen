@@ -194,7 +194,7 @@
               MaxLoss: data.MaxLoss ? `${data.MaxLoss.toFixed(1)}` : 'Unknown',
               Date: data['Date'].substr(0,7) || 'Unknown',
               UpstreamRegion: data.UpstreamRegion || 'Unknown',
-              UpstreamSector: data.UpstreamSector ? `${data.UpstreamSector}` : 'Unknown',
+              UpstreamSector: data.WorstSector ? `${data.WorstSector}` : 'Unknown',
               nuts2: data.nuts2 || 'Unknown',
             };
             this.showPopup = true;
