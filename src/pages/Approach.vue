@@ -361,8 +361,6 @@ Sun, Y., Zhang, R. and Li, A. (2024). 'A new concept of education-innovation-eco
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 30% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
-              radial-gradient(circle at 70% 80%, rgba(147, 51, 234, 0.1) 0%, transparent 50%);
   pointer-events: none;
 }
 
