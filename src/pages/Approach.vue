@@ -1,5 +1,50 @@
 <template>
   <div class="academic-team">
+    <div class="team-intro-section rounded-2xl p-8 mb-2">
+      <div class="university-header">OUR TEAM</div>
+      <div class="flex flex-col lg:flex-row items-start justify-between gap-8">
+        <!-- 左侧照片墙 -->
+        <div class="team-photos-container w-full lg:w-1/2">
+          <div class="team-photos grid grid-cols-5 grid-rows-3 gap-3 w-full max-w-md mx-auto">
+            <div v-for="n in 15" :key="n" class="team-photo-wrapper group">
+              <img :src="getPhoto(n)" class="team-photo" :alt="`team member ${n}`" />
+              <div class="photo-overlay"></div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 右侧简介 -->
+        <div class="team-intro-text w-full lg:w-1/2 space-y-6">
+          <div class="intro-content">
+            <p class="text-lg text-black leading-relaxed mb-4">
+              Our team consists of <span class="font-semibold">multidisciplinary experts</span> in geography, climate, economics, artificial intelligence, and more, dedicated to advancing the frontier of cascading risk research. Team members have rich international backgrounds, spanning universities, research institutes, and industry, with strong theoretical and practical capabilities.
+            </p>
+            <p class="text-lg text-black leading-relaxed mb-4">
+              We focus on leveraging <span class="font-semibold">AI and data science methods</span> to uncover the complex transmission mechanisms of risks in areas such as extreme events, infrastructure, and supply chains. With open collaboration and innovation as our core values, we serve governments, enterprises, and society in risk management and decision support.
+            </p>
+            <p class="text-lg text-black leading-relaxed">
+              Through <span class="font-semibold">interdisciplinary cooperation</span> and international exchange, we continuously expand the boundaries of risk science, contributing to global sustainable development and enhanced societal resilience.
+            </p>
+          </div>
+          
+          <!-- 团队统计 -->
+          <div class="team-stats grid grid-cols-3 gap-4 pt-4 border-t border-gray-300">
+            <div class="stat-item text-center">
+              <div class="text-2xl font-bold text-black">15+</div>
+              <div class="text-sm text-gray-600">Experts</div>
+            </div>
+            <div class="stat-item text-center">
+              <div class="text-2xl font-bold text-black">5+</div>
+              <div class="text-sm text-gray-600">Countries</div>
+            </div>
+            <div class="stat-item text-center">
+              <div class="text-2xl font-bold text-black">10+</div>
+              <div class="text-sm text-gray-600">Years</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="university-header">CORE MEMBERS</div>
     <div class="team-grid">
       <div v-for="(contributor) in coreMembers" :key="contributor.id" class="member-card">
@@ -66,7 +111,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 const websiteSVG = `<svg width="25" height="25" t="1750214648696" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10025" width="64" height="64" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M81.822476 674.133333c18.578286 0 33.938286 13.750857 36.376381 31.695238l0.341333 4.973715v165.302857c0 14.531048 10.727619 26.672762 24.624762 28.964571l4.729905 0.390096h165.302857a36.668952 36.668952 0 0 1 4.973715 73.142857l-4.973715 0.292571h-165.302857A102.985143 102.985143 0 0 1 45.348571 883.419429l-0.243809-7.314286v-165.302857c0-20.284952 16.384-36.668952 36.717714-36.668953z m860.355048-1.072762c18.627048 0 33.938286 13.799619 36.376381 31.744l0.341333 4.973715v165.302857a102.985143 102.985143 0 0 1-95.475809 102.546286l-7.314286 0.243809h-165.302857a36.668952 36.668952 0 0 1-4.973715-73.094095l4.973715-0.341333h165.302857c14.531048 0 26.672762-10.727619 28.964571-24.624762l0.390096-4.778667v-165.254095c0-20.284952 16.432762-36.717714 36.717714-36.717715zM296.667429 46.128762a36.668952 36.668952 0 0 1 4.973714 73.094095l-4.973714 0.341333h-148.72381a29.500952 29.500952 0 0 0-29.013333 24.624762l-0.390096 4.778667v165.254095a36.668952 36.668952 0 0 1-73.142857 4.973715l-0.292571-4.973715v-165.302857c0-54.125714 42.22781-98.742857 95.475809-102.546286l7.314286-0.243809h148.72381zM876.105143 45.104762c54.174476 0 98.742857 42.22781 102.546286 95.475809l0.243809 7.314286v165.302857a36.668952 36.668952 0 0 1-73.094095 4.973715l-0.341333-4.973715v-165.302857a29.500952 29.500952 0 0 0-24.624762-28.964571l-4.729905-0.390096h-165.302857a36.668952 36.668952 0 0 1-4.973715-73.142857l4.973715-0.292571h165.302857zM477.866667 283.111619c19.017143-9.020952 41.155048-9.99619 61.244952-2.82819l7.460571 3.072 224.304762 115.809523c15.262476 6.826667 25.453714 21.211429 26.136381 38.668191a42.76419 42.76419 0 0 1-20.138666 34.962286l-4.681143 2.535619-57.100191 29.257142v150.77181a64.170667 64.170667 0 0 1-15.11619 36.278857l-4.583619 4.876191-5.071238 4.486095c-13.750857 11.215238-29.598476 19.992381-46.811429 25.892571a392.630857 392.630857 0 0 1-131.120762 20.626286 393.020952 393.020952 0 0 1-131.657143-20.626286c-17.115429-5.851429-33.01181-14.628571-46.567619-25.746285a66.169905 66.169905 0 0 1-24.819809-44.032l-0.097524-3.120762v-149.406477L253.074286 475.623619a43.544381 43.544381 0 0 1-24.380953-27.648l-1.267809-5.461333-0.585143-5.753905a42.959238 42.959238 0 0 1 21.26019-35.108571L477.866667 283.111619z m-102.497524 255.609905v113.761524c0-1.170286 1.26781 0.487619 5.607619 3.510857 7.070476 4.681143 14.726095 8.484571 22.479238 11.264 34.620952 11.50781 71.289905 17.066667 108.739048 16.384a323.779048 323.779048 0 0 0 107.958857-16.432762 106.788571 106.788571 0 0 0 22.576762-11.215238l5.12-3.754667c0.292571-0.146286 0.487619-0.195048 0.585143-0.146286l0.146285 0.487619v-113.712761l-102.351238 52.809142c-19.017143 8.97219-41.155048 9.99619-61.293714 2.828191l-7.41181-3.120762-102.15619-52.662857z m138.776381-199.192381l-1.804191-0.195048-3.315809 0.195048-189.391238 97.816381 188.367238 97.231238c0.682667 0.292571 1.462857 0.487619 2.535619 0.585143h3.023238l1.267809-0.097524 189.391239-97.767619-188.318477-97.28a8.192 8.192 0 0 0-1.755428-0.487619z" fill="#000000" p-id="10026"></path><path d="M755.273143 512.78019a31.841524 31.841524 0 0 0-15.847619 23.649524l-0.146286 126.439619c-1.462857 10.48381 4.87619 22.625524 15.993905 29.062096a34.474667 34.474667 0 0 0 34.328381 0 31.548952 31.548952 0 0 0 15.847619-31.207619l0.146286-118.832762c1.462857-10.532571-4.87619-22.674286-15.993905-29.110858a34.523429 34.523429 0 0 0-29.647238-2.243047l-4.681143 2.243047z" fill="#000000" p-id="10027"></path></svg>`;
 
 export default {
@@ -283,6 +328,13 @@ Sun, Y., Zhang, R. and Li, A. (2024). 'A new concept of education-innovation-eco
         }
       ]
     }
+  },
+  methods: {
+    getPhoto(n: number) {
+      // 可根据实际头像路径替换，默认用 u1~u6 循环
+      const idx = (n-1) + 1;
+      return `/src/assets/images/u${idx}.png`;
+    }
   }
 }
 </script>
@@ -294,6 +346,168 @@ Sun, Y., Zhang, R. and Li, A. (2024). 'A new concept of education-innovation-eco
   color: #222;
   min-height: 100vh;
   padding: 32px 0;
+}
+
+/* 团队介绍区域样式 */
+.team-intro-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.team-intro-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 70% 80%, rgba(147, 51, 234, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.team-photos-container {
+  position: relative;
+  z-index: 1;
+}
+
+.team-photos {
+  position: relative;
+}
+
+.team-photo-wrapper {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.team-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.photo-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.team-photo-wrapper:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+}
+
+.team-photo-wrapper:hover .team-photo {
+  transform: scale(1.05);
+}
+
+.team-photo-wrapper:hover .photo-overlay {
+  opacity: 1;
+}
+
+.team-intro-text {
+  position: relative;
+  z-index: 1;
+}
+
+.intro-content p {
+  position: relative;
+}
+
+.intro-content p::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 0.5em;
+  width: 3px;
+  height: 1em;
+  background: linear-gradient(to bottom, #6b7280, #9ca3af);
+  border-radius: 2px;
+  opacity: 0.7;
+}
+
+.team-stats {
+  position: relative;
+}
+
+.stat-item {
+  padding: 12px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.02);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+  background: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+  .team-intro-section {
+    padding: 6rem 2rem;
+  }
+  
+  .team-photos {
+    gap: 2px;
+  }
+  
+  .team-photo-wrapper {
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-intro-section {
+    padding: 4rem 1.5rem;
+  }
+  
+  .team-photos {
+    max-width: 280px;
+    gap: 1px;
+  }
+  
+  .team-photo-wrapper {
+    border-radius: 6px;
+  }
+  
+  .intro-content p::before {
+    left: -8px;
+    width: 2px;
+  }
+  
+  .team-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+  }
+  
+  .stat-item {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-intro-section {
+    padding: 3rem 1rem;
+  }
+  
+  .team-photos {
+    max-width: 200px;
+  }
+  
+  .team-photo-wrapper {
+    border-radius: 4px;
+  }
 }
 
 .university-header {
