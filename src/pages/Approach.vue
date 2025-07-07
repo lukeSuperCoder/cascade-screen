@@ -135,118 +135,17 @@ He has published over 50 papers in high-impact journals, including Nature, Natur
         },
         {
           id: 2,
-          name: 'Professor Aijun Li',
+          name: 'Pengfei Yuan',
           title: 'Lecturer in Risk, Environment and Society',
-          avatar: '/src/assets/images/u2.png',
-          detail: `Prof. Aijun Li is a Professor at Shandong University, China. He is the Principal Investigator of the Center for Economic Research and leads a research team focused on large-scale modeling for energy economics, climate policy, and disaster resilience. He is a Taishan Scholar Young Expert (Shandong Province), Outstanding Mid-Career Scholar (Shandong University), and Young Cultural Talent awarded by the Central Propaganda Department of China.
-
-He graduated with a PhD in Economics at Xiamen University and completed postdoctoral research at Shandong University, with a visiting scholarship at the University of Pittsburgh. His work develops methodologies to quantify carbon emissions, economic resilience, and climate policy impacts, pioneering open-source DEA models for global sustainability research.
-
-He has published over 40 peer-reviewed papers in top-tier journals, including Economic Research, European Journal of Operational Research, Energy Economics, and Journal of Cleaner Production. More than 30 of his papers rank in the top 5% of their disciplines, with 1 ESI Hot Paper, 2 ESI Highly Cited Papers, and the Elsevier Highest Cited Paper Award (2018).`,
+          avatar: '/src/assets/images/u13.png',
+          detail: `Pengfei Yuan is a postgraduate researcher at the Department of Geography, King's College London and a Ph.D candidate in Shandong university. His research focuses on Climate-induced disruption modeling in critical infrastructure systems based on AI techniques and Cascading risk analysis in global supply and value chains. His key publication includes:
+ 
+Yuan, P. et al. (2024). 'Assessing the supply risks of critical metals in China's low-carbon energy transition', Global Environmental Change, 86, 102825. `,
           socialLinks: [
-            { platform: 'Website', icon: websiteSVG, url: 'https://faculty.sdu.edu.cn/liaijun/zh_CN/index.htm' }
+            { platform: 'Website', icon: websiteSVG, url: 'https://scholar.google.com/citations?hl=zh-CN&view_op=list_works&gmla=AH8HC4w8l1MN3Dpk86LnT2klac_URAoruVhFuUX1sif2CPVer_0Eqx4lbbkFt928VFgrgJIWOemcqTgQ7lxik79pFW-DV1tg5ZFX-19nyfKO00GYDDOWYPaK44yVBeKLEaA&user=fPUyCCgAAAAJ' }
           ]
         },
-        {
-          id: 3,
-          name: 'Dr Jinlei Zhang',
-          title: 'Lecturer in Risk, Environment and Society',
-          avatar: '/src/assets/images/u3.png',
-          detail: `Dr. Jinlei Zhang is an Associate Professor at the School of Systems Science, Beijing Jiaotong University, where he leads research in intelligent transportation systems and spatiotemporal data mining. He serves as Lead Guest Editor for Transportmetrica A and Sustainability special issues, and was Guest Editor for Journal of Geo-Information Science, Special Issue. 
 
-He earned his PhD in Traffic Engineering from Beijing Jiaotong University, with visiting research at the University of Washington and Hong Kong Polytechnic University. His research focuses on traffic engineering,deep learning, spatiotemporal data mining, and traffic prediction. 
-
-He has published over 30 SCI papers in top journals including IEEE Transactions on Intelligent Transportation Systems, Transportation Research Part C, and Information Fusion. His key publications includes:
-Yue Mo, Jinlei Zhang* , Chengcheng Wang, Xiaopei Hao, Lixing Yang, Ziyou Gao. A Semi-Conv-Transformer model for inflow prediction of newly expanding subway lines. IEEE Transactions on Intelligent Transportation Systems, 2025: 1-17.
-
-Jinlei Zhang , Shuai Mao, Shuxin Zhang, Jiateng Yin, Lixing Yang*, Ziyou Gao*. EF-former for short-term passenger Flow Prediction during large-scale events in Urban Rail Transit systems[J]. Information Fusion, 2025, 117: 102916.`,
-          socialLinks: [
-            { platform: 'Website', icon: websiteSVG, url: 'https://faculty.bjtu.edu.cn/9684/' }
-          ]
-        },
-        {
-          id: 4,
-          name: 'Dr Jin Rui',
-          title: 'Lecturer in Risk, Environment and Society',
-          avatar: '/src/assets/images/u4.png',
-          detail: `Dr. Jin Rui is a Postdoctoral Research Associate in Spatial Analytics and Machine Learning at the Department of Geography, King's College London, UK. He leads AI-driven projects on building typology recognition, flood prediction, and semantic risk perception at King's College London, following postdoctoral work on smart mobility modeling at Heidelberg University. He serves as Guest Editor for Land's Special Issue on spatial data science.
-
-He graduated with a Dr.-Ing. in Spatial Planning (magna cum laude) from Technical University Dortmund, Germany, and an MSc in Architecture and Urban Planning from Leibniz University Hannover, Germany.
-
-His research focuses on geospatial artificial intelligence for multi-scale modeling and intelligent intervention in urban environments, aiming to enhance cities' resilience to climate risks and social inequalities. By integrating multi-source data—such as street view imagery, social media, remote sensing, and mobile signaling—with advanced methods including deep learning, graph neural networks, and causal inference, he develop interpretable spatiotemporal models for urban risk prediction, behavioral simulation, and policy evaluation. Grounded in a human-centered perspective, his work promotes data-driven urban governance, infrastructure optimization, and spatial justice transformation. Key publications include:
-
-Rui, J. (2025). Green disparities, happiness elusive: Decoding the spatial mismatch between green equity and the happiness from vulnerable perspectives. Cities, 163, 106063.
-
-Rui, J., & Cai, C. (2025). Plausible or misleading? Evaluating the adaption of the place pulse 2.0 dataset for predicting subjective perception in Chinese urban landscapes. Habitat International, 157, 103333.`,
-          socialLinks: [
-            { platform: 'Website', icon: websiteSVG, url: 'https://come.tju.edu.cn/info/1552/5864.htm' }
-          ]
-        },
-        {
-          id: 5,
-          name: 'Dr Jin Rui',
-          title: 'Lecturer in Risk, Environment and Society',
-          avatar: '/src/assets/images/u5.png',
-          detail: `Dr. Yuan Liu is an Associate Research Fellow at the National Climate Center, China Meteorological Administration. He holds a PhD in Natural Disaster Science from Beijing Normal University, an MSc in Environmental Engineering from North China Electric Power University, and a BSc in Applied Meteorology from Nanjing University of Information Science and Technology. 
-
-He Engaged in research on meteorological disaster risk and climate change impact assessment, with a focus on risk evaluation grounded in the hazard–exposure–vulnerability framework, disaster loss estimation based on input-output theory, and interdisciplinary climate-economic assessments integrating climate science, physical systems, and economic modeling. His current research centers on the impacts of extreme weather and climate events on infrastructure and agricultural systems under global warming, with an emphasis on cross-sectoral cascading effects. Key publications in high-impact journals include:
-
-Liu, Y., Li, N., Zhang, Z., Huang, C., Chen, X., & Wang, F. (2020). The central trend in crop yields under climate change in China: A systematic review. Science of the Total Environment.
-
-Huang, C., Guo, J., Zhang, Z., Li, N., Zhu, A., Liu, Y., Chen, X., Sun, B. (2025). Indirect economic benefits of energy consumption changes under China's carbon neutrality goal. Energy.`,
-          socialLinks: [
-            { platform: 'Website', icon: websiteSVG, url: 'https://www.kcl.ac.uk/people/daoping-wang' }
-          ]
-        },
-        {
-          id: 6,
-          name: 'Dr Zhao Zeng',
-          title: 'Lecturer in Risk, Environment and Society',
-          avatar: '/src/assets/images/u6.png',
-          detail: `Dr. Zhao Zeng is an Associate Research Fellow at the College of Management and Economics, Tianjin University, China. Her research focuses on cascading risk analysis of sudden-onset disasters (including natural disasters) and post-disaster management. 
-
-She holds a PhD degree in Climate Change Economics from the University of East Anglia, UK, a Master and a Bachelor degree from Beijing Forestry University, China. Before joining Tianjin University, she was a research associate at Imperial College London, UK. 
-
-During past several years, she improved the methodology of disaster footprint analysis based on Input-Output framework, which can be applied to quantify the disaster-induced economic costs cascading throughout production supply chains at both industrial and regional level, and assess the economic impacts of various post-disaster recovery schemes. Key publication in high-impact journals includes:
-
-Zhao Zeng, Nan Wang, Zengkai Zhang, Huimin Wang, Huibin Du*. Flood footprint assessment: Assessing external assistance' impact on post-disaster recovery. Risk Analysis, 2025, 1–12. https://doi.org/10.1111/risa.70013.`,
-          socialLinks: [
-            { platform: 'Website', icon: websiteSVG, url: 'https://come.tju.edu.cn/info/1552/5864.htm' }
-          ]
-        }
-      ],
-      advisorBoard: [
-        {
-          id: 1,
-          name: 'Can Wang',
-          title: 'Lecturer in Risk, Environment and Society',
-          avatar: '/src/assets/images/u7.png',
-          detail: `Can Wang is a PhD Candidate in Business Management at the Department of Management, Beijing Institute of Technology (BIT), China. She also holds B.E. in Information Management and Information System and M.S. in Management Science and Engineering from BIT. 
-
-Her research focuses on cascading risks in energy transitions, examining how disruptions in energy systems, technology deployment, and economic structures influence productivity, employment patterns, and labor markets during the shift to a low-carbon economy. Her study also explores how the price changes during the energy transition are transmitted to energy-consuming sectors, potentially creating risks in these sectors. Additionally, her research investigates how extreme weather events, such as heatwaves and floods, affect the resilience of the low-carbon transition, analyzing how both energy systems and labor markets adapt to such risks. By employing Integrated Assessment Models (IAMs) and machine learning, her research captures interdependencies across various sectors, aiming to identify policy interventions that can reduce cascading vulnerabilities and enhance the overall resilience of low-carbon systems. Key publication includes:
-
-Song Y, Wang C, Wang Z. Climate risk, institutional quality, and total factor productivity[J]. Technological Forecasting and Social Change, 2023, 189: 122365.`,
-          socialLinks: [
-            { platform: 'Website', icon: websiteSVG, url: 'https://www.kcl.ac.uk/people/daoping-wang' }
-          ]
-        },
-        {
-          id: 2,
-          name: 'Congcong Du',
-          title: 'Lecturer in Risk, Environment and Society',
-          avatar: '/src/assets/images/u8.png',
-          detail: `Congcong Du is a PhD candidate in the Department of Aeronautical and Aviation Engineering at The Hong Kong Polytechnic University. He holds an M.S. and a B.S. in Industrial Engineering from the China University of Mining and Technology.
-
-His research focuses on climate risks in aviation and aviation emission reduction. 
-He has published 5 papers in high-impact journals, with selected key publications including: 
-
-Pan, Y., Dong, F., & Du, C*. (2023). Is China approaching the inflection point of the ecological Kuznets curve? Analysis based on ecosystem service value at the county level. Journal of Environmental Management, 326, 116629 (8/Q1).
-
-Du, C., Cao, Y., Ling, Y., Jin, Z., Wang, S., & Wang, D. (2024). Does manufacturing agglomeration promote green productivity growth in China? Fresh evidence from partially linear functional-coefficient models. Energy Economics, 131, 107352 (13.6/Q1).`,
-          socialLinks: [
-            { platform: 'Website', icon: websiteSVG, url: 'https://come.tju.edu.cn/info/1552/5864.htm' }
-          ]
-        },
         {
           id: 3,
           name: 'Jia Zheng',
@@ -294,14 +193,19 @@ Hu, L. et al. (2025). 'Understanding the heterogeneous roles of China's sectors 
         },
         {
           id: 7,
-          name: 'Pengfei Yuan',
+          name: 'Congcong Du',
           title: 'Lecturer in Risk, Environment and Society',
-          avatar: '/src/assets/images/u13.png',
-          detail: `Pengfei Yuan is a postgraduate researcher at the Department of Geography, King's College London and a Ph.D candidate in Shandong university. His research focuses on Climate-induced disruption modeling in critical infrastructure systems based on AI techniques and Cascading risk analysis in global supply and value chains. His key publication includes:
- 
-Yuan, P. et al. (2024). 'Assessing the supply risks of critical metals in China's low-carbon energy transition', Global Environmental Change, 86, 102825. `,
+          avatar: '/src/assets/images/u8.png',
+          detail: `Congcong Du is a PhD candidate in the Department of Aeronautical and Aviation Engineering at The Hong Kong Polytechnic University. He holds an M.S. and a B.S. in Industrial Engineering from the China University of Mining and Technology.
+
+His research focuses on climate risks in aviation and aviation emission reduction. 
+He has published 5 papers in high-impact journals, with selected key publications including: 
+
+Pan, Y., Dong, F., & Du, C*. (2023). Is China approaching the inflection point of the ecological Kuznets curve? Analysis based on ecosystem service value at the county level. Journal of Environmental Management, 326, 116629 (8/Q1).
+
+Du, C., Cao, Y., Ling, Y., Jin, Z., Wang, S., & Wang, D. (2024). Does manufacturing agglomeration promote green productivity growth in China? Fresh evidence from partially linear functional-coefficient models. Energy Economics, 131, 107352 (13.6/Q1).`,
           socialLinks: [
-            { platform: 'Website', icon: websiteSVG, url: 'https://www.kcl.ac.uk/people/daoping-wang' }
+            { platform: 'Website', icon: websiteSVG, url: 'https://come.tju.edu.cn/info/1552/5864.htm' }
           ]
         },
         {
@@ -325,7 +229,105 @@ Sun, Y., Zhang, R. and Li, A. (2024). 'A new concept of education-innovation-eco
           socialLinks: [
             { platform: 'Website', icon: websiteSVG, url: 'https://www.kcl.ac.uk/people/daoping-wang' }
           ]
+        },
+        {
+          id: 10,
+          name: 'Can Wang',
+          title: 'Lecturer in Risk, Environment and Society',
+          avatar: '/src/assets/images/u7.png',
+          detail: `Can Wang is a PhD Candidate in Business Management at the Department of Management, Beijing Institute of Technology (BIT), China. She also holds B.E. in Information Management and Information System and M.S. in Management Science and Engineering from BIT. 
+
+Her research focuses on cascading risks in energy transitions, examining how disruptions in energy systems, technology deployment, and economic structures influence productivity, employment patterns, and labor markets during the shift to a low-carbon economy. Her study also explores how the price changes during the energy transition are transmitted to energy-consuming sectors, potentially creating risks in these sectors. Additionally, her research investigates how extreme weather events, such as heatwaves and floods, affect the resilience of the low-carbon transition, analyzing how both energy systems and labor markets adapt to such risks. By employing Integrated Assessment Models (IAMs) and machine learning, her research captures interdependencies across various sectors, aiming to identify policy interventions that can reduce cascading vulnerabilities and enhance the overall resilience of low-carbon systems. Key publication includes:
+
+Song Y, Wang C, Wang Z. Climate risk, institutional quality, and total factor productivity[J]. Technological Forecasting and Social Change, 2023, 189: 122365.`,
+          socialLinks: [
+            { platform: 'Website', icon: websiteSVG, url: 'https://www.kcl.ac.uk/people/daoping-wang' }
+          ]
+        },
+      ],
+      advisorBoard: [
+                {
+          id: 1,
+          name: 'Professor Aijun Li',
+          title: 'Lecturer in Risk, Environment and Society',
+          avatar: '/src/assets/images/u2.png',
+          detail: `Prof. Aijun Li is a Professor at Shandong University, China. He is the Principal Investigator of the Center for Economic Research and leads a research team focused on large-scale modeling for energy economics, climate policy, and disaster resilience. He is a Taishan Scholar Young Expert (Shandong Province), Outstanding Mid-Career Scholar (Shandong University), and Young Cultural Talent awarded by the Central Propaganda Department of China.
+
+He graduated with a PhD in Economics at Xiamen University and completed postdoctoral research at Shandong University, with a visiting scholarship at the University of Pittsburgh. His work develops methodologies to quantify carbon emissions, economic resilience, and climate policy impacts, pioneering open-source DEA models for global sustainability research.
+
+He has published over 40 peer-reviewed papers in top-tier journals, including Economic Research, European Journal of Operational Research, Energy Economics, and Journal of Cleaner Production. More than 30 of his papers rank in the top 5% of their disciplines, with 1 ESI Hot Paper, 2 ESI Highly Cited Papers, and the Elsevier Highest Cited Paper Award (2018).`,
+          socialLinks: [
+            { platform: 'Website', icon: websiteSVG, url: 'https://faculty.sdu.edu.cn/liaijun/zh_CN/index.htm' }
+          ]
+        },
+        {
+          id: 2,
+          name: 'Dr Jinlei Zhang',
+          title: 'Lecturer in Risk, Environment and Society',
+          avatar: '/src/assets/images/u3.png',
+          detail: `Dr. Jinlei Zhang is an Associate Professor at the School of Systems Science, Beijing Jiaotong University, where he leads research in intelligent transportation systems and spatiotemporal data mining. He serves as Lead Guest Editor for Transportmetrica A and Sustainability special issues, and was Guest Editor for Journal of Geo-Information Science, Special Issue. 
+
+He earned his PhD in Traffic Engineering from Beijing Jiaotong University, with visiting research at the University of Washington and Hong Kong Polytechnic University. His research focuses on traffic engineering,deep learning, spatiotemporal data mining, and traffic prediction. 
+
+He has published over 30 SCI papers in top journals including IEEE Transactions on Intelligent Transportation Systems, Transportation Research Part C, and Information Fusion. His key publications includes:
+Yue Mo, Jinlei Zhang* , Chengcheng Wang, Xiaopei Hao, Lixing Yang, Ziyou Gao. A Semi-Conv-Transformer model for inflow prediction of newly expanding subway lines. IEEE Transactions on Intelligent Transportation Systems, 2025: 1-17.
+
+Jinlei Zhang , Shuai Mao, Shuxin Zhang, Jiateng Yin, Lixing Yang*, Ziyou Gao*. EF-former for short-term passenger Flow Prediction during large-scale events in Urban Rail Transit systems[J]. Information Fusion, 2025, 117: 102916.`,
+          socialLinks: [
+            { platform: 'Website', icon: websiteSVG, url: 'https://faculty.bjtu.edu.cn/9684/' }
+          ]
+        },
+        {
+          id: 3,
+          name: 'Dr Jin Rui',
+          title: 'Lecturer in Risk, Environment and Society',
+          avatar: '/src/assets/images/u4.png',
+          detail: `Dr. Jin Rui is a Postdoctoral Research Associate in Spatial Analytics and Machine Learning at the Department of Geography, King's College London, UK. He leads AI-driven projects on building typology recognition, flood prediction, and semantic risk perception at King's College London, following postdoctoral work on smart mobility modeling at Heidelberg University. He serves as Guest Editor for Land's Special Issue on spatial data science.
+
+He graduated with a Dr.-Ing. in Spatial Planning (magna cum laude) from Technical University Dortmund, Germany, and an MSc in Architecture and Urban Planning from Leibniz University Hannover, Germany.
+
+His research focuses on geospatial artificial intelligence for multi-scale modeling and intelligent intervention in urban environments, aiming to enhance cities' resilience to climate risks and social inequalities. By integrating multi-source data—such as street view imagery, social media, remote sensing, and mobile signaling—with advanced methods including deep learning, graph neural networks, and causal inference, he develop interpretable spatiotemporal models for urban risk prediction, behavioral simulation, and policy evaluation. Grounded in a human-centered perspective, his work promotes data-driven urban governance, infrastructure optimization, and spatial justice transformation. Key publications include:
+
+Rui, J. (2025). Green disparities, happiness elusive: Decoding the spatial mismatch between green equity and the happiness from vulnerable perspectives. Cities, 163, 106063.
+
+Rui, J., & Cai, C. (2025). Plausible or misleading? Evaluating the adaption of the place pulse 2.0 dataset for predicting subjective perception in Chinese urban landscapes. Habitat International, 157, 103333.`,
+          socialLinks: [
+            { platform: 'Website', icon: websiteSVG, url: 'https://come.tju.edu.cn/info/1552/5864.htm' }
+          ]
+        },
+        {
+          id: 4,
+          name: 'Dr Jin Rui',
+          title: 'Lecturer in Risk, Environment and Society',
+          avatar: '/src/assets/images/u5.png',
+          detail: `Dr. Yuan Liu is an Associate Research Fellow at the National Climate Center, China Meteorological Administration. He holds a PhD in Natural Disaster Science from Beijing Normal University, an MSc in Environmental Engineering from North China Electric Power University, and a BSc in Applied Meteorology from Nanjing University of Information Science and Technology. 
+
+He Engaged in research on meteorological disaster risk and climate change impact assessment, with a focus on risk evaluation grounded in the hazard–exposure–vulnerability framework, disaster loss estimation based on input-output theory, and interdisciplinary climate-economic assessments integrating climate science, physical systems, and economic modeling. His current research centers on the impacts of extreme weather and climate events on infrastructure and agricultural systems under global warming, with an emphasis on cross-sectoral cascading effects. Key publications in high-impact journals include:
+
+Liu, Y., Li, N., Zhang, Z., Huang, C., Chen, X., & Wang, F. (2020). The central trend in crop yields under climate change in China: A systematic review. Science of the Total Environment.
+
+Huang, C., Guo, J., Zhang, Z., Li, N., Zhu, A., Liu, Y., Chen, X., Sun, B. (2025). Indirect economic benefits of energy consumption changes under China's carbon neutrality goal. Energy.`,
+          socialLinks: [
+            { platform: 'Website', icon: websiteSVG, url: 'https://www.kcl.ac.uk/people/daoping-wang' }
+          ]
+        },
+        {
+          id: 5,
+          name: 'Dr Zhao Zeng',
+          title: 'Lecturer in Risk, Environment and Society',
+          avatar: '/src/assets/images/u6.png',
+          detail: `Dr. Zhao Zeng is an Associate Research Fellow at the College of Management and Economics, Tianjin University, China. Her research focuses on cascading risk analysis of sudden-onset disasters (including natural disasters) and post-disaster management. 
+
+She holds a PhD degree in Climate Change Economics from the University of East Anglia, UK, a Master and a Bachelor degree from Beijing Forestry University, China. Before joining Tianjin University, she was a research associate at Imperial College London, UK. 
+
+During past several years, she improved the methodology of disaster footprint analysis based on Input-Output framework, which can be applied to quantify the disaster-induced economic costs cascading throughout production supply chains at both industrial and regional level, and assess the economic impacts of various post-disaster recovery schemes. Key publication in high-impact journals includes:
+
+Zhao Zeng, Nan Wang, Zengkai Zhang, Huimin Wang, Huibin Du*. Flood footprint assessment: Assessing external assistance' impact on post-disaster recovery. Risk Analysis, 2025, 1–12. https://doi.org/10.1111/risa.70013.`,
+          socialLinks: [
+            { platform: 'Website', icon: websiteSVG, url: 'https://come.tju.edu.cn/info/1552/5864.htm' }
+          ]
         }
+
       ]
     }
   },
