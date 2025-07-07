@@ -4,8 +4,8 @@
       <div class="university-header">OUR TEAM</div>
       <div class="flex flex-col lg:flex-row items-start justify-between gap-8">
         <!-- 左侧照片墙 -->
-        <div class="team-photos-container w-full lg:w-1/2">
-          <div class="team-photos grid grid-cols-5 grid-rows-3 gap-3 w-full max-w-md mx-auto">
+        <div class="team-photos-container w-full lg:w-1/2 flex items-center justify-center">
+          <div class="team-photos grid grid-cols-5 grid-rows-3 gap-3 w-full max-w-md">
             <div v-for="n in 15" :key="n" class="team-photo-wrapper group">
               <img :src="getPhoto(n)" class="team-photo" :alt="`team member ${n}`" />
               <div class="photo-overlay"></div>
