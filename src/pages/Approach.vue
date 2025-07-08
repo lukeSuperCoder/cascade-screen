@@ -588,7 +588,7 @@ Zhao Zeng, Nan Wang, Zengkai Zhang, Huimin Wang, Huibin Du*. Flood footprint ass
 .avatar {
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 12px 12px 0 0;
 }
 
