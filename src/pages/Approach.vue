@@ -34,8 +34,8 @@
               <div class="text-sm text-gray-600">Experts</div>
             </div>
             <div class="stat-item text-center">
-              <div class="text-2xl font-bold text-black">5+</div>
-              <div class="text-sm text-gray-600">Countries</div>
+              <div class="text-2xl font-bold text-black">7+</div>
+              <div class="text-sm text-gray-600">Institutions</div>
             </div>
             <div class="stat-item text-center">
               <div class="text-2xl font-bold text-black">10+</div>
