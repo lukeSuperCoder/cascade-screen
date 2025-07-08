@@ -122,7 +122,7 @@ export default {
         {
           id: 1,
           name: 'Dr Daoping Wang',
-          title: 'Lecturer in Risk, Environment and Society',
+          title: "King's College London'",
           avatar: '/src/assets/images/u1.png',
           detail: `Dr. Daoping Wang is a Lecturer in Risk, Environment and Society at the Department of Geography, King's College London, UK. He serves as Lead of the King's Geocomputation and Data Science Research Hub and is an External Fellow of the World Economic Forum, driving interdisciplinary research on Risk and Resilience, Extreme Weather Events, Infrastructures, and Supply Chains.
 
@@ -136,7 +136,7 @@ He has published over 50 papers in high-impact journals, including Nature, Natur
         {
           id: 2,
           name: 'Pengfei Yuan',
-          title: 'Lecturer in Risk, Environment and Society',
+          title: "King's College London'",
           avatar: '/src/assets/images/u13.png',
           detail: `Pengfei Yuan is a postgraduate researcher at the Department of Geography, King's College London and a Ph.D candidate in Shandong university. His research focuses on Climate-induced disruption modeling in critical infrastructure systems based on AI techniques and Cascading risk analysis in global supply and value chains. His key publication includes:
  
@@ -149,7 +149,7 @@ Yuan, P. et al. (2024). 'Assessing the supply risks of critical metals in China'
         {
           id: 3,
           name: 'Jia Zheng',
-          title: 'Lecturer in Risk, Environment and Society',
+          title: "King's College London'",
           avatar: '/src/assets/images/u9.png',
           detail: `Jia Zheng is a PhD student in the Department of Geography at King's College London. She graduated with a MSc in Risk and Disaster Science (Distinction) from University College London. 
 
@@ -161,7 +161,7 @@ Her research examines how hydropower fluctuations in Southwestern China—amplif
         {
           id: 4,
           name: 'Jiaming Yu',
-          title: 'Lecturer in Risk, Environment and Society',
+          title: "King's College London'",
           avatar: '/src/assets/images/u10.png',
           detail: `Jiaming Yu is a PhD student in the Department of Geography at King's College London. She holds a Bachelor's degree in Energy Economics from China University of Petroleum, Beijing, and a Master's degree in Energy Economics from Shanghai University of Finance and Economics. 
 
@@ -173,7 +173,7 @@ Her research focuses on analyzing cascading socioeconomic risks triggered by ext
         {
           id: 5,
           name: 'Lijuan Zhou',
-          title: 'Lecturer in Risk, Environment and Society',
+          title: 'Shandong University',
           avatar: '/src/assets/images/u11.png',
           detail: `Lijuan Zhou is a PhD student in Population, Resource, Environmental Economics at the Center for Economic Research, Shandong University. She holds a Master degree from the Centre for Economic Research. Her research interest is disaster cascading risk economics. `,
           socialLinks: [
@@ -183,7 +183,7 @@ Her research focuses on analyzing cascading socioeconomic risks triggered by ext
         {
           id: 6,
           name: 'Liqi Hu',
-          title: 'Lecturer in Risk, Environment and Society',
+          title: 'Shandong University',
           avatar: '/src/assets/images/u12.png',
           detail: `Liqi Hu is a research student at the Center for Economic Research, Shandong University. Her work specialises in disaster economics, and her latest published paper is 
 Hu, L. et al. (2025). 'Understanding the heterogeneous roles of China's sectors under the shock of second Trump administration's new tariffs: A novel method of shock-based input-output data envelopment analysis', Energy, 324, 135687.`,
@@ -194,7 +194,7 @@ Hu, L. et al. (2025). 'Understanding the heterogeneous roles of China's sectors 
         {
           id: 7,
           name: 'Congcong Du',
-          title: 'Lecturer in Risk, Environment and Society',
+          title: 'Hong Kong Polytechnic University',
           avatar: '/src/assets/images/u8.png',
           detail: `Congcong Du is a PhD candidate in the Department of Aeronautical and Aviation Engineering at The Hong Kong Polytechnic University. He holds an M.S. and a B.S. in Industrial Engineering from the China University of Mining and Technology.
 
@@ -211,7 +211,7 @@ Du, C., Cao, Y., Ling, Y., Jin, Z., Wang, S., & Wang, D. (2024). Does manufactur
         {
           id: 8,
           name: 'Wen He',
-          title: 'Lecturer in Risk, Environment and Society',
+          title: 'King's College London',
           avatar: '/src/assets/images/u14.png',
           detail: `Wen He is a Postgraduate Researcher (PhD Candidate) in the Department of Geography at King's College London, specialising in urban cascading climate risks.`,
           socialLinks: [
@@ -221,7 +221,7 @@ Du, C., Cao, Y., Ling, Y., Jin, Z., Wang, S., & Wang, D. (2024). Does manufactur
         {
           id: 9,
           name: 'Yaotian Sun',
-          title: 'Lecturer in Risk, Environment and Society',
+          title: 'Shandong University',
           avatar: '/src/assets/images/u15.png',
           detail: `Yaotian Sun is a research student in Economics of Population, Resources and Environment at the Center for Economic Research, Shandong University. Her key publication includes:
 
@@ -233,7 +233,7 @@ Sun, Y., Zhang, R. and Li, A. (2024). 'A new concept of education-innovation-eco
         {
           id: 10,
           name: 'Can Wang',
-          title: 'Lecturer in Risk, Environment and Society',
+          title: 'Beijing Institute of Technology',
           avatar: '/src/assets/images/u7.png',
           detail: `Can Wang is a PhD Candidate in Business Management at the Department of Management, Beijing Institute of Technology (BIT), China. She also holds B.E. in Information Management and Information System and M.S. in Management Science and Engineering from BIT. 
 
@@ -249,7 +249,7 @@ Song Y, Wang C, Wang Z. Climate risk, institutional quality, and total factor pr
                 {
           id: 1,
           name: 'Professor Aijun Li',
-          title: 'Lecturer in Risk, Environment and Society',
+          title: 'Shandong University',
           avatar: '/src/assets/images/u2.png',
           detail: `Prof. Aijun Li is a Professor at Shandong University, China. He is the Principal Investigator of the Center for Economic Research and leads a research team focused on large-scale modeling for energy economics, climate policy, and disaster resilience. He is a Taishan Scholar Young Expert (Shandong Province), Outstanding Mid-Career Scholar (Shandong University), and Young Cultural Talent awarded by the Central Propaganda Department of China.
 
@@ -263,7 +263,7 @@ He has published over 40 peer-reviewed papers in top-tier journals, including Ec
         {
           id: 2,
           name: 'Dr Jinlei Zhang',
-          title: 'Lecturer in Risk, Environment and Society',
+          title: 'Beijing Jiaotong University',
           avatar: '/src/assets/images/u3.png',
           detail: `Dr. Jinlei Zhang is an Associate Professor at the School of Systems Science, Beijing Jiaotong University, where he leads research in intelligent transportation systems and spatiotemporal data mining. He serves as Lead Guest Editor for Transportmetrica A and Sustainability special issues, and was Guest Editor for Journal of Geo-Information Science, Special Issue. 
 
@@ -280,7 +280,7 @@ Jinlei Zhang , Shuai Mao, Shuxin Zhang, Jiateng Yin, Lixing Yang*, Ziyou Gao*. E
         {
           id: 3,
           name: 'Dr Jin Rui',
-          title: 'Lecturer in Risk, Environment and Society',
+          title: "King's College London",
           avatar: '/src/assets/images/u4.png',
           detail: `Dr. Jin Rui is a Postdoctoral Research Associate in Spatial Analytics and Machine Learning at the Department of Geography, King's College London, UK. He leads AI-driven projects on building typology recognition, flood prediction, and semantic risk perception at King's College London, following postdoctoral work on smart mobility modeling at Heidelberg University. He serves as Guest Editor for Land's Special Issue on spatial data science.
 
@@ -297,8 +297,8 @@ Rui, J., & Cai, C. (2025). Plausible or misleading? Evaluating the adaption of t
         },
         {
           id: 4,
-          name: 'Dr Jin Rui',
-          title: 'Lecturer in Risk, Environment and Society',
+          name: 'Dr Yuan Liu',
+          title: 'China Meteorological Administration',
           avatar: '/src/assets/images/u5.png',
           detail: `Dr. Yuan Liu is an Associate Research Fellow at the National Climate Center, China Meteorological Administration. He holds a PhD in Natural Disaster Science from Beijing Normal University, an MSc in Environmental Engineering from North China Electric Power University, and a BSc in Applied Meteorology from Nanjing University of Information Science and Technology. 
 
@@ -314,7 +314,7 @@ Huang, C., Guo, J., Zhang, Z., Li, N., Zhu, A., Liu, Y., Chen, X., Sun, B. (2025
         {
           id: 5,
           name: 'Dr Zhao Zeng',
-          title: 'Lecturer in Risk, Environment and Society',
+          title: 'Tianjin University',
           avatar: '/src/assets/images/u6.png',
           detail: `Dr. Zhao Zeng is an Associate Research Fellow at the College of Management and Economics, Tianjin University, China. Her research focuses on cascading risk analysis of sudden-onset disasters (including natural disasters) and post-disaster management. 
 
