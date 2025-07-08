@@ -211,7 +211,7 @@ Du, C., Cao, Y., Ling, Y., Jin, Z., Wang, S., & Wang, D. (2024). Does manufactur
         {
           id: 8,
           name: 'Wen He',
-          title: 'King's College London',
+          title: "King's College London",
           avatar: '/src/assets/images/u14.png',
           detail: `Wen He is a Postgraduate Researcher (PhD Candidate) in the Department of Geography at King's College London, specialising in urban cascading climate risks.`,
           socialLinks: [
