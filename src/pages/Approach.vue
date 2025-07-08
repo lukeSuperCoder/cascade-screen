@@ -2,9 +2,9 @@
   <div class="academic-team">
     <div class="team-intro-section rounded-2xl p-8 mb-2">
       <div class="university-header">OUR TEAM</div>
-      <div class="flex flex-col lg:flex-row items-start justify-between gap-8">
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-20">
         <!-- 左侧照片墙 -->
-        <div class="team-photos-container w-full lg:w-1/2 flex items-center justify-center">
+        <div class="team-photos-container w-full lg:w-1/2 flex items-center justify-end">
           <div class="team-photos grid grid-cols-5 grid-rows-3 gap-3 w-full max-w-md">
             <div v-for="n in 15" :key="n" class="team-photo-wrapper group">
               <img :src="getPhoto(n)" class="team-photo" :alt="`team member ${n}`" />
@@ -585,7 +585,7 @@ Sun, Y., Zhang, R. and Li, A. (2024). 'A new concept of education-innovation-eco
 
 .avatar {
   width: 100%;
-  height: 180px;
+  height: 200px;
   object-fit: cover;
   border-radius: 12px 12px 0 0;
 }
