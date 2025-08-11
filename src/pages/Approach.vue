@@ -122,7 +122,7 @@ export default {
         {
           id: 1,
           name: 'Dr Daoping Wang',
-          title: "King's College London'",
+          title: "King's College London",
           avatar: './images/u1.png',
           detail: `Dr. Daoping Wang is a Lecturer in Risk, Environment and Society at the Department of Geography, King's College London, UK. He serves as Lead of the King's Geocomputation and Data Science Research Hub and is an External Fellow of the World Economic Forum, driving interdisciplinary research on Risk and Resilience, Extreme Weather Events, Infrastructures, and Supply Chains.
 
@@ -136,7 +136,7 @@ He has published over 50 papers in high-impact journals, including Nature, Natur
         {
           id: 2,
           name: 'Pengfei Yuan',
-          title: "King's College London'",
+          title: "King's College London",
           avatar: './images/u13.png',
           detail: `Pengfei Yuan is a postgraduate researcher at the Department of Geography, King's College London and a Ph.D candidate in Shandong university. His research focuses on Climate-induced disruption modeling in critical infrastructure systems based on AI techniques and Cascading risk analysis in global supply and value chains. His key publication includes:
  
@@ -149,7 +149,7 @@ Yuan, P. et al. (2024). 'Assessing the supply risks of critical metals in China'
         {
           id: 3,
           name: 'Jia Zheng',
-          title: "King's College London'",
+          title: "King's College London",
           avatar: './images/u9.png',
           detail: `Jia Zheng is a PhD student in the Department of Geography at King's College London. She graduated with a MSc in Risk and Disaster Science (Distinction) from University College London. 
 
@@ -161,7 +161,7 @@ Her research examines how hydropower fluctuations in Southwestern China—amplif
         {
           id: 4,
           name: 'Jiaming Yu',
-          title: "King's College London'",
+          title: "King's College London",
           avatar: './images/u10.png',
           detail: `Jiaming Yu is a PhD student in the Department of Geography at King's College London. She holds a Bachelor's degree in Energy Economics from China University of Petroleum, Beijing, and a Master's degree in Energy Economics from Shanghai University of Finance and Economics. 
 
