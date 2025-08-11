@@ -747,7 +747,7 @@ export default {
           ...item
         },
         style: {
-          iconUrl: `/src/assets/icons/${this.shapeMap[item.properties.WorstSector]}.png`,
+          iconUrl: `./icons/${this.shapeMap[item.properties.WorstSector]}.png`,
           iconScale: this.selectAllChecked? mapMaxLossToRadiusAll(item.properties.MaxLoss): mapMaxLossToRadius(item.properties.MaxLoss),
         }
       }));

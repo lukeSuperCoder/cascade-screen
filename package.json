@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/lukeSuperCoder/cascade-screen",
+  "homepage": "https://lukesupercoder.github.io/cascade-screen",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",

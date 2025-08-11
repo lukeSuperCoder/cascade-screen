@@ -58,7 +58,7 @@ export default defineComponent({
 
 <style scoped>
 .bg-hero-pattern {
-  background-image: url('/src/assets/images/earth-bg.jpg');
+  background-image: url('@/assets/images/earth-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 55% 100%;

@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../pages/Home.vue'
 import MapPage from '../pages/MapPage.vue'
 import Approach from '../pages/Approach.vue'
@@ -6,7 +6,7 @@ import Empty from '../pages/Empty.vue'
 
 // 创建路由
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(), // 改为 Hash 模式
   routes: [
     {
       path: '/',
