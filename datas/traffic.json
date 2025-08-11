@@ -1,0 +1,7202 @@
+[
+    {
+        "Month": 10,
+        "nuts218cd": "UKD1",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 123.1351,
+        "Eco_loss": 12417.8445,
+        "coordinate": [
+            -1.599691,
+            53.120737
+        ],
+        "Industry Tags": "Energy,Transportation"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKD7",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 246.4383,
+        "Eco_loss": 7438.9476,
+        "coordinate": [
+            -6.879065,
+            56.737992
+        ],
+        "Industry Tags": "Transportation"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKH1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 4.8075,
+        "Eco_loss": 6062.093,
+        "coordinate": [
+            -3.022877,
+            55.195131
+        ],
+        "Industry Tags": "Communication,Transportation,Energy"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKI7",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 98.0595,
+        "Eco_loss": 11238.8265,
+        "coordinate": [
+            -3.046919,
+            54.897816
+        ],
+        "Industry Tags": "Agriculture,Transportation"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKK3",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 149.0981,
+        "Eco_loss": 13889.2757,
+        "coordinate": [
+            -6.199356,
+            55.98438
+        ],
+        "Industry Tags": "Agriculture,Energy"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKE3",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 197.1657,
+        "Eco_loss": 6486.1584,
+        "coordinate": [
+            -3.38922,
+            58.862707
+        ],
+        "Industry Tags": "Communication"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKD1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 109.8892,
+        "Eco_loss": 4391.4558,
+        "coordinate": [
+            -1.506418,
+            52.146819
+        ],
+        "Industry Tags": "Transportation,Agriculture,Communication,Energy"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKJ3",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 155.9519,
+        "Eco_loss": 17678.8228,
+        "coordinate": [
+            0.752909,
+            51.02861
+        ],
+        "Industry Tags": "Transportation"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKD1",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 144.1177,
+        "Eco_loss": 13599.2406,
+        "coordinate": [
+            -4.805636,
+            54.616118
+        ],
+        "Industry Tags": "Transportation,Agriculture,Manufacturing"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKM7",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 143.5749,
+        "Eco_loss": 14448.1501,
+        "coordinate": [
+            -7.240876,
+            54.908623
+        ],
+        "Industry Tags": "Manufacturing,Energy,Communication"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKG1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 3.0331,
+        "Eco_loss": 9189.6352,
+        "coordinate": [
+            -7.77208,
+            54.757893
+        ],
+        "Industry Tags": "Transportation"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKI6",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 49.2684,
+        "Eco_loss": 2889.5298,
+        "coordinate": [
+            -3.079755,
+            51.286487
+        ],
+        "Industry Tags": "Communication,Agriculture,Manufacturing,Energy,Transportation"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKG1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 193.0765,
+        "Eco_loss": 9946.0566,
+        "coordinate": [
+            -6.232457,
+            50.274751
+        ],
+        "Industry Tags": "Energy,Agriculture,Manufacturing,Transportation,Communication"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKM7",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 89.2326,
+        "Eco_loss": 2309.0526,
+        "coordinate": [
+            -1.040927,
+            50.888379
+        ],
+        "Industry Tags": "Agriculture"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKC1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 98.0359,
+        "Eco_loss": 17538.4069,
+        "coordinate": [
+            -6.685666,
+            54.234958
+        ],
+        "Industry Tags": "Manufacturing"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKF2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 187.4088,
+        "Eco_loss": 8804.3344,
+        "coordinate": [
+            -1.686183,
+            57.335332
+        ],
+        "Industry Tags": "Manufacturing"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKG2",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 236.433,
+        "Eco_loss": 7658.7325,
+        "coordinate": [
+            -3.554538,
+            52.957005
+        ],
+        "Industry Tags": "Agriculture"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKM8",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 40.1823,
+        "Eco_loss": 14254.4385,
+        "coordinate": [
+            -3.111168,
+            54.17314
+        ],
+        "Industry Tags": "Agriculture,Communication,Manufacturing,Energy,Transportation"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKF2",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 193.0176,
+        "Eco_loss": 3867.3265,
+        "coordinate": [
+            -1.430594,
+            51.583357
+        ],
+        "Industry Tags": "Agriculture,Energy,Manufacturing,Transportation,Communication"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKH1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 38.0242,
+        "Eco_loss": 2961.8208,
+        "coordinate": [
+            -3.173637,
+            54.096238
+        ],
+        "Industry Tags": "Manufacturing,Transportation,Agriculture,Communication,Energy"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKG1",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 54.3801,
+        "Eco_loss": 13818.2373,
+        "coordinate": [
+            -1.486097,
+            54.511929
+        ],
+        "Industry Tags": "Communication"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKH2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 245.3604,
+        "Eco_loss": 17943.8209,
+        "coordinate": [
+            -4.365404,
+            51.804736
+        ],
+        "Industry Tags": "Agriculture,Energy,Manufacturing"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKF1",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 202.8067,
+        "Eco_loss": 4115.5157,
+        "coordinate": [
+            -6.673964,
+            57.34395
+        ],
+        "Industry Tags": "Agriculture,Energy,Transportation,Manufacturing,Communication"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKM6",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 81.9078,
+        "Eco_loss": 7338.6026,
+        "coordinate": [
+            -4.1092,
+            58.299223
+        ],
+        "Industry Tags": "Communication,Manufacturing,Transportation,Energy"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKH1",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 86.4791,
+        "Eco_loss": 4641.2734,
+        "coordinate": [
+            -2.931162,
+            52.942053
+        ],
+        "Industry Tags": "Communication,Transportation,Agriculture,Manufacturing"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKL2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 102.2982,
+        "Eco_loss": 8871.7154,
+        "coordinate": [
+            -4.90407,
+            50.865291
+        ],
+        "Industry Tags": "Agriculture"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKM5",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 196.1136,
+        "Eco_loss": 16954.2803,
+        "coordinate": [
+            0.458226,
+            52.982199
+        ],
+        "Industry Tags": "Communication"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKC2",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 136.9921,
+        "Eco_loss": 9609.9486,
+        "coordinate": [
+            -5.754098,
+            57.614889
+        ],
+        "Industry Tags": "Transportation"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKH3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 213.4014,
+        "Eco_loss": 14070.343,
+        "coordinate": [
+            -0.909525,
+            53.812277
+        ],
+        "Industry Tags": "Agriculture,Manufacturing,Transportation"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKD7",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 48.2969,
+        "Eco_loss": 3437.195,
+        "coordinate": [
+            -2.129602,
+            52.221611
+        ],
+        "Industry Tags": "Transportation,Manufacturing,Agriculture,Energy"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKK1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 182.5967,
+        "Eco_loss": 8441.843,
+        "coordinate": [
+            -4.429894,
+            50.73369
+        ],
+        "Industry Tags": "Agriculture"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKJ4",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 89.4326,
+        "Eco_loss": 3999.9235,
+        "coordinate": [
+            -4.517103,
+            51.973983
+        ],
+        "Industry Tags": "Manufacturing,Agriculture,Energy,Transportation,Communication"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKE2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 55.2767,
+        "Eco_loss": 18136.7294,
+        "coordinate": [
+            -4.744471,
+            51.924918
+        ],
+        "Industry Tags": "Manufacturing"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKG2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 104.2154,
+        "Eco_loss": 756.8794,
+        "coordinate": [
+            -4.307985,
+            57.876998
+        ],
+        "Industry Tags": "Energy"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKH2",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 66.602,
+        "Eco_loss": 13173.0222,
+        "coordinate": [
+            -2.990203,
+            54.719481
+        ],
+        "Industry Tags": "Agriculture,Manufacturing,Transportation"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKE1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 140.3556,
+        "Eco_loss": 2688.4567,
+        "coordinate": [
+            -3.213703,
+            54.502023
+        ],
+        "Industry Tags": "Communication,Transportation,Energy,Manufacturing"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKJ1",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 220.4656,
+        "Eco_loss": 4195.3025,
+        "coordinate": [
+            -5.109792,
+            54.583081
+        ],
+        "Industry Tags": "Energy,Agriculture"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKM7",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 237.9353,
+        "Eco_loss": 5383.1252,
+        "coordinate": [
+            -2.368713,
+            54.591379
+        ],
+        "Industry Tags": "Energy,Agriculture"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKK3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 30.5273,
+        "Eco_loss": 11586.1221,
+        "coordinate": [
+            -4.780162,
+            58.554068
+        ],
+        "Industry Tags": "Communication,Agriculture,Transportation,Energy"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKI3",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 238.2143,
+        "Eco_loss": 2131.3368,
+        "coordinate": [
+            -4.711483,
+            56.191268
+        ],
+        "Industry Tags": "Agriculture,Communication,Energy,Transportation,Manufacturing"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKL2",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 40.3943,
+        "Eco_loss": 7421.5454,
+        "coordinate": [
+            -5.532398,
+            57.179993
+        ],
+        "Industry Tags": "Agriculture,Transportation,Manufacturing,Energy"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKH1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 108.6074,
+        "Eco_loss": 7000.8676,
+        "coordinate": [
+            -6.83944,
+            57.849689
+        ],
+        "Industry Tags": "Transportation,Energy,Communication,Agriculture"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKD7",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 249.9041,
+        "Eco_loss": 10165.9697,
+        "coordinate": [
+            -1.267154,
+            53.834946
+        ],
+        "Industry Tags": "Transportation,Agriculture"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKI5",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 177.3428,
+        "Eco_loss": 15837.1464,
+        "coordinate": [
+            -5.37801,
+            57.582787
+        ],
+        "Industry Tags": "Manufacturing,Transportation,Energy,Agriculture,Communication"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKK3",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 217.2486,
+        "Eco_loss": 3915.4642,
+        "coordinate": [
+            -4.732822,
+            50.183671
+        ],
+        "Industry Tags": "Agriculture,Communication,Transportation,Energy,Manufacturing"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKE1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 143.9296,
+        "Eco_loss": 3509.4034,
+        "coordinate": [
+            -4.672983,
+            51.705937
+        ],
+        "Industry Tags": "Energy,Agriculture"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKK1",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 13.2956,
+        "Eco_loss": 1894.0987,
+        "coordinate": [
+            -3.963592,
+            58.265748
+        ],
+        "Industry Tags": "Communication,Transportation,Manufacturing"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKF1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 226.8553,
+        "Eco_loss": 1883.7122,
+        "coordinate": [
+            -1.305984,
+            51.070154
+        ],
+        "Industry Tags": "Communication,Energy"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKE1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 211.9105,
+        "Eco_loss": 19092.7552,
+        "coordinate": [
+            -4.125662,
+            51.513775
+        ],
+        "Industry Tags": "Agriculture,Transportation,Communication"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKF2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 154.1026,
+        "Eco_loss": 1682.9701,
+        "coordinate": [
+            -3.443311,
+            51.455254
+        ],
+        "Industry Tags": "Agriculture,Communication"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKJ4",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 163.0361,
+        "Eco_loss": 18620.9856,
+        "coordinate": [
+            -2.429623,
+            57.321922
+        ],
+        "Industry Tags": "Manufacturing,Agriculture,Transportation"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKG2",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 58.5924,
+        "Eco_loss": 5791.6637,
+        "coordinate": [
+            -7.657662,
+            57.412792
+        ],
+        "Industry Tags": "Agriculture,Energy,Manufacturing"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKH3",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 158.6217,
+        "Eco_loss": 18178.9919,
+        "coordinate": [
+            -5.056487,
+            51.340973
+        ],
+        "Industry Tags": "Energy,Agriculture,Manufacturing,Communication,Transportation"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKE2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 144.5536,
+        "Eco_loss": 7442.9687,
+        "coordinate": [
+            -0.822378,
+            52.044768
+        ],
+        "Industry Tags": "Agriculture,Communication"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKL1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 99.0037,
+        "Eco_loss": 8929.143,
+        "coordinate": [
+            -1.595379,
+            54.235555
+        ],
+        "Industry Tags": "Agriculture"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKK4",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 75.5712,
+        "Eco_loss": 18015.9562,
+        "coordinate": [
+            -5.612879,
+            54.361369
+        ],
+        "Industry Tags": "Energy,Transportation,Manufacturing"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKH1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 157.0698,
+        "Eco_loss": 16531.2202,
+        "coordinate": [
+            -5.757897,
+            50.595178
+        ],
+        "Industry Tags": "Energy,Communication,Transportation,Agriculture,Manufacturing"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKK1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 34.8376,
+        "Eco_loss": 16079.6158,
+        "coordinate": [
+            -1.777999,
+            51.484898
+        ],
+        "Industry Tags": "Communication,Manufacturing"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKM5",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 165.933,
+        "Eco_loss": 19863.0714,
+        "coordinate": [
+            -6.665425,
+            58.055489
+        ],
+        "Industry Tags": "Energy,Communication,Manufacturing,Transportation"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKE4",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 197.3177,
+        "Eco_loss": 15381.0457,
+        "coordinate": [
+            -4.928529,
+            54.982655
+        ],
+        "Industry Tags": "Communication,Energy,Transportation,Agriculture"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKH1",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 245.1506,
+        "Eco_loss": 17614.421,
+        "coordinate": [
+            -0.532983,
+            50.686586
+        ],
+        "Industry Tags": "Manufacturing,Agriculture,Energy,Transportation,Communication"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKI3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 249.4692,
+        "Eco_loss": 16509.4304,
+        "coordinate": [
+            1.035527,
+            52.079563
+        ],
+        "Industry Tags": "Agriculture,Communication"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKF2",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 13.0828,
+        "Eco_loss": 10189.0509,
+        "coordinate": [
+            -5.624,
+            56.917642
+        ],
+        "Industry Tags": "Manufacturing,Transportation,Agriculture"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKK1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 105.1269,
+        "Eco_loss": 8725.9318,
+        "coordinate": [
+            -6.779072,
+            55.277913
+        ],
+        "Industry Tags": "Energy,Manufacturing,Transportation"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKG3",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 27.1616,
+        "Eco_loss": 16062.148,
+        "coordinate": [
+            0.416956,
+            51.778908
+        ],
+        "Industry Tags": "Transportation"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKE2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 193.1608,
+        "Eco_loss": 6233.8428,
+        "coordinate": [
+            -2.68847,
+            54.680409
+        ],
+        "Industry Tags": "Energy,Transportation,Manufacturing,Communication,Agriculture"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKD7",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 245.1447,
+        "Eco_loss": 6125.0396,
+        "coordinate": [
+            -4.019865,
+            57.214266
+        ],
+        "Industry Tags": "Communication,Agriculture,Transportation,Manufacturing,Energy"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKD4",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 28.6753,
+        "Eco_loss": 11224.0862,
+        "coordinate": [
+            -4.622174,
+            56.792895
+        ],
+        "Industry Tags": "Energy"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKI5",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 39.0258,
+        "Eco_loss": 1038.4878,
+        "coordinate": [
+            -2.815188,
+            55.40824
+        ],
+        "Industry Tags": "Manufacturing"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKJ2",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 206.7589,
+        "Eco_loss": 13622.643,
+        "coordinate": [
+            -5.563307,
+            57.172839
+        ],
+        "Industry Tags": "Communication"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKI5",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 168.5988,
+        "Eco_loss": 7012.5735,
+        "coordinate": [
+            -1.134686,
+            55.257012
+        ],
+        "Industry Tags": "Energy,Communication,Agriculture,Manufacturing"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKK3",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 139.7331,
+        "Eco_loss": 625.2855,
+        "coordinate": [
+            -2.600319,
+            57.018673
+        ],
+        "Industry Tags": "Energy,Transportation,Agriculture,Manufacturing"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKC2",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 223.3607,
+        "Eco_loss": 9808.7447,
+        "coordinate": [
+            -4.544394,
+            50.754335
+        ],
+        "Industry Tags": "Communication,Energy,Transportation"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKM7",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 140.6168,
+        "Eco_loss": 16915.1012,
+        "coordinate": [
+            -3.757817,
+            53.46112
+        ],
+        "Industry Tags": "Communication,Transportation"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKD4",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 235.7323,
+        "Eco_loss": 13659.9575,
+        "coordinate": [
+            -7.957606,
+            57.026092
+        ],
+        "Industry Tags": "Energy,Communication"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKE3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 83.6536,
+        "Eco_loss": 6103.5747,
+        "coordinate": [
+            -2.895673,
+            55.310943
+        ],
+        "Industry Tags": "Agriculture,Manufacturing,Transportation,Energy,Communication"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKK1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 115.9788,
+        "Eco_loss": 7978.905,
+        "coordinate": [
+            -6.189772,
+            57.329598
+        ],
+        "Industry Tags": "Manufacturing,Communication,Transportation"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKC2",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 243.274,
+        "Eco_loss": 13016.2363,
+        "coordinate": [
+            -7.047099,
+            56.753719
+        ],
+        "Industry Tags": "Manufacturing,Transportation,Agriculture,Energy"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKG1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 81.9508,
+        "Eco_loss": 4967.0672,
+        "coordinate": [
+            -2.042721,
+            51.901991
+        ],
+        "Industry Tags": "Energy,Agriculture,Transportation"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKK2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 80.3237,
+        "Eco_loss": 12312.5672,
+        "coordinate": [
+            -5.802071,
+            57.227086
+        ],
+        "Industry Tags": "Communication,Transportation,Energy,Manufacturing,Agriculture"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKI7",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 186.0914,
+        "Eco_loss": 5986.7129,
+        "coordinate": [
+            -3.796216,
+            54.766215
+        ],
+        "Industry Tags": "Energy,Transportation,Communication,Agriculture,Manufacturing"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKM7",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 36.2287,
+        "Eco_loss": 9661.0822,
+        "coordinate": [
+            -4.25049,
+            51.446646
+        ],
+        "Industry Tags": "Agriculture,Manufacturing,Transportation"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKM7",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 26.2737,
+        "Eco_loss": 10558.4833,
+        "coordinate": [
+            -6.985494,
+            56.29074
+        ],
+        "Industry Tags": "Agriculture,Energy,Manufacturing,Communication"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKG2",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 179.6738,
+        "Eco_loss": 1461.3805,
+        "coordinate": [
+            -3.95033,
+            51.053798
+        ],
+        "Industry Tags": "Transportation,Manufacturing,Communication,Agriculture,Energy"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKD1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 221.6164,
+        "Eco_loss": 13782.3288,
+        "coordinate": [
+            -1.94095,
+            57.581022
+        ],
+        "Industry Tags": "Manufacturing,Agriculture"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKM8",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 18.2879,
+        "Eco_loss": 1658.0293,
+        "coordinate": [
+            -2.251418,
+            57.541789
+        ],
+        "Industry Tags": "Communication,Transportation,Manufacturing,Energy,Agriculture"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKM9",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 11.027,
+        "Eco_loss": 18290.4047,
+        "coordinate": [
+            -1.873013,
+            54.203826
+        ],
+        "Industry Tags": "Transportation,Energy"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKM5",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 240.6232,
+        "Eco_loss": 18746.3441,
+        "coordinate": [
+            -6.99741,
+            56.490761
+        ],
+        "Industry Tags": "Agriculture"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKM9",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 172.2273,
+        "Eco_loss": 3378.2532,
+        "coordinate": [
+            -3.547966,
+            58.311068
+        ],
+        "Industry Tags": "Communication,Manufacturing,Transportation,Energy,Agriculture"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKM5",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 12.3934,
+        "Eco_loss": 14478.8069,
+        "coordinate": [
+            -5.933994,
+            57.930655
+        ],
+        "Industry Tags": "Manufacturing"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKF1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 37.2469,
+        "Eco_loss": 1914.7184,
+        "coordinate": [
+            -2.639963,
+            55.106071
+        ],
+        "Industry Tags": "Communication,Agriculture,Energy,Manufacturing,Transportation"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKE4",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 224.2203,
+        "Eco_loss": 2909.1182,
+        "coordinate": [
+            -3.268155,
+            57.605157
+        ],
+        "Industry Tags": "Manufacturing,Energy"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKH2",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 119.9482,
+        "Eco_loss": 14412.4366,
+        "coordinate": [
+            -3.753345,
+            54.011893
+        ],
+        "Industry Tags": "Manufacturing,Communication,Energy,Agriculture"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKC1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 183.5918,
+        "Eco_loss": 791.9598,
+        "coordinate": [
+            -3.428398,
+            58.717937
+        ],
+        "Industry Tags": "Transportation,Agriculture"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKK4",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 65.2669,
+        "Eco_loss": 14065.8507,
+        "coordinate": [
+            -1.994611,
+            52.197789
+        ],
+        "Industry Tags": "Agriculture,Manufacturing,Transportation,Energy,Communication"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKM6",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 88.9069,
+        "Eco_loss": 2797.0173,
+        "coordinate": [
+            -2.126038,
+            54.865637
+        ],
+        "Industry Tags": "Communication"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKM8",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 152.2625,
+        "Eco_loss": 6217.0412,
+        "coordinate": [
+            -3.846616,
+            56.916624
+        ],
+        "Industry Tags": "Agriculture,Transportation,Manufacturing,Communication"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKH1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 105.3225,
+        "Eco_loss": 570.947,
+        "coordinate": [
+            -2.281688,
+            57.32569
+        ],
+        "Industry Tags": "Agriculture,Communication"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKK3",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 106.4952,
+        "Eco_loss": 11608.719,
+        "coordinate": [
+            -1.98453,
+            53.419545
+        ],
+        "Industry Tags": "Agriculture,Communication,Manufacturing,Energy,Transportation"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKJ1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 129.3091,
+        "Eco_loss": 9764.0381,
+        "coordinate": [
+            -5.348075,
+            57.672678
+        ],
+        "Industry Tags": "Agriculture,Communication,Energy,Transportation"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKI5",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 96.622,
+        "Eco_loss": 9950.5162,
+        "coordinate": [
+            -7.151693,
+            56.394506
+        ],
+        "Industry Tags": "Manufacturing"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKJ1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 46.1662,
+        "Eco_loss": 19597.2393,
+        "coordinate": [
+            -7.707114,
+            57.408821
+        ],
+        "Industry Tags": "Energy,Transportation"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKH1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 163.5704,
+        "Eco_loss": 18550.5755,
+        "coordinate": [
+            -2.556294,
+            55.942372
+        ],
+        "Industry Tags": "Energy,Transportation"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKF1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 63.9275,
+        "Eco_loss": 9454.8193,
+        "coordinate": [
+            -2.933578,
+            55.12687
+        ],
+        "Industry Tags": "Agriculture"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKD4",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 55.576,
+        "Eco_loss": 4886.997,
+        "coordinate": [
+            -4.844847,
+            51.431607
+        ],
+        "Industry Tags": "Transportation,Energy"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKL2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 235.5526,
+        "Eco_loss": 15293.8643,
+        "coordinate": [
+            -1.515007,
+            55.407795
+        ],
+        "Industry Tags": "Energy,Agriculture,Transportation,Communication"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKE1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 51.2004,
+        "Eco_loss": 18462.8299,
+        "coordinate": [
+            1.253741,
+            52.414811
+        ],
+        "Industry Tags": "Agriculture,Manufacturing"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKL2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 235.5547,
+        "Eco_loss": 18842.7441,
+        "coordinate": [
+            -1.916071,
+            50.880141
+        ],
+        "Industry Tags": "Transportation,Communication,Agriculture,Energy,Manufacturing"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKI3",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 26.2928,
+        "Eco_loss": 4580.9941,
+        "coordinate": [
+            -5.059161,
+            57.330383
+        ],
+        "Industry Tags": "Communication,Manufacturing,Transportation"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKI5",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 186.9761,
+        "Eco_loss": 3818.4438,
+        "coordinate": [
+            -3.182208,
+            57.13437
+        ],
+        "Industry Tags": "Transportation,Agriculture,Manufacturing"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKH1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 152.1019,
+        "Eco_loss": 18653.8082,
+        "coordinate": [
+            -4.258788,
+            57.80326
+        ],
+        "Industry Tags": "Agriculture,Manufacturing,Transportation"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKI3",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 81.9351,
+        "Eco_loss": 9795.8776,
+        "coordinate": [
+            -5.092371,
+            56.523015
+        ],
+        "Industry Tags": "Agriculture"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKE3",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 155.3259,
+        "Eco_loss": 2504.534,
+        "coordinate": [
+            -6.230118,
+            57.544367
+        ],
+        "Industry Tags": "Energy,Communication,Transportation,Agriculture,Manufacturing"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKK1",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 134.015,
+        "Eco_loss": 2183.3611,
+        "coordinate": [
+            -5.297637,
+            57.342116
+        ],
+        "Industry Tags": "Communication"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKG2",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 205.59,
+        "Eco_loss": 5536.3281,
+        "coordinate": [
+            -4.238633,
+            58.187107
+        ],
+        "Industry Tags": "Manufacturing,Communication,Transportation"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKJ2",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 145.5674,
+        "Eco_loss": 4703.5824,
+        "coordinate": [
+            -3.722814,
+            51.18845
+        ],
+        "Industry Tags": "Manufacturing"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKM8",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 121.8181,
+        "Eco_loss": 19716.473,
+        "coordinate": [
+            -0.405286,
+            53.20769
+        ],
+        "Industry Tags": "Transportation,Agriculture"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKD7",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 166.0983,
+        "Eco_loss": 17411.9831,
+        "coordinate": [
+            -3.21146,
+            57.323279
+        ],
+        "Industry Tags": "Agriculture,Manufacturing,Transportation,Communication"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKI5",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 145.1869,
+        "Eco_loss": 12058.3734,
+        "coordinate": [
+            0.823703,
+            51.657581
+        ],
+        "Industry Tags": "Communication,Manufacturing,Transportation,Energy"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKG3",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 5.0679,
+        "Eco_loss": 6519.7122,
+        "coordinate": [
+            -7.111819,
+            56.740528
+        ],
+        "Industry Tags": "Transportation,Energy"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKI5",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 48.8801,
+        "Eco_loss": 6724.5496,
+        "coordinate": [
+            -8.017092,
+            54.60181
+        ],
+        "Industry Tags": "Energy"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKG2",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 228.2278,
+        "Eco_loss": 866.3755,
+        "coordinate": [
+            -3.402565,
+            58.5244
+        ],
+        "Industry Tags": "Agriculture,Transportation,Manufacturing"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKK1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 88.4453,
+        "Eco_loss": 16388.071,
+        "coordinate": [
+            -4.219329,
+            53.187692
+        ],
+        "Industry Tags": "Transportation"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKJ3",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 91.2781,
+        "Eco_loss": 2038.9322,
+        "coordinate": [
+            -3.027316,
+            53.744646
+        ],
+        "Industry Tags": "Communication,Energy"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKF1",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 86.738,
+        "Eco_loss": 15965.1559,
+        "coordinate": [
+            -7.114607,
+            54.742529
+        ],
+        "Industry Tags": "Agriculture,Energy,Manufacturing,Transportation,Communication"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKD1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 117.0385,
+        "Eco_loss": 19537.3145,
+        "coordinate": [
+            -6.498607,
+            54.81998
+        ],
+        "Industry Tags": "Transportation"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKD1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 174.9939,
+        "Eco_loss": 17315.9068,
+        "coordinate": [
+            -3.675849,
+            50.979999
+        ],
+        "Industry Tags": "Energy,Communication,Agriculture"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKG3",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 181.0795,
+        "Eco_loss": 7399.8809,
+        "coordinate": [
+            -6.190595,
+            54.98482
+        ],
+        "Industry Tags": "Manufacturing,Agriculture"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKI3",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 131.5744,
+        "Eco_loss": 11101.8309,
+        "coordinate": [
+            -1.460706,
+            52.046324
+        ],
+        "Industry Tags": "Manufacturing,Transportation,Energy,Communication"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKD7",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 147.3562,
+        "Eco_loss": 19503.8578,
+        "coordinate": [
+            -5.564106,
+            58.114907
+        ],
+        "Industry Tags": "Transportation,Agriculture,Manufacturing,Communication"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKM5",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 162.9197,
+        "Eco_loss": 16677.2711,
+        "coordinate": [
+            -3.524537,
+            55.819726
+        ],
+        "Industry Tags": "Manufacturing,Energy,Agriculture,Transportation,Communication"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKF3",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 87.1818,
+        "Eco_loss": 12471.7492,
+        "coordinate": [
+            -1.966497,
+            54.819741
+        ],
+        "Industry Tags": "Agriculture"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKG1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 90.6755,
+        "Eco_loss": 6823.2799,
+        "coordinate": [
+            1.139274,
+            51.020878
+        ],
+        "Industry Tags": "Energy,Transportation,Agriculture,Communication,Manufacturing"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKD1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 120.6006,
+        "Eco_loss": 15835.1614,
+        "coordinate": [
+            -7.614692,
+            55.098043
+        ],
+        "Industry Tags": "Transportation,Manufacturing,Agriculture"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKG2",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 131.2436,
+        "Eco_loss": 14348.3642,
+        "coordinate": [
+            -5.738506,
+            56.674697
+        ],
+        "Industry Tags": "Manufacturing,Transportation,Communication"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKH2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 142.0705,
+        "Eco_loss": 3789.8163,
+        "coordinate": [
+            -0.7602,
+            52.362851
+        ],
+        "Industry Tags": "Communication,Agriculture,Transportation"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKG2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 210.7113,
+        "Eco_loss": 14773.7708,
+        "coordinate": [
+            -2.725215,
+            56.261876
+        ],
+        "Industry Tags": "Transportation,Communication,Manufacturing"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKE2",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 222.5125,
+        "Eco_loss": 2867.7183,
+        "coordinate": [
+            -5.951552,
+            57.736029
+        ],
+        "Industry Tags": "Energy"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKH3",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 205.1759,
+        "Eco_loss": 11952.5006,
+        "coordinate": [
+            0.541946,
+            52.33251
+        ],
+        "Industry Tags": "Communication"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKG1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 80.2754,
+        "Eco_loss": 12418.4223,
+        "coordinate": [
+            -4.516219,
+            58.239165
+        ],
+        "Industry Tags": "Energy,Transportation"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKE2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 174.9996,
+        "Eco_loss": 15580.9179,
+        "coordinate": [
+            -0.634184,
+            52.223797
+        ],
+        "Industry Tags": "Communication,Transportation,Agriculture"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKK2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 128.0159,
+        "Eco_loss": 2579.9658,
+        "coordinate": [
+            -3.458213,
+            53.649823
+        ],
+        "Industry Tags": "Energy,Communication,Agriculture,Manufacturing"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKC2",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 172.4268,
+        "Eco_loss": 18667.9834,
+        "coordinate": [
+            -4.713071,
+            56.227798
+        ],
+        "Industry Tags": "Agriculture,Energy"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKD3",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 99.6982,
+        "Eco_loss": 2552.9154,
+        "coordinate": [
+            -7.552437,
+            55.300654
+        ],
+        "Industry Tags": "Transportation,Manufacturing"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKF3",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 43.8087,
+        "Eco_loss": 13222.6703,
+        "coordinate": [
+            -1.670285,
+            60.356933
+        ],
+        "Industry Tags": "Transportation,Communication,Manufacturing,Energy,Agriculture"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKG1",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 120.7115,
+        "Eco_loss": 1586.6945,
+        "coordinate": [
+            -0.185202,
+            53.444149
+        ],
+        "Industry Tags": "Agriculture"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKD1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 109.6979,
+        "Eco_loss": 3348.7033,
+        "coordinate": [
+            -2.323821,
+            50.752544
+        ],
+        "Industry Tags": "Communication,Energy,Transportation,Agriculture"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKL1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 82.9742,
+        "Eco_loss": 5009.1305,
+        "coordinate": [
+            -2.516817,
+            53.496356
+        ],
+        "Industry Tags": "Agriculture"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKJ4",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 207.4391,
+        "Eco_loss": 10172.8363,
+        "coordinate": [
+            -0.36209,
+            53.512424
+        ],
+        "Industry Tags": "Manufacturing,Communication,Agriculture"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKH2",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 223.3411,
+        "Eco_loss": 957.7384,
+        "coordinate": [
+            -0.353194,
+            51.440958
+        ],
+        "Industry Tags": "Energy,Manufacturing,Agriculture"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKE1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 168.0143,
+        "Eco_loss": 12704.7237,
+        "coordinate": [
+            -4.632463,
+            51.521114
+        ],
+        "Industry Tags": "Transportation,Manufacturing,Energy,Agriculture"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKJ2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 75.3249,
+        "Eco_loss": 807.3661,
+        "coordinate": [
+            -1.591659,
+            51.80822
+        ],
+        "Industry Tags": "Manufacturing,Agriculture,Communication"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKE2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 15.4531,
+        "Eco_loss": 16714.3681,
+        "coordinate": [
+            -4.661661,
+            56.134079
+        ],
+        "Industry Tags": "Manufacturing,Communication"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKE4",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 233.0032,
+        "Eco_loss": 14715.5805,
+        "coordinate": [
+            -1.837845,
+            51.727455
+        ],
+        "Industry Tags": "Manufacturing,Energy"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKI4",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 44.5475,
+        "Eco_loss": 2167.7873,
+        "coordinate": [
+            -1.673618,
+            53.576641
+        ],
+        "Industry Tags": "Transportation"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKI4",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 139.4007,
+        "Eco_loss": 4678.3371,
+        "coordinate": [
+            -0.572329,
+            51.174335
+        ],
+        "Industry Tags": "Agriculture,Manufacturing,Communication,Transportation"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKE2",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 106.6833,
+        "Eco_loss": 19667.3123,
+        "coordinate": [
+            -4.267473,
+            50.529125
+        ],
+        "Industry Tags": "Communication,Manufacturing,Agriculture,Energy"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKC2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 115.5167,
+        "Eco_loss": 459.5303,
+        "coordinate": [
+            -3.666181,
+            54.798765
+        ],
+        "Industry Tags": "Agriculture,Communication,Energy"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKH3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 146.7412,
+        "Eco_loss": 8155.0112,
+        "coordinate": [
+            -5.281235,
+            58.656351
+        ],
+        "Industry Tags": "Manufacturing,Agriculture"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKH3",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 196.4702,
+        "Eco_loss": 19127.6037,
+        "coordinate": [
+            -0.576804,
+            54.189266
+        ],
+        "Industry Tags": "Transportation"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKE1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 61.4989,
+        "Eco_loss": 8003.094,
+        "coordinate": [
+            -6.204548,
+            57.053855
+        ],
+        "Industry Tags": "Manufacturing,Agriculture,Transportation,Communication"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKE4",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 233.2112,
+        "Eco_loss": 3516.2864,
+        "coordinate": [
+            -5.047364,
+            51.385549
+        ],
+        "Industry Tags": "Manufacturing,Agriculture,Transportation"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKD3",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 225.2927,
+        "Eco_loss": 6567.6143,
+        "coordinate": [
+            -1.70641,
+            52.013658
+        ],
+        "Industry Tags": "Transportation,Agriculture,Energy,Communication,Manufacturing"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKG1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 241.492,
+        "Eco_loss": 12289.8251,
+        "coordinate": [
+            -0.835866,
+            52.354683
+        ],
+        "Industry Tags": "Manufacturing,Transportation,Energy,Agriculture"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKD1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 223.4712,
+        "Eco_loss": 7104.808,
+        "coordinate": [
+            -6.060347,
+            57.869483
+        ],
+        "Industry Tags": "Energy,Manufacturing,Communication,Agriculture"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKK3",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 230.9149,
+        "Eco_loss": 9645.3441,
+        "coordinate": [
+            -5.949139,
+            57.258311
+        ],
+        "Industry Tags": "Transportation,Agriculture,Communication,Manufacturing"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKG2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 129.2414,
+        "Eco_loss": 10051.8671,
+        "coordinate": [
+            -3.602821,
+            58.046387
+        ],
+        "Industry Tags": "Manufacturing,Transportation,Agriculture"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKM8",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 50.7558,
+        "Eco_loss": 13390.9154,
+        "coordinate": [
+            -1.738681,
+            54.333319
+        ],
+        "Industry Tags": "Energy,Manufacturing"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKD1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 149.6708,
+        "Eco_loss": 7705.7735,
+        "coordinate": [
+            -5.967554,
+            50.435854
+        ],
+        "Industry Tags": "Agriculture"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKM5",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 246.6909,
+        "Eco_loss": 14277.13,
+        "coordinate": [
+            0.66643,
+            52.976319
+        ],
+        "Industry Tags": "Agriculture,Transportation,Communication"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKJ4",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 118.4142,
+        "Eco_loss": 17288.7404,
+        "coordinate": [
+            -3.486823,
+            52.523698
+        ],
+        "Industry Tags": "Energy,Agriculture,Communication"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKI3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 174.4545,
+        "Eco_loss": 1647.3079,
+        "coordinate": [
+            -4.592029,
+            50.451479
+        ],
+        "Industry Tags": "Transportation,Manufacturing,Agriculture,Energy"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKM7",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 50.5377,
+        "Eco_loss": 10194.6549,
+        "coordinate": [
+            -6.750609,
+            57.89906
+        ],
+        "Industry Tags": "Transportation"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKK1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 94.5211,
+        "Eco_loss": 19778.9759,
+        "coordinate": [
+            -5.843092,
+            56.420143
+        ],
+        "Industry Tags": "Energy,Agriculture,Communication,Transportation,Manufacturing"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKG3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 15.1865,
+        "Eco_loss": 5081.355,
+        "coordinate": [
+            -4.354004,
+            51.36267
+        ],
+        "Industry Tags": "Transportation,Energy,Agriculture,Communication,Manufacturing"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKJ4",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 51.3983,
+        "Eco_loss": 2727.9739,
+        "coordinate": [
+            -3.453187,
+            55.271094
+        ],
+        "Industry Tags": "Agriculture"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKH2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 5.9376,
+        "Eco_loss": 9768.6073,
+        "coordinate": [
+            -2.175272,
+            54.168519
+        ],
+        "Industry Tags": "Communication,Transportation,Energy,Manufacturing"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKG3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 186.969,
+        "Eco_loss": 14276.9929,
+        "coordinate": [
+            -2.915617,
+            58.613096
+        ],
+        "Industry Tags": "Communication,Transportation"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKE3",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 166.5012,
+        "Eco_loss": 5575.3485,
+        "coordinate": [
+            -3.650886,
+            55.428722
+        ],
+        "Industry Tags": "Transportation,Manufacturing"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKC2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 74.0118,
+        "Eco_loss": 3666.7289,
+        "coordinate": [
+            -7.312075,
+            57.135961
+        ],
+        "Industry Tags": "Agriculture,Manufacturing,Communication,Energy,Transportation"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKE1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 66.5277,
+        "Eco_loss": 16043.6648,
+        "coordinate": [
+            -3.889031,
+            52.55717
+        ],
+        "Industry Tags": "Agriculture"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKH2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 238.6205,
+        "Eco_loss": 18903.7106,
+        "coordinate": [
+            -4.622383,
+            52.76735
+        ],
+        "Industry Tags": "Transportation,Communication,Energy,Agriculture"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKC2",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 238.6278,
+        "Eco_loss": 55.3891,
+        "coordinate": [
+            0.811836,
+            51.210253
+        ],
+        "Industry Tags": "Communication,Energy,Manufacturing,Transportation,Agriculture"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKH1",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 109.6971,
+        "Eco_loss": 432.2071,
+        "coordinate": [
+            -1.111882,
+            51.512141
+        ],
+        "Industry Tags": "Transportation"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKM5",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 25.2151,
+        "Eco_loss": 6995.5173,
+        "coordinate": [
+            -0.620647,
+            52.070296
+        ],
+        "Industry Tags": "Manufacturing"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKM8",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 59.4995,
+        "Eco_loss": 16363.6358,
+        "coordinate": [
+            -1.486842,
+            51.722144
+        ],
+        "Industry Tags": "Energy,Agriculture,Communication"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKI3",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 170.4373,
+        "Eco_loss": 15852.8676,
+        "coordinate": [
+            -5.58186,
+            50.95519
+        ],
+        "Industry Tags": "Agriculture,Transportation,Manufacturing,Energy"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKH2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 200.0741,
+        "Eco_loss": 10739.0375,
+        "coordinate": [
+            -4.893755,
+            51.340872
+        ],
+        "Industry Tags": "Manufacturing"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKF3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 58.9753,
+        "Eco_loss": 13895.4843,
+        "coordinate": [
+            -7.105262,
+            58.252263
+        ],
+        "Industry Tags": "Communication,Energy,Agriculture"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKH3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 133.3403,
+        "Eco_loss": 16090.1336,
+        "coordinate": [
+            -0.167105,
+            51.684674
+        ],
+        "Industry Tags": "Communication"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKI6",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 76.6888,
+        "Eco_loss": 13892.0888,
+        "coordinate": [
+            -4.437802,
+            53.726056
+        ],
+        "Industry Tags": "Energy,Communication,Agriculture,Manufacturing"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKI4",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 17.683,
+        "Eco_loss": 10292.7164,
+        "coordinate": [
+            -3.774541,
+            56.036042
+        ],
+        "Industry Tags": "Transportation,Communication,Energy,Manufacturing,Agriculture"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKM8",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 217.1949,
+        "Eco_loss": 10422.6526,
+        "coordinate": [
+            -1.893293,
+            57.438304
+        ],
+        "Industry Tags": "Transportation,Communication"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKH3",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 132.7356,
+        "Eco_loss": 4080.1167,
+        "coordinate": [
+            -3.185036,
+            55.159869
+        ],
+        "Industry Tags": "Energy,Communication,Transportation"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKH3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 135.8172,
+        "Eco_loss": 19283.4815,
+        "coordinate": [
+            -3.441452,
+            55.016684
+        ],
+        "Industry Tags": "Manufacturing"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKI3",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 230.4593,
+        "Eco_loss": 9480.9072,
+        "coordinate": [
+            -3.320242,
+            59.155668
+        ],
+        "Industry Tags": "Communication"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKC1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 210.5042,
+        "Eco_loss": 14987.9997,
+        "coordinate": [
+            0.772036,
+            50.930852
+        ],
+        "Industry Tags": "Manufacturing,Energy,Agriculture,Transportation,Communication"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKE2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 90.7858,
+        "Eco_loss": 11466.2298,
+        "coordinate": [
+            -6.019627,
+            54.801321
+        ],
+        "Industry Tags": "Energy"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKL1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 166.869,
+        "Eco_loss": 4756.7838,
+        "coordinate": [
+            -7.24697,
+            57.877945
+        ],
+        "Industry Tags": "Agriculture"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKJ1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 37.4746,
+        "Eco_loss": 15762.0448,
+        "coordinate": [
+            -2.283455,
+            54.907982
+        ],
+        "Industry Tags": "Agriculture"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKE2",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 224.4375,
+        "Eco_loss": 4516.3999,
+        "coordinate": [
+            -8.383215,
+            54.728134
+        ],
+        "Industry Tags": "Communication,Manufacturing,Agriculture"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKI3",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 107.4033,
+        "Eco_loss": 2695.2711,
+        "coordinate": [
+            -1.881313,
+            59.965571
+        ],
+        "Industry Tags": "Transportation,Agriculture,Communication,Energy"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKM5",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 24.7977,
+        "Eco_loss": 17939.6387,
+        "coordinate": [
+            -3.855594,
+            50.890473
+        ],
+        "Industry Tags": "Communication,Manufacturing"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKM8",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 81.0549,
+        "Eco_loss": 134.8849,
+        "coordinate": [
+            -4.681048,
+            56.504338
+        ],
+        "Industry Tags": "Manufacturing,Agriculture"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKI6",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 26.938,
+        "Eco_loss": 9595.0996,
+        "coordinate": [
+            1.103447,
+            52.288938
+        ],
+        "Industry Tags": "Communication,Agriculture,Energy,Transportation,Manufacturing"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKI4",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 21.85,
+        "Eco_loss": 12169.9366,
+        "coordinate": [
+            -0.241777,
+            53.060412
+        ],
+        "Industry Tags": "Manufacturing,Agriculture"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKF1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 6.9997,
+        "Eco_loss": 10053.8027,
+        "coordinate": [
+            -5.76102,
+            58.353919
+        ],
+        "Industry Tags": "Agriculture,Manufacturing,Transportation"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKM7",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 134.0815,
+        "Eco_loss": 19321.5976,
+        "coordinate": [
+            -4.98573,
+            52.497645
+        ],
+        "Industry Tags": "Manufacturing"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKM7",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 108.5271,
+        "Eco_loss": 4213.8381,
+        "coordinate": [
+            -4.504244,
+            57.633755
+        ],
+        "Industry Tags": "Communication,Manufacturing"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKE1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 59.6443,
+        "Eco_loss": 13503.2872,
+        "coordinate": [
+            -4.392315,
+            50.603389
+        ],
+        "Industry Tags": "Transportation,Manufacturing,Energy,Agriculture,Communication"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKJ3",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 167.2977,
+        "Eco_loss": 15689.8749,
+        "coordinate": [
+            -5.889692,
+            54.083892
+        ],
+        "Industry Tags": "Communication,Agriculture"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKK1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 43.0487,
+        "Eco_loss": 16967.3841,
+        "coordinate": [
+            -2.32461,
+            57.173057
+        ],
+        "Industry Tags": "Agriculture,Manufacturing"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKJ4",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 84.8606,
+        "Eco_loss": 13688.1871,
+        "coordinate": [
+            -0.423551,
+            52.568164
+        ],
+        "Industry Tags": "Communication,Manufacturing"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKM7",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 234.6036,
+        "Eco_loss": 6041.6295,
+        "coordinate": [
+            -6.393098,
+            57.169185
+        ],
+        "Industry Tags": "Manufacturing,Agriculture"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKG2",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 242.9613,
+        "Eco_loss": 3722.5737,
+        "coordinate": [
+            -6.914006,
+            55.025344
+        ],
+        "Industry Tags": "Energy,Communication"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKG2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 219.3465,
+        "Eco_loss": 4482.0247,
+        "coordinate": [
+            -4.025511,
+            53.044114
+        ],
+        "Industry Tags": "Transportation"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKM8",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 192.7716,
+        "Eco_loss": 8136.1551,
+        "coordinate": [
+            -2.11519,
+            52.642977
+        ],
+        "Industry Tags": "Manufacturing,Transportation,Communication"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKG2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 31.4666,
+        "Eco_loss": 16331.4055,
+        "coordinate": [
+            -5.664196,
+            50.822919
+        ],
+        "Industry Tags": "Energy,Transportation,Communication"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKI3",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 58.4925,
+        "Eco_loss": 1934.8856,
+        "coordinate": [
+            -2.058694,
+            50.443143
+        ],
+        "Industry Tags": "Transportation,Energy"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKD4",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 173.1683,
+        "Eco_loss": 19117.5582,
+        "coordinate": [
+            -6.999531,
+            54.514024
+        ],
+        "Industry Tags": "Agriculture,Transportation,Manufacturing"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKI6",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 170.1302,
+        "Eco_loss": 9222.6406,
+        "coordinate": [
+            -3.537711,
+            57.071424
+        ],
+        "Industry Tags": "Manufacturing,Transportation"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKK4",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 216.5941,
+        "Eco_loss": 2776.5129,
+        "coordinate": [
+            0.503784,
+            51.995122
+        ],
+        "Industry Tags": "Communication,Energy,Transportation,Manufacturing"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKJ1",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 248.9595,
+        "Eco_loss": 186.3077,
+        "coordinate": [
+            -7.358055,
+            55.445997
+        ],
+        "Industry Tags": "Energy,Transportation,Agriculture,Communication"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKG2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 75.9678,
+        "Eco_loss": 916.8362,
+        "coordinate": [
+            -4.845553,
+            50.80156
+        ],
+        "Industry Tags": "Manufacturing,Energy,Agriculture"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKE1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 158.5743,
+        "Eco_loss": 3248.7297,
+        "coordinate": [
+            -3.561347,
+            53.260766
+        ],
+        "Industry Tags": "Agriculture,Manufacturing,Communication,Transportation"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKD7",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 217.4432,
+        "Eco_loss": 19683.6585,
+        "coordinate": [
+            -2.260663,
+            53.86193
+        ],
+        "Industry Tags": "Energy,Transportation,Agriculture,Communication"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKF1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 148.7212,
+        "Eco_loss": 15618.6306,
+        "coordinate": [
+            -3.802126,
+            51.202414
+        ],
+        "Industry Tags": "Manufacturing"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKL2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 106.0541,
+        "Eco_loss": 15353.0306,
+        "coordinate": [
+            0.127541,
+            53.449312
+        ],
+        "Industry Tags": "Communication"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKD6",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 199.3398,
+        "Eco_loss": 8141.0762,
+        "coordinate": [
+            -2.317851,
+            57.451192
+        ],
+        "Industry Tags": "Energy,Transportation,Manufacturing,Communication"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKH1",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 114.4973,
+        "Eco_loss": 3486.4859,
+        "coordinate": [
+            -1.77408,
+            53.281424
+        ],
+        "Industry Tags": "Energy,Communication,Transportation,Manufacturing,Agriculture"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKD3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 5.9038,
+        "Eco_loss": 8190.751,
+        "coordinate": [
+            -3.89192,
+            54.520483
+        ],
+        "Industry Tags": "Agriculture,Manufacturing,Transportation"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKD1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 234.2346,
+        "Eco_loss": 12443.8245,
+        "coordinate": [
+            -3.878284,
+            50.85398
+        ],
+        "Industry Tags": "Energy"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKE1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 215.6111,
+        "Eco_loss": 3934.5955,
+        "coordinate": [
+            -5.620202,
+            54.754035
+        ],
+        "Industry Tags": "Agriculture,Transportation"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKI3",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 44.5944,
+        "Eco_loss": 4991.5818,
+        "coordinate": [
+            -1.594936,
+            51.430048
+        ],
+        "Industry Tags": "Transportation,Agriculture,Manufacturing,Communication"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKJ3",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 26.8843,
+        "Eco_loss": 3164.8199,
+        "coordinate": [
+            -4.179824,
+            57.526692
+        ],
+        "Industry Tags": "Energy,Communication,Agriculture,Manufacturing"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKH1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 42.7646,
+        "Eco_loss": 16534.0182,
+        "coordinate": [
+            0.03841,
+            53.7406
+        ],
+        "Industry Tags": "Energy,Manufacturing,Communication,Transportation,Agriculture"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKD4",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 2.3319,
+        "Eco_loss": 3057.5733,
+        "coordinate": [
+            -4.653602,
+            55.285646
+        ],
+        "Industry Tags": "Communication,Agriculture,Transportation,Manufacturing,Energy"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKK4",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 223.7707,
+        "Eco_loss": 14108.5942,
+        "coordinate": [
+            -3.623953,
+            54.887028
+        ],
+        "Industry Tags": "Manufacturing,Agriculture"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKE2",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 229.8595,
+        "Eco_loss": 17322.6751,
+        "coordinate": [
+            -6.063822,
+            56.678868
+        ],
+        "Industry Tags": "Agriculture,Transportation,Manufacturing,Communication,Energy"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKD4",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 210.0026,
+        "Eco_loss": 17147.277,
+        "coordinate": [
+            1.125373,
+            52.486222
+        ],
+        "Industry Tags": "Energy,Transportation"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKM9",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 193.8558,
+        "Eco_loss": 546.9242,
+        "coordinate": [
+            1.465031,
+            52.702726
+        ],
+        "Industry Tags": "Manufacturing,Agriculture"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKD1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 37.2782,
+        "Eco_loss": 15475.8119,
+        "coordinate": [
+            -5.562755,
+            57.736792
+        ],
+        "Industry Tags": "Manufacturing,Agriculture,Energy,Communication,Transportation"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKF2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 228.5497,
+        "Eco_loss": 17798.3924,
+        "coordinate": [
+            -0.327081,
+            52.941108
+        ],
+        "Industry Tags": "Manufacturing,Transportation,Communication"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKD4",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 158.6204,
+        "Eco_loss": 13595.3724,
+        "coordinate": [
+            -3.783239,
+            53.052595
+        ],
+        "Industry Tags": "Manufacturing,Communication,Energy,Agriculture,Transportation"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKM7",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 175.767,
+        "Eco_loss": 1066.8446,
+        "coordinate": [
+            -5.212778,
+            56.64957
+        ],
+        "Industry Tags": "Energy,Manufacturing"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKL2",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 108.3724,
+        "Eco_loss": 19921.961,
+        "coordinate": [
+            -0.159829,
+            52.34777
+        ],
+        "Industry Tags": "Communication,Agriculture,Manufacturing,Energy"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKE2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 234.922,
+        "Eco_loss": 5009.7746,
+        "coordinate": [
+            0.039543,
+            51.742397
+        ],
+        "Industry Tags": "Energy"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKK2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 224.0645,
+        "Eco_loss": 1323.0415,
+        "coordinate": [
+            -5.495129,
+            50.656739
+        ],
+        "Industry Tags": "Energy,Communication,Transportation,Agriculture"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKI6",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 43.326,
+        "Eco_loss": 15907.4627,
+        "coordinate": [
+            -3.152265,
+            58.46778
+        ],
+        "Industry Tags": "Energy,Transportation,Communication,Manufacturing,Agriculture"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKJ2",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 129.4734,
+        "Eco_loss": 2168.8457,
+        "coordinate": [
+            -4.521743,
+            52.092207
+        ],
+        "Industry Tags": "Energy"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKE3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 66.1004,
+        "Eco_loss": 1506.4813,
+        "coordinate": [
+            -2.724789,
+            56.048724
+        ],
+        "Industry Tags": "Energy,Communication,Transportation,Agriculture,Manufacturing"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKE3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 235.9224,
+        "Eco_loss": 9762.6083,
+        "coordinate": [
+            0.00208,
+            52.990018
+        ],
+        "Industry Tags": "Manufacturing,Energy,Agriculture,Transportation,Communication"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKG1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 113.3653,
+        "Eco_loss": 5600.4851,
+        "coordinate": [
+            -6.474131,
+            56.714227
+        ],
+        "Industry Tags": "Energy,Agriculture,Communication,Transportation,Manufacturing"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKL2",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 65.514,
+        "Eco_loss": 9404.8977,
+        "coordinate": [
+            -6.339048,
+            56.390815
+        ],
+        "Industry Tags": "Energy,Manufacturing,Agriculture,Transportation,Communication"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKG1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 236.3961,
+        "Eco_loss": 12641.4632,
+        "coordinate": [
+            -2.718962,
+            59.432164
+        ],
+        "Industry Tags": "Agriculture,Communication,Manufacturing,Transportation"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKM5",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 207.9058,
+        "Eco_loss": 15419.8435,
+        "coordinate": [
+            -4.610268,
+            53.261596
+        ],
+        "Industry Tags": "Agriculture"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKD7",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 40.8355,
+        "Eco_loss": 3751.1812,
+        "coordinate": [
+            -0.149175,
+            52.220195
+        ],
+        "Industry Tags": "Communication,Agriculture,Transportation,Manufacturing,Energy"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKJ2",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 47.0252,
+        "Eco_loss": 3020.4123,
+        "coordinate": [
+            -6.079658,
+            54.401282
+        ],
+        "Industry Tags": "Transportation,Agriculture"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKD6",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 26.6776,
+        "Eco_loss": 12579.3891,
+        "coordinate": [
+            -1.029269,
+            54.534468
+        ],
+        "Industry Tags": "Manufacturing,Agriculture,Communication"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKC1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 187.1081,
+        "Eco_loss": 14732.3688,
+        "coordinate": [
+            -3.304873,
+            56.030243
+        ],
+        "Industry Tags": "Communication,Agriculture,Energy,Transportation"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKM5",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 67.1164,
+        "Eco_loss": 0.5037,
+        "coordinate": [
+            -5.00063,
+            57.705155
+        ],
+        "Industry Tags": "Communication,Energy,Manufacturing,Transportation,Agriculture"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKK4",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 184.2095,
+        "Eco_loss": 4997.1986,
+        "coordinate": [
+            -4.097693,
+            56.600315
+        ],
+        "Industry Tags": "Manufacturing,Agriculture,Energy,Transportation,Communication"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKC2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 47.0588,
+        "Eco_loss": 14771.056,
+        "coordinate": [
+            -4.124823,
+            51.884145
+        ],
+        "Industry Tags": "Agriculture,Energy,Communication,Transportation"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKK4",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 126.3305,
+        "Eco_loss": 13347.7996,
+        "coordinate": [
+            -4.529295,
+            55.959498
+        ],
+        "Industry Tags": "Transportation,Manufacturing"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKE2",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 210.2826,
+        "Eco_loss": 6643.5614,
+        "coordinate": [
+            -3.349434,
+            52.719836
+        ],
+        "Industry Tags": "Energy"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKE1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 85.3846,
+        "Eco_loss": 14163.8314,
+        "coordinate": [
+            -5.343037,
+            50.182566
+        ],
+        "Industry Tags": "Agriculture,Energy,Manufacturing"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKK4",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 108.711,
+        "Eco_loss": 14735.1233,
+        "coordinate": [
+            0.45527,
+            52.814204
+        ],
+        "Industry Tags": "Agriculture,Manufacturing,Energy,Transportation"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKI7",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 13.8651,
+        "Eco_loss": 17091.8762,
+        "coordinate": [
+            1.860716,
+            52.286756
+        ],
+        "Industry Tags": "Communication,Agriculture,Energy,Transportation,Manufacturing"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKI5",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 32.0437,
+        "Eco_loss": 13200.7144,
+        "coordinate": [
+            -5.179604,
+            57.777486
+        ],
+        "Industry Tags": "Communication,Agriculture"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKH1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 243.1445,
+        "Eco_loss": 4236.9195,
+        "coordinate": [
+            -1.13509,
+            50.597885
+        ],
+        "Industry Tags": "Communication,Manufacturing,Energy,Transportation"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKM8",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 132.1948,
+        "Eco_loss": 1940.0846,
+        "coordinate": [
+            -3.24436,
+            55.395582
+        ],
+        "Industry Tags": "Communication,Transportation,Manufacturing,Energy,Agriculture"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKD7",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 230.0136,
+        "Eco_loss": 7452.822,
+        "coordinate": [
+            -0.601838,
+            53.204205
+        ],
+        "Industry Tags": "Agriculture,Manufacturing,Communication,Transportation,Energy"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKM8",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 56.1249,
+        "Eco_loss": 10207.3072,
+        "coordinate": [
+            0.551894,
+            51.2241
+        ],
+        "Industry Tags": "Communication,Energy,Manufacturing,Agriculture,Transportation"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKH3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 182.9523,
+        "Eco_loss": 14401.2888,
+        "coordinate": [
+            -1.332137,
+            54.800844
+        ],
+        "Industry Tags": "Manufacturing,Energy"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKD1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 14.0035,
+        "Eco_loss": 15866.9226,
+        "coordinate": [
+            -1.115191,
+            60.619782
+        ],
+        "Industry Tags": "Energy,Transportation,Agriculture,Manufacturing"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKM7",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 58.623,
+        "Eco_loss": 15194.5203,
+        "coordinate": [
+            -4.794229,
+            54.859335
+        ],
+        "Industry Tags": "Agriculture,Transportation"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKM9",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 210.9925,
+        "Eco_loss": 1315.815,
+        "coordinate": [
+            -5.930018,
+            57.734809
+        ],
+        "Industry Tags": "Communication"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKH3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 42.6185,
+        "Eco_loss": 14562.2287,
+        "coordinate": [
+            -7.181792,
+            54.342688
+        ],
+        "Industry Tags": "Transportation"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKE1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 40.9967,
+        "Eco_loss": 2095.2651,
+        "coordinate": [
+            -4.465859,
+            57.559818
+        ],
+        "Industry Tags": "Communication,Manufacturing,Transportation,Agriculture"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKE2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 244.1736,
+        "Eco_loss": 6939.2589,
+        "coordinate": [
+            -5.51154,
+            58.086574
+        ],
+        "Industry Tags": "Communication"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKL2",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 36.0096,
+        "Eco_loss": 16454.1693,
+        "coordinate": [
+            -4.665568,
+            55.19458
+        ],
+        "Industry Tags": "Agriculture,Manufacturing"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKC2",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 106.0179,
+        "Eco_loss": 15889.3118,
+        "coordinate": [
+            -0.213218,
+            51.739762
+        ],
+        "Industry Tags": "Agriculture,Energy,Communication"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKJ3",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 55.9126,
+        "Eco_loss": 13815.6305,
+        "coordinate": [
+            -2.943908,
+            51.198275
+        ],
+        "Industry Tags": "Transportation"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKC2",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 156.0843,
+        "Eco_loss": 8937.9577,
+        "coordinate": [
+            -4.603909,
+            54.84324
+        ],
+        "Industry Tags": "Transportation"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKG1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 122.6235,
+        "Eco_loss": 8676.5886,
+        "coordinate": [
+            -8.397106,
+            55.097829
+        ],
+        "Industry Tags": "Energy,Communication"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKL2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 113.0923,
+        "Eco_loss": 14943.0434,
+        "coordinate": [
+            -6.118573,
+            56.7914
+        ],
+        "Industry Tags": "Energy,Manufacturing,Agriculture,Transportation"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKG3",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 168.1413,
+        "Eco_loss": 14238.6877,
+        "coordinate": [
+            -2.85621,
+            55.271199
+        ],
+        "Industry Tags": "Transportation,Manufacturing,Communication,Energy,Agriculture"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKK1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 170.4859,
+        "Eco_loss": 13000.9732,
+        "coordinate": [
+            -7.419108,
+            57.630549
+        ],
+        "Industry Tags": "Communication,Manufacturing,Transportation"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKD4",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 3.057,
+        "Eco_loss": 9884.6988,
+        "coordinate": [
+            -3.458509,
+            58.680737
+        ],
+        "Industry Tags": "Communication"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKJ1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 242.7482,
+        "Eco_loss": 7204.872,
+        "coordinate": [
+            -3.686901,
+            51.189138
+        ],
+        "Industry Tags": "Agriculture,Transportation"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKC2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 124.5501,
+        "Eco_loss": 12488.1361,
+        "coordinate": [
+            -3.759065,
+            57.07893
+        ],
+        "Industry Tags": "Manufacturing,Agriculture,Communication,Energy,Transportation"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKM8",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 11.7614,
+        "Eco_loss": 19851.1697,
+        "coordinate": [
+            -2.303098,
+            59.467189
+        ],
+        "Industry Tags": "Transportation,Agriculture,Communication,Energy"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKC2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 6.8695,
+        "Eco_loss": 4370.9128,
+        "coordinate": [
+            -1.906559,
+            53.846833
+        ],
+        "Industry Tags": "Agriculture,Transportation,Energy,Communication,Manufacturing"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKG3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 122.1197,
+        "Eco_loss": 1540.5016,
+        "coordinate": [
+            -6.543657,
+            57.682248
+        ],
+        "Industry Tags": "Manufacturing,Communication,Energy"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKI4",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 238.3248,
+        "Eco_loss": 13705.3911,
+        "coordinate": [
+            0.798376,
+            52.673195
+        ],
+        "Industry Tags": "Agriculture,Manufacturing"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKM7",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 186.0437,
+        "Eco_loss": 10559.6233,
+        "coordinate": [
+            -3.418969,
+            56.65541
+        ],
+        "Industry Tags": "Manufacturing,Agriculture"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKD4",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 223.3475,
+        "Eco_loss": 1390.5739,
+        "coordinate": [
+            -3.202291,
+            54.162596
+        ],
+        "Industry Tags": "Manufacturing,Communication,Energy,Transportation,Agriculture"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKM8",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 14.0694,
+        "Eco_loss": 4338.2481,
+        "coordinate": [
+            -3.355703,
+            53.836134
+        ],
+        "Industry Tags": "Transportation,Energy,Agriculture,Communication,Manufacturing"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKE2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 83.2127,
+        "Eco_loss": 13584.5783,
+        "coordinate": [
+            -2.874169,
+            58.722766
+        ],
+        "Industry Tags": "Communication,Agriculture,Manufacturing,Transportation"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKK1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 134.3071,
+        "Eco_loss": 9377.9884,
+        "coordinate": [
+            -0.670883,
+            52.37988
+        ],
+        "Industry Tags": "Energy,Communication"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKC1",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 180.3179,
+        "Eco_loss": 7986.7831,
+        "coordinate": [
+            -3.462961,
+            54.85157
+        ],
+        "Industry Tags": "Transportation,Agriculture,Manufacturing"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKI6",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 15.3354,
+        "Eco_loss": 10446.9015,
+        "coordinate": [
+            -2.651829,
+            59.707585
+        ],
+        "Industry Tags": "Agriculture,Communication,Transportation,Energy"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKI3",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 70.9512,
+        "Eco_loss": 10076.4433,
+        "coordinate": [
+            -4.276152,
+            51.24122
+        ],
+        "Industry Tags": "Communication,Agriculture,Manufacturing"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKJ4",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 203.3772,
+        "Eco_loss": 17077.8621,
+        "coordinate": [
+            -4.807574,
+            58.187704
+        ],
+        "Industry Tags": "Energy,Communication,Manufacturing"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKG3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 126.7091,
+        "Eco_loss": 8889.4629,
+        "coordinate": [
+            -3.094396,
+            54.940883
+        ],
+        "Industry Tags": "Energy"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKM8",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 174.6836,
+        "Eco_loss": 9347.791,
+        "coordinate": [
+            -5.594626,
+            54.676316
+        ],
+        "Industry Tags": "Energy,Agriculture,Communication,Transportation,Manufacturing"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKD1",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 30.286,
+        "Eco_loss": 18832.7845,
+        "coordinate": [
+            -3.091708,
+            53.522968
+        ],
+        "Industry Tags": "Communication,Agriculture,Transportation,Energy,Manufacturing"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKD3",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 187.8915,
+        "Eco_loss": 7153.0579,
+        "coordinate": [
+            1.148808,
+            52.962458
+        ],
+        "Industry Tags": "Manufacturing,Communication,Transportation,Agriculture"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKH2",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 136.1426,
+        "Eco_loss": 15270.7306,
+        "coordinate": [
+            -4.550912,
+            52.722449
+        ],
+        "Industry Tags": "Manufacturing,Energy,Communication"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKI6",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 240.2973,
+        "Eco_loss": 18024.0854,
+        "coordinate": [
+            -6.649081,
+            54.244605
+        ],
+        "Industry Tags": "Manufacturing"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKD7",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 94.9647,
+        "Eco_loss": 10705.4961,
+        "coordinate": [
+            -4.550684,
+            51.047816
+        ],
+        "Industry Tags": "Energy"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKD3",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 214.985,
+        "Eco_loss": 2306.11,
+        "coordinate": [
+            -1.011915,
+            50.633259
+        ],
+        "Industry Tags": "Manufacturing,Communication,Agriculture,Energy,Transportation"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKF3",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 28.3132,
+        "Eco_loss": 14007.1362,
+        "coordinate": [
+            -0.597338,
+            54.259119
+        ],
+        "Industry Tags": "Agriculture,Manufacturing,Communication,Transportation"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKD3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 96.6345,
+        "Eco_loss": 11787.3584,
+        "coordinate": [
+            -2.235248,
+            50.792138
+        ],
+        "Industry Tags": "Energy,Transportation"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKF1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 60.7342,
+        "Eco_loss": 26.0378,
+        "coordinate": [
+            -2.916391,
+            54.865587
+        ],
+        "Industry Tags": "Manufacturing"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKK3",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 32.1957,
+        "Eco_loss": 16082.3341,
+        "coordinate": [
+            -2.944242,
+            58.609509
+        ],
+        "Industry Tags": "Agriculture,Communication,Manufacturing,Energy,Transportation"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKD6",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 236.3858,
+        "Eco_loss": 12144.4456,
+        "coordinate": [
+            -3.578372,
+            54.607526
+        ],
+        "Industry Tags": "Communication,Manufacturing,Energy"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKD3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 153.272,
+        "Eco_loss": 7752.1215,
+        "coordinate": [
+            -2.326432,
+            56.975717
+        ],
+        "Industry Tags": "Communication,Agriculture,Energy,Manufacturing,Transportation"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKD3",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 153.7473,
+        "Eco_loss": 1717.0849,
+        "coordinate": [
+            -0.447139,
+            51.113353
+        ],
+        "Industry Tags": "Communication,Agriculture"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKM8",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 162.7155,
+        "Eco_loss": 17209.4193,
+        "coordinate": [
+            -1.06824,
+            54.461702
+        ],
+        "Industry Tags": "Manufacturing,Energy,Communication,Transportation"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKK1",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 66.3028,
+        "Eco_loss": 10598.7979,
+        "coordinate": [
+            -3.927742,
+            55.811214
+        ],
+        "Industry Tags": "Energy,Manufacturing"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKC1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 95.8054,
+        "Eco_loss": 16335.8023,
+        "coordinate": [
+            -3.323756,
+            58.33221
+        ],
+        "Industry Tags": "Manufacturing,Energy"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKD1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 207.5955,
+        "Eco_loss": 1720.954,
+        "coordinate": [
+            -0.719398,
+            51.362393
+        ],
+        "Industry Tags": "Agriculture,Transportation,Manufacturing,Communication"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKG1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 8.2507,
+        "Eco_loss": 4372.5142,
+        "coordinate": [
+            -5.810085,
+            57.34376
+        ],
+        "Industry Tags": "Manufacturing,Transportation,Communication,Energy"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKG3",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 6.1863,
+        "Eco_loss": 14932.0573,
+        "coordinate": [
+            -6.697135,
+            58.018821
+        ],
+        "Industry Tags": "Energy,Manufacturing,Agriculture,Transportation,Communication"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKD4",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 196.1362,
+        "Eco_loss": 18477.3764,
+        "coordinate": [
+            -3.4701,
+            51.934958
+        ],
+        "Industry Tags": "Manufacturing,Communication,Energy,Agriculture"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKC1",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 82.3845,
+        "Eco_loss": 19826.0469,
+        "coordinate": [
+            -1.699287,
+            53.640769
+        ],
+        "Industry Tags": "Energy"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKK4",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 120.8664,
+        "Eco_loss": 4735.3274,
+        "coordinate": [
+            -2.332133,
+            51.115659
+        ],
+        "Industry Tags": "Energy,Agriculture"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKI6",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 188.9617,
+        "Eco_loss": 2689.2408,
+        "coordinate": [
+            -3.649434,
+            52.606924
+        ],
+        "Industry Tags": "Transportation,Manufacturing,Communication,Agriculture,Energy"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKC1",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 47.5665,
+        "Eco_loss": 19667.0149,
+        "coordinate": [
+            -2.098835,
+            52.556794
+        ],
+        "Industry Tags": "Agriculture,Manufacturing"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKL2",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 73.1717,
+        "Eco_loss": 11783.9264,
+        "coordinate": [
+            -6.256094,
+            57.645001
+        ],
+        "Industry Tags": "Communication,Transportation,Energy,Manufacturing"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKF1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 128.6093,
+        "Eco_loss": 6159.4281,
+        "coordinate": [
+            -5.809664,
+            53.959803
+        ],
+        "Industry Tags": "Energy"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKG2",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 144.0245,
+        "Eco_loss": 16158.5878,
+        "coordinate": [
+            -3.885907,
+            52.946625
+        ],
+        "Industry Tags": "Energy"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKK4",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 160.7976,
+        "Eco_loss": 15520.8679,
+        "coordinate": [
+            -4.480473,
+            52.028087
+        ],
+        "Industry Tags": "Manufacturing"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKM8",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 107.015,
+        "Eco_loss": 528.8345,
+        "coordinate": [
+            -3.599612,
+            56.082214
+        ],
+        "Industry Tags": "Energy,Communication"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKG2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 22.2285,
+        "Eco_loss": 5417.9743,
+        "coordinate": [
+            -4.717214,
+            55.587333
+        ],
+        "Industry Tags": "Energy,Transportation,Agriculture"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKD6",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 9.6533,
+        "Eco_loss": 18226.9274,
+        "coordinate": [
+            -4.845483,
+            56.246774
+        ],
+        "Industry Tags": "Agriculture,Transportation,Communication,Manufacturing,Energy"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKK4",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 122.8593,
+        "Eco_loss": 1140.7631,
+        "coordinate": [
+            -4.57786,
+            53.419713
+        ],
+        "Industry Tags": "Transportation,Agriculture"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKM9",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 223.4324,
+        "Eco_loss": 8132.0492,
+        "coordinate": [
+            -4.475891,
+            54.895544
+        ],
+        "Industry Tags": "Communication,Energy,Manufacturing,Agriculture"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKM6",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 190.4305,
+        "Eco_loss": 2067.373,
+        "coordinate": [
+            -3.089297,
+            51.040764
+        ],
+        "Industry Tags": "Transportation"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKI7",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 91.4435,
+        "Eco_loss": 3609.228,
+        "coordinate": [
+            -0.969229,
+            50.836857
+        ],
+        "Industry Tags": "Communication,Energy,Transportation"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKC1",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 169.2332,
+        "Eco_loss": 9833.3958,
+        "coordinate": [
+            -7.494374,
+            56.958752
+        ],
+        "Industry Tags": "Manufacturing,Communication"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKM9",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 223.3243,
+        "Eco_loss": 6769.7448,
+        "coordinate": [
+            -3.259463,
+            58.888088
+        ],
+        "Industry Tags": "Communication"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKH3",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 122.8645,
+        "Eco_loss": 13314.0609,
+        "coordinate": [
+            -6.548097,
+            54.360992
+        ],
+        "Industry Tags": "Transportation,Communication"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKC2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 232.0499,
+        "Eco_loss": 15145.9258,
+        "coordinate": [
+            -4.257064,
+            54.962856
+        ],
+        "Industry Tags": "Agriculture,Transportation,Manufacturing,Energy,Communication"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKK4",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 218.4084,
+        "Eco_loss": 8113.5884,
+        "coordinate": [
+            -1.921951,
+            50.532954
+        ],
+        "Industry Tags": "Manufacturing"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKD3",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 209.518,
+        "Eco_loss": 4446.8344,
+        "coordinate": [
+            -4.683168,
+            56.795135
+        ],
+        "Industry Tags": "Manufacturing,Communication"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKD3",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 4.2847,
+        "Eco_loss": 19409.3637,
+        "coordinate": [
+            -6.736058,
+            58.211891
+        ],
+        "Industry Tags": "Communication"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKE3",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 209.1282,
+        "Eco_loss": 9286.0017,
+        "coordinate": [
+            0.450982,
+            53.138985
+        ],
+        "Industry Tags": "Energy"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKL2",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 196.3041,
+        "Eco_loss": 13758.0689,
+        "coordinate": [
+            -3.172845,
+            53.992596
+        ],
+        "Industry Tags": "Agriculture,Communication,Manufacturing,Transportation"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKJ2",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 42.6329,
+        "Eco_loss": 5988.2608,
+        "coordinate": [
+            -2.886094,
+            55.477961
+        ],
+        "Industry Tags": "Communication,Energy,Manufacturing,Transportation"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKL1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 227.0058,
+        "Eco_loss": 3471.2258,
+        "coordinate": [
+            -4.900563,
+            52.096378
+        ],
+        "Industry Tags": "Communication,Transportation"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKH2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 102.7558,
+        "Eco_loss": 19942.5529,
+        "coordinate": [
+            -4.639325,
+            57.564055
+        ],
+        "Industry Tags": "Transportation,Energy,Manufacturing,Communication"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKL2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 22.2297,
+        "Eco_loss": 14137.9965,
+        "coordinate": [
+            -2.278264,
+            55.093105
+        ],
+        "Industry Tags": "Agriculture,Transportation"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKK3",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 97.231,
+        "Eco_loss": 9938.4867,
+        "coordinate": [
+            -0.433576,
+            50.92747
+        ],
+        "Industry Tags": "Transportation,Energy,Manufacturing,Communication,Agriculture"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKH1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 127.3082,
+        "Eco_loss": 14802.9982,
+        "coordinate": [
+            -1.232219,
+            55.000145
+        ],
+        "Industry Tags": "Agriculture,Transportation,Energy"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKL2",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 188.2628,
+        "Eco_loss": 10912.9536,
+        "coordinate": [
+            -1.721257,
+            59.877422
+        ],
+        "Industry Tags": "Communication,Energy,Manufacturing,Transportation"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKM9",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 229.1583,
+        "Eco_loss": 7634.209,
+        "coordinate": [
+            -0.625372,
+            53.939269
+        ],
+        "Industry Tags": "Transportation,Agriculture,Communication,Energy"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKC1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 64.3265,
+        "Eco_loss": 9441.7636,
+        "coordinate": [
+            -2.822816,
+            56.891448
+        ],
+        "Industry Tags": "Agriculture,Transportation,Communication,Manufacturing,Energy"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKI7",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 60.8067,
+        "Eco_loss": 637.613,
+        "coordinate": [
+            -2.471687,
+            59.808748
+        ],
+        "Industry Tags": "Agriculture,Energy,Manufacturing,Communication,Transportation"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKM5",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 133.9779,
+        "Eco_loss": 19862.5006,
+        "coordinate": [
+            0.503065,
+            51.042905
+        ],
+        "Industry Tags": "Transportation,Manufacturing,Agriculture,Energy,Communication"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKH1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 165.4954,
+        "Eco_loss": 12193.7595,
+        "coordinate": [
+            -6.213523,
+            55.84789
+        ],
+        "Industry Tags": "Manufacturing,Agriculture,Energy,Transportation"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKD4",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 99.4619,
+        "Eco_loss": 18504.2338,
+        "coordinate": [
+            -3.888115,
+            53.366405
+        ],
+        "Industry Tags": "Communication,Manufacturing,Energy,Transportation,Agriculture"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKE1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 210.1671,
+        "Eco_loss": 496.788,
+        "coordinate": [
+            -6.469226,
+            57.541392
+        ],
+        "Industry Tags": "Energy"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKM7",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 229.3651,
+        "Eco_loss": 18171.1786,
+        "coordinate": [
+            -1.223838,
+            52.480244
+        ],
+        "Industry Tags": "Manufacturing,Communication"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKM8",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 83.6522,
+        "Eco_loss": 19600.4766,
+        "coordinate": [
+            0.706672,
+            50.893557
+        ],
+        "Industry Tags": "Manufacturing,Agriculture,Communication,Energy"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKD7",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 200.4199,
+        "Eco_loss": 2475.4115,
+        "coordinate": [
+            -2.805939,
+            56.815283
+        ],
+        "Industry Tags": "Communication,Energy"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKM5",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 111.0627,
+        "Eco_loss": 5196.383,
+        "coordinate": [
+            -4.258642,
+            57.633011
+        ],
+        "Industry Tags": "Transportation,Communication,Agriculture,Energy"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKH1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 223.4079,
+        "Eco_loss": 18328.3083,
+        "coordinate": [
+            -3.426178,
+            52.486219
+        ],
+        "Industry Tags": "Communication,Manufacturing"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKJ1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 106.3316,
+        "Eco_loss": 19762.39,
+        "coordinate": [
+            -3.821548,
+            58.057111
+        ],
+        "Industry Tags": "Transportation,Energy,Agriculture"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKF3",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 50.9276,
+        "Eco_loss": 11767.5592,
+        "coordinate": [
+            -1.982679,
+            57.195386
+        ],
+        "Industry Tags": "Communication"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKF1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 54.323,
+        "Eco_loss": 3148.9184,
+        "coordinate": [
+            -0.375021,
+            52.547524
+        ],
+        "Industry Tags": "Communication,Agriculture,Transportation,Manufacturing,Energy"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKH3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 196.4304,
+        "Eco_loss": 18511.453,
+        "coordinate": [
+            -5.05178,
+            57.099912
+        ],
+        "Industry Tags": "Communication,Transportation"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKJ4",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 123.3934,
+        "Eco_loss": 11949.006,
+        "coordinate": [
+            -5.534153,
+            54.422712
+        ],
+        "Industry Tags": "Energy,Transportation,Manufacturing,Communication,Agriculture"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKI7",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 197.8385,
+        "Eco_loss": 18551.9407,
+        "coordinate": [
+            -2.255175,
+            57.131927
+        ],
+        "Industry Tags": "Energy,Communication,Transportation"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKJ2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 85.8204,
+        "Eco_loss": 17701.7808,
+        "coordinate": [
+            -1.384209,
+            54.355951
+        ],
+        "Industry Tags": "Energy"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKC1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 151.3055,
+        "Eco_loss": 9352.6787,
+        "coordinate": [
+            -1.552845,
+            52.854046
+        ],
+        "Industry Tags": "Agriculture,Energy,Manufacturing"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKM7",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 58.6517,
+        "Eco_loss": 8742.1699,
+        "coordinate": [
+            -4.607057,
+            51.544708
+        ],
+        "Industry Tags": "Energy,Transportation"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKI3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 76.9397,
+        "Eco_loss": 10593.3836,
+        "coordinate": [
+            -3.136359,
+            55.371986
+        ],
+        "Industry Tags": "Energy,Manufacturing,Transportation,Agriculture"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKG1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 15.063,
+        "Eco_loss": 2224.4834,
+        "coordinate": [
+            -5.447774,
+            51.546578
+        ],
+        "Industry Tags": "Transportation,Energy,Communication"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKL1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 34.6621,
+        "Eco_loss": 15837.4536,
+        "coordinate": [
+            -7.526309,
+            57.392896
+        ],
+        "Industry Tags": "Energy,Agriculture,Manufacturing,Communication,Transportation"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKJ2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 158.7972,
+        "Eco_loss": 17347.6852,
+        "coordinate": [
+            -0.126551,
+            53.863347
+        ],
+        "Industry Tags": "Manufacturing,Energy,Transportation,Communication,Agriculture"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKE4",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 12.542,
+        "Eco_loss": 15005.3726,
+        "coordinate": [
+            1.822021,
+            52.25682
+        ],
+        "Industry Tags": "Transportation,Communication"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKI7",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 68.491,
+        "Eco_loss": 1742.4401,
+        "coordinate": [
+            -6.506492,
+            57.714738
+        ],
+        "Industry Tags": "Agriculture,Transportation"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKD6",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 36.1286,
+        "Eco_loss": 1732.7407,
+        "coordinate": [
+            -5.704777,
+            51.100616
+        ],
+        "Industry Tags": "Manufacturing,Communication"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKM6",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 56.6821,
+        "Eco_loss": 10852.8048,
+        "coordinate": [
+            -4.107293,
+            52.614492
+        ],
+        "Industry Tags": "Energy,Agriculture,Manufacturing,Transportation,Communication"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKM9",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 87.3053,
+        "Eco_loss": 18159.5233,
+        "coordinate": [
+            -7.275011,
+            55.036571
+        ],
+        "Industry Tags": "Energy,Communication,Manufacturing,Agriculture"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKG1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 249.8867,
+        "Eco_loss": 4292.9929,
+        "coordinate": [
+            -7.337443,
+            57.923151
+        ],
+        "Industry Tags": "Manufacturing,Communication,Transportation,Agriculture,Energy"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKM7",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 222.5205,
+        "Eco_loss": 7801.4372,
+        "coordinate": [
+            -6.236915,
+            56.249249
+        ],
+        "Industry Tags": "Agriculture"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKI5",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 136.0652,
+        "Eco_loss": 8321.917,
+        "coordinate": [
+            -5.319805,
+            58.529967
+        ],
+        "Industry Tags": "Energy,Transportation,Communication,Manufacturing,Agriculture"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKE3",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 47.9314,
+        "Eco_loss": 11026.6476,
+        "coordinate": [
+            -4.040085,
+            55.90858
+        ],
+        "Industry Tags": "Manufacturing,Transportation,Communication,Agriculture,Energy"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKH1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 150.5861,
+        "Eco_loss": 19386.9957,
+        "coordinate": [
+            -5.883858,
+            56.351738
+        ],
+        "Industry Tags": "Agriculture,Transportation"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKD4",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 64.3716,
+        "Eco_loss": 8533.7374,
+        "coordinate": [
+            -4.348142,
+            58.627668
+        ],
+        "Industry Tags": "Manufacturing,Agriculture,Communication"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKI3",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 225.4581,
+        "Eco_loss": 18665.2182,
+        "coordinate": [
+            -1.051072,
+            52.801836
+        ],
+        "Industry Tags": "Communication,Transportation,Agriculture,Energy"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKF3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 69.4559,
+        "Eco_loss": 16719.6191,
+        "coordinate": [
+            -3.669252,
+            50.964078
+        ],
+        "Industry Tags": "Communication,Transportation,Energy"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKM8",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 100.8317,
+        "Eco_loss": 9309.0095,
+        "coordinate": [
+            -5.533189,
+            58.360358
+        ],
+        "Industry Tags": "Transportation,Communication,Energy,Manufacturing"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKD3",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 211.3028,
+        "Eco_loss": 5758.3802,
+        "coordinate": [
+            -4.748537,
+            52.201031
+        ],
+        "Industry Tags": "Energy,Communication,Transportation"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKH1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 142.4979,
+        "Eco_loss": 8241.1057,
+        "coordinate": [
+            -2.87118,
+            50.782526
+        ],
+        "Industry Tags": "Manufacturing"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKD4",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 150.761,
+        "Eco_loss": 13104.3507,
+        "coordinate": [
+            -2.387972,
+            52.098733
+        ],
+        "Industry Tags": "Transportation,Agriculture,Communication,Manufacturing,Energy"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKG1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 135.7991,
+        "Eco_loss": 6332.1769,
+        "coordinate": [
+            -5.807964,
+            57.755368
+        ],
+        "Industry Tags": "Manufacturing"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKG3",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 186.0626,
+        "Eco_loss": 14284.8697,
+        "coordinate": [
+            -7.395525,
+            57.628057
+        ],
+        "Industry Tags": "Agriculture,Transportation,Manufacturing,Energy,Communication"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKK2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 145.1767,
+        "Eco_loss": 8051.6081,
+        "coordinate": [
+            -3.331223,
+            57.340846
+        ],
+        "Industry Tags": "Communication,Transportation"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKG1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 201.0259,
+        "Eco_loss": 15773.231,
+        "coordinate": [
+            -3.067323,
+            52.91001
+        ],
+        "Industry Tags": "Transportation,Communication,Energy,Agriculture"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKM8",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 212.9137,
+        "Eco_loss": 5815.0174,
+        "coordinate": [
+            -2.805165,
+            57.563126
+        ],
+        "Industry Tags": "Energy,Communication"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKI4",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 218.1674,
+        "Eco_loss": 16518.3749,
+        "coordinate": [
+            -3.321482,
+            54.893368
+        ],
+        "Industry Tags": "Communication"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKE3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 155.9624,
+        "Eco_loss": 18252.4321,
+        "coordinate": [
+            -2.36872,
+            52.611271
+        ],
+        "Industry Tags": "Communication,Transportation"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKL2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 3.6044,
+        "Eco_loss": 9951.9201,
+        "coordinate": [
+            0.825075,
+            51.538545
+        ],
+        "Industry Tags": "Energy"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKD4",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 236.1513,
+        "Eco_loss": 5756.6343,
+        "coordinate": [
+            -4.440611,
+            55.713563
+        ],
+        "Industry Tags": "Agriculture,Communication,Energy"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKD1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 21.781,
+        "Eco_loss": 14166.8126,
+        "coordinate": [
+            -3.531942,
+            54.664193
+        ],
+        "Industry Tags": "Agriculture,Manufacturing"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKH1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 28.4119,
+        "Eco_loss": 9948.2383,
+        "coordinate": [
+            1.414361,
+            51.29019
+        ],
+        "Industry Tags": "Communication,Manufacturing,Energy,Transportation,Agriculture"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKE3",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 190.5408,
+        "Eco_loss": 8231.4243,
+        "coordinate": [
+            -3.153452,
+            53.842107
+        ],
+        "Industry Tags": "Energy,Manufacturing,Agriculture"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKI6",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 148.0575,
+        "Eco_loss": 12025.9414,
+        "coordinate": [
+            -1.61616,
+            55.241995
+        ],
+        "Industry Tags": "Agriculture"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKE4",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 168.9031,
+        "Eco_loss": 6355.5172,
+        "coordinate": [
+            -2.636093,
+            51.988869
+        ],
+        "Industry Tags": "Energy,Manufacturing"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKD6",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 103.9378,
+        "Eco_loss": 15487.2948,
+        "coordinate": [
+            -7.397304,
+            57.573837
+        ],
+        "Industry Tags": "Communication,Energy,Manufacturing,Agriculture,Transportation"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKL1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 245.7874,
+        "Eco_loss": 4351.6662,
+        "coordinate": [
+            -5.453979,
+            57.11302
+        ],
+        "Industry Tags": "Agriculture"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKI5",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 89.5562,
+        "Eco_loss": 5523.4105,
+        "coordinate": [
+            -1.367434,
+            51.331491
+        ],
+        "Industry Tags": "Manufacturing,Energy,Communication,Agriculture,Transportation"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKL2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 79.4122,
+        "Eco_loss": 16300.5052,
+        "coordinate": [
+            -6.629458,
+            54.860718
+        ],
+        "Industry Tags": "Energy,Agriculture,Transportation"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKE2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 114.5605,
+        "Eco_loss": 16091.8285,
+        "coordinate": [
+            -5.127917,
+            50.635918
+        ],
+        "Industry Tags": "Agriculture,Transportation,Manufacturing,Energy"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKJ1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 224.2918,
+        "Eco_loss": 134.8649,
+        "coordinate": [
+            -4.147901,
+            57.087079
+        ],
+        "Industry Tags": "Transportation,Agriculture,Manufacturing,Energy,Communication"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKL1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 238.2544,
+        "Eco_loss": 46.8326,
+        "coordinate": [
+            -2.654609,
+            55.537192
+        ],
+        "Industry Tags": "Energy"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKJ3",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 68.2508,
+        "Eco_loss": 4250.6767,
+        "coordinate": [
+            -7.020818,
+            56.676681
+        ],
+        "Industry Tags": "Manufacturing,Transportation,Communication,Agriculture,Energy"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKC1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 177.3303,
+        "Eco_loss": 16414.6567,
+        "coordinate": [
+            -3.188078,
+            52.931787
+        ],
+        "Industry Tags": "Transportation,Energy"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKJ4",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 155.4263,
+        "Eco_loss": 6980.4469,
+        "coordinate": [
+            -5.768417,
+            56.767233
+        ],
+        "Industry Tags": "Manufacturing"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKG3",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 54.6864,
+        "Eco_loss": 15122.8028,
+        "coordinate": [
+            -0.825518,
+            50.657842
+        ],
+        "Industry Tags": "Agriculture"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKH2",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 107.8595,
+        "Eco_loss": 1872.8504,
+        "coordinate": [
+            -6.308187,
+            56.483486
+        ],
+        "Industry Tags": "Energy,Communication,Agriculture,Transportation,Manufacturing"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKK2",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 131.8462,
+        "Eco_loss": 8499.7478,
+        "coordinate": [
+            -7.333326,
+            56.389124
+        ],
+        "Industry Tags": "Transportation,Manufacturing"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKG3",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 154.2553,
+        "Eco_loss": 2072.6446,
+        "coordinate": [
+            -3.733437,
+            53.513334
+        ],
+        "Industry Tags": "Transportation,Agriculture,Communication,Manufacturing,Energy"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKJ1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 4.8539,
+        "Eco_loss": 19148.1821,
+        "coordinate": [
+            0.28235,
+            53.350589
+        ],
+        "Industry Tags": "Agriculture,Transportation"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKK2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 114.9331,
+        "Eco_loss": 18393.2339,
+        "coordinate": [
+            -2.707053,
+            59.160782
+        ],
+        "Industry Tags": "Manufacturing,Agriculture"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKD7",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 28.6433,
+        "Eco_loss": 10623.7944,
+        "coordinate": [
+            -5.762926,
+            54.347538
+        ],
+        "Industry Tags": "Transportation,Energy,Communication,Manufacturing"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKF2",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 157.9034,
+        "Eco_loss": 19699.5869,
+        "coordinate": [
+            -1.588639,
+            51.017517
+        ],
+        "Industry Tags": "Manufacturing,Agriculture"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKH3",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 9.3633,
+        "Eco_loss": 2115.1754,
+        "coordinate": [
+            -3.424214,
+            56.496208
+        ],
+        "Industry Tags": "Manufacturing,Agriculture"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKL2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 177.7389,
+        "Eco_loss": 9441.8128,
+        "coordinate": [
+            -3.837328,
+            57.935104
+        ],
+        "Industry Tags": "Communication"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKK4",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 181.0433,
+        "Eco_loss": 8063.1993,
+        "coordinate": [
+            -6.952308,
+            55.294614
+        ],
+        "Industry Tags": "Agriculture,Energy,Transportation,Manufacturing,Communication"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKG3",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 17.3212,
+        "Eco_loss": 16391.8623,
+        "coordinate": [
+            -2.541531,
+            54.95673
+        ],
+        "Industry Tags": "Transportation,Agriculture"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKE3",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 101.9871,
+        "Eco_loss": 6961.813,
+        "coordinate": [
+            -2.193426,
+            56.909796
+        ],
+        "Industry Tags": "Energy,Manufacturing,Communication,Transportation"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKI6",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 73.8504,
+        "Eco_loss": 14410.464,
+        "coordinate": [
+            -4.099039,
+            58.307915
+        ],
+        "Industry Tags": "Energy,Manufacturing,Communication"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKF2",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 96.4731,
+        "Eco_loss": 7379.0403,
+        "coordinate": [
+            -6.239175,
+            55.944232
+        ],
+        "Industry Tags": "Communication,Manufacturing,Energy"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKJ1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 110.5113,
+        "Eco_loss": 1275.9303,
+        "coordinate": [
+            -3.588207,
+            53.394095
+        ],
+        "Industry Tags": "Energy,Agriculture,Manufacturing"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKD7",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 93.392,
+        "Eco_loss": 16978.6325,
+        "coordinate": [
+            -4.529159,
+            52.003291
+        ],
+        "Industry Tags": "Transportation,Agriculture,Communication"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKF2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 182.835,
+        "Eco_loss": 1407.4796,
+        "coordinate": [
+            -3.121796,
+            54.151763
+        ],
+        "Industry Tags": "Communication,Agriculture,Transportation,Energy,Manufacturing"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKM8",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 42.1923,
+        "Eco_loss": 1864.9905,
+        "coordinate": [
+            -6.366992,
+            58.241493
+        ],
+        "Industry Tags": "Energy,Agriculture,Communication,Transportation,Manufacturing"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKM6",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 94.2087,
+        "Eco_loss": 16625.426,
+        "coordinate": [
+            -2.666982,
+            52.853329
+        ],
+        "Industry Tags": "Energy"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKE1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 182.3045,
+        "Eco_loss": 3300.7416,
+        "coordinate": [
+            -1.714949,
+            53.269704
+        ],
+        "Industry Tags": "Manufacturing"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKH1",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 56.567,
+        "Eco_loss": 2056.8186,
+        "coordinate": [
+            -3.498311,
+            53.290147
+        ],
+        "Industry Tags": "Energy,Communication"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKI5",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 180.1495,
+        "Eco_loss": 4095.433,
+        "coordinate": [
+            1.478345,
+            52.769066
+        ],
+        "Industry Tags": "Transportation,Manufacturing"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKF2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 211.966,
+        "Eco_loss": 7439.1848,
+        "coordinate": [
+            -1.963435,
+            55.405349
+        ],
+        "Industry Tags": "Manufacturing,Agriculture,Energy,Communication,Transportation"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKH3",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 147.9735,
+        "Eco_loss": 12737.9713,
+        "coordinate": [
+            -4.716362,
+            50.646747
+        ],
+        "Industry Tags": "Agriculture,Transportation,Manufacturing"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKC1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 39.1172,
+        "Eco_loss": 14769.122,
+        "coordinate": [
+            -6.48518,
+            56.893845
+        ],
+        "Industry Tags": "Energy,Communication"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKF2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 176.8282,
+        "Eco_loss": 1462.3465,
+        "coordinate": [
+            -0.723018,
+            50.93676
+        ],
+        "Industry Tags": "Communication,Transportation,Agriculture"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKI7",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 242.9547,
+        "Eco_loss": 4272.5713,
+        "coordinate": [
+            -2.440669,
+            52.279623
+        ],
+        "Industry Tags": "Agriculture,Energy,Transportation"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKE3",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 93.1754,
+        "Eco_loss": 1202.7032,
+        "coordinate": [
+            1.292207,
+            52.571222
+        ],
+        "Industry Tags": "Transportation,Communication,Energy"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKE2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 159.7729,
+        "Eco_loss": 15762.0471,
+        "coordinate": [
+            -4.717374,
+            54.947311
+        ],
+        "Industry Tags": "Energy,Transportation,Communication,Manufacturing,Agriculture"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKK3",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 240.1002,
+        "Eco_loss": 6411.1079,
+        "coordinate": [
+            -3.374654,
+            55.782553
+        ],
+        "Industry Tags": "Communication,Agriculture,Energy,Transportation"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKI5",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 198.5463,
+        "Eco_loss": 6519.8193,
+        "coordinate": [
+            -5.675168,
+            56.086623
+        ],
+        "Industry Tags": "Energy,Transportation,Agriculture"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKM6",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 173.1277,
+        "Eco_loss": 9324.9209,
+        "coordinate": [
+            -4.264055,
+            58.178101
+        ],
+        "Industry Tags": "Transportation"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKM6",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 173.2626,
+        "Eco_loss": 4725.3539,
+        "coordinate": [
+            -1.18056,
+            51.362888
+        ],
+        "Industry Tags": "Manufacturing,Agriculture,Communication"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKC1",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 165.5871,
+        "Eco_loss": 11408.8666,
+        "coordinate": [
+            -0.918986,
+            53.707582
+        ],
+        "Industry Tags": "Agriculture"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKJ2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 62.2374,
+        "Eco_loss": 12770.2058,
+        "coordinate": [
+            -2.746752,
+            56.19612
+        ],
+        "Industry Tags": "Energy,Agriculture,Communication,Transportation"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKH3",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 181.3261,
+        "Eco_loss": 10382.4056,
+        "coordinate": [
+            -7.871287,
+            57.309261
+        ],
+        "Industry Tags": "Energy,Communication"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKD4",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 23.9423,
+        "Eco_loss": 17964.5456,
+        "coordinate": [
+            -6.799798,
+            58.105369
+        ],
+        "Industry Tags": "Transportation,Energy,Manufacturing,Agriculture"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKD1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 72.3394,
+        "Eco_loss": 11793.4036,
+        "coordinate": [
+            0.801205,
+            51.113284
+        ],
+        "Industry Tags": "Energy,Transportation"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKI7",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 50.649,
+        "Eco_loss": 19685.521,
+        "coordinate": [
+            -0.760038,
+            52.663677
+        ],
+        "Industry Tags": "Energy,Communication,Manufacturing"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKE3",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 31.7425,
+        "Eco_loss": 11447.3292,
+        "coordinate": [
+            -7.301409,
+            57.65018
+        ],
+        "Industry Tags": "Transportation,Agriculture,Communication,Manufacturing"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKF1",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 91.5514,
+        "Eco_loss": 13413.7659,
+        "coordinate": [
+            -2.676329,
+            53.311098
+        ],
+        "Industry Tags": "Transportation,Communication,Agriculture"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKJ4",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 48.2439,
+        "Eco_loss": 6654.0399,
+        "coordinate": [
+            -3.901531,
+            56.826493
+        ],
+        "Industry Tags": "Communication,Transportation"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKD3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 201.4388,
+        "Eco_loss": 18676.0154,
+        "coordinate": [
+            -2.884363,
+            58.598453
+        ],
+        "Industry Tags": "Transportation,Communication"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKE3",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 126.0455,
+        "Eco_loss": 11868.2405,
+        "coordinate": [
+            -2.547291,
+            56.487103
+        ],
+        "Industry Tags": "Transportation,Manufacturing,Communication,Energy"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKG1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 170.0406,
+        "Eco_loss": 9307.9003,
+        "coordinate": [
+            -2.369575,
+            53.960119
+        ],
+        "Industry Tags": "Agriculture,Communication,Transportation,Energy"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKI4",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 163.1826,
+        "Eco_loss": 5856.9935,
+        "coordinate": [
+            -2.056043,
+            57.313064
+        ],
+        "Industry Tags": "Communication,Energy,Transportation"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKF3",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 142.3655,
+        "Eco_loss": 4791.966,
+        "coordinate": [
+            -3.854495,
+            53.120185
+        ],
+        "Industry Tags": "Manufacturing,Communication,Transportation,Energy,Agriculture"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKM6",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 151.8156,
+        "Eco_loss": 11420.029,
+        "coordinate": [
+            -2.201104,
+            51.816675
+        ],
+        "Industry Tags": "Manufacturing,Energy,Agriculture,Communication"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKE2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 243.6426,
+        "Eco_loss": 782.5538,
+        "coordinate": [
+            -4.246809,
+            57.408224
+        ],
+        "Industry Tags": "Transportation,Communication,Energy"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKJ3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 178.5074,
+        "Eco_loss": 2228.1012,
+        "coordinate": [
+            -2.438084,
+            59.59603
+        ],
+        "Industry Tags": "Manufacturing,Energy"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKH2",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 195.3486,
+        "Eco_loss": 18910.6015,
+        "coordinate": [
+            -0.445861,
+            50.903112
+        ],
+        "Industry Tags": "Communication"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKM6",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 61.1883,
+        "Eco_loss": 7863.5555,
+        "coordinate": [
+            -4.050286,
+            51.25457
+        ],
+        "Industry Tags": "Agriculture,Communication,Energy,Transportation,Manufacturing"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKJ1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 24.0172,
+        "Eco_loss": 8729.7893,
+        "coordinate": [
+            -4.00181,
+            53.299343
+        ],
+        "Industry Tags": "Transportation,Manufacturing"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKL1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 214.0656,
+        "Eco_loss": 5034.5157,
+        "coordinate": [
+            -2.921828,
+            57.420733
+        ],
+        "Industry Tags": "Manufacturing,Communication,Agriculture"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKD7",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 163.5608,
+        "Eco_loss": 2991.4125,
+        "coordinate": [
+            -3.236725,
+            58.757086
+        ],
+        "Industry Tags": "Transportation"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKM9",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 145.1219,
+        "Eco_loss": 3779.9319,
+        "coordinate": [
+            1.632148,
+            52.131988
+        ],
+        "Industry Tags": "Agriculture,Energy,Manufacturing,Transportation"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKE2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 205.2045,
+        "Eco_loss": 19363.7011,
+        "coordinate": [
+            -1.415339,
+            51.510823
+        ],
+        "Industry Tags": "Energy,Manufacturing,Transportation,Agriculture"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKI5",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 135.1931,
+        "Eco_loss": 12648.5768,
+        "coordinate": [
+            -5.722222,
+            50.181456
+        ],
+        "Industry Tags": "Manufacturing,Energy,Agriculture,Communication,Transportation"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKH3",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 92.0757,
+        "Eco_loss": 4732.0766,
+        "coordinate": [
+            1.696999,
+            51.897728
+        ],
+        "Industry Tags": "Communication,Manufacturing,Energy,Transportation"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKM9",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 193.5155,
+        "Eco_loss": 1757.8979,
+        "coordinate": [
+            -1.2002,
+            53.343194
+        ],
+        "Industry Tags": "Communication"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKG2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 36.4832,
+        "Eco_loss": 19715.2453,
+        "coordinate": [
+            -4.383866,
+            50.346681
+        ],
+        "Industry Tags": "Transportation,Energy,Communication,Agriculture"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKL2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 184.8573,
+        "Eco_loss": 18329.5147,
+        "coordinate": [
+            -6.484219,
+            57.451911
+        ],
+        "Industry Tags": "Agriculture"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKD3",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 241.0001,
+        "Eco_loss": 15499.1188,
+        "coordinate": [
+            -5.622277,
+            54.077492
+        ],
+        "Industry Tags": "Transportation,Energy,Communication,Agriculture"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKI6",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 181.9929,
+        "Eco_loss": 9704.5699,
+        "coordinate": [
+            -4.701593,
+            50.606462
+        ],
+        "Industry Tags": "Manufacturing,Communication,Agriculture,Energy"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKM5",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 180.5381,
+        "Eco_loss": 8990.1603,
+        "coordinate": [
+            -4.781656,
+            51.509478
+        ],
+        "Industry Tags": "Transportation,Agriculture,Manufacturing"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKM8",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 102.4025,
+        "Eco_loss": 178.5546,
+        "coordinate": [
+            -5.609271,
+            58.149962
+        ],
+        "Industry Tags": "Energy,Manufacturing,Communication,Agriculture"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKM5",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 117.997,
+        "Eco_loss": 15656.467,
+        "coordinate": [
+            -1.102199,
+            51.209546
+        ],
+        "Industry Tags": "Manufacturing,Energy,Communication,Transportation"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKM5",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 211.1614,
+        "Eco_loss": 19314.1968,
+        "coordinate": [
+            -3.651018,
+            51.153766
+        ],
+        "Industry Tags": "Agriculture,Energy,Communication,Transportation"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKI4",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 21.4596,
+        "Eco_loss": 9753.4496,
+        "coordinate": [
+            -4.172107,
+            53.356034
+        ],
+        "Industry Tags": "Communication,Energy,Transportation"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKG1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 44.9956,
+        "Eco_loss": 15552.6397,
+        "coordinate": [
+            0.019261,
+            53.496989
+        ],
+        "Industry Tags": "Agriculture"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKM9",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 84.0143,
+        "Eco_loss": 10249.6657,
+        "coordinate": [
+            -3.785909,
+            50.454558
+        ],
+        "Industry Tags": "Communication"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKJ4",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 230.3722,
+        "Eco_loss": 15709.8224,
+        "coordinate": [
+            -5.330808,
+            56.289426
+        ],
+        "Industry Tags": "Communication,Agriculture"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKM5",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 17.2975,
+        "Eco_loss": 13749.5936,
+        "coordinate": [
+            -2.5132,
+            55.10263
+        ],
+        "Industry Tags": "Manufacturing,Communication"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKM5",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 58.2167,
+        "Eco_loss": 5918.5912,
+        "coordinate": [
+            1.06491,
+            52.555345
+        ],
+        "Industry Tags": "Energy,Agriculture,Manufacturing,Communication,Transportation"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKJ2",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 121.5767,
+        "Eco_loss": 9464.0832,
+        "coordinate": [
+            -1.418107,
+            54.416894
+        ],
+        "Industry Tags": "Energy,Transportation,Communication,Manufacturing,Agriculture"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKD7",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 39.3113,
+        "Eco_loss": 12755.5736,
+        "coordinate": [
+            -5.679833,
+            58.067129
+        ],
+        "Industry Tags": "Energy,Communication,Transportation"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKL1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 150.2843,
+        "Eco_loss": 11982.4493,
+        "coordinate": [
+            1.030703,
+            51.408651
+        ],
+        "Industry Tags": "Transportation,Energy"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKE3",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 38.32,
+        "Eco_loss": 6142.4901,
+        "coordinate": [
+            -1.887859,
+            53.251924
+        ],
+        "Industry Tags": "Transportation,Agriculture,Energy,Communication"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKK2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 239.0025,
+        "Eco_loss": 6646.5197,
+        "coordinate": [
+            1.03811,
+            51.53444
+        ],
+        "Industry Tags": "Transportation,Manufacturing,Energy,Communication,Agriculture"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKG1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 167.1861,
+        "Eco_loss": 16662.244,
+        "coordinate": [
+            -7.806855,
+            57.148146
+        ],
+        "Industry Tags": "Communication,Manufacturing,Transportation,Energy"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKI5",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 111.3121,
+        "Eco_loss": 2440.6222,
+        "coordinate": [
+            -5.880151,
+            58.191611
+        ],
+        "Industry Tags": "Manufacturing,Agriculture,Transportation,Communication,Energy"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKE2",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 100.3677,
+        "Eco_loss": 1802.6147,
+        "coordinate": [
+            -3.68114,
+            52.290921
+        ],
+        "Industry Tags": "Manufacturing"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKK2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 43.8491,
+        "Eco_loss": 11987.761,
+        "coordinate": [
+            -7.693923,
+            57.005846
+        ],
+        "Industry Tags": "Manufacturing,Agriculture,Communication"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKH2",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 50.1565,
+        "Eco_loss": 4816.6231,
+        "coordinate": [
+            0.461521,
+            53.047651
+        ],
+        "Industry Tags": "Communication,Manufacturing"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKM8",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 12.4875,
+        "Eco_loss": 18844.1956,
+        "coordinate": [
+            -3.646842,
+            54.540754
+        ],
+        "Industry Tags": "Agriculture"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKF1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 3.8312,
+        "Eco_loss": 9532.8884,
+        "coordinate": [
+            -5.751763,
+            51.488043
+        ],
+        "Industry Tags": "Transportation,Communication,Energy,Agriculture,Manufacturing"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKC1",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 105.0095,
+        "Eco_loss": 1619.0607,
+        "coordinate": [
+            -6.490221,
+            54.893599
+        ],
+        "Industry Tags": "Manufacturing,Energy,Agriculture,Transportation,Communication"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKG2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 70.1707,
+        "Eco_loss": 17968.3787,
+        "coordinate": [
+            -5.21379,
+            58.354074
+        ],
+        "Industry Tags": "Manufacturing,Agriculture,Communication"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKJ4",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 78.4312,
+        "Eco_loss": 11718.2204,
+        "coordinate": [
+            -1.439624,
+            53.567187
+        ],
+        "Industry Tags": "Energy"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKM5",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 232.6671,
+        "Eco_loss": 2863.0113,
+        "coordinate": [
+            -4.171495,
+            53.248185
+        ],
+        "Industry Tags": "Agriculture,Transportation,Communication,Manufacturing,Energy"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKJ2",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 66.5985,
+        "Eco_loss": 4291.2911,
+        "coordinate": [
+            -2.129223,
+            55.296043
+        ],
+        "Industry Tags": "Agriculture,Energy,Communication,Manufacturing"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKF1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 105.1813,
+        "Eco_loss": 15468.5231,
+        "coordinate": [
+            -3.500342,
+            52.844932
+        ],
+        "Industry Tags": "Agriculture,Manufacturing,Communication"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKI5",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 3.4435,
+        "Eco_loss": 12284.3894,
+        "coordinate": [
+            -7.712434,
+            54.593372
+        ],
+        "Industry Tags": "Communication"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKK4",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 216.8602,
+        "Eco_loss": 5523.6601,
+        "coordinate": [
+            -3.972394,
+            52.202794
+        ],
+        "Industry Tags": "Transportation,Communication,Agriculture"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKK1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 191.7406,
+        "Eco_loss": 3500.3999,
+        "coordinate": [
+            -6.375177,
+            56.413255
+        ],
+        "Industry Tags": "Agriculture,Transportation,Communication,Manufacturing"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKJ4",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 106.9451,
+        "Eco_loss": 14425.182,
+        "coordinate": [
+            -2.899789,
+            52.92527
+        ],
+        "Industry Tags": "Transportation"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKD3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 26.9361,
+        "Eco_loss": 9041.6659,
+        "coordinate": [
+            -1.276325,
+            53.24786
+        ],
+        "Industry Tags": "Manufacturing,Communication"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKE3",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 143.4741,
+        "Eco_loss": 6110.7413,
+        "coordinate": [
+            -1.418259,
+            53.297574
+        ],
+        "Industry Tags": "Manufacturing,Transportation,Communication,Agriculture"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKK2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 206.2802,
+        "Eco_loss": 4348.5794,
+        "coordinate": [
+            -6.976556,
+            57.951808
+        ],
+        "Industry Tags": "Transportation,Energy"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKH2",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 82.2725,
+        "Eco_loss": 3955.2096,
+        "coordinate": [
+            -7.983988,
+            54.682901
+        ],
+        "Industry Tags": "Communication"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKG3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 83.4904,
+        "Eco_loss": 4125.7201,
+        "coordinate": [
+            -2.466712,
+            57.118781
+        ],
+        "Industry Tags": "Energy,Agriculture"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKJ1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 79.2549,
+        "Eco_loss": 378.3375,
+        "coordinate": [
+            0.37329,
+            52.746712
+        ],
+        "Industry Tags": "Communication,Manufacturing,Energy,Transportation,Agriculture"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKH3",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 180.8077,
+        "Eco_loss": 6107.3666,
+        "coordinate": [
+            -5.895272,
+            50.345279
+        ],
+        "Industry Tags": "Transportation,Agriculture"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKM8",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 32.9186,
+        "Eco_loss": 9091.6684,
+        "coordinate": [
+            -2.503475,
+            51.268553
+        ],
+        "Industry Tags": "Transportation"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKJ3",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 136.4363,
+        "Eco_loss": 7827.0994,
+        "coordinate": [
+            -3.101878,
+            56.84003
+        ],
+        "Industry Tags": "Manufacturing,Agriculture,Energy"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKD7",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 71.9034,
+        "Eco_loss": 16524.4081,
+        "coordinate": [
+            -1.816428,
+            52.382637
+        ],
+        "Industry Tags": "Communication,Transportation"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKK1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 186.1212,
+        "Eco_loss": 13645.4484,
+        "coordinate": [
+            -4.68198,
+            56.147774
+        ],
+        "Industry Tags": "Energy,Communication"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKI3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 181.5917,
+        "Eco_loss": 5327.6074,
+        "coordinate": [
+            -6.703815,
+            57.982448
+        ],
+        "Industry Tags": "Transportation,Agriculture"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKH1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 86.741,
+        "Eco_loss": 9818.5979,
+        "coordinate": [
+            -6.031188,
+            50.779776
+        ],
+        "Industry Tags": "Manufacturing,Energy,Transportation"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKJ1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 15.8313,
+        "Eco_loss": 704.9992,
+        "coordinate": [
+            -5.81146,
+            54.222722
+        ],
+        "Industry Tags": "Manufacturing,Transportation"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKE1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 138.537,
+        "Eco_loss": 2216.0305,
+        "coordinate": [
+            -3.391317,
+            55.093171
+        ],
+        "Industry Tags": "Agriculture,Manufacturing"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKE2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 123.3505,
+        "Eco_loss": 11372.9812,
+        "coordinate": [
+            -1.172247,
+            54.28843
+        ],
+        "Industry Tags": "Manufacturing,Agriculture"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKJ3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 153.0422,
+        "Eco_loss": 7062.4584,
+        "coordinate": [
+            -4.749557,
+            55.959007
+        ],
+        "Industry Tags": "Agriculture"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKC2",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 143.6556,
+        "Eco_loss": 11152.3083,
+        "coordinate": [
+            1.008662,
+            51.202084
+        ],
+        "Industry Tags": "Energy,Agriculture,Transportation,Communication"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKH2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 150.2496,
+        "Eco_loss": 16687.5032,
+        "coordinate": [
+            -3.839012,
+            52.74174
+        ],
+        "Industry Tags": "Manufacturing,Transportation"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKD3",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 78.3365,
+        "Eco_loss": 451.8499,
+        "coordinate": [
+            -7.541509,
+            56.583212
+        ],
+        "Industry Tags": "Manufacturing,Communication,Agriculture"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKM8",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 103.6132,
+        "Eco_loss": 4133.7435,
+        "coordinate": [
+            -1.968409,
+            57.553079
+        ],
+        "Industry Tags": "Manufacturing,Communication,Energy,Agriculture"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKI6",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 105.7921,
+        "Eco_loss": 2837.7809,
+        "coordinate": [
+            -2.619581,
+            53.946958
+        ],
+        "Industry Tags": "Agriculture,Energy,Transportation,Communication,Manufacturing"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKI3",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 56.5135,
+        "Eco_loss": 4915.7377,
+        "coordinate": [
+            -4.811459,
+            55.736276
+        ],
+        "Industry Tags": "Communication,Agriculture,Manufacturing,Transportation"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKE1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 1.2373,
+        "Eco_loss": 8901.0024,
+        "coordinate": [
+            -4.668401,
+            54.900412
+        ],
+        "Industry Tags": "Manufacturing,Transportation,Agriculture"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKJ3",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 195.814,
+        "Eco_loss": 13493.2345,
+        "coordinate": [
+            -2.485213,
+            51.066177
+        ],
+        "Industry Tags": "Agriculture,Manufacturing,Energy"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKD7",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 195.6063,
+        "Eco_loss": 1969.3857,
+        "coordinate": [
+            -2.754929,
+            51.523928
+        ],
+        "Industry Tags": "Agriculture,Energy"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKG2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 204.0997,
+        "Eco_loss": 2739.5865,
+        "coordinate": [
+            -3.212469,
+            56.222634
+        ],
+        "Industry Tags": "Transportation,Agriculture,Energy,Manufacturing,Communication"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKF2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 165.6848,
+        "Eco_loss": 331.9806,
+        "coordinate": [
+            -2.036086,
+            50.994884
+        ],
+        "Industry Tags": "Manufacturing,Agriculture,Energy"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKI4",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 61.7607,
+        "Eco_loss": 16778.3776,
+        "coordinate": [
+            -5.849039,
+            57.305992
+        ],
+        "Industry Tags": "Agriculture,Communication,Energy"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKF3",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 5.7063,
+        "Eco_loss": 10723.2459,
+        "coordinate": [
+            -7.9894,
+            54.842571
+        ],
+        "Industry Tags": "Agriculture,Energy"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKI3",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 236.1965,
+        "Eco_loss": 11964.9792,
+        "coordinate": [
+            0.040765,
+            53.453677
+        ],
+        "Industry Tags": "Energy,Communication"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKH3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 182.6371,
+        "Eco_loss": 547.8782,
+        "coordinate": [
+            -5.644332,
+            58.067864
+        ],
+        "Industry Tags": "Manufacturing"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKG3",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 237.9877,
+        "Eco_loss": 10857.2137,
+        "coordinate": [
+            -7.227566,
+            55.064937
+        ],
+        "Industry Tags": "Transportation,Energy,Manufacturing,Agriculture,Communication"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKJ1",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 110.3761,
+        "Eco_loss": 14172.8303,
+        "coordinate": [
+            -0.602922,
+            50.866506
+        ],
+        "Industry Tags": "Communication,Energy,Manufacturing"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKC1",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 97.8936,
+        "Eco_loss": 16525.9305,
+        "coordinate": [
+            -1.622473,
+            50.436641
+        ],
+        "Industry Tags": "Energy,Agriculture,Manufacturing,Transportation"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKI7",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 29.7021,
+        "Eco_loss": 2521.8441,
+        "coordinate": [
+            -6.11321,
+            56.78509
+        ],
+        "Industry Tags": "Communication,Transportation,Manufacturing,Energy,Agriculture"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKH1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 102.6462,
+        "Eco_loss": 1530.3178,
+        "coordinate": [
+            -5.337997,
+            57.6023
+        ],
+        "Industry Tags": "Manufacturing,Communication,Energy,Transportation"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKK4",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 103.3312,
+        "Eco_loss": 11216.081,
+        "coordinate": [
+            -4.204995,
+            55.928502
+        ],
+        "Industry Tags": "Transportation,Communication,Manufacturing"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKD7",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 171.733,
+        "Eco_loss": 1221.3898,
+        "coordinate": [
+            -5.599626,
+            55.906502
+        ],
+        "Industry Tags": "Agriculture,Communication,Manufacturing"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKM9",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 207.0785,
+        "Eco_loss": 14266.2542,
+        "coordinate": [
+            -4.813998,
+            52.670228
+        ],
+        "Industry Tags": "Communication,Energy,Agriculture,Transportation,Manufacturing"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKF3",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 162.8053,
+        "Eco_loss": 13279.6137,
+        "coordinate": [
+            -2.56453,
+            51.593824
+        ],
+        "Industry Tags": "Energy,Communication,Manufacturing,Transportation,Agriculture"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKH3",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 227.9472,
+        "Eco_loss": 3565.2219,
+        "coordinate": [
+            -1.919643,
+            51.459484
+        ],
+        "Industry Tags": "Manufacturing,Energy,Transportation"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKG3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 171.0466,
+        "Eco_loss": 4806.892,
+        "coordinate": [
+            0.702735,
+            52.443171
+        ],
+        "Industry Tags": "Manufacturing,Agriculture,Energy,Transportation"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKK4",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 48.414,
+        "Eco_loss": 7825.7662,
+        "coordinate": [
+            -4.327721,
+            53.069431
+        ],
+        "Industry Tags": "Energy,Manufacturing"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKI6",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 90.8066,
+        "Eco_loss": 12950.1412,
+        "coordinate": [
+            -1.352585,
+            53.585572
+        ],
+        "Industry Tags": "Manufacturing,Agriculture,Communication,Energy"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKI7",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 141.7137,
+        "Eco_loss": 10504.7684,
+        "coordinate": [
+            -2.594435,
+            50.662658
+        ],
+        "Industry Tags": "Energy,Communication"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKK4",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 88.1665,
+        "Eco_loss": 13526.3965,
+        "coordinate": [
+            -2.549325,
+            55.583639
+        ],
+        "Industry Tags": "Manufacturing,Transportation"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKC1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 240.7147,
+        "Eco_loss": 1322.7962,
+        "coordinate": [
+            -1.013902,
+            51.172993
+        ],
+        "Industry Tags": "Transportation,Agriculture,Energy,Communication,Manufacturing"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKH3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 128.3042,
+        "Eco_loss": 12453.3261,
+        "coordinate": [
+            -3.35494,
+            55.858579
+        ],
+        "Industry Tags": "Manufacturing,Energy,Agriculture,Communication,Transportation"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKK3",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 125.5607,
+        "Eco_loss": 4894.3226,
+        "coordinate": [
+            -5.01849,
+            56.787627
+        ],
+        "Industry Tags": "Manufacturing,Communication"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKD6",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 66.2087,
+        "Eco_loss": 9219.012,
+        "coordinate": [
+            -6.54743,
+            55.064773
+        ],
+        "Industry Tags": "Energy,Agriculture"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKD1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 222.6149,
+        "Eco_loss": 2833.7087,
+        "coordinate": [
+            -5.969377,
+            54.285506
+        ],
+        "Industry Tags": "Transportation,Energy"
+    },
+    {
+        "Month": 2,
+        "nuts218cd": "UKI6",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 181.9751,
+        "Eco_loss": 4332.838,
+        "coordinate": [
+            -3.002893,
+            53.759233
+        ],
+        "Industry Tags": "Agriculture,Transportation,Communication"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKC2",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 243.4675,
+        "Eco_loss": 13436.5949,
+        "coordinate": [
+            -5.559133,
+            51.011707
+        ],
+        "Industry Tags": "Manufacturing,Communication,Transportation,Energy"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKJ2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 248.2849,
+        "Eco_loss": 1032.452,
+        "coordinate": [
+            -2.511298,
+            59.611281
+        ],
+        "Industry Tags": "Agriculture"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKC1",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 184.5157,
+        "Eco_loss": 12960.6216,
+        "coordinate": [
+            -0.424984,
+            50.801814
+        ],
+        "Industry Tags": "Transportation,Communication,Energy,Manufacturing"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKJ3",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 172.8322,
+        "Eco_loss": 6106.2521,
+        "coordinate": [
+            -3.394992,
+            54.043678
+        ],
+        "Industry Tags": "Energy,Transportation,Agriculture,Manufacturing"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKC2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 58.366,
+        "Eco_loss": 16785.5032,
+        "coordinate": [
+            -3.118153,
+            54.972424
+        ],
+        "Industry Tags": "Transportation"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKF3",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 93.9848,
+        "Eco_loss": 6823.7226,
+        "coordinate": [
+            -7.11708,
+            55.322399
+        ],
+        "Industry Tags": "Energy,Communication,Agriculture,Manufacturing"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKD3",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 113.9137,
+        "Eco_loss": 1514.4927,
+        "coordinate": [
+            -2.745521,
+            54.236482
+        ],
+        "Industry Tags": "Transportation,Communication"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKJ1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 199.9371,
+        "Eco_loss": 12982.4094,
+        "coordinate": [
+            -0.376373,
+            52.393403
+        ],
+        "Industry Tags": "Transportation,Agriculture,Communication"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKK4",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 173.2888,
+        "Eco_loss": 785.7885,
+        "coordinate": [
+            -3.542447,
+            53.387302
+        ],
+        "Industry Tags": "Agriculture,Transportation,Manufacturing,Energy,Communication"
+    },
+    {
+        "Month": 10,
+        "nuts218cd": "UKG3",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 197.4357,
+        "Eco_loss": 16475.2444,
+        "coordinate": [
+            -3.501972,
+            57.3382
+        ],
+        "Industry Tags": "Communication,Agriculture,Transportation,Energy"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKG3",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 209.7462,
+        "Eco_loss": 10056.1873,
+        "coordinate": [
+            -5.132098,
+            51.335389
+        ],
+        "Industry Tags": "Transportation,Energy"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKG1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 171.0501,
+        "Eco_loss": 4364.6444,
+        "coordinate": [
+            -3.713454,
+            52.314122
+        ],
+        "Industry Tags": "Manufacturing"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKL2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 194.2085,
+        "Eco_loss": 5024.6514,
+        "coordinate": [
+            -4.81041,
+            55.28239
+        ],
+        "Industry Tags": "Energy,Transportation,Manufacturing,Communication"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKI3",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 127.9293,
+        "Eco_loss": 16286.6499,
+        "coordinate": [
+            -1.430696,
+            54.557275
+        ],
+        "Industry Tags": "Energy,Transportation,Agriculture,Manufacturing,Communication"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKH3",
+        "Incident Time": 2024,
+        "Total_Daily_Period": 197.2285,
+        "Eco_loss": 8110.8686,
+        "coordinate": [
+            -2.556468,
+            50.859089
+        ],
+        "Industry Tags": "Agriculture,Transportation,Energy,Communication,Manufacturing"
+    },
+    {
+        "Month": 4,
+        "nuts218cd": "UKK4",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 76.9411,
+        "Eco_loss": 10703.7832,
+        "coordinate": [
+            -4.301947,
+            50.775972
+        ],
+        "Industry Tags": "Transportation,Energy,Manufacturing"
+    },
+    {
+        "Month": 1,
+        "nuts218cd": "UKG2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 14.0024,
+        "Eco_loss": 13534.8238,
+        "coordinate": [
+            -6.069719,
+            58.475738
+        ],
+        "Industry Tags": "Communication"
+    },
+    {
+        "Month": 5,
+        "nuts218cd": "UKC2",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 227.1908,
+        "Eco_loss": 15285.1134,
+        "coordinate": [
+            -2.658685,
+            52.73308
+        ],
+        "Industry Tags": "Manufacturing,Energy,Transportation,Communication,Agriculture"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKE3",
+        "Incident Time": 2023,
+        "Total_Daily_Period": 208.0182,
+        "Eco_loss": 5548.9663,
+        "coordinate": [
+            -3.017802,
+            53.692846
+        ],
+        "Industry Tags": "Communication,Energy,Transportation,Manufacturing,Agriculture"
+    },
+    {
+        "Month": 7,
+        "nuts218cd": "UKK1",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 1.6628,
+        "Eco_loss": 17342.4094,
+        "coordinate": [
+            -3.607195,
+            55.411054
+        ],
+        "Industry Tags": "Energy,Manufacturing,Communication,Transportation,Agriculture"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKF1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 108.9192,
+        "Eco_loss": 12418.917,
+        "coordinate": [
+            -4.247405,
+            52.923676
+        ],
+        "Industry Tags": "Agriculture,Communication,Manufacturing,Transportation,Energy"
+    },
+    {
+        "Month": 3,
+        "nuts218cd": "UKI7",
+        "Incident Time": 2026,
+        "Total_Daily_Period": 146.7753,
+        "Eco_loss": 8129.4179,
+        "coordinate": [
+            -2.408603,
+            56.564046
+        ],
+        "Industry Tags": "Energy,Agriculture,Communication,Manufacturing,Transportation"
+    },
+    {
+        "Month": 9,
+        "nuts218cd": "UKJ2",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 245.7639,
+        "Eco_loss": 12341.9756,
+        "coordinate": [
+            -4.252278,
+            54.458912
+        ],
+        "Industry Tags": "Transportation,Manufacturing,Energy"
+    },
+    {
+        "Month": 11,
+        "nuts218cd": "UKH1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 236.8738,
+        "Eco_loss": 10164.4403,
+        "coordinate": [
+            -4.056462,
+            53.389401
+        ],
+        "Industry Tags": "Manufacturing,Agriculture"
+    },
+    {
+        "Month": 6,
+        "nuts218cd": "UKH3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 38.5124,
+        "Eco_loss": 15765.4516,
+        "coordinate": [
+            -1.628755,
+            52.31071
+        ],
+        "Industry Tags": "Manufacturing,Communication,Energy,Transportation,Agriculture"
+    },
+    {
+        "Month": 12,
+        "nuts218cd": "UKD3",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 136.71,
+        "Eco_loss": 11749.9582,
+        "coordinate": [
+            -3.79624,
+            58.521422
+        ],
+        "Industry Tags": "Agriculture"
+    },
+    {
+        "Month": 8,
+        "nuts218cd": "UKG1",
+        "Incident Time": 2025,
+        "Total_Daily_Period": 99.5512,
+        "Eco_loss": 19425.2064,
+        "coordinate": [
+            -4.338198,
+            53.499774
+        ],
+        "Industry Tags": "Agriculture,Energy,Transportation"
+    }
+]

@@ -1,0 +1,520 @@
+[
+    {
+        "properties": {
+            "nuts218cd": "UKC1",
+            "nuts218nm": "Tees Valley and Durham",
+            "bng_e": 414643,
+            "bng_n": 532242,
+            "long": -1.7744,
+            "lat": 54.68502045
+        },
+        "coordinate": [
+            -1.691826,
+            54.661678
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKC2",
+            "nuts218nm": "Northumberland and Tyne and Wear",
+            "bng_e": 398898,
+            "bng_n": 602530,
+            "long": -2.01891994,
+            "lat": 55.31684113
+        },
+        "coordinate": [
+            -2.020082,
+            55.211611
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKD1",
+            "nuts218nm": "Cumbria",
+            "bng_e": 341868,
+            "bng_n": 527389,
+            "long": -2.90217996,
+            "lat": 54.63825989
+        },
+        "coordinate": [
+            -2.899423,
+            54.590774
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKD3",
+            "nuts218nm": "Greater Manchester",
+            "bng_e": 377940,
+            "bng_n": 401102,
+            "long": -2.33406997,
+            "lat": 53.50614929
+        },
+        "coordinate": [
+            -2.284238,
+            53.515161
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKD4",
+            "nuts218nm": "Lancashire",
+            "bng_e": 363669,
+            "bng_n": 441026,
+            "long": -2.55392003,
+            "lat": 53.86418152
+        },
+        "coordinate": [
+            -2.61048,
+            53.838575
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKD6",
+            "nuts218nm": "Cheshire",
+            "bng_e": 368759,
+            "bng_n": 368676,
+            "long": -2.46926999,
+            "lat": 53.21422958
+        },
+        "coordinate": [
+            -2.521161,
+            53.204859
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKD7",
+            "nuts218nm": "Merseyside",
+            "bng_e": 344324,
+            "bng_n": 390164,
+            "long": -2.83892989,
+            "lat": 53.40534973
+        },
+        "coordinate": [
+            -2.900054,
+            53.433287
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKE1",
+            "nuts218nm": "East Yorkshire and Northern Lincolnshire",
+            "bng_e": 488051,
+            "bng_n": 443608,
+            "long": -0.66202998,
+            "lat": 53.88122177
+        },
+        "coordinate": [
+            -0.494133,
+            53.786307
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKE2",
+            "nuts218nm": "North Yorkshire",
+            "bng_e": 429509,
+            "bng_n": 466515,
+            "long": -1.55032003,
+            "lat": 54.09371185
+        },
+        "coordinate": [
+            -1.408171,
+            54.18266
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKE3",
+            "nuts218nm": "South Yorkshire",
+            "bng_e": 441052,
+            "bng_n": 398663,
+            "long": -1.38284004,
+            "lat": 53.48310852
+        },
+        "coordinate": [
+            -1.33126,
+            53.484381
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKE4",
+            "nuts218nm": "West Yorkshire",
+            "bng_e": 418686,
+            "bng_n": 427238,
+            "long": -1.71817005,
+            "lat": 53.74119949
+        },
+        "coordinate": [
+            -1.688883,
+            53.743116
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKF1",
+            "nuts218nm": "Derbyshire and Nottinghamshire",
+            "bng_e": 449616,
+            "bng_n": 357965,
+            "long": -1.26014996,
+            "lat": 53.11658096
+        },
+        "coordinate": [
+            -1.341276,
+            53.131881
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKF2",
+            "nuts218nm": "Leicestershire, Rutland and Northamptonshire",
+            "bng_e": 470025,
+            "bng_n": 284901,
+            "long": -0.97086,
+            "lat": 52.4575882
+        },
+        "coordinate": [
+            -0.957639,
+            52.494143
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKF3",
+            "nuts218nm": "Lincolnshire",
+            "bng_e": 517985,
+            "bng_n": 358543,
+            "long": -0.23882,
+            "lat": 53.11104965
+        },
+        "coordinate": [
+            -0.249465,
+            53.114707
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKG1",
+            "nuts218nm": "Herefordshire, Worcestershire and Warwickshire",
+            "bng_e": 390692,
+            "bng_n": 262189,
+            "long": -2.13776994,
+            "lat": 52.25780106
+        },
+        "coordinate": [
+            -2.17671,
+            52.205306
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKG2",
+            "nuts218nm": "Shropshire and Staffordshire",
+            "bng_e": 376573,
+            "bng_n": 318829,
+            "long": -2.34863997,
+            "lat": 52.7665596
+        },
+        "coordinate": [
+            -2.416492,
+            52.737452
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKG3",
+            "nuts218nm": "West Midlands",
+            "bng_e": 402507,
+            "bng_n": 289715,
+            "long": -1.96448004,
+            "lat": 52.50534058
+        },
+        "coordinate": [
+            -1.874573,
+            52.488349
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKH1",
+            "nuts218nm": "East Anglia",
+            "bng_e": 602130,
+            "bng_n": 288929,
+            "long": 0.97383302,
+            "lat": 52.46089935
+        },
+        "coordinate": [
+            0.729094,
+            52.453724
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKH2",
+            "nuts218nm": "Bedfordshire and Hertfordshire",
+            "bng_e": 518883,
+            "bng_n": 226203,
+            "long": -0.27267,
+            "lat": 51.92166901
+        },
+        "coordinate": [
+            -0.317965,
+            51.934615
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKH3",
+            "nuts218nm": "Essex",
+            "bng_e": 569523,
+            "bng_n": 210837,
+            "long": 0.45554799,
+            "lat": 51.77053833
+        },
+        "coordinate": [
+            0.553695,
+            51.795163
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKI1",
+            "nuts218nm": "Inner London",
+            "bng_e": 527495,
+            "bng_n": 181567,
+            "long": -0.16383,
+            "lat": 51.51863861
+        },
+        "coordinate": [
+            -0.096984,
+            51.504864
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKI2",
+            "nuts218nm": "Outer London",
+            "bng_e": 546334,
+            "bng_n": 189866,
+            "long": 0.11095,
+            "lat": 51.58864975
+        },
+        "coordinate": [
+            -0.114654,
+            51.499506
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKJ1",
+            "nuts218nm": "Berkshire, Buckinghamshire and Oxfordshire",
+            "bng_e": 462576,
+            "bng_n": 202253,
+            "long": -1.09561002,
+            "lat": 51.71551895
+        },
+        "coordinate": [
+            -1.096537,
+            51.719354
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKJ2",
+            "nuts218nm": "Surrey, East and West Sussex",
+            "bng_e": 527932,
+            "bng_n": 133940,
+            "long": -0.17460001,
+            "lat": 51.09051132
+        },
+        "coordinate": [
+            -0.223668,
+            51.040524
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKJ3",
+            "nuts218nm": "Hampshire and Isle of Wight",
+            "bng_e": 445931,
+            "bng_n": 135667,
+            "long": -1.34512997,
+            "lat": 51.11845016
+        },
+        "coordinate": [
+            -1.288128,
+            51.028076
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKJ4",
+            "nuts218nm": "Kent",
+            "bng_e": 590108,
+            "bng_n": 148050,
+            "long": 0.71976799,
+            "lat": 51.20001984
+        },
+        "coordinate": [
+            0.722289,
+            51.229647
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKK1",
+            "nuts218nm": "Gloucestershire, Wiltshire and Bath/Bristol area",
+            "bng_e": 383347,
+            "bng_n": 180249,
+            "long": -2.2414,
+            "lat": 51.52090073
+        },
+        "coordinate": [
+            -2.11196,
+            51.521592
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKK2",
+            "nuts218nm": "Dorset and Somerset",
+            "bng_e": 362838,
+            "bng_n": 113805,
+            "long": -2.53008008,
+            "lat": 50.92248917
+        },
+        "coordinate": [
+            -2.665593,
+            50.971347
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKK3",
+            "nuts218nm": "Cornwall and Isles of Scilly",
+            "bng_e": 212501,
+            "bng_n": 64494,
+            "long": -4.64248991,
+            "lat": 50.45022964
+        },
+        "coordinate": [
+            -4.831752,
+            50.404553
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKK4",
+            "nuts218nm": "Devon",
+            "bng_e": 283141,
+            "bng_n": 93082,
+            "long": -3.65701008,
+            "lat": 50.72555923
+        },
+        "coordinate": [
+            -3.81167,
+            50.75426
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKL1",
+            "nuts218nm": "West Wales",
+            "bng_e": 236647,
+            "bng_n": 236819,
+            "long": -4.38130999,
+            "lat": 52.0057106
+        },
+        "coordinate": [
+            -4.035513,
+            52.363093
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKL2",
+            "nuts218nm": "East Wales",
+            "bng_e": 312334,
+            "bng_n": 277025,
+            "long": -3.28945994,
+            "lat": 52.38422012
+        },
+        "coordinate": [
+            -3.294806,
+            52.289555
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKM2",
+            "nuts218nm": "Eastern Scotland",
+            "bng_e": 300521,
+            "bng_n": 733779,
+            "long": -3.61698008,
+            "lat": 56.48554993
+        },
+        "coordinate": [
+            -3.595675,
+            56.40297
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKM3",
+            "nuts218nm": "West Central Scotland",
+            "bng_e": 235646,
+            "bng_n": 684791,
+            "long": -4.63895988,
+            "lat": 56.02772903
+        },
+        "coordinate": [
+            -3.774402,
+            55.416873
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKM5",
+            "nuts218nm": "North Eastern Scotland",
+            "bng_e": 360864,
+            "bng_n": 814981,
+            "long": -2.64976001,
+            "lat": 57.22386932
+        },
+        "coordinate": [
+            -2.618251,
+            57.239069
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKM6",
+            "nuts218nm": "Highlands and Islands",
+            "bng_e": 251287,
+            "bng_n": 833327,
+            "long": -4.47424984,
+            "lat": 57.36603165
+        },
+        "coordinate": [
+            -4.782835,
+            57.498789
+        ]
+    },
+    {
+        "properties": {
+            "nuts218cd": "UKN0",
+            "nuts218nm": "Northern Ireland",
+            "bng_e": 86601,
+            "bng_n": 535325,
+            "long": -6.85481024,
+            "lat": 54.61494064
+        },
+        "coordinate": [
+            -6.68213,
+            54.608267
+        ]
+    }
+]

@@ -1,0 +1,4405 @@
+[
+  {
+    "properties": {
+      "nuts218cd": "UKC1",
+      "nuts218nm": "Tees Valley and Durham",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.967857143,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "North Yorkshire",
+      "Cumulative_loss": 0.064285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      -1.7743636173265318,
+      54.68487677948886
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKC2",
+      "nuts218nm": "Northumberland and Tyne and Wear",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.967857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Tees Valley and Durham",
+      "Cumulative_loss": 0.064285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      -2.094465864568051,
+      55.27706187202841
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD1",
+      "nuts218nm": "Cumbria",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.967857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Lancashire",
+      "Cumulative_loss": 0.064285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      -2.9461583794871555,
+      54.626916951856344
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD3",
+      "nuts218nm": "Greater Manchester",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.967857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Cheshire",
+      "Cumulative_loss": 0.064285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      -2.3374405429619003,
+      53.506507979572625
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD4",
+      "nuts218nm": "Lancashire",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.967857143,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Greater Manchester",
+      "Cumulative_loss": 0.064285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      -2.4597008729475967,
+      53.861158784492595
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD6",
+      "nuts218nm": "Cheshire",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.978571429,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Greater Manchester",
+      "Cumulative_loss": 0.042857143,
+      "year_week": 1
+    },
+    "coordinate": [
+      -2.471671254895064,
+      53.21403295308612
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD7",
+      "nuts218nm": "Merseyside",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.989285714,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Cheshire",
+      "Cumulative_loss": 0.021428571,
+      "year_week": 1
+    },
+    "coordinate": [
+      -3.0954678799077735,
+      53.37052109003151
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKE1",
+      "nuts218nm": "East Yorkshire and Northern Lincolnshire",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.967857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "South Yorkshire",
+      "Cumulative_loss": 0.064285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      -0.6696798037339573,
+      53.87401288465294
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKE2",
+      "nuts218nm": "North Yorkshire",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.867857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "West Yorkshire",
+      "Cumulative_loss": 0.464285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      -1.5318838374956194,
+      54.09027437032269
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKE3",
+      "nuts218nm": "South Yorkshire",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.867857143,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Derbyshire and Nottinghamshire",
+      "Cumulative_loss": 0.464285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      -1.3815177597277748,
+      53.481174241658195
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKE4",
+      "nuts218nm": "West Yorkshire",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.867857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "North Yorkshire",
+      "Cumulative_loss": 0.464285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      -1.7202004027399593,
+      53.741427117192885
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKF1",
+      "nuts218nm": "Derbyshire and Nottinghamshire",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.967857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "South Yorkshire",
+      "Cumulative_loss": 0.064285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      -1.2597068392721216,
+      53.11882040372139
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKF2",
+      "nuts218nm": "Leicestershire, Rutland and Northamptonshire",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.967857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Bedfordshire and Hertfordshire",
+      "Cumulative_loss": 0.064285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      -0.8167009044645351,
+      52.47754526641731
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKF3",
+      "nuts218nm": "Lincolnshire",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.967857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "East Yorkshire and Northern Lincolnshire",
+      "Cumulative_loss": 0.064285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      -0.1920010648543034,
+      53.12833893294745
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKG1",
+      "nuts218nm": "Herefordshire, Worcestershire and Warwickshire",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.967857143,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "West Midlands",
+      "Cumulative_loss": 0.064285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      -2.131871891860217,
+      52.256602188203416
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKG2",
+      "nuts218nm": "Shropshire and Staffordshire",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.967857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Cheshire",
+      "Cumulative_loss": 0.064285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      -2.3508614775982712,
+      52.76623925078802
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKG3",
+      "nuts218nm": "West Midlands",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.967857143,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Herefordshire, Worcestershire and Warwickshire",
+      "Cumulative_loss": 0.064285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      -1.9643961186447032,
+      52.50500325722782
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKH1",
+      "nuts218nm": "East Anglia",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.967857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Essex",
+      "Cumulative_loss": 0.064285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      0.9633716220012298,
+      52.45617070714793
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKH2",
+      "nuts218nm": "Bedfordshire and Hertfordshire",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.967857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Outer London",
+      "Cumulative_loss": 0.064285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      -0.2733553320887782,
+      51.961289855562846
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKH3",
+      "nuts218nm": "Essex",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.967857143,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Inner London",
+      "Cumulative_loss": 0.064285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      0.4286167095893427,
+      51.77189261824135
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKI1",
+      "nuts218nm": "Inner London",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.967857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Outer London",
+      "Cumulative_loss": 0.064285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      -0.1234739290746106,
+      51.459809395960434
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKI2",
+      "nuts218nm": "Outer London",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.967857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Inner London",
+      "Cumulative_loss": 0.064285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      -0.371941727797439,
+      51.48929899538382
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKJ1",
+      "nuts218nm": "Berkshire, Buckinghamshire and Oxfordshire",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.967857143,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Hampshire and Isle of Wight",
+      "Cumulative_loss": 0.064285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      -1.1779787189243909,
+      51.76245904916984
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKJ2",
+      "nuts218nm": "Surrey, East and West Sussex",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.967857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Inner London",
+      "Cumulative_loss": 0.064285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      -0.2012966602897701,
+      51.09663319706843
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKJ3",
+      "nuts218nm": "Hampshire and Isle of Wight",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.967857143,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Berkshire, Buckinghamshire and Oxfordshire",
+      "Cumulative_loss": 0.064285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      -1.2433128645113374,
+      51.044981340882735
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKJ4",
+      "nuts218nm": "Kent",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.967857143,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Essex",
+      "Cumulative_loss": 0.064285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      0.721714844476812,
+      51.199119490967334
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKK1",
+      "nuts218nm": "Gloucestershire, Wiltshire and Bath/Bristol area",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.967857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Dorset and Somerset",
+      "Cumulative_loss": 0.064285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      -2.1485220104479237,
+      51.52863480781653
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKK2",
+      "nuts218nm": "Dorset and Somerset",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.967857143,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Gloucestershire, Wiltshire and Bath/Bristol area",
+      "Cumulative_loss": 0.064285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      -2.5278343069819584,
+      50.92097239636034
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKK3",
+      "nuts218nm": "Cornwall and Isles of Scilly",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.967857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Devon",
+      "Cumulative_loss": 0.064285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      -4.625275506120921,
+      50.44501678126882
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKK4",
+      "nuts218nm": "Devon",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.967857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Cornwall and Isles of Scilly",
+      "Cumulative_loss": 0.064285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      -3.7117998007831856,
+      50.72413884353073
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKL1",
+      "nuts218nm": "West Wales",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.967857143,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "East Wales",
+      "Cumulative_loss": 0.064285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      -4.294759299414998,
+      52.016288627664586
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKL2",
+      "nuts218nm": "East Wales",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.967857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "West Wales",
+      "Cumulative_loss": 0.064285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      -3.398530414895232,
+      52.368994597027445
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKM2",
+      "nuts218nm": "Eastern Scotland",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.967857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Highlands and Islands",
+      "Cumulative_loss": 0.064285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      -4.070351536146481,
+      56.348583522460984
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKM3",
+      "nuts218nm": "West Central Scotland",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.967857143,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Cumbria",
+      "Cumulative_loss": 0.064285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      -3.416622712069783,
+      55.482425891695
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKM5",
+      "nuts218nm": "North Eastern Scotland",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.967857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Eastern Scotland",
+      "Cumulative_loss": 0.064285714,
+      "year_week": 1
+    },
+    "coordinate": [
+      -2.6454487684811596,
+      57.224184436214344
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKM6",
+      "nuts218nm": "Highlands and Islands",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.978571429,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Eastern Scotland",
+      "Cumulative_loss": 0.042857143,
+      "year_week": 1
+    },
+    "coordinate": [
+      -4.672961436309493,
+      56.98053866519594
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKN0",
+      "nuts218nm": "Northern Ireland",
+      "date": "2016-01-04",
+      "Eco_Intensity": 0.978571429,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Highlands and Islands",
+      "Cumulative_loss": 0.042857143,
+      "year_week": 1
+    },
+    "coordinate": [
+      -6.83851219076082,
+      54.63742733950739
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKC1",
+      "nuts218nm": "Tees Valley and Durham",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.892857143,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "North Yorkshire",
+      "Cumulative_loss": 0.589285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      -1.7743636173265318,
+      54.68487677948886
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKC2",
+      "nuts218nm": "Northumberland and Tyne and Wear",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.892857143,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Tees Valley and Durham",
+      "Cumulative_loss": 0.589285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      -2.094465864568051,
+      55.27706187202841
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD1",
+      "nuts218nm": "Cumbria",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.892857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Lancashire",
+      "Cumulative_loss": 0.589285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      -2.9461583794871555,
+      54.626916951856344
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD3",
+      "nuts218nm": "Greater Manchester",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.892857143,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Cheshire",
+      "Cumulative_loss": 0.589285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      -2.3374405429619003,
+      53.506507979572625
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD4",
+      "nuts218nm": "Lancashire",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.892857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Greater Manchester",
+      "Cumulative_loss": 0.589285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      -2.4597008729475967,
+      53.861158784492595
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD6",
+      "nuts218nm": "Cheshire",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.928571429,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Greater Manchester",
+      "Cumulative_loss": 0.392857143,
+      "year_week": 2
+    },
+    "coordinate": [
+      -2.471671254895064,
+      53.21403295308612
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD7",
+      "nuts218nm": "Merseyside",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.964285714,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Cheshire",
+      "Cumulative_loss": 0.196428571,
+      "year_week": 2
+    },
+    "coordinate": [
+      -3.0954678799077735,
+      53.37052109003151
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKE1",
+      "nuts218nm": "East Yorkshire and Northern Lincolnshire",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.892857143,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "South Yorkshire",
+      "Cumulative_loss": 0.589285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      -0.6696798037339573,
+      53.87401288465294
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKE2",
+      "nuts218nm": "North Yorkshire",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.792857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "West Yorkshire",
+      "Cumulative_loss": 1.689285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      -1.5318838374956194,
+      54.09027437032269
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKE3",
+      "nuts218nm": "South Yorkshire",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.792857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Derbyshire and Nottinghamshire",
+      "Cumulative_loss": 1.689285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      -1.3815177597277748,
+      53.481174241658195
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKE4",
+      "nuts218nm": "West Yorkshire",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.792857143,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "North Yorkshire",
+      "Cumulative_loss": 1.689285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      -1.7202004027399593,
+      53.741427117192885
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKF1",
+      "nuts218nm": "Derbyshire and Nottinghamshire",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.892857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "South Yorkshire",
+      "Cumulative_loss": 0.589285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      -1.2597068392721216,
+      53.11882040372139
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKF2",
+      "nuts218nm": "Leicestershire, Rutland and Northamptonshire",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.892857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Bedfordshire and Hertfordshire",
+      "Cumulative_loss": 0.589285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      -0.8167009044645351,
+      52.47754526641731
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKF3",
+      "nuts218nm": "Lincolnshire",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.892857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "East Yorkshire and Northern Lincolnshire",
+      "Cumulative_loss": 0.589285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      -0.1920010648543034,
+      53.12833893294745
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKG1",
+      "nuts218nm": "Herefordshire, Worcestershire and Warwickshire",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.892857143,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "West Midlands",
+      "Cumulative_loss": 0.589285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      -2.131871891860217,
+      52.256602188203416
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKG2",
+      "nuts218nm": "Shropshire and Staffordshire",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.892857143,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Cheshire",
+      "Cumulative_loss": 0.589285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      -2.3508614775982712,
+      52.76623925078802
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKG3",
+      "nuts218nm": "West Midlands",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.892857143,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Herefordshire, Worcestershire and Warwickshire",
+      "Cumulative_loss": 0.589285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      -1.9643961186447032,
+      52.50500325722782
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKH1",
+      "nuts218nm": "East Anglia",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.892857143,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Essex",
+      "Cumulative_loss": 0.589285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      0.9633716220012298,
+      52.45617070714793
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKH2",
+      "nuts218nm": "Bedfordshire and Hertfordshire",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.892857143,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Outer London",
+      "Cumulative_loss": 0.589285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      -0.2733553320887782,
+      51.961289855562846
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKH3",
+      "nuts218nm": "Essex",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.892857143,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Inner London",
+      "Cumulative_loss": 0.589285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      0.4286167095893427,
+      51.77189261824135
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKI1",
+      "nuts218nm": "Inner London",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.892857143,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Outer London",
+      "Cumulative_loss": 0.589285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      -0.1234739290746106,
+      51.459809395960434
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKI2",
+      "nuts218nm": "Outer London",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.892857143,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Inner London",
+      "Cumulative_loss": 0.589285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      -0.371941727797439,
+      51.48929899538382
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKJ1",
+      "nuts218nm": "Berkshire, Buckinghamshire and Oxfordshire",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.892857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Hampshire and Isle of Wight",
+      "Cumulative_loss": 0.589285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      -1.1779787189243909,
+      51.76245904916984
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKJ2",
+      "nuts218nm": "Surrey, East and West Sussex",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.892857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Inner London",
+      "Cumulative_loss": 0.589285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      -0.2012966602897701,
+      51.09663319706843
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKJ3",
+      "nuts218nm": "Hampshire and Isle of Wight",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.892857143,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Berkshire, Buckinghamshire and Oxfordshire",
+      "Cumulative_loss": 0.589285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      -1.2433128645113374,
+      51.044981340882735
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKJ4",
+      "nuts218nm": "Kent",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.892857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Essex",
+      "Cumulative_loss": 0.589285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      0.721714844476812,
+      51.199119490967334
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKK1",
+      "nuts218nm": "Gloucestershire, Wiltshire and Bath/Bristol area",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.892857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Dorset and Somerset",
+      "Cumulative_loss": 0.589285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      -2.1485220104479237,
+      51.52863480781653
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKK2",
+      "nuts218nm": "Dorset and Somerset",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.892857143,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Gloucestershire, Wiltshire and Bath/Bristol area",
+      "Cumulative_loss": 0.589285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      -2.5278343069819584,
+      50.92097239636034
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKK3",
+      "nuts218nm": "Cornwall and Isles of Scilly",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.892857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Devon",
+      "Cumulative_loss": 0.589285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      -4.625275506120921,
+      50.44501678126882
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKK4",
+      "nuts218nm": "Devon",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.892857143,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Cornwall and Isles of Scilly",
+      "Cumulative_loss": 0.589285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      -3.7117998007831856,
+      50.72413884353073
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKL1",
+      "nuts218nm": "West Wales",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.892857143,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "East Wales",
+      "Cumulative_loss": 0.589285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      -4.294759299414998,
+      52.016288627664586
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKL2",
+      "nuts218nm": "East Wales",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.892857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "West Wales",
+      "Cumulative_loss": 0.589285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      -3.398530414895232,
+      52.368994597027445
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKM2",
+      "nuts218nm": "Eastern Scotland",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.892857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Highlands and Islands",
+      "Cumulative_loss": 0.589285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      -4.070351536146481,
+      56.348583522460984
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKM3",
+      "nuts218nm": "West Central Scotland",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.892857143,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Cumbria",
+      "Cumulative_loss": 0.589285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      -3.416622712069783,
+      55.482425891695
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKM5",
+      "nuts218nm": "North Eastern Scotland",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.892857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Eastern Scotland",
+      "Cumulative_loss": 0.589285714,
+      "year_week": 2
+    },
+    "coordinate": [
+      -2.6454487684811596,
+      57.224184436214344
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKM6",
+      "nuts218nm": "Highlands and Islands",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.928571429,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Eastern Scotland",
+      "Cumulative_loss": 0.392857143,
+      "year_week": 2
+    },
+    "coordinate": [
+      -4.672961436309493,
+      56.98053866519594
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKN0",
+      "nuts218nm": "Northern Ireland",
+      "date": "2016-01-11",
+      "Eco_Intensity": 0.928571429,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Highlands and Islands",
+      "Cumulative_loss": 0.392857143,
+      "year_week": 2
+    },
+    "coordinate": [
+      -6.83851219076082,
+      54.63742733950739
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKC1",
+      "nuts218nm": "Tees Valley and Durham",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.817857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "North Yorkshire",
+      "Cumulative_loss": 1.639285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      -1.7743636173265318,
+      54.68487677948886
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKC2",
+      "nuts218nm": "Northumberland and Tyne and Wear",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.817857143,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Tees Valley and Durham",
+      "Cumulative_loss": 1.639285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      -2.094465864568051,
+      55.27706187202841
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD1",
+      "nuts218nm": "Cumbria",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.817857143,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Lancashire",
+      "Cumulative_loss": 1.639285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      -2.9461583794871555,
+      54.626916951856344
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD3",
+      "nuts218nm": "Greater Manchester",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.817857143,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Cheshire",
+      "Cumulative_loss": 1.639285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      -2.3374405429619003,
+      53.506507979572625
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD4",
+      "nuts218nm": "Lancashire",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.817857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Greater Manchester",
+      "Cumulative_loss": 1.639285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      -2.4597008729475967,
+      53.861158784492595
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD6",
+      "nuts218nm": "Cheshire",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.878571429,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Greater Manchester",
+      "Cumulative_loss": 1.092857143,
+      "year_week": 3
+    },
+    "coordinate": [
+      -2.471671254895064,
+      53.21403295308612
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD7",
+      "nuts218nm": "Merseyside",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.939285714,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Cheshire",
+      "Cumulative_loss": 0.546428571,
+      "year_week": 3
+    },
+    "coordinate": [
+      -3.0954678799077735,
+      53.37052109003151
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKE1",
+      "nuts218nm": "East Yorkshire and Northern Lincolnshire",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.817857143,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "South Yorkshire",
+      "Cumulative_loss": 1.639285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      -0.6696798037339573,
+      53.87401288465294
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKE2",
+      "nuts218nm": "North Yorkshire",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.717857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "West Yorkshire",
+      "Cumulative_loss": 3.439285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      -1.5318838374956194,
+      54.09027437032269
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKE3",
+      "nuts218nm": "South Yorkshire",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.717857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Derbyshire and Nottinghamshire",
+      "Cumulative_loss": 3.439285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      -1.3815177597277748,
+      53.481174241658195
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKE4",
+      "nuts218nm": "West Yorkshire",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.717857143,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "North Yorkshire",
+      "Cumulative_loss": 3.439285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      -1.7202004027399593,
+      53.741427117192885
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKF1",
+      "nuts218nm": "Derbyshire and Nottinghamshire",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.817857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "South Yorkshire",
+      "Cumulative_loss": 1.639285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      -1.2597068392721216,
+      53.11882040372139
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKF2",
+      "nuts218nm": "Leicestershire, Rutland and Northamptonshire",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.817857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Bedfordshire and Hertfordshire",
+      "Cumulative_loss": 1.639285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      -0.8167009044645351,
+      52.47754526641731
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKF3",
+      "nuts218nm": "Lincolnshire",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.817857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "East Yorkshire and Northern Lincolnshire",
+      "Cumulative_loss": 1.639285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      -0.1920010648543034,
+      53.12833893294745
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKG1",
+      "nuts218nm": "Herefordshire, Worcestershire and Warwickshire",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.817857143,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "West Midlands",
+      "Cumulative_loss": 1.639285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      -2.131871891860217,
+      52.256602188203416
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKG2",
+      "nuts218nm": "Shropshire and Staffordshire",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.817857143,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Cheshire",
+      "Cumulative_loss": 1.639285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      -2.3508614775982712,
+      52.76623925078802
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKG3",
+      "nuts218nm": "West Midlands",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.817857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Herefordshire, Worcestershire and Warwickshire",
+      "Cumulative_loss": 1.639285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      -1.9643961186447032,
+      52.50500325722782
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKH1",
+      "nuts218nm": "East Anglia",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.817857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Essex",
+      "Cumulative_loss": 1.639285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      0.9633716220012298,
+      52.45617070714793
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKH2",
+      "nuts218nm": "Bedfordshire and Hertfordshire",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.817857143,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Outer London",
+      "Cumulative_loss": 1.639285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      -0.2733553320887782,
+      51.961289855562846
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKH3",
+      "nuts218nm": "Essex",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.817857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Inner London",
+      "Cumulative_loss": 1.639285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      0.4286167095893427,
+      51.77189261824135
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKI1",
+      "nuts218nm": "Inner London",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.817857143,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Outer London",
+      "Cumulative_loss": 1.639285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      -0.1234739290746106,
+      51.459809395960434
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKI2",
+      "nuts218nm": "Outer London",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.817857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Inner London",
+      "Cumulative_loss": 1.639285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      -0.371941727797439,
+      51.48929899538382
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKJ1",
+      "nuts218nm": "Berkshire, Buckinghamshire and Oxfordshire",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.817857143,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Hampshire and Isle of Wight",
+      "Cumulative_loss": 1.639285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      -1.1779787189243909,
+      51.76245904916984
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKJ2",
+      "nuts218nm": "Surrey, East and West Sussex",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.817857143,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Inner London",
+      "Cumulative_loss": 1.639285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      -0.2012966602897701,
+      51.09663319706843
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKJ3",
+      "nuts218nm": "Hampshire and Isle of Wight",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.817857143,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Berkshire, Buckinghamshire and Oxfordshire",
+      "Cumulative_loss": 1.639285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      -1.2433128645113374,
+      51.044981340882735
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKJ4",
+      "nuts218nm": "Kent",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.817857143,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Essex",
+      "Cumulative_loss": 1.639285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      0.721714844476812,
+      51.199119490967334
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKK1",
+      "nuts218nm": "Gloucestershire, Wiltshire and Bath/Bristol area",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.817857143,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Dorset and Somerset",
+      "Cumulative_loss": 1.639285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      -2.1485220104479237,
+      51.52863480781653
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKK2",
+      "nuts218nm": "Dorset and Somerset",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.817857143,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Gloucestershire, Wiltshire and Bath/Bristol area",
+      "Cumulative_loss": 1.639285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      -2.5278343069819584,
+      50.92097239636034
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKK3",
+      "nuts218nm": "Cornwall and Isles of Scilly",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.817857143,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Devon",
+      "Cumulative_loss": 1.639285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      -4.625275506120921,
+      50.44501678126882
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKK4",
+      "nuts218nm": "Devon",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.817857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Cornwall and Isles of Scilly",
+      "Cumulative_loss": 1.639285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      -3.7117998007831856,
+      50.72413884353073
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKL1",
+      "nuts218nm": "West Wales",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.817857143,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "East Wales",
+      "Cumulative_loss": 1.639285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      -4.294759299414998,
+      52.016288627664586
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKL2",
+      "nuts218nm": "East Wales",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.817857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "West Wales",
+      "Cumulative_loss": 1.639285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      -3.398530414895232,
+      52.368994597027445
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKM2",
+      "nuts218nm": "Eastern Scotland",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.817857143,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Highlands and Islands",
+      "Cumulative_loss": 1.639285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      -4.070351536146481,
+      56.348583522460984
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKM3",
+      "nuts218nm": "West Central Scotland",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.817857143,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Cumbria",
+      "Cumulative_loss": 1.639285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      -3.416622712069783,
+      55.482425891695
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKM5",
+      "nuts218nm": "North Eastern Scotland",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.817857143,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Eastern Scotland",
+      "Cumulative_loss": 1.639285714,
+      "year_week": 3
+    },
+    "coordinate": [
+      -2.6454487684811596,
+      57.224184436214344
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKM6",
+      "nuts218nm": "Highlands and Islands",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.878571429,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Eastern Scotland",
+      "Cumulative_loss": 1.092857143,
+      "year_week": 3
+    },
+    "coordinate": [
+      -4.672961436309493,
+      56.98053866519594
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKN0",
+      "nuts218nm": "Northern Ireland",
+      "date": "2016-01-18",
+      "Eco_Intensity": 0.878571429,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Highlands and Islands",
+      "Cumulative_loss": 1.092857143,
+      "year_week": 3
+    },
+    "coordinate": [
+      -6.83851219076082,
+      54.63742733950739
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKC1",
+      "nuts218nm": "Tees Valley and Durham",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.742857143,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "North Yorkshire",
+      "Cumulative_loss": 3.214285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      -1.7743636173265318,
+      54.68487677948886
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKC2",
+      "nuts218nm": "Northumberland and Tyne and Wear",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.742857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Tees Valley and Durham",
+      "Cumulative_loss": 3.214285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      -2.094465864568051,
+      55.27706187202841
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD1",
+      "nuts218nm": "Cumbria",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.742857143,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Lancashire",
+      "Cumulative_loss": 3.214285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      -2.9461583794871555,
+      54.626916951856344
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD3",
+      "nuts218nm": "Greater Manchester",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.742857143,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Cheshire",
+      "Cumulative_loss": 3.214285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      -2.3374405429619003,
+      53.506507979572625
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD4",
+      "nuts218nm": "Lancashire",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.742857143,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Greater Manchester",
+      "Cumulative_loss": 3.214285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      -2.4597008729475967,
+      53.861158784492595
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD6",
+      "nuts218nm": "Cheshire",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.828571429,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Greater Manchester",
+      "Cumulative_loss": 2.142857143,
+      "year_week": 4
+    },
+    "coordinate": [
+      -2.471671254895064,
+      53.21403295308612
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD7",
+      "nuts218nm": "Merseyside",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Cheshire",
+      "Cumulative_loss": 1.071428571,
+      "year_week": 4
+    },
+    "coordinate": [
+      -3.0954678799077735,
+      53.37052109003151
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKE1",
+      "nuts218nm": "East Yorkshire and Northern Lincolnshire",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.742857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "South Yorkshire",
+      "Cumulative_loss": 3.214285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      -0.6696798037339573,
+      53.87401288465294
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKE2",
+      "nuts218nm": "North Yorkshire",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.642857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "West Yorkshire",
+      "Cumulative_loss": 5.714285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      -1.5318838374956194,
+      54.09027437032269
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKE3",
+      "nuts218nm": "South Yorkshire",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.642857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Derbyshire and Nottinghamshire",
+      "Cumulative_loss": 5.714285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      -1.3815177597277748,
+      53.481174241658195
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKE4",
+      "nuts218nm": "West Yorkshire",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.642857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "North Yorkshire",
+      "Cumulative_loss": 5.714285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      -1.7202004027399593,
+      53.741427117192885
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKF1",
+      "nuts218nm": "Derbyshire and Nottinghamshire",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.742857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "South Yorkshire",
+      "Cumulative_loss": 3.214285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      -1.2597068392721216,
+      53.11882040372139
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKF2",
+      "nuts218nm": "Leicestershire, Rutland and Northamptonshire",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.742857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Bedfordshire and Hertfordshire",
+      "Cumulative_loss": 3.214285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      -0.8167009044645351,
+      52.47754526641731
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKF3",
+      "nuts218nm": "Lincolnshire",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.742857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "East Yorkshire and Northern Lincolnshire",
+      "Cumulative_loss": 3.214285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      -0.1920010648543034,
+      53.12833893294745
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKG1",
+      "nuts218nm": "Herefordshire, Worcestershire and Warwickshire",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.742857143,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "West Midlands",
+      "Cumulative_loss": 3.214285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      -2.131871891860217,
+      52.256602188203416
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKG2",
+      "nuts218nm": "Shropshire and Staffordshire",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.742857143,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Cheshire",
+      "Cumulative_loss": 3.214285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      -2.3508614775982712,
+      52.76623925078802
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKG3",
+      "nuts218nm": "West Midlands",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.742857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Herefordshire, Worcestershire and Warwickshire",
+      "Cumulative_loss": 3.214285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      -1.9643961186447032,
+      52.50500325722782
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKH1",
+      "nuts218nm": "East Anglia",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.742857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Essex",
+      "Cumulative_loss": 3.214285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      0.9633716220012298,
+      52.45617070714793
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKH2",
+      "nuts218nm": "Bedfordshire and Hertfordshire",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.742857143,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Outer London",
+      "Cumulative_loss": 3.214285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      -0.2733553320887782,
+      51.961289855562846
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKH3",
+      "nuts218nm": "Essex",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.742857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Inner London",
+      "Cumulative_loss": 3.214285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      0.4286167095893427,
+      51.77189261824135
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKI1",
+      "nuts218nm": "Inner London",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.742857143,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Outer London",
+      "Cumulative_loss": 3.214285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      -0.1234739290746106,
+      51.459809395960434
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKI2",
+      "nuts218nm": "Outer London",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.742857143,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Inner London",
+      "Cumulative_loss": 3.214285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      -0.371941727797439,
+      51.48929899538382
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKJ1",
+      "nuts218nm": "Berkshire, Buckinghamshire and Oxfordshire",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.742857143,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Hampshire and Isle of Wight",
+      "Cumulative_loss": 3.214285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      -1.1779787189243909,
+      51.76245904916984
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKJ2",
+      "nuts218nm": "Surrey, East and West Sussex",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.742857143,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Inner London",
+      "Cumulative_loss": 3.214285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      -0.2012966602897701,
+      51.09663319706843
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKJ3",
+      "nuts218nm": "Hampshire and Isle of Wight",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.742857143,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Berkshire, Buckinghamshire and Oxfordshire",
+      "Cumulative_loss": 3.214285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      -1.2433128645113374,
+      51.044981340882735
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKJ4",
+      "nuts218nm": "Kent",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.742857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Essex",
+      "Cumulative_loss": 3.214285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      0.721714844476812,
+      51.199119490967334
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKK1",
+      "nuts218nm": "Gloucestershire, Wiltshire and Bath/Bristol area",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.742857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Dorset and Somerset",
+      "Cumulative_loss": 3.214285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      -2.1485220104479237,
+      51.52863480781653
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKK2",
+      "nuts218nm": "Dorset and Somerset",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.742857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Gloucestershire, Wiltshire and Bath/Bristol area",
+      "Cumulative_loss": 3.214285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      -2.5278343069819584,
+      50.92097239636034
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKK3",
+      "nuts218nm": "Cornwall and Isles of Scilly",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.742857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Devon",
+      "Cumulative_loss": 3.214285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      -4.625275506120921,
+      50.44501678126882
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKK4",
+      "nuts218nm": "Devon",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.742857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Cornwall and Isles of Scilly",
+      "Cumulative_loss": 3.214285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      -3.7117998007831856,
+      50.72413884353073
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKL1",
+      "nuts218nm": "West Wales",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.742857143,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "East Wales",
+      "Cumulative_loss": 3.214285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      -4.294759299414998,
+      52.016288627664586
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKL2",
+      "nuts218nm": "East Wales",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.742857143,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "West Wales",
+      "Cumulative_loss": 3.214285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      -3.398530414895232,
+      52.368994597027445
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKM2",
+      "nuts218nm": "Eastern Scotland",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.742857143,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Highlands and Islands",
+      "Cumulative_loss": 3.214285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      -4.070351536146481,
+      56.348583522460984
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKM3",
+      "nuts218nm": "West Central Scotland",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.742857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Cumbria",
+      "Cumulative_loss": 3.214285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      -3.416622712069783,
+      55.482425891695
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKM5",
+      "nuts218nm": "North Eastern Scotland",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.742857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Eastern Scotland",
+      "Cumulative_loss": 3.214285714,
+      "year_week": 4
+    },
+    "coordinate": [
+      -2.6454487684811596,
+      57.224184436214344
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKM6",
+      "nuts218nm": "Highlands and Islands",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.828571429,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Eastern Scotland",
+      "Cumulative_loss": 2.142857143,
+      "year_week": 4
+    },
+    "coordinate": [
+      -4.672961436309493,
+      56.98053866519594
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKN0",
+      "nuts218nm": "Northern Ireland",
+      "date": "2016-01-25",
+      "Eco_Intensity": 0.828571429,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Highlands and Islands",
+      "Cumulative_loss": 2.142857143,
+      "year_week": 4
+    },
+    "coordinate": [
+      -6.83851219076082,
+      54.63742733950739
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKC1",
+      "nuts218nm": "Tees Valley and Durham",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.764285714,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "North Yorkshire",
+      "Cumulative_loss": 5.121428571,
+      "year_week": 5
+    },
+    "coordinate": [
+      -1.7743636173265318,
+      54.68487677948886
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKC2",
+      "nuts218nm": "Northumberland and Tyne and Wear",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.764285714,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Tees Valley and Durham",
+      "Cumulative_loss": 5.121428571,
+      "year_week": 5
+    },
+    "coordinate": [
+      -2.094465864568051,
+      55.27706187202841
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD1",
+      "nuts218nm": "Cumbria",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.764285714,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Lancashire",
+      "Cumulative_loss": 5.121428571,
+      "year_week": 5
+    },
+    "coordinate": [
+      -2.9461583794871555,
+      54.626916951856344
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD3",
+      "nuts218nm": "Greater Manchester",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.764285714,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Cheshire",
+      "Cumulative_loss": 5.121428571,
+      "year_week": 5
+    },
+    "coordinate": [
+      -2.3374405429619003,
+      53.506507979572625
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD4",
+      "nuts218nm": "Lancashire",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.764285714,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Greater Manchester",
+      "Cumulative_loss": 5.121428571,
+      "year_week": 5
+    },
+    "coordinate": [
+      -2.4597008729475967,
+      53.861158784492595
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD6",
+      "nuts218nm": "Cheshire",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.842857143,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Greater Manchester",
+      "Cumulative_loss": 3.414285714,
+      "year_week": 5
+    },
+    "coordinate": [
+      -2.471671254895064,
+      53.21403295308612
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD7",
+      "nuts218nm": "Merseyside",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.921428571,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Cheshire",
+      "Cumulative_loss": 1.707142857,
+      "year_week": 5
+    },
+    "coordinate": [
+      -3.0954678799077735,
+      53.37052109003151
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKE1",
+      "nuts218nm": "East Yorkshire and Northern Lincolnshire",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.764285714,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "South Yorkshire",
+      "Cumulative_loss": 5.121428571,
+      "year_week": 5
+    },
+    "coordinate": [
+      -0.6696798037339573,
+      53.87401288465294
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKE2",
+      "nuts218nm": "North Yorkshire",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.685714286,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "West Yorkshire",
+      "Cumulative_loss": 8.278571429,
+      "year_week": 5
+    },
+    "coordinate": [
+      -1.5318838374956194,
+      54.09027437032269
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKE3",
+      "nuts218nm": "South Yorkshire",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.685714286,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Derbyshire and Nottinghamshire",
+      "Cumulative_loss": 8.278571429,
+      "year_week": 5
+    },
+    "coordinate": [
+      -1.3815177597277748,
+      53.481174241658195
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKE4",
+      "nuts218nm": "West Yorkshire",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.685714286,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "North Yorkshire",
+      "Cumulative_loss": 8.278571429,
+      "year_week": 5
+    },
+    "coordinate": [
+      -1.7202004027399593,
+      53.741427117192885
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKF1",
+      "nuts218nm": "Derbyshire and Nottinghamshire",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.764285714,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "South Yorkshire",
+      "Cumulative_loss": 5.121428571,
+      "year_week": 5
+    },
+    "coordinate": [
+      -1.2597068392721216,
+      53.11882040372139
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKF2",
+      "nuts218nm": "Leicestershire, Rutland and Northamptonshire",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.764285714,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Bedfordshire and Hertfordshire",
+      "Cumulative_loss": 5.121428571,
+      "year_week": 5
+    },
+    "coordinate": [
+      -0.8167009044645351,
+      52.47754526641731
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKF3",
+      "nuts218nm": "Lincolnshire",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.764285714,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "East Yorkshire and Northern Lincolnshire",
+      "Cumulative_loss": 5.121428571,
+      "year_week": 5
+    },
+    "coordinate": [
+      -0.1920010648543034,
+      53.12833893294745
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKG1",
+      "nuts218nm": "Herefordshire, Worcestershire and Warwickshire",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.764285714,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "West Midlands",
+      "Cumulative_loss": 5.121428571,
+      "year_week": 5
+    },
+    "coordinate": [
+      -2.131871891860217,
+      52.256602188203416
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKG2",
+      "nuts218nm": "Shropshire and Staffordshire",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.764285714,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Cheshire",
+      "Cumulative_loss": 5.121428571,
+      "year_week": 5
+    },
+    "coordinate": [
+      -2.3508614775982712,
+      52.76623925078802
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKG3",
+      "nuts218nm": "West Midlands",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.764285714,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Herefordshire, Worcestershire and Warwickshire",
+      "Cumulative_loss": 5.121428571,
+      "year_week": 5
+    },
+    "coordinate": [
+      -1.9643961186447032,
+      52.50500325722782
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKH1",
+      "nuts218nm": "East Anglia",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.764285714,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Essex",
+      "Cumulative_loss": 5.121428571,
+      "year_week": 5
+    },
+    "coordinate": [
+      0.9633716220012298,
+      52.45617070714793
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKH2",
+      "nuts218nm": "Bedfordshire and Hertfordshire",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.764285714,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Outer London",
+      "Cumulative_loss": 5.121428571,
+      "year_week": 5
+    },
+    "coordinate": [
+      -0.2733553320887782,
+      51.961289855562846
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKH3",
+      "nuts218nm": "Essex",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.764285714,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Inner London",
+      "Cumulative_loss": 5.121428571,
+      "year_week": 5
+    },
+    "coordinate": [
+      0.4286167095893427,
+      51.77189261824135
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKI1",
+      "nuts218nm": "Inner London",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.764285714,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Outer London",
+      "Cumulative_loss": 5.121428571,
+      "year_week": 5
+    },
+    "coordinate": [
+      -0.1234739290746106,
+      51.459809395960434
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKI2",
+      "nuts218nm": "Outer London",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.764285714,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Inner London",
+      "Cumulative_loss": 5.121428571,
+      "year_week": 5
+    },
+    "coordinate": [
+      -0.371941727797439,
+      51.48929899538382
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKJ1",
+      "nuts218nm": "Berkshire, Buckinghamshire and Oxfordshire",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.764285714,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Hampshire and Isle of Wight",
+      "Cumulative_loss": 5.121428571,
+      "year_week": 5
+    },
+    "coordinate": [
+      -1.1779787189243909,
+      51.76245904916984
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKJ2",
+      "nuts218nm": "Surrey, East and West Sussex",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.764285714,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Inner London",
+      "Cumulative_loss": 5.121428571,
+      "year_week": 5
+    },
+    "coordinate": [
+      -0.2012966602897701,
+      51.09663319706843
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKJ3",
+      "nuts218nm": "Hampshire and Isle of Wight",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.764285714,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Berkshire, Buckinghamshire and Oxfordshire",
+      "Cumulative_loss": 5.121428571,
+      "year_week": 5
+    },
+    "coordinate": [
+      -1.2433128645113374,
+      51.044981340882735
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKJ4",
+      "nuts218nm": "Kent",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.764285714,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Essex",
+      "Cumulative_loss": 5.121428571,
+      "year_week": 5
+    },
+    "coordinate": [
+      0.721714844476812,
+      51.199119490967334
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKK1",
+      "nuts218nm": "Gloucestershire, Wiltshire and Bath/Bristol area",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.764285714,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Dorset and Somerset",
+      "Cumulative_loss": 5.121428571,
+      "year_week": 5
+    },
+    "coordinate": [
+      -2.1485220104479237,
+      51.52863480781653
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKK2",
+      "nuts218nm": "Dorset and Somerset",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.764285714,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Gloucestershire, Wiltshire and Bath/Bristol area",
+      "Cumulative_loss": 5.121428571,
+      "year_week": 5
+    },
+    "coordinate": [
+      -2.5278343069819584,
+      50.92097239636034
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKK3",
+      "nuts218nm": "Cornwall and Isles of Scilly",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.764285714,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Devon",
+      "Cumulative_loss": 5.121428571,
+      "year_week": 5
+    },
+    "coordinate": [
+      -4.625275506120921,
+      50.44501678126882
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKK4",
+      "nuts218nm": "Devon",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.764285714,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Cornwall and Isles of Scilly",
+      "Cumulative_loss": 5.121428571,
+      "year_week": 5
+    },
+    "coordinate": [
+      -3.7117998007831856,
+      50.72413884353073
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKL1",
+      "nuts218nm": "West Wales",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.764285714,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "East Wales",
+      "Cumulative_loss": 5.121428571,
+      "year_week": 5
+    },
+    "coordinate": [
+      -4.294759299414998,
+      52.016288627664586
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKL2",
+      "nuts218nm": "East Wales",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.764285714,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "West Wales",
+      "Cumulative_loss": 5.121428571,
+      "year_week": 5
+    },
+    "coordinate": [
+      -3.398530414895232,
+      52.368994597027445
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKM2",
+      "nuts218nm": "Eastern Scotland",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.764285714,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Highlands and Islands",
+      "Cumulative_loss": 5.121428571,
+      "year_week": 5
+    },
+    "coordinate": [
+      -4.070351536146481,
+      56.348583522460984
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKM3",
+      "nuts218nm": "West Central Scotland",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.764285714,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Cumbria",
+      "Cumulative_loss": 5.121428571,
+      "year_week": 5
+    },
+    "coordinate": [
+      -3.416622712069783,
+      55.482425891695
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKM5",
+      "nuts218nm": "North Eastern Scotland",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.764285714,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Eastern Scotland",
+      "Cumulative_loss": 5.121428571,
+      "year_week": 5
+    },
+    "coordinate": [
+      -2.6454487684811596,
+      57.224184436214344
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKM6",
+      "nuts218nm": "Highlands and Islands",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.842857143,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Eastern Scotland",
+      "Cumulative_loss": 3.414285714,
+      "year_week": 5
+    },
+    "coordinate": [
+      -4.672961436309493,
+      56.98053866519594
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKN0",
+      "nuts218nm": "Northern Ireland",
+      "date": "2016-02-01",
+      "Eco_Intensity": 0.842857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Highlands and Islands",
+      "Cumulative_loss": 3.414285714,
+      "year_week": 5
+    },
+    "coordinate": [
+      -6.83851219076082,
+      54.63742733950739
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKC1",
+      "nuts218nm": "Tees Valley and Durham",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "North Yorkshire",
+      "Cumulative_loss": 6.171428571,
+      "year_week": 6
+    },
+    "coordinate": [
+      -1.7743636173265318,
+      54.68487677948886
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKC2",
+      "nuts218nm": "Northumberland and Tyne and Wear",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Tees Valley and Durham",
+      "Cumulative_loss": 6.171428571,
+      "year_week": 6
+    },
+    "coordinate": [
+      -2.094465864568051,
+      55.27706187202841
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD1",
+      "nuts218nm": "Cumbria",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Lancashire",
+      "Cumulative_loss": 6.171428571,
+      "year_week": 6
+    },
+    "coordinate": [
+      -2.9461583794871555,
+      54.626916951856344
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD3",
+      "nuts218nm": "Greater Manchester",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Cheshire",
+      "Cumulative_loss": 6.171428571,
+      "year_week": 6
+    },
+    "coordinate": [
+      -2.3374405429619003,
+      53.506507979572625
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD4",
+      "nuts218nm": "Lancashire",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Greater Manchester",
+      "Cumulative_loss": 6.171428571,
+      "year_week": 6
+    },
+    "coordinate": [
+      -2.4597008729475967,
+      53.861158784492595
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD6",
+      "nuts218nm": "Cheshire",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.942857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Greater Manchester",
+      "Cumulative_loss": 4.114285714,
+      "year_week": 6
+    },
+    "coordinate": [
+      -2.471671254895064,
+      53.21403295308612
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD7",
+      "nuts218nm": "Merseyside",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.971428571,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Cheshire",
+      "Cumulative_loss": 2.057142857,
+      "year_week": 6
+    },
+    "coordinate": [
+      -3.0954678799077735,
+      53.37052109003151
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKE1",
+      "nuts218nm": "East Yorkshire and Northern Lincolnshire",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "South Yorkshire",
+      "Cumulative_loss": 6.171428571,
+      "year_week": 6
+    },
+    "coordinate": [
+      -0.6696798037339573,
+      53.87401288465294
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKE2",
+      "nuts218nm": "North Yorkshire",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.885714286,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "West Yorkshire",
+      "Cumulative_loss": 9.678571429,
+      "year_week": 6
+    },
+    "coordinate": [
+      -1.5318838374956194,
+      54.09027437032269
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKE3",
+      "nuts218nm": "South Yorkshire",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.885714286,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Derbyshire and Nottinghamshire",
+      "Cumulative_loss": 9.678571429,
+      "year_week": 6
+    },
+    "coordinate": [
+      -1.3815177597277748,
+      53.481174241658195
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKE4",
+      "nuts218nm": "West Yorkshire",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.885714286,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "North Yorkshire",
+      "Cumulative_loss": 9.678571429,
+      "year_week": 6
+    },
+    "coordinate": [
+      -1.7202004027399593,
+      53.741427117192885
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKF1",
+      "nuts218nm": "Derbyshire and Nottinghamshire",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "South Yorkshire",
+      "Cumulative_loss": 6.171428571,
+      "year_week": 6
+    },
+    "coordinate": [
+      -1.2597068392721216,
+      53.11882040372139
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKF2",
+      "nuts218nm": "Leicestershire, Rutland and Northamptonshire",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Bedfordshire and Hertfordshire",
+      "Cumulative_loss": 6.171428571,
+      "year_week": 6
+    },
+    "coordinate": [
+      -0.8167009044645351,
+      52.47754526641731
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKF3",
+      "nuts218nm": "Lincolnshire",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "East Yorkshire and Northern Lincolnshire",
+      "Cumulative_loss": 6.171428571,
+      "year_week": 6
+    },
+    "coordinate": [
+      -0.1920010648543034,
+      53.12833893294745
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKG1",
+      "nuts218nm": "Herefordshire, Worcestershire and Warwickshire",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "West Midlands",
+      "Cumulative_loss": 6.171428571,
+      "year_week": 6
+    },
+    "coordinate": [
+      -2.131871891860217,
+      52.256602188203416
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKG2",
+      "nuts218nm": "Shropshire and Staffordshire",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Cheshire",
+      "Cumulative_loss": 6.171428571,
+      "year_week": 6
+    },
+    "coordinate": [
+      -2.3508614775982712,
+      52.76623925078802
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKG3",
+      "nuts218nm": "West Midlands",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Herefordshire, Worcestershire and Warwickshire",
+      "Cumulative_loss": 6.171428571,
+      "year_week": 6
+    },
+    "coordinate": [
+      -1.9643961186447032,
+      52.50500325722782
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKH1",
+      "nuts218nm": "East Anglia",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Essex",
+      "Cumulative_loss": 6.171428571,
+      "year_week": 6
+    },
+    "coordinate": [
+      0.9633716220012298,
+      52.45617070714793
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKH2",
+      "nuts218nm": "Bedfordshire and Hertfordshire",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Outer London",
+      "Cumulative_loss": 6.171428571,
+      "year_week": 6
+    },
+    "coordinate": [
+      -0.2733553320887782,
+      51.961289855562846
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKH3",
+      "nuts218nm": "Essex",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Inner London",
+      "Cumulative_loss": 6.171428571,
+      "year_week": 6
+    },
+    "coordinate": [
+      0.4286167095893427,
+      51.77189261824135
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKI1",
+      "nuts218nm": "Inner London",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Outer London",
+      "Cumulative_loss": 6.171428571,
+      "year_week": 6
+    },
+    "coordinate": [
+      -0.1234739290746106,
+      51.459809395960434
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKI2",
+      "nuts218nm": "Outer London",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Inner London",
+      "Cumulative_loss": 6.171428571,
+      "year_week": 6
+    },
+    "coordinate": [
+      -0.371941727797439,
+      51.48929899538382
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKJ1",
+      "nuts218nm": "Berkshire, Buckinghamshire and Oxfordshire",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Hampshire and Isle of Wight",
+      "Cumulative_loss": 6.171428571,
+      "year_week": 6
+    },
+    "coordinate": [
+      -1.1779787189243909,
+      51.76245904916984
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKJ2",
+      "nuts218nm": "Surrey, East and West Sussex",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Inner London",
+      "Cumulative_loss": 6.171428571,
+      "year_week": 6
+    },
+    "coordinate": [
+      -0.2012966602897701,
+      51.09663319706843
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKJ3",
+      "nuts218nm": "Hampshire and Isle of Wight",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Berkshire, Buckinghamshire and Oxfordshire",
+      "Cumulative_loss": 6.171428571,
+      "year_week": 6
+    },
+    "coordinate": [
+      -1.2433128645113374,
+      51.044981340882735
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKJ4",
+      "nuts218nm": "Kent",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Essex",
+      "Cumulative_loss": 6.171428571,
+      "year_week": 6
+    },
+    "coordinate": [
+      0.721714844476812,
+      51.199119490967334
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKK1",
+      "nuts218nm": "Gloucestershire, Wiltshire and Bath/Bristol area",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Dorset and Somerset",
+      "Cumulative_loss": 6.171428571,
+      "year_week": 6
+    },
+    "coordinate": [
+      -2.1485220104479237,
+      51.52863480781653
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKK2",
+      "nuts218nm": "Dorset and Somerset",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Gloucestershire, Wiltshire and Bath/Bristol area",
+      "Cumulative_loss": 6.171428571,
+      "year_week": 6
+    },
+    "coordinate": [
+      -2.5278343069819584,
+      50.92097239636034
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKK3",
+      "nuts218nm": "Cornwall and Isles of Scilly",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Devon",
+      "Cumulative_loss": 6.171428571,
+      "year_week": 6
+    },
+    "coordinate": [
+      -4.625275506120921,
+      50.44501678126882
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKK4",
+      "nuts218nm": "Devon",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Cornwall and Isles of Scilly",
+      "Cumulative_loss": 6.171428571,
+      "year_week": 6
+    },
+    "coordinate": [
+      -3.7117998007831856,
+      50.72413884353073
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKL1",
+      "nuts218nm": "West Wales",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "East Wales",
+      "Cumulative_loss": 6.171428571,
+      "year_week": 6
+    },
+    "coordinate": [
+      -4.294759299414998,
+      52.016288627664586
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKL2",
+      "nuts218nm": "East Wales",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "West Wales",
+      "Cumulative_loss": 6.171428571,
+      "year_week": 6
+    },
+    "coordinate": [
+      -3.398530414895232,
+      52.368994597027445
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKM2",
+      "nuts218nm": "Eastern Scotland",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Highlands and Islands",
+      "Cumulative_loss": 6.171428571,
+      "year_week": 6
+    },
+    "coordinate": [
+      -4.070351536146481,
+      56.348583522460984
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKM3",
+      "nuts218nm": "West Central Scotland",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Cumbria",
+      "Cumulative_loss": 6.171428571,
+      "year_week": 6
+    },
+    "coordinate": [
+      -3.416622712069783,
+      55.482425891695
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKM5",
+      "nuts218nm": "North Eastern Scotland",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.914285714,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Eastern Scotland",
+      "Cumulative_loss": 6.171428571,
+      "year_week": 6
+    },
+    "coordinate": [
+      -2.6454487684811596,
+      57.224184436214344
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKM6",
+      "nuts218nm": "Highlands and Islands",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.942857143,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Eastern Scotland",
+      "Cumulative_loss": 4.114285714,
+      "year_week": 6
+    },
+    "coordinate": [
+      -4.672961436309493,
+      56.98053866519594
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKN0",
+      "nuts218nm": "Northern Ireland",
+      "date": "2016-02-08",
+      "Eco_Intensity": 0.942857143,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Highlands and Islands",
+      "Cumulative_loss": 4.114285714,
+      "year_week": 6
+    },
+    "coordinate": [
+      -6.83851219076082,
+      54.63742733950739
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKC1",
+      "nuts218nm": "Tees Valley and Durham",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.064285714,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "North Yorkshire",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -1.7743636173265318,
+      54.68487677948886
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKC2",
+      "nuts218nm": "Northumberland and Tyne and Wear",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.064285714,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Tees Valley and Durham",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -2.094465864568051,
+      55.27706187202841
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD1",
+      "nuts218nm": "Cumbria",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.064285714,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Lancashire",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -2.9461583794871555,
+      54.626916951856344
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD3",
+      "nuts218nm": "Greater Manchester",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.064285714,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Cheshire",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -2.3374405429619003,
+      53.506507979572625
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD4",
+      "nuts218nm": "Lancashire",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.064285714,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Greater Manchester",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -2.4597008729475967,
+      53.861158784492595
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD6",
+      "nuts218nm": "Cheshire",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.042857143,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Greater Manchester",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -2.471671254895064,
+      53.21403295308612
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKD7",
+      "nuts218nm": "Merseyside",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.021428571,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Cheshire",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -3.0954678799077735,
+      53.37052109003151
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKE1",
+      "nuts218nm": "East Yorkshire and Northern Lincolnshire",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.064285714,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "South Yorkshire",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -0.6696798037339573,
+      53.87401288465294
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKE2",
+      "nuts218nm": "North Yorkshire",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.085714286,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "West Yorkshire",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -1.5318838374956194,
+      54.09027437032269
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKE3",
+      "nuts218nm": "South Yorkshire",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.085714286,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Derbyshire and Nottinghamshire",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -1.3815177597277748,
+      53.481174241658195
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKE4",
+      "nuts218nm": "West Yorkshire",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.085714286,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "North Yorkshire",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -1.7202004027399593,
+      53.741427117192885
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKF1",
+      "nuts218nm": "Derbyshire and Nottinghamshire",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.064285714,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "South Yorkshire",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -1.2597068392721216,
+      53.11882040372139
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKF2",
+      "nuts218nm": "Leicestershire, Rutland and Northamptonshire",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.064285714,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Bedfordshire and Hertfordshire",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -0.8167009044645351,
+      52.47754526641731
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKF3",
+      "nuts218nm": "Lincolnshire",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.064285714,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "East Yorkshire and Northern Lincolnshire",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -0.1920010648543034,
+      53.12833893294745
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKG1",
+      "nuts218nm": "Herefordshire, Worcestershire and Warwickshire",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.064285714,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "West Midlands",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -2.131871891860217,
+      52.256602188203416
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKG2",
+      "nuts218nm": "Shropshire and Staffordshire",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.064285714,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Cheshire",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -2.3508614775982712,
+      52.76623925078802
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKG3",
+      "nuts218nm": "West Midlands",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.064285714,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Herefordshire, Worcestershire and Warwickshire",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -1.9643961186447032,
+      52.50500325722782
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKH1",
+      "nuts218nm": "East Anglia",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.064285714,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Essex",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      0.9633716220012298,
+      52.45617070714793
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKH2",
+      "nuts218nm": "Bedfordshire and Hertfordshire",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.064285714,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Outer London",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -0.2733553320887782,
+      51.961289855562846
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKH3",
+      "nuts218nm": "Essex",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.064285714,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Inner London",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      0.4286167095893427,
+      51.77189261824135
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKI1",
+      "nuts218nm": "Inner London",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.064285714,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Outer London",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -0.1234739290746106,
+      51.459809395960434
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKI2",
+      "nuts218nm": "Outer London",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.064285714,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Inner London",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -0.371941727797439,
+      51.48929899538382
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKJ1",
+      "nuts218nm": "Berkshire, Buckinghamshire and Oxfordshire",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.064285714,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Hampshire and Isle of Wight",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -1.1779787189243909,
+      51.76245904916984
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKJ2",
+      "nuts218nm": "Surrey, East and West Sussex",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.064285714,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Inner London",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -0.2012966602897701,
+      51.09663319706843
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKJ3",
+      "nuts218nm": "Hampshire and Isle of Wight",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.064285714,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Berkshire, Buckinghamshire and Oxfordshire",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -1.2433128645113374,
+      51.044981340882735
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKJ4",
+      "nuts218nm": "Kent",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.064285714,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Essex",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      0.721714844476812,
+      51.199119490967334
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKK1",
+      "nuts218nm": "Gloucestershire, Wiltshire and Bath/Bristol area",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.064285714,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Dorset and Somerset",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -2.1485220104479237,
+      51.52863480781653
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKK2",
+      "nuts218nm": "Dorset and Somerset",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.064285714,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Gloucestershire, Wiltshire and Bath/Bristol area",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -2.5278343069819584,
+      50.92097239636034
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKK3",
+      "nuts218nm": "Cornwall and Isles of Scilly",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.064285714,
+      "Event": "UK York flooding",
+      "Sector": "Construction",
+      "Damage_source": "Devon",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -4.625275506120921,
+      50.44501678126882
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKK4",
+      "nuts218nm": "Devon",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.064285714,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Cornwall and Isles of Scilly",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -3.7117998007831856,
+      50.72413884353073
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKL1",
+      "nuts218nm": "West Wales",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.064285714,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "East Wales",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -4.294759299414998,
+      52.016288627664586
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKL2",
+      "nuts218nm": "East Wales",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.064285714,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "West Wales",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -3.398530414895232,
+      52.368994597027445
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKM2",
+      "nuts218nm": "Eastern Scotland",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.064285714,
+      "Event": "UK York flooding",
+      "Sector": "Energy",
+      "Damage_source": "Highlands and Islands",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -4.070351536146481,
+      56.348583522460984
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKM3",
+      "nuts218nm": "West Central Scotland",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.064285714,
+      "Event": "UK York flooding",
+      "Sector": "Services",
+      "Damage_source": "Cumbria",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -3.416622712069783,
+      55.482425891695
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKM5",
+      "nuts218nm": "North Eastern Scotland",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.064285714,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Eastern Scotland",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -2.6454487684811596,
+      57.224184436214344
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKM6",
+      "nuts218nm": "Highlands and Islands",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.042857143,
+      "Event": "UK York flooding",
+      "Sector": "Manufacturing",
+      "Damage_source": "Eastern Scotland",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -4.672961436309493,
+      56.98053866519594
+    ]
+  },
+  {
+    "properties": {
+      "nuts218cd": "UKN0",
+      "nuts218nm": "Northern Ireland",
+      "date": "2016-02-15",
+      "Eco_Intensity": 1.042857143,
+      "Event": "UK York flooding",
+      "Sector": "Agriculture",
+      "Damage_source": "Highlands and Islands",
+      "Cumulative_loss": 0.0,
+      "year_week": 7
+    },
+    "coordinate": [
+      -6.83851219076082,
+      54.63742733950739
+    ]
+  }
+]
